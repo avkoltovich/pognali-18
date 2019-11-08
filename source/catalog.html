@@ -8,9 +8,10 @@
 
 <body>
   <header class="site-header">
-    <a class="header__logo-link"><img class="header__logo-img" src="https://via.placeholder.com/100x19" width="100"
-        height="19" alt="Погнали?"></a>
-    <button type="button" class="header__button--open"><span class="visually-hidden">Открыть меню</span></button>
+    <a class="site-header__logo-link"><img class="site-header__logo-img" src="https://via.placeholder.com/100x19"
+        width="100" height="19" alt="Погнали?"></a>
+    <button type="button" class="site-header__button site-header__button--open"><span class="visually-hidden">Открыть
+        меню</span></button>
   </header>
   <main>
     <h1 class="main-heading">Попутчики</h1>
@@ -18,10 +19,10 @@
       <h2 class="visually-hidden">Каталог попутчиков</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <span class="catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
+          <span class="catalog__status catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
           <h3 class="catalog__title">Таня Фирсова</h3>
-          <button class="catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button">Like!</button>
           <b class="catalog__like">1,5 m</b>
           <p class="catalog__tags">
             #ЗОЖ #ПП #Фитнес #пляж
@@ -64,10 +65,10 @@
           <button class="catalog__button" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
-          <span class="catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
+          <span class="catalog__status catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин">
           <h3 class="catalog__title">Петя Демин</h3>
-          <button class="catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button">Like!</button>
           <b class="catalog__like">150</b>
           <p class="catalog__tags">
             #бургер #бар #футбол
@@ -106,10 +107,10 @@
           <button class="catalog__button" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
-          <span class="catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
+          <span class="catalog__status catalog__status--online"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов">
           <h3 class="catalog__title">Марк Смолов</h3>
-          <button class="catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button">Like!</button>
           <b class="catalog__like">1700</b>
           <p class="catalog__tags">
             #рэп #тату #хайпбист
@@ -152,11 +153,11 @@
           <button class="catalog__button" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
-          <span class="catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
+          <span class="catalog__status catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
             alt="Лариса Роговая">
           <h3 class="catalog__title">Лариса Роговая</h3>
-          <button class="catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button">Like!</button>
           <b class="catalog__like">23</b>
           <p class="catalog__tags">
             #образование #карьера
@@ -196,7 +197,7 @@
           <button class="catalog__button" type="button">Позвать!</button>
         </li>
       </ul>
-      <button class="catalog__button--more" type="button">Показать еще</button>
+      <button class="catalog__button catalog__button--more" type="button">Показать еще</button>
       <ul class="catalog__pagination pagination">
         <li class="pagination__item">
           <a href="" class="pagination__link"><span class="visually-hidden">Назад</span></a>
@@ -208,26 +209,27 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a class="footer__logo-link"><img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали?"></a>
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a href="" class="footer__link">
+    <a class="site-footer__logo-link"><img src="https://via.placeholder.com/96x15" width="96" height="15"
+        alt="Погнали?"></a>
+    <ul class="site-footer__list">
+      <li class="site-footer__item">
+        <a href="" class="site-footer__link">
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
-      <li class="footer__item">
-        <a href="" class="footer__link">
+      <li class="site-footer__item">
+        <a href="" class="site-footer__link">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
-      <li class="footer__item">
-        <a href="" class="footer__link">
+      <li class="site-footer__item">
+        <a href="" class="site-footer__link">
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>
     </ul>
     <p>
-      <small class="footer__copyright">Разработано</small>
+      <small class="site-footer__copyright">Разработано</small>
       <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x34" width="27"
           height="34" alt="HTML Academy"></a>
     </p>
