@@ -66,6 +66,51 @@
   </header>
   <main>
     <h1 class="main-heading">Направления</h1>
+    <section class="profile">
+      <h2 class="visually-hidden">Мой профиль</h2>
+      <dl class="profile__level">
+        <dt>80</dt>
+        <dd>level</dd>
+      </dl>
+      <img class="profile__photo" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Мое фото">
+      <form class="profile__form">
+        <label class="profile__label profile__label--upload">
+          <input class="profile__upload" type="file">
+          Сменить фото
+        </label>
+        <fieldset class="profile__fieldset">
+          <legend class="profile__legend">
+            Тэги
+          </legend>
+          <textarea class="profile__textarea" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+        </fieldset>
+        <fieldset class="profile__fieldset">
+          <legend class="profile__legend">
+            Транспорт
+          </legend>
+          <label class="profile__label profile__label--transport">
+            <input type="checkbox" class="filter__checkbox" name="Airplane" aria-label="Самолет" checked>
+            <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="profile__label profile__label--transport">
+            <input type="checkbox" class="filter__checkbox" name="Bus" aria-label="Автобус" checked>
+            <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="profile__label profile__label--transport">
+            <input type="checkbox" class="filter__checkbox" name="Bike" aria-label="Велосипед">
+            <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="profile__label profile__label--transport">
+            <input type="checkbox" class="filter__checkbox" name="Run" aria-label="Пешком" checked>
+            <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
+              height="33" aria-hidden="true">
+          </label>
+        </fieldset>
+      </form>
+    </section>
   </main>
   <footer class="site-footer">
     <a class="site-footer__logo-link">
