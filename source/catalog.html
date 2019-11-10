@@ -167,37 +167,132 @@
       </ul>
       <ul class="filter-country__list">
         <li class="filter-country__item">
-          <button class="filter-country__button">Афганистан</button>
+          <button class="filter-country__button" type="button">Афганистан</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Албания</button>
+          <button class="filter-country__button" type="button">Албания</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Алжир</button>
+          <button class="filter-country__button" type="button">Алжир</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Андорра</button>
+          <button class="filter-country__button" type="button">Андорра</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Аргентина</button>
+          <button class="filter-country__button" type="button">Аргентина</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Армения</button>
+          <button class="filter-country__button" type="button">Армения</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Австралия</button>
+          <button class="filter-country__button" type="button">Австралия</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Австрия</button>
+          <button class="filter-country__button" type="button">Австрия</button>
         </li>
         <li class="filter-country__item">
-          <button class="filter-country__button">Азербайджан</button>
+          <button class="filter-country__button" type="button">Азербайджан</button>
         </li>
       </ul>
-      <button class="filter-country__button">
+      <button class="filter-country__button" type="button">
         <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
         свернуть
       </button>
+    </section>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <h3 class="filter__heading">Подберите идеального попутчика</h3>
+      <form action="https://echo.htmlacademy.ru" class="filter__form">
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Хобби</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Музыка</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Hard Rock" checked>
+            <span class="filter__checkbox-icon"></span>
+            Тяжелый рок
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Russian rap">
+            <span class="filter__checkbox-icon"></span>
+            Русский рэп
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Eurodance">
+            <span class="filter__checkbox-icon"></span>
+            Евроденс
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Еда</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Транспорт</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Airplane" aria-label="Самолет" checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Bus" aria-label="Автобус" checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Bike" aria-label="Велосипед">
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="Run" aria-label="Пешком" checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
+              height="33" aria-hidden="true">
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Левел</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="number" class="filter__number" placeholder="30">
+          </label>
+          <label class="filter__label">
+            <input type="number" class="filter__number" placeholder="100">
+          </label>
+          <button class="filter__button filter__button--range" type="button" aria-label="Меньше"></button>
+          <button class="filter__button filter__button--range" type="button" aria-label="Больше"></button>
+        </fieldset>
+        <button class="filter__button filter__button--submit" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог попутчиков</h2>
