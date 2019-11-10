@@ -10,8 +10,53 @@
   <header class="site-header">
     <a class="site-header__logo-link"><img class="site-header__logo-img" src="https://via.placeholder.com/100x19"
         width="100" height="19" alt="Погнали?"></a>
-    <button type="button" class="site-header__button site-header__button--open"><span class="visually-hidden">Открыть
-        меню</span></button>
+    <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
+      <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
+    </button>
+    <button class="site-header__button site-header__button--close" type="button" aria-label="Закрыть меню">
+      <img src="https://via.placeholder.com/19x19" width="19" height="19" aria-hidden="true" alt="Закрыть меню">
+    </button>
+    <nav class="site-header__navigation">
+      <ul class="site-header__navigation-list">
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">О сервисе</a>
+        </li>
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">Направления</a>
+        </li>
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="site-header__user-list">
+      <li class="site-header__user-item">
+        <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
+      </li>
+      <li class="site-header__user-item">
+        <a href="tel:+78005558628" class="site-header__user-link">8 800 555-86-28</a>
+      </li>
+      <li class="site-header__user-item">
+        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">mail@htmlacademy.ru</a>
+      </li>
+    </ul>
+    <ul class="site-header__social-list">
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
   </header>
   <main>
     <h1 class="visually-hidden">Сервис поиска попутчиков</h1>
@@ -77,11 +122,11 @@
         чужих.
       </p>
       <p class="about__text">
-        <b>
+        <strong>
           А если найдете кого-то
           близкого по духу — скорее
           зовите в совместный трип!
-        </b>
+        </strong>
       </p>
     </section>
     <section class="directions">
@@ -235,21 +280,21 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a class="site-footer__logo-link"><img src="https://via.placeholder.com/96x15" width="96" height="15"
-        alt="Погнали?"></a>
-    <ul class="site-footer__social">
+    <a class="site-footer__logo-link">
+      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали?"></a>
+    <ul class="site-footer__social-list">
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>

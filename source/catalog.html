@@ -10,8 +10,53 @@
   <header class="site-header">
     <a class="site-header__logo-link"><img class="site-header__logo-img" src="https://via.placeholder.com/100x19"
         width="100" height="19" alt="Погнали?"></a>
-    <button type="button" class="site-header__button site-header__button--open"><span class="visually-hidden">Открыть
-        меню</span></button>
+    <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
+      <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
+    </button>
+    <button class="site-header__button site-header__button--close" type="button" aria-label="Закрыть меню">
+      <img src="https://via.placeholder.com/19x19" width="19" height="19" aria-hidden="true" alt="Закрыть меню">
+    </button>
+    <nav class="site-header__navigation">
+      <ul class="site-header__navigation-list">
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">О сервисе</a>
+        </li>
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">Направления</a>
+        </li>
+        <li class="site-header__navigation-item">
+          <a href="" class="site-header__navigation-link">Попутчики</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="site-header__user-list">
+      <li class="site-header__user-item">
+        <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
+      </li>
+      <li class="site-header__user-item">
+        <a href="tel:+78005558628" class="site-header__user-link">8 800 555-86-28</a>
+      </li>
+      <li class="site-header__user-item">
+        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">mail@htmlacademy.ru</a>
+      </li>
+    </ul>
+    <ul class="site-header__social-list">
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="site-header__social-item">
+        <a href="" class="site-header__social-link">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
   </header>
   <main>
     <h1 class="main-heading">Попутчики</h1>
@@ -28,7 +73,7 @@
             #ЗОЖ #ПП #Фитнес #пляж
             #авокадо #смузи
           </p>
-          <b class="catalog__list-caption">хочет посетить:</b>
+          <h4 class="catalog__list-caption">хочет посетить:</h4>
           <ul class="catalog__countries-list">
             <li class="catalog__flag">
               <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Шри-ланка">
@@ -43,7 +88,7 @@
               Сейшелы
             </li>
           </ul>
-          <b class="catalog__list-caption">транспорт:</b>
+          <h4 class="catalog__list-caption">транспорт:</h4>
           <ul class="catalog__transport-list">
             <li class="catalog__transport-item catalog__transport-item--active">
               <span class="visually-hidden">Самолёт</span>
@@ -74,7 +119,7 @@
             #бургер #бар #футбол
             #концерт #крафт
           </p>
-          <b class="catalog__list-caption">хочет посетить:</b>
+          <h4 class="catalog__list-caption">хочет посетить:</h4>
           <ul class="catalog__countries-list">
             <li class="catalog__flag">
               <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Бельгия">
@@ -85,7 +130,7 @@
               Чехия
             </li>
           </ul>
-          <b class="catalog__list-caption">транспорт:</b>
+          <h4 class="catalog__list-caption">транспорт:</h4>
           <ul class="catalog__transport-list">
             <li class="catalog__transport-item catalog__transport-item--active">
               <span class="visually-hidden">Самолёт</span>
@@ -116,7 +161,7 @@
             #рэп #тату #хайпбист
             #кроссовки #суприм
           </p>
-          <b class="catalog__list-caption">хочет посетить:</b>
+          <h4 class="catalog__list-caption">хочет посетить:</h4>
           <ul class="catalog__countries-list">
             <li class="catalog__flag">
               <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="США">
@@ -131,7 +176,7 @@
               Доминикана
             </li>
           </ul>
-          <b class="catalog__list-caption">транспорт:</b>
+          <h4 class="catalog__list-caption">транспорт:</h4>
           <ul class="catalog__transport-list">
             <li class="catalog__transport catalog__transport-item--active">
               <span class="visually-hidden">Самолёт</span>
@@ -163,7 +208,7 @@
             #образование #карьера
             #учеба #линкедин
           </p>
-          <b class="catalog__list-caption">хочет посетить:</b>
+          <h4 class="catalog__list-caption">хочет посетить:</h4>
           <ul class="catalog__countries-list">
             <li class="catalog__flag">
               <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
@@ -175,7 +220,7 @@
               Германия
             </li>
           </ul>
-          <b class="catalog__list-caption">транспорт:</b>
+          <h4 class="catalog__list-caption">транспорт:</h4>
           <ul class="catalog__transport-list">
             <li class="catalog__transport-item catalog__transport-item--active">
               <span class="visually-hidden">Самолёт</span>
@@ -209,21 +254,21 @@
     </section>
   </main>
   <footer class="site-footer">
-    <a class="site-footer__logo-link"><img src="https://via.placeholder.com/96x15" width="96" height="15"
-        alt="Погнали?"></a>
-    <ul class="site-footer__social">
+    <a class="site-footer__logo-link">
+      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали?"></a>
+    <ul class="site-footer__social-list">
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="site-footer__social-item">
-        <a href="" class="site-footer__link">
+        <a href="" class="site-footer__social-link">
           <span class="visually-hidden">Instagram</span>
         </a>
       </li>
