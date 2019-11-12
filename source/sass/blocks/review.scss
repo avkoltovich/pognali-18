@@ -1,0 +1,17 @@
+.review {
+  color: #ffffff;
+
+  background-color: $bgcolor-mobile-dark;
+}
+
+.review__text {
+  @include font-light;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.review__author {
+  @include font-bold;
+  font-size: 16px;
+  line-height: 1.38;
+}

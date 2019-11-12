@@ -1,0 +1,42 @@
+.howto {
+  background-color: $bgcolor-mobile-dark;
+}
+
+.howto__item {
+  width: 270px;
+  padding-top: 23px;
+  padding-right: 50px;
+  padding-left: 25px;
+
+  @include font-bold;
+  font-size: 18px;
+  color: #161c35;
+
+  border-radius: 10px;
+}
+
+.howto__item:not(:first-child) {
+  margin-top: -20px;
+}
+
+.howto__item:not(:last-child) {
+  height: 100px;
+}
+
+.howto__item:nth-child(1) {
+  background-color: #ff8d30;
+}
+
+.howto__item:nth-child(2) {
+  background-color: #ffa530;
+}
+
+.howto__item:nth-child(3) {
+  background-color: #ffbd30;
+}
+
+.howto__item:nth-child(4) {
+  height: 80px;
+
+  background-color: #ffd74b;
+}

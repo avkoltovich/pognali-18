@@ -1,10 +1,16 @@
 body {
   width: 320px;
 }
-@import 'mixins.scss';
-@import 'variables.scss';
-@import 'font-face.scss';
-@import 'visually-hidden.scss';
-@import 'normalize.scss';
-@import 'blocks/site-header.scss';
-@import 'blocks/promotion.scss';
+@import "mixins.scss";
+@import "variables.scss";
+@import "font-face.scss";
+@import "visually-hidden.scss";
+@import "normalize.scss";
+@import "box-sizing.scss";
+@import "blocks/site-header.scss";
+@import "blocks/promotion.scss";
+@import "blocks/user-menu.scss";
+@import "blocks/review.scss";
+@import "blocks/howto.scss";
+@import "blocks/about.scss";
+@import "blocks/directions.scss";

@@ -1,0 +1,9 @@
+.directions {
+  background-color: $bgcolor-mobile-light;
+}
+
+.directions__heading {
+  @include font-bold;
+  font-size: 24px;
+  color: #ff8d30;
+}

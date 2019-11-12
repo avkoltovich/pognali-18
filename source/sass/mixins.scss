@@ -1,47 +1,47 @@
 @mixin font-light {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
 }
 
 @mixin font-normal {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 @mixin font-medium {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
 
 @mixin font-bold {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
 
 @mixin font-light-italic {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: italic;
   font-weight: 300;
 }
 
 @mixin font-normal-italic {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
 }
 
 @mixin font-medium-italic {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: italic;
   font-weight: 500;
 }
 
 @mixin font-bold-italic {
-  font-family: 'BloggerSans', Arial, sans-serif;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-style: italic;
   font-weight: bold;
 }

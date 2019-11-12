@@ -1,6 +1,6 @@
 .promotion {
-  background-color: #192144;
-  background-image: url('../../img/globe-back-mobile@1x.jpg');
+  background-color: $bgcolor-mobile-dark;
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,5 +11,5 @@
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
