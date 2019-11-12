@@ -1,6 +1,10 @@
-@import "mixins.scss";
-@import "valiables.scss";
-@import "font-face.scss";
-@import "visually-hidden.scss";
-@import "normalize.scss";
-@import "blocks/site-header.scss";
+body {
+  width: 320px;
+}
+@import 'mixins.scss';
+@import 'variables.scss';
+@import 'font-face.scss';
+@import 'visually-hidden.scss';
+@import 'normalize.scss';
+@import 'blocks/site-header.scss';
+@import 'blocks/promotion.scss';

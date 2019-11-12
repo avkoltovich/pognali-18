@@ -3,12 +3,10 @@
 }
 
 .site-header__navigation-list {
+  @include list;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 0;
-
-  list-style: none;
 }
 
 .site-header__navigation-link {
@@ -20,4 +18,29 @@
   color: #192144;
 }
 
+.site-header__user-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+}
 
+.site-header__user-link {
+  @include font-bold;
+  font-size: 16px;
+  line-height: 1.38;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+
+  &--btn {
+    font-size: 17px;
+    color: #161c35;
+
+    background-color: #ffd74b;
+  }
+}
+
+.site-header__social-list {
+  @include list;
+  display: flex;
+}
