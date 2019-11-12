@@ -7,3 +7,41 @@
   font-size: 24px;
   color: #ff8d30;
 }
+
+.directions__text {
+  @include font-light;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #444444;
+}
+
+.directions__list {
+  @include list;
+}
+
+.directions__link {
+  text-decoration: none;
+
+  &--btn {
+    @include font-bold;
+    font-size: 18px;
+    color: #1d2e5b;
+
+    border-radius: 10px;
+    background-color: #ffd74b;
+  }
+}
+
+.directions__title {
+  @include font-bold;
+  font-size: 21px;
+  color: #161c35;
+}
+
+.directions__counter,
+.directions__text {
+  @include font-medium;
+  font-size: 16px;
+  line-height: 1.13;
+  color: rgba(68, 68, 68, 0.3);
+}
