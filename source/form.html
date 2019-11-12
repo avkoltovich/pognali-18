@@ -13,9 +13,6 @@
     <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
       <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
     </button>
-    <button class="site-header__button site-header__button--close" type="button" aria-label="Закрыть меню">
-      <img src="https://via.placeholder.com/19x19" width="19" height="19" aria-hidden="true" alt="Закрыть меню">
-    </button>
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
@@ -89,22 +86,23 @@
             Транспорт
           </legend>
           <label class="profile__label profile__label--transport">
-            <input type="checkbox" class="profile__checkbox" name="Airplane" aria-label="Самолет" checked>
+            <input type="checkbox" class="profile__checkbox" name="transport" value="Airplane" aria-label="Самолет"
+              checked>
             <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
               height="33" aria-hidden="true">
           </label>
           <label class="profile__label profile__label--transport">
-            <input type="checkbox" class="profile__checkbox" name="Bus" aria-label="Автобус" checked>
+            <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус" checked>
             <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
               height="33" aria-hidden="true">
           </label>
           <label class="profile__label profile__label--transport">
-            <input type="checkbox" class="profile__checkbox" name="Bike" aria-label="Велосипед">
+            <input type="checkbox" class="profile__checkbox" name="transport" value="Bike" aria-label="Велосипед">
             <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
               height="33" aria-hidden="true">
           </label>
           <label class="profile__label profile__label--transport">
-            <input type="checkbox" class="profile__checkbox" name="Run" aria-label="Пешком" checked>
+            <input type="checkbox" class="profile__checkbox" name="transport" value="Run" aria-label="Пешком" checked>
             <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
               height="33" aria-hidden="true">
           </label>
@@ -116,380 +114,524 @@
       <ol class="plans__list">
         <li class="plans__item">
           <h3 class="plans__title">Франция, Италия</h3>
-          <span class="plans__companion">3 попутчика</span>
-          <span class="plans__date">26 мар — 29 мар</span>
-          <button class="plans__button">Изменить</button>
+          <p class="plans__companion">3 попутчика</p>
+          <p class="plans__date">26 мар — 29 мар</p>
+          <a href="" class="plans__link">Изменить</a>
         </li>
         <li class="plans__item">
           <h3 class="plans__title">Таиланд, Индонезия</h3>
-          <span class="plans__companion">1 попутчик</span>
-          <span class="plans__date">1 июл — 15 июл</span>
-          <button class="plans__button">Изменить</button>
+          <p class="plans__companion">1 попутчик</p>
+          <p class="plans__date">1 июл — 15 июл</p>
+          <a href="" class="plans__link">Изменить</a>
         </li>
       </ol>
     </section>
     <section class="add-plan">
       <h2 class="add-plan__heading">Добавить план:</h2>
-      <section class="step-one">
-        <h2 class="add-plan__heading add-plan__heading-step">Шаг 1.<br> Даты пребывания</h2>
-        <p class="add-plan__text">
-          Укажите предпочтительное количество попутчиков, которых
-          вы хотели бы позвать в поездку и ее предполагаемую длительность.
-        </p>
-        <form class="step-one__form">
-          <fieldset class="step-one__fieldset">
-            <legend class="step-one__legend">ищу попутчиков:</legend>
-            <button class="step-one__button" type="button" aria-label="Меньше">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-            </button>
-            <label class="step-one__lebel">
-              <span class="step-one__unit">Чел.</span>
-              <input type="number" placeholder="2">
+      <form class="add-plan__form">
+        <section class="step-one">
+          <h2 class="add-plan__heading add-plan__heading-step">Шаг 1.<br> Даты пребывания</h2>
+          <p class="add-plan__text">
+            Укажите предпочтительное количество попутчиков, которых
+            вы хотели бы позвать в поездку и ее предполагаемую длительность.
+          </p>
+            <fieldset class="step-one__fieldset">
+              <legend class="step-one__legend">ищу попутчиков: <span class="step-one__unit">Чел.</span></legend>
+              <button class="step-one__button" type="button" aria-label="Меньше">
+                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+              </button>
+              <label class="step-one__lebel">
+                <input type="number" placeholder="2">
+              </label>
+              <button class="step-one__button" type="button" aria-label="Больше">
+                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+              </button>
+            </fieldset>
+            <fieldset class="step-one__fieldset">
+              <legend class="step-one__legend">Длительность: <span class="step-one__unit">дн.</span></legend>
+              <button class="step-one__button" type="button" aria-label="Меньше">
+                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+              </button>
+              <label class="step-one__lebel">
+                <input type="number" placeholder="2">
+              </label>
+              <button class="step-one__button" type="button" aria-label="Больше">
+                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+              </button>
+            </fieldset>
+            <label class="step-one__label">
+              <input type="checkbox" class="step-one__checkbox" name="childrens" value="true" checked>
+              <span class="step-one__checkbox-icon"></span>
+              Можно с детьми
             </label>
-            <button class="step-one__button" type="button" aria-label="Больше">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-            </button>
-          </fieldset>
-          <fieldset class="step-one__fieldset">
-            <legend class="step-one__legend">Длительность:</legend>
-            <button class="step-one__button" type="button" aria-label="Меньше">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-            </button>
-            <label class="step-one__lebel">
-              <span class="step-one__unit">дн.</span>
-              <input type="number" placeholder="2">
-            </label>
-            <button class="step-one__button" type="button" aria-label="Больше">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-            </button>
-          </fieldset>
-          <label class="step-one__label">
-            <input type="checkbox" class="step-one__checkbox" name="With children's" checked>
-            <span class="step-one__checkbox-icon"></span>
-            Можно с детьми
-          </label>
-        </form>
-        <div class="step-one__wrapper">
-          <button class="step-one__button" type="button" aria-label="Назад">
-            <img src="https://via.placeholder.com/17x17" width="17" height="17" alt="<" aria-hidden="true">
-          </button>
-          <span class="step-one__calendar-title">Март 2019</span>
-          <button class="step-one__button" type="button" aria-label="Вперед">
-            <img src="https://via.placeholder.com/17x17" width="17" height="17" alt=">" aria-hidden="true">
-          </button>
-        </div>
-        <ul class="step-one__calendar">
-          <li class="step-one__calendar-cell">П</li>
-          <li class="step-one__calendar-cell">В</li>
-          <li class="step-one__calendar-cell">С</li>
-          <li class="step-one__calendar-cell">Ч</li>
-          <li class="step-one__calendar-cell">П</li>
-          <li class="step-one__calendar-cell step-one__calendar-cell--weekend">С</li>
-          <li class="step-one__calendar-cell step-one__calendar-cell--weekend">В</li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">23</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">24</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">25</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">26</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">27</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">28</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">1</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">2</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">3</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">4</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">5</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">6</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">7</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">8</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">9</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">10</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">11</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">12</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">13</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">14</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">15</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">16</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">17</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">18</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">19</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">20</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">21</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">22</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">23</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">24</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--disabled">25</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--focus">26</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--active">27</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn step-one__calendar-btn--active">28</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">29</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">30</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">31</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">1</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">2</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">3</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">4</button>
-          </li>
-          <li class="step-one__calendar-cell">
-            <button class="step-one__calendar-btn">5</button>
-          </li>
-        </ul>
-        <a href="" class="add-plan__link add-plan__link--next">Следующий шаг</a>
-      </section>
-      <section class="step-two">
-        <h2 class="add-plan__heading add-plan__heading-step">Шаг 2.<br> Маршрут</h2>
-        <p class="add-plan__text">
-          Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-        </p>
-        <form class="step-two__form">
+          <table class="step-one__calendar">
+            <caption class="step-one__caption">
+              <button class="step-one__button" type="button" aria-label="Назад">
+                <img src="https://via.placeholder.com/17x17" width="17" height="17" alt="<" aria-hidden="true">
+              </button>
+              Март 2019
+              <button class="step-one__button" type="button" aria-label="Вперед">
+                <img src="https://via.placeholder.com/17x17" width="17" height="17" alt=">" aria-hidden="true">
+              </button>
+            </caption>
+            <tr class="step-one__row">
+              <th class="step-one__cell step-one__cell--heading">
+                П
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                В
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                С
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                Ч
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                П
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                С
+              </th>
+              <th class="step-one__cell step-one__cell--heading">
+                В
+              </th>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  23
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  24
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  25
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  26
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  27
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  28
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  1
+                </label>
+              </td>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  2
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  3
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  4
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  5
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  6
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  7
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  8
+                </label>
+              </td>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  9
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  10
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  11
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  12
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  13
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  14
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  15
+                </label>
+              </td>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  16
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  17
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  18
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  19
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  20
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  21
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  22
+                </label>
+              </td>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  23
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  24
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  25
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  26
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  27
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  28
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  29
+                </label>
+              </td>
+            </tr>
+            <tr class="step-one__row">
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  30
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  31
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  1
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  2
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  3
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  4
+                </label>
+              </td>
+              <td class="step-one__cell">
+                <label class="step-one__label">
+                  <input type="checkbox" class="step-one__checkbox">
+                  5
+                </label>
+              </td>
+            </tr>
+          </table>
+          <a href="" class="add-plan__link add-plan__link--next">Следующий шаг</a>
+        </section>
+        <section class="step-two">
+          <h2 class="add-plan__heading add-plan__heading-step">Шаг 2.<br> Маршрут</h2>
+          <p class="add-plan__text">
+            Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
+          </p>
           <fieldset class="step-two__fieldset">
-            <select class="step-two__select" name="country">
-              <option>Босния и герцегов</option>
-            </select>
             <label class="step-two__label">
+              <input class="step-two__input" type="text" name="country" placeholder="Босния и герцегов">
               <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и герцегов">
-              <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
-                <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
-              </button>
             </label>
+            <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+              <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
+            </button>
           </fieldset>
           <fieldset class="step-two__fieldset">
-            <select class="step-two__select" name="country">
-              <option>Чехия</option>
-            </select>
             <label class="step-two__label">
+              <input class="step-two__input" type="text" name="country" placeholder="Чехия">
               <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
-              <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
-                <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
-              </button>
             </label>
+            <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+              <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
+            </button>
           </fieldset>
           <fieldset class="step-two__fieldset">
-            <select class="step-two__select" name="country">
-              <option>Выберите страну</option>
-            </select>
             <label class="step-two__label">
-              <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
-                <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
-              </button>
+              <input class="step-two__input" type="text" name="country" placeholder="Выберите страну">
             </label>
+            <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+              <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
+            </button>
           </fieldset>
           <button class="step-two__button step-two__button--add" type="button">Добавить страну</button>
-        </form>
-        <a href="" class="add-plan__link add-plan__link--next">Следующий шаг</a>
-        <a href="" class="add-plan__link add-plan__link--back">На шаг назад</a>
-      </section>
-      <section class="add-plan__country country">
-        <h2 class="country__heading">Выберите страну</h2>
-        <button class="country__button country__button--close" aria-label="Закрыть">
-          <img src="https://via.placeholder.com/9x9" width="9" height="9" alt="X" aria-hidden="true">
-        </button>
-        <ul class="country__letter-list">
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">А</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Б</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">В</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Г</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Д</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Е</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">З</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">И</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">К</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Л</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">М</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Н</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">О</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">П</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Р</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">С</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Т</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">У</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Ф</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Х</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Ч</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Ш</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Э</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Ю</button>
-          </li>
-          <li class="country__letter-item">
-            <button class="country__letter-button" type="button">Я</button>
-          </li>
-        </ul>
-        <ul class="country__list">
-          <li class="country__item">
-            <button class="country__button" type="button">Афганистан</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Албания</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Алжир</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Андорра</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Аргентина</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Армения</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Австралия</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Австрия</button>
-          </li>
-          <li class="country__item">
-            <button class="country__button" type="button">Азербайджан</button>
-          </li>
-        </ul>
-      </section>
-      <section class="step-three">
-        <h2 class="add-plan__heading add-plan__heading-step">Шаг 3.<br> Развлечения</h2>
-        <p class="add-plan__text">
-          Наконец, расскажите о своих планах времяпровождения.
-          Можно писать в свободной форме и ставить тэги.
-        </p>
-        <label class="step-three__label">
-          Босния и Герцеговия
-          <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Боснии и Герцеговии">
-          <textarea class="step-three__textarea" placeholder="План действий" aria-label="План действий"></textarea>
-        </label>
-        <label class="step-three__label">
-          Чехия
-          <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
-          <textarea class="step-three__textarea" placeholder="План действий"
-            aria-label="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-        </label>
-        <button class="add-plan__button" type="submit">Отправить</button>
-        <a href="" class="add-plan__link add-plan__link--back">На шаг назад</a>
-      </section>
+          <a href="" class="add-plan__link add-plan__link--next">Следующий шаг</a>
+          <a href="" class="add-plan__link add-plan__link--back">На шаг назад</a>
+        </section>
+        <section class="add-plan__country country">
+          <h2 class="country__heading">Выберите страну</h2>
+          <button class="country__button country__button--close" aria-label="Закрыть">
+            <img src="https://via.placeholder.com/9x9" width="9" height="9" alt="X" aria-hidden="true">
+          </button>
+          <ul class="country__letter-list">
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">А</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Б</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">В</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Г</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Д</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Е</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">З</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">И</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">К</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Л</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">М</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Н</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">О</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">П</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Р</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">С</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Т</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">У</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Ф</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Х</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Ч</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Ш</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Э</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Ю</button>
+            </li>
+            <li class="country__letter-item">
+              <button class="country__letter-button" type="button">Я</button>
+            </li>
+          </ul>
+          <ul class="country__list">
+            <li class="country__item">
+              <a href="" class="country__link">Афганистан</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Албания</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Алжир</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Андорра</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Аргентина</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Армения</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Австралия</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Австрия</a>
+            </li>
+            <li class="country__item">
+              <a href="" class="country__link">Азербайджан</a>
+            </li>
+          </ul>
+        </section>
+        <section class="step-three">
+          <h2 class="add-plan__heading add-plan__heading-step">Шаг 3.<br> Развлечения</h2>
+          <p class="add-plan__text">
+            Наконец, расскажите о своих планах времяпровождения.
+            Можно писать в свободной форме и ставить тэги.
+          </p>
+          <label class="step-three__label">
+            Босния и Герцеговия
+            <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Боснии и Герцеговии">
+            <textarea class="step-three__textarea" placeholder="План действий" aria-label="План действий"></textarea>
+          </label>
+          <label class="step-three__label">
+            Чехия
+            <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
+            <textarea class="step-three__textarea" placeholder="План действий"
+              aria-label="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          </label>
+          <button class="add-plan__button" type="submit">Отправить</button>
+          <a href="" class="add-plan__link add-plan__link--back">На шаг назад</a>
+        </section>
+      </form>
     </section>
   </main>
   <footer class="site-footer">
