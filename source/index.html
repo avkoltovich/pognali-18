@@ -13,9 +13,6 @@
     <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
       <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
     </button>
-    <button class="site-header__button site-header__button--close" type="button" aria-label="Закрыть меню">
-      <img src="https://via.placeholder.com/19x19" width="19" height="19" aria-hidden="true" alt="Закрыть меню">
-    </button>
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
@@ -34,10 +31,16 @@
         <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
       </li>
       <li class="site-header__user-item">
-        <a href="tel:+78005558628" class="site-header__user-link">8 800 555-86-28</a>
+        <a href="tel:+78005558628" class="site-header__user-link">
+          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Телефон" aria-hidden="true">
+          8 800 555-86-28
+        </a>
       </li>
       <li class="site-header__user-item">
-        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">
+          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+          mail@htmlacademy.ru
+        </a>
       </li>
     </ul>
     <ul class="site-header__social-list">
@@ -69,10 +72,14 @@
       <h2 class="visually-hidden">Меню пользователя</h2>
       <ul class="user-menu__list">
         <li class="user-menu__item">
-          <a href="tel:+78005558628" class="user-menu__link"><span class="visually-hidden">Позвонить</span></a>
+          <a href="tel:+78005558628" class="user-menu__link">
+            <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Позвонить нам">
+          </a>
         </li>
         <li class="user-menu__item">
-          <a href="mailto:mail@htmlacademy.ru" class="user-menu__link"><span class="visually-hidden">Написать</span></a>
+          <a href="mailto:mail@htmlacademy.ru" class="user-menu__link">
+            <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Написать нам на e-mail">
+          </a>
         </li>
         <li class="user-menu__item">
           <a href="" class="user-menu__link">Авторизация</a>
@@ -137,7 +144,7 @@
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
               alt="Таиланд">
             <h3 class="directions__title">Таиланд</h3>
-            <span class="directions__text">Джунгли зовут!</span>
+            <p class="directions__text">Джунгли зовут!</p>
             <span class="directions__counter">18321</span>
           </a>
         </li>
@@ -146,7 +153,7 @@
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
               alt="Франция">
             <h3 class="directions__title">Франция</h3>
-            <span class="directions__text">Трэ бьен, манифик!</span>
+            <p class="directions__text">Трэ бьен, манифик!</p>
             <span class="directions__counter">12518</span>
           </a>
         </li>
@@ -154,7 +161,7 @@
           <a href="" class="directions__link">
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110" alt="Чехия">
             <h3 class="directions__title">Чехия</h3>
-            <span class="directions__text">Закоулки старой Европы</span>
+            <p class="directions__text">Закоулки старой Европы</p>
             <span class="directions__counter">5326</span>
           </a>
         </li>
@@ -172,9 +179,9 @@
         для хайкинга.
       </p>
       <p class="companions__text">
-        <b>
+        <strong>
           Теперь можно легко найти единомышленников!
-        </b>
+        </strong>
       </p>
       <ul class="companions__list">
         <li class="companions__item">
@@ -300,6 +307,50 @@
         <button class="business-rate__button" type="button">Закрыть окно</button>
       </section>
     </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <h3 class="feedback__heading">Заинтересовались?</h3>
+      <p class="feedback__text">
+        Зарегистрируйтесь,
+        это быстро и бесплатно!
+        Уже зарегистрированы? Тогда скорее <a href="" class="feedback__link">авторизуйтесь</a>.
+      </p>
+      <form action="https://echo.htmlacademy.ru" class="feedback__form">
+        <input class="feedback__input" type="email" placeholder="E-mail" aria-label="E-mail">
+        <button class="feedback__button" type="submit" aria-label="Отправить">
+          <img src="https://via.placeholder.com/10x14" width="10" height="14" alt="Отправить" aria-hidden="true">
+        </button>
+      </form>
+      <p class="feedback__text">
+        Остались вопросы?
+        Мы с радостью на них ответим!
+      </p>
+      <ul class="feedback__contact-list">
+        <li class="feedback__contact-item">
+          <a href="tel:+78005558628" class="feedback__contact-link">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Телефон" aria-hidden="true">
+            8 800 555-86-28
+          </a>
+        </li>
+        <li class="feedback__contact-item">
+          <a href="mailto:mail@htmlacademy.ru" class="feedback__contact-link">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+            mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <address class="contacts__address">
+        <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Метка на карте" aria-hidden="true">
+        ул. Большая
+        Конюшенная, 19/8
+      </address>
+      <a href="" class="contacts__link">Проложить маршрут</a>
+      <img src="https://via.placeholder.com/320x307" width="320" height="307"
+        alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+    </section>
   </main>
   <footer class="site-footer">
     <a class="site-footer__logo-link">
@@ -323,8 +374,9 @@
     </ul>
     <p>
       <small class="site-footer__copyright">Разработано</small>
-      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x34" width="27"
-          height="34" alt="HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+      </a>
     </p>
   </footer>
 

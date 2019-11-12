@@ -13,9 +13,6 @@
     <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
       <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
     </button>
-    <button class="site-header__button site-header__button--close" type="button" aria-label="Закрыть меню">
-      <img src="https://via.placeholder.com/19x19" width="19" height="19" aria-hidden="true" alt="Закрыть меню">
-    </button>
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
@@ -34,10 +31,16 @@
         <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
       </li>
       <li class="site-header__user-item">
-        <a href="tel:+78005558628" class="site-header__user-link">8 800 555-86-28</a>
+        <a href="tel:+78005558628" class="site-header__user-link">
+          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Телефон" aria-hidden="true">
+          8 800 555-86-28
+        </a>
       </li>
       <li class="site-header__user-item">
-        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">
+          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+          mail@htmlacademy.ru
+        </a>
       </li>
     </ul>
     <ul class="site-header__social-list">
@@ -60,6 +63,235 @@
   </header>
   <main>
     <h1 class="main-heading">Попутчики</h1>
+    <section class="filter-country">
+      <h2 class="filter-country__heading">Фильтрация по странам</h2>
+      <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
+        <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
+      </button>
+      <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
+        <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
+      </button>
+      <ul class="filter-country__continent-list">
+        <li class="filter-country__continent-item">
+          <button class="filter-country__continent-button" type="button">Европа</button>
+        </li>
+        <li class="filter-country__continent-item">
+          <button class="filter-country__continent-button" type="button">Азия</button>
+        </li>
+        <li class="filter-country__continent-item">
+          <button class="filter-country__continent-button" type="button">Америка</button>
+        </li>
+        <li class="filter-country__continent-item">
+          <button class="filter-country__continent-button" type="button">Острова</button>
+        </li>
+      </ul>
+      <ul class="filter-country__letter-list">
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">А</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Б</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">В</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Г</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Д</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Е</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">З</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">И</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">К</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Л</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">М</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Н</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">О</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">П</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Р</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">С</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Т</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">У</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Ф</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Х</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Ч</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Ш</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Э</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Ю</button>
+        </li>
+        <li class="filter-country__letter-item">
+          <button class="filter-country__letter-button" type="button">Я</button>
+        </li>
+      </ul>
+      <ul class="filter-country__list">
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Афганистан</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Албания</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Алжир</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Андорра</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Аргентина</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Армения</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Австралия</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Австрия</a>
+        </li>
+        <li class="filter-country__item">
+          <a href="" class="filter-country__link">Азербайджан</a>
+        </li>
+      </ul>
+      <button class="filter-country__button" type="button">
+        <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
+        свернуть
+      </button>
+    </section>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <h3 class="filter__heading">Подберите идеального попутчика</h3>
+      <form action="https://echo.htmlacademy.ru" class="filter__form">
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Хобби</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Музыка</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
+            <span class="filter__checkbox-icon"></span>
+            Тяжелый рок
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="hobby" value="Russian rap">
+            <span class="filter__checkbox-icon"></span>
+            Русский рэп
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="hobby" value="Eurodance">
+            <span class="filter__checkbox-icon"></span>
+            Евроденс
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Еда</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Транспорт</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
+              checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="transport" value="Bus" aria-label="Автобус" checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="transport" value="Bike" aria-label="Велосипед">
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
+              height="33" aria-hidden="true">
+          </label>
+          <label class="filter__label">
+            <input type="checkbox" class="filter__checkbox" name="transport" value="Run" aria-label="Пешком" checked>
+            <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
+              height="33" aria-hidden="true">
+          </label>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__legend">Левел</legend>
+          <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+          </button>
+          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
+          </button>
+          <label class="filter__label">
+            <input type="number" class="filter__number" placeholder="30">
+          </label>
+          <label class="filter__label">
+            <input type="number" class="filter__number" placeholder="100">
+          </label>
+          <button class="filter__button filter__button--range" type="button" aria-label="Меньше"></button>
+          <button class="filter__button filter__button--range" type="button" aria-label="Больше"></button>
+        </fieldset>
+        <button class="filter__button filter__button--submit" type="submit">Показать</button>
+      </form>
+    </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог попутчиков</h2>
       <ul class="catalog__list">
