@@ -1,0 +1,23 @@
+.site-header {
+  background-color: #fff;
+}
+
+.site-header__navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.site-header__navigation-link {
+  @include font-medium;
+  font-size: 30px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+}
+
+
