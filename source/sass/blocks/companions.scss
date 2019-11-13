@@ -1,8 +1,21 @@
 .companions {
+  position: relative;
+  z-index: 4;
+
+  margin-top: -60px;
+  padding-top: 130px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+
   background-color: $bgcolor-mobile-dark;
+  border-radius: 0 0 30px 30px;
 }
 
 .companions__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-bold;
   font-size: 24px;
   color: #ff8d30;
@@ -24,6 +37,8 @@
 }
 
 .companions__item {
+  margin-bottom: 10px;
+
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -57,6 +72,11 @@
   text-decoration: none;
 
   &--btn {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    padding-left: 24px;
+
     @include font-bold;
     font-size: 18px;
     color: #1d2e5b;
@@ -83,7 +103,7 @@
   font-size: 16px;
   line-height: 1.13;
   text-align: center;
-  color: #444444;
+  color: $greyish-brown;
 }
 
 .companions__transport-list {

@@ -1,15 +1,25 @@
 .about {
+  position: relative;
+  z-index: 6;
+
   height: 352px;
+  padding-top: 30px;
+  padding-right: 60px;
+  padding-bottom: 84px;
+  padding-left: 50px;
 
   background-color: $bgcolor-mobile-dark;
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 0 0 30px 30px;
 }
 
 .about__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-bold;
   font-size: 24px;
   color: #ff8d30;
@@ -21,6 +31,9 @@
   line-height: 1.38;
   color: #ffffff;
   &--bold {
+    margin-top: 0;
+    margin-bottom: 0;
+
     @include font-bold;
   }
 }

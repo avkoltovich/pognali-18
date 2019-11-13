@@ -1,5 +1,14 @@
 .howto {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 39px;
+
   background-color: $bgcolor-mobile-dark;
+}
+
+.howto__list {
+  @include list;
 }
 
 .howto__item {

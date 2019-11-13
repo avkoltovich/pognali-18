@@ -1,8 +1,36 @@
 .directions {
+  position: relative;
+  z-index: 5;
+
+  padding-top: 130px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin-top: -60px;
+
   background-color: $bgcolor-mobile-light;
+  border-radius: 0 0 30px 30px;
+}
+
+.directions__item-wrapper {
+  position: relative;
+
+  padding-top: 28px;
+  padding-left: 25px;
+  margin-top: -10px;
+
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.directions__img {
+  border-radius: 10px 10px 0 0;
 }
 
 .directions__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-bold;
   font-size: 24px;
   color: #ff8d30;
@@ -12,7 +40,7 @@
   @include font-light;
   font-size: 16px;
   line-height: 1.38;
-  color: #444444;
+  color: $greyish-brown;
 }
 
 .directions__list {
@@ -23,6 +51,11 @@
   text-decoration: none;
 
   &--btn {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    padding-left: 24px;
+
     @include font-bold;
     font-size: 18px;
     color: #1d2e5b;
@@ -33,6 +66,9 @@
 }
 
 .directions__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-bold;
   font-size: 21px;
   color: #161c35;

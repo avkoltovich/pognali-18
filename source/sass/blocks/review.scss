@@ -4,7 +4,17 @@
   background-color: $bgcolor-mobile-dark;
 }
 
+.review__blockquote {
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 110px;
+}
+
 .review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+
   @include font-light;
   font-size: 16px;
   line-height: 1.38;

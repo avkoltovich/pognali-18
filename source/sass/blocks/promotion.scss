@@ -7,6 +7,9 @@
 }
 
 .promotion__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font-bold;
   font-size: 36px;
   line-height: 1.11;

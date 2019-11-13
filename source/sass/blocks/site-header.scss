@@ -1,4 +1,7 @@
 .site-header {
+  padding-right: 25px;
+  padding-left: 25px;
+
   background-color: #fff;
 }
 
@@ -33,6 +36,11 @@
   color: #192144;
 
   &--btn {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
     font-size: 17px;
     color: #161c35;
 

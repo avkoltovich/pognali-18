@@ -1,6 +1,21 @@
+.user-menu {
+  height: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+
+  background-color: transparent;
+}
+
 .user-menu__list {
-  @include list;
   display: flex;
+
+  @include list;
+}
+
+.user-menu__item:last-child {
+  width: 100%;
 }
 
 .user-menu__link {
@@ -12,6 +27,11 @@
   color: #161c35;
 
   &--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
     border-radius: 20px;
     background-color: #ffd74b;
   }

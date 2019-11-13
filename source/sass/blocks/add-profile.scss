@@ -1,5 +1,20 @@
 .add-profile {
+  position: relative;
+  z-index: 3;
+
+  margin-top: -60px;
+  padding-top: 130px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+
   background-color: $bgcolor-mobile-light;
+  border-radius: 0 0 30px 30px;
+}
+
+.add-profile__heading {
+  margin-top: 0;
+  margin-bottom: 44px;
 }
 
 .add-profile__link {
@@ -12,9 +27,17 @@
   }
 
   &--all {
+    display: block;
+
     font-size: 16px;
     color: #192144;
   }
+}
+
+.add-profile__list {
+  width: 200px;
+  @include list;
+  margin-bottom: 30px;
 }
 
 .add-profile__item {
@@ -33,5 +56,5 @@
   @include font-light;
   font-size: 16px;
   line-height: 1.38;
-  color: #444444;
+  color: $greyish-brown;
 }
