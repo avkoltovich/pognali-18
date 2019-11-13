@@ -1,5 +1,6 @@
 .pagination {
   display: flex;
+
   @include list;
 }
 
@@ -16,9 +17,11 @@
   height: 50px;
 
   background-color: #ffffff;
+
   &--back {
     border-radius: 20px 0 0 20px;
   }
+
   &--fwd {
     border-radius: 0 20px 20px 0;
   }

@@ -86,6 +86,7 @@
 
   & dd {
     margin-left: 0;
+
     @include font-normal;
     font-size: 14px;
   }
@@ -118,6 +119,7 @@
 
 .companions__countries {
   display: flex;
+
   @include list;
 }
 
@@ -131,5 +133,6 @@
 
 .companions__transport-list {
   display: flex;
+
   @include list;
 }
