@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  @include list;
+}
+
+.pagination__item {
+  width: 50%;
+}
+
+.pagination__item:first-child {
+  border-right: 1px solid $bgcolor-mobile-light;
+}
+
+.pagination__link {
+  display: flex;
+  height: 50px;
+
+  background-color: #ffffff;
+  &--back {
+    border-radius: 20px 0 0 20px;
+  }
+  &--fwd {
+    border-radius: 0 20px 20px 0;
+  }
+}

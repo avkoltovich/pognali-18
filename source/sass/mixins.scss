@@ -19,7 +19,7 @@
 @mixin font-bold {
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @mixin font-light-italic {
@@ -43,7 +43,7 @@
 @mixin font-bold-italic {
   font-family: "BloggerSans", "Arial", sans-serif;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @mixin list {
