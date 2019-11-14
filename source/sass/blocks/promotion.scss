@@ -1,5 +1,5 @@
 .promotion {
-  background-color: $bgcolor-mobile-dark;
+  background-color: $bgcolor-dark;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,7 +10,7 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;

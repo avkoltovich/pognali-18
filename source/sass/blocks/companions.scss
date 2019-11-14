@@ -1,20 +1,30 @@
 .companions {
+  @include round-end;
   position: relative;
   z-index: 4;
 
-  margin-top: -60px;
   padding-top: 130px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
 
-  background-color: $bgcolor-mobile-dark;
+  background-color: $bgcolor-dark;
   background-image: url("../img/smolov-back-desktop@1x.png"),
     url("../img/rogovaya-back-mobile@1x.png");
   background-position: top 100px right 25px,
     top 370px left -10px;
   background-repeat: no-repeat;
-  border-radius: 0 0 30px 30px;
+
+  &::before {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+
+    width: 113px;
+    height: 132px;
+    content: "";
+
+    border-radius: 0 20px 20px 0;
+    background-color: #141b3b;
+  }
 }
 
 .companions__heading {
@@ -23,35 +33,21 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 24px;
   color: #ff8d30;
-}
-
-.companions::before {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  z-index: 0;
-
-  width: 113px;
-  height: 132px;
-  content: "";
-
-  border-radius: 0 20px 20px 0;
-  background-color: #141b3b;
 }
 
 .companions__text {
   position: relative;
 
-  @include font-light;
+  @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
 
   &--bold {
-    @include font-bold;
+    @include font(700, normal);
   }
 }
 
@@ -80,14 +76,14 @@
   border-radius: 50%;
 
   & dt {
-    @include font-bold;
+    @include font(700, normal);
     font-size: 24px;
   }
 
   & dd {
     margin-left: 0;
 
-    @include font-normal;
+    @include font(400, normal);
     font-size: 14px;
   }
 }
@@ -101,7 +97,7 @@
     height: 62px;
     padding-left: 24px;
 
-    @include font-bold;
+    @include font(700, normal);
     font-size: 18px;
     color: #1d2e5b;
 
@@ -111,7 +107,7 @@
 }
 
 .companions__name {
-  @include font-bold;
+  @include font(700, normal);
   font-size: 21px;
   text-align: center;
   color: #1d2e5b;
@@ -124,7 +120,7 @@
 }
 
 .companions__tags {
-  @include font-normal;
+  @include font(400, normal);
   font-size: 16px;
   line-height: 1.13;
   text-align: center;

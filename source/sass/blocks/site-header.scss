@@ -13,7 +13,7 @@
 }
 
 .site-header__navigation-link {
-  @include font-medium;
+  @include font(500, normal);
   font-size: 30px;
   line-height: 1.2;
   text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 .site-header__user-link {
-  @include font-bold;
+  @include font(700, normal);
   font-size: 16px;
   line-height: 1.38;
   text-decoration: none;

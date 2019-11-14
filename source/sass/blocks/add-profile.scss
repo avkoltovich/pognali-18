@@ -1,15 +1,11 @@
 .add-profile {
+  @include round-end;
   position: relative;
   z-index: 3;
 
-  margin-top: -60px;
   padding-top: 130px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 50px;
 
-  background-color: $bgcolor-mobile-light;
-  border-radius: 0 0 30px 30px;
+  background-color: $bgcolor-light;
 }
 
 .add-profile__heading {
@@ -18,7 +14,7 @@
 }
 
 .add-profile__link {
-  @include font-bold;
+  @include font(700, normal);
   text-decoration: none;
 
   &--add {
@@ -45,16 +41,16 @@
   height: 65px;
 
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
-}
 
-.add-profile__item:first-child {
-  border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+  &:first-child {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+  }
 }
 
 .add-profile__item-cell {
   margin-left: 0;
 
-  @include font-light;
+  @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: $greyish-brown;

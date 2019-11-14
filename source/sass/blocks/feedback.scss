@@ -1,22 +1,18 @@
 .feedback {
+  @include round-end;
   position: relative;
   z-index: 2;
 
-  margin-top: -60px;
   padding-top: 130px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
 
-  background-color: $bgcolor-mobile-dark;
-  border-radius: 0 0 30px 30px;
+  background-color: $bgcolor-dark;
 }
 
 .feedback__heading {
   margin-top: 0;
   margin-bottom: 23px;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 24px;
   text-align: center;
   color: #ff8d30;
@@ -26,7 +22,7 @@
   margin-top: 0;
   margin-bottom: 32px;
 
-  @include font-light;
+  @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
@@ -49,7 +45,7 @@
   padding-left: 24px;
   margin-right: -10px;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 18px;
   color: rgba(68, 68, 68, 0.3);
 
@@ -80,7 +76,7 @@
   align-items: center;
   width: fit-content;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 16px;
   line-height: 1.38;
   text-decoration: none;

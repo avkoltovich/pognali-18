@@ -16,7 +16,7 @@
 }
 
 .site-footer__copyright {
-  @include font-normal;
+  @include font(400, normal);
   font-size: 16px;
   line-height: 1.38;
   color: $greyish-brown;

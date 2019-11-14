@@ -1,49 +1,7 @@
-@mixin font-light {
+@mixin font($weight, $style) {
   font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-@mixin font-normal {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@mixin font-medium {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
-@mixin font-bold {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@mixin font-light-italic {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 300;
-}
-
-@mixin font-normal-italic {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-}
-
-@mixin font-medium-italic {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 500;
-}
-
-@mixin font-bold-italic {
-  font-family: "BloggerSans", "Arial", sans-serif;
-  font-style: italic;
-  font-weight: 700;
+  font-weight: $weight;
+  font-style: $style;
 }
 
 @mixin list {
@@ -52,4 +10,13 @@
   margin-bottom: 0;
 
   list-style: none;
+}
+
+@mixin round-end {
+  margin-top: -60px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+
+  border-radius: 0 0 30px 30px;
 }

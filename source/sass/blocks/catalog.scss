@@ -5,7 +5,7 @@
   padding-left: 25px;
   margin-bottom: -60px;
 
-  background-color: $bgcolor-mobile-light;
+  background-color: $bgcolor-light;
 }
 
 .catalog__list {
@@ -26,13 +26,13 @@
 }
 
 .catalog__title {
-  @include font-bold;
+  @include font(700, normal);
   font-size: 20px;
   color: #1d2e5b;
 }
 
 .catalog__like {
-  @include font-bold;
+  @include font(700, normal);
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
@@ -40,14 +40,14 @@
 }
 
 .catalog__tags {
-  @include font-normal;
+  @include font(400, normal);
   font-size: 15px;
   line-height: 1.2;
   color: $greyish-brown;
 }
 
 .catalog__list-caption {
-  @include font-normal;
+  @include font(400, normal);
   font-size: 15px;
   line-height: 1.2;
   color: $greyish-brown;
@@ -58,7 +58,7 @@
 }
 
 .catalog__flag {
-  @include font-medium;
+  @include font(500, normal);
   font-size: 15px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -71,7 +71,7 @@
 
 .catalog__level {
   & dt {
-    @include font-normal;
+    @include font(400, normal);
     font-size: 15px;
     line-height: 1.2;
     color: $greyish-brown;
@@ -80,7 +80,7 @@
   & dd {
     margin-left: 0;
 
-    @include font-bold;
+    @include font(700, normal);
     font-size: 24px;
     line-height: 0.75;
     color: #1d2e5b;
@@ -88,7 +88,7 @@
 }
 
 .catalog__button {
-  @include font-bold;
+  @include font(700, normal);
   font-size: 17px;
   text-transform: uppercase;
 

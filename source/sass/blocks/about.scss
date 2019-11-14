@@ -8,7 +8,7 @@
   padding-bottom: 84px;
   padding-left: 50px;
 
-  background-color: $bgcolor-mobile-dark;
+  background-color: $bgcolor-dark;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -20,13 +20,13 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 24px;
   color: #ff8d30;
 }
 
 .about__text {
-  @include font-light;
+  @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
@@ -35,6 +35,6 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    @include font-bold;
+    @include font(700, normal);
   }
 }

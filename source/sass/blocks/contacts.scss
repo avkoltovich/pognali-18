@@ -1,22 +1,18 @@
 .contacts {
+  @include round-end;
   position: relative;
   z-index: 1;
 
-  margin-top: -60px;
   padding-top: 90px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
 
-  background-color: $bgcolor-mobile-yellow;
-  border-radius: 0 0 30px 30px;
+  background-color: $bgcolor-bright;
 }
 
 .contacts__address {
   display: flex;
   margin-bottom: 32px;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 16px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -29,7 +25,7 @@
   height: 62px;
   padding-left: 24px;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 18px;
   text-decoration: none;
   color: #1d2e5b;

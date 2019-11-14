@@ -6,10 +6,10 @@
 
 .pagination__item {
   width: 50%;
-}
 
-.pagination__item:first-child {
-  border-right: 1px solid $bgcolor-mobile-light;
+  &:first-child {
+    border-right: 1px solid $bgcolor-light;
+  }
 }
 
 .pagination__link {

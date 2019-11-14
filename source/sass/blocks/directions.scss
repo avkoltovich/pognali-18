@@ -1,15 +1,11 @@
 .directions {
+  @include round-end;
   position: relative;
   z-index: 5;
 
   padding-top: 130px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
-  margin-top: -60px;
 
-  background-color: $bgcolor-mobile-light;
-  border-radius: 0 0 30px 30px;
+  background-color: $bgcolor-light;
 }
 
 .directions__item-wrapper {
@@ -31,13 +27,13 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 24px;
   color: #ff8d30;
 }
 
 .directions__text {
-  @include font-light;
+  @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: $greyish-brown;
@@ -56,7 +52,7 @@
     height: 62px;
     padding-left: 24px;
 
-    @include font-bold;
+    @include font(700, normal);
     font-size: 18px;
     color: #1d2e5b;
 
@@ -69,14 +65,14 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  @include font-bold;
+  @include font(700, normal);
   font-size: 21px;
   color: #161c35;
 }
 
 .directions__counter,
 .directions__text {
-  @include font-medium;
+  @include font(500, normal);
   font-size: 16px;
   line-height: 1.13;
   color: rgba(68, 68, 68, 0.3);
