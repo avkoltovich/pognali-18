@@ -1,0 +1,51 @@
+.howto {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 39px;
+
+  background-color: $bgcolor-dark;
+}
+
+.howto__list {
+  @include list;
+}
+
+.howto__item {
+  width: 270px;
+  padding-top: 23px;
+  padding-right: 50px;
+  padding-left: 25px;
+
+  @include font(700, normal);
+  font-size: 18px;
+  color: #161c35;
+
+  border-radius: 10px;
+
+  &:not(:first-child) {
+    margin-top: -20px;
+  }
+
+  &:not(:last-child) {
+    height: 100px;
+  }
+
+  &:nth-child(1) {
+    background-color: #ff8d30;
+  }
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    height: 80px;
+
+    background-color: #ffd74b;
+  }
+}

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали - Попутчики</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -299,7 +300,9 @@
           <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
           <h3 class="catalog__title">Таня Фирсова</h3>
-          <button class="catalog__button catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+            <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+          </button>
           <b class="catalog__like">1,5 m</b>
           <p class="catalog__tags">
             #ЗОЖ #ПП #Фитнес #пляж
@@ -339,13 +342,15 @@
             <dt>левел:</dt>
             <dd>99</dd>
           </dl>
-          <button class="catalog__button" type="button">Позвать!</button>
+          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин">
           <h3 class="catalog__title">Петя Демин</h3>
-          <button class="catalog__button catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+            <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+          </button>
           <b class="catalog__like">150</b>
           <p class="catalog__tags">
             #бургер #бар #футбол
@@ -381,13 +386,15 @@
             <dt>левел:</dt>
             <dd>80</dd>
           </dl>
-          <button class="catalog__button" type="button">Позвать!</button>
+          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов">
           <h3 class="catalog__title">Марк Смолов</h3>
-          <button class="catalog__button catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+            <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+          </button>
           <b class="catalog__like">1700</b>
           <p class="catalog__tags">
             #рэп #тату #хайпбист
@@ -427,14 +434,16 @@
             <dt>левел:</dt>
             <dd>25</dd>
           </dl>
-          <button class="catalog__button" type="button">Позвать!</button>
+          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
           <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
             alt="Лариса Роговая">
           <h3 class="catalog__title">Лариса Роговая</h3>
-          <button class="catalog__button catalog__button--like" type="button">Like!</button>
+          <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+            <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+          </button>
           <b class="catalog__like">23</b>
           <p class="catalog__tags">
             #образование #карьера
@@ -471,16 +480,20 @@
             <dt>левел:</dt>
             <dd>50</dd>
           </dl>
-          <button class="catalog__button" type="button">Позвать!</button>
+          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
       </ul>
       <button class="catalog__button catalog__button--more" type="button">Показать еще</button>
       <ul class="catalog__pagination pagination">
         <li class="pagination__item">
-          <a href="" class="pagination__link"><span class="visually-hidden">Назад</span></a>
+          <a href="" class="pagination__link pagination__link--back" aria-label="Назад">
+
+          </a>
         </li>
         <li class="pagination__item">
-          <a href="" class="pagination__link"><span class="visually-hidden">Вперед</span></a>
+          <a href="" class="pagination__link pagination__link--fwd" aria-label="Вперед">
+
+          </a>
         </li>
       </ul>
     </section>

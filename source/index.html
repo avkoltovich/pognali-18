@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали - Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="site-header">
-    <a class="site-header__logo-link"><img class="site-header__logo-img" src="https://via.placeholder.com/100x19"
-        width="100" height="19" alt="Погнали?"></a>
+    <a class="site-header__logo-link">
+      <img class="site-header__logo-img" src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+    </a>
     <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
-      <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
+      <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">
     </button>
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
@@ -32,7 +34,7 @@
       </li>
       <li class="site-header__user-item">
         <a href="tel:+78005558628" class="site-header__user-link">
-          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Телефон" aria-hidden="true">
+          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
           8 800 555-86-28
         </a>
       </li>
@@ -65,7 +67,7 @@
     <h1 class="visually-hidden">Сервис поиска попутчиков</h1>
     <section class="promotion">
       <h2 class="promotion__heading">В путешествие с крутыми попутчиками!</h2>
-      <img class="promotion__img" src="https://via.placeholder.com/192x255" width="192" height="255"
+      <img class="promotion__img" src="img/traveller-illustration-mobile@1x.png" width="192" height="255"
         alt="Ваш крутой попутчик">
     </section>
     <section class="user-menu">
@@ -82,7 +84,7 @@
           </a>
         </li>
         <li class="user-menu__item">
-          <a href="" class="user-menu__link">Авторизация</a>
+          <a href="" class="user-menu__link user-menu__link--btn">Авторизация</a>
         </li>
       </ul>
     </section>
@@ -128,7 +130,7 @@
         с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
         чужих.
       </p>
-      <p class="about__text">
+      <p class="about__text about__text--bold">
         <strong>
           А если найдете кого-то
           близкого по духу — скорее
@@ -138,31 +140,49 @@
     </section>
     <section class="directions">
       <h2 class="directions__heading">Направления</h2>
+      <p class="directions__text">
+        Мы не продаем туры
+        и ничего не рекламируем.
+        Люди сами пишут о странах, куда хотели бы отправиться
+        и чем можно там заняться.
+      </p>
       <ul class="directions__list">
         <li class="directions__item">
           <a href="" class="directions__link">
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
               alt="Таиланд">
-            <h3 class="directions__title">Таиланд</h3>
-            <p class="directions__text">Джунгли зовут!</p>
-            <span class="directions__counter">18321</span>
+            <div class="directions__item-wrapper">
+              <h3 class="directions__title">
+                Таиланд
+              </h3>
+              <span class="directions__counter">18321</span>
+              <p class="directions__text">Джунгли зовут!</p>
+            </div>
           </a>
         </li>
         <li class="directions__item">
           <a href="" class="directions__link">
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
               alt="Франция">
-            <h3 class="directions__title">Франция</h3>
-            <p class="directions__text">Трэ бьен, манифик!</p>
-            <span class="directions__counter">12518</span>
+            <div class="directions__item-wrapper">
+              <h3 class="directions__title">
+                Франция
+              </h3>
+              <span class="directions__counter">12518</span>
+              <p class="directions__text">Трэ бьен, манифик!</p>
+            </div>
           </a>
         </li>
         <li class="directions__item">
           <a href="" class="directions__link">
             <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110" alt="Чехия">
-            <h3 class="directions__title">Чехия</h3>
-            <p class="directions__text">Закоулки старой Европы</p>
-            <span class="directions__counter">5326</span>
+            <div class="directions__item-wrapper">
+              <h3 class="directions__title">
+                Чехия
+              </h3>
+              <span class="directions__counter">5326</span>
+              <p class="directions__text">Закоулки старой Европы</p>
+            </div>
           </a>
         </li>
         <li class="directions__item">
@@ -173,12 +193,12 @@
       </ul>
     </section>
     <section class="companions">
-      <h2 class="companions">Попутчики</h2>
+      <h2 class="companions__heading">Попутчики</h2>
       <p class="companions__text">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
         для хайкинга.
       </p>
-      <p class="companions__text">
+      <p class="companions__text companions__text--bold">
         <strong>
           Теперь можно легко найти единомышленников!
         </strong>
@@ -192,19 +212,18 @@
           <a href="" class="companions__link">
             <img class="companions__photo" src="https://via.placeholder.com/270x270" width="270" height="270"
               alt="Таня Фирсова">
-            <span class="companions__status companions__status--offline"><span
-                class="visually-hidden">Оффлайн</span></span>
+            <span class="companions__status companions__status--offline" aria-label="Оффлайн"></span>
             <h3 class="companions__name">Таня Фирсова</h3>
           </a>
           <ul class="companions__countries">
             <li class="companions__flag">
-              <span class="visually-hidden">Шри-Ланка</span>
+              <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка">
             </li>
             <li class="companions__flag">
-              <span class="visually-hidden">Таиланд</span>
+              <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Таиланд">
             </li>
             <li class="companions__flag">
-              <span class="visually-hidden">Сейшельские Острова</span>
+              <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшельские Острова">
             </li>
           </ul>
           <p class="companions__tags">
@@ -227,16 +246,15 @@
           <a href="" class="companions__link">
             <img class="companions__photo" src="https://via.placeholder.com/270x270" width="270" height="270"
               alt="Петя Демин">
-            <span class="companions__status companions__status--online"><span
-                class="visually-hidden">Онлайн</span></span>
+            <span class="companions__status companions__status--online" aria-label="Онлайн"></span>
             <h3 class="companions__name">Петя Демин</h3>
           </a>
           <ul class="companions__countries">
             <li class="companions__flag">
-              <span class="visually-hidden">Бельгия</span>
+              <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Бельгия">
             </li>
             <li class="companions__flag">
-              <span class="visually-hidden">Чехия</span>
+              <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
             </li>
           </ul>
           <p class="companions__tags">
@@ -258,12 +276,10 @@
             </li>
           </ul>
         </li>
-        <li class="companions__item">
-          <a href="catalog.html" class="companions__link companions__link--btn">
-            Показать всех
-          </a>
-        </li>
       </ul>
+      <a href="catalog.html" class="companions__link companions__link--btn">
+        Показать всех
+      </a>
     </section>
     <section class="add-profile">
       <h2 class="add-profile__heading">
@@ -271,16 +287,22 @@
       </h2>
       <ol class="add-profile__list">
         <li class="add-profile__item">
-          <span class="add-profile__item-cell">Базовое размещение</span>
-          <span class="add-profile__item-cell">Бесплатно</span>
+          <dl>
+            <dt class="add-profile__item-cell">Базовое размещение</dt>
+            <dd class="add-profile__item-cell">Бесплатно</dd>
+          </dl>
         </li>
         <li class="add-profile__item">
-          <span class="add-profile__item-cell">Вывод на первых позициях</span>
-          <span class="add-profile__item-cell">99 руб./мес</span>
+          <dl>
+            <dt class="add-profile__item-cell">Вывод на первых позициях</dt>
+            <dd class="add-profile__item-cell">99 руб./мес</dd>
+          </dl>
         </li>
         <li class="add-profile__item">
-          <span class="add-profile__item-cell">Кастомный цвет карточки</span>
-          <span class="add-profile__item-cell">59 руб./мес</span>
+          <dl>
+            <dt class="add-profile__item-cell">Кастомный цвет карточки</dt>
+            <dd class="add-profile__item-cell">59 руб./мес</dd>
+          </dl>
         </li>
       </ol>
       <a href="" class="add-profile__link add-profile__link--all">Показать тарифы для бизнеса</a>
@@ -322,7 +344,7 @@
         </button>
       </form>
       <p class="feedback__text">
-        Остались вопросы?
+        Остались вопросы?<br>
         Мы с радостью на них ответим!
       </p>
       <ul class="feedback__contact-list">
@@ -344,10 +366,13 @@
       <h2 class="visually-hidden">Контактная информация</h2>
       <address class="contacts__address">
         <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Метка на карте" aria-hidden="true">
-        ул. Большая
+        ул. Большая<br>
         Конюшенная, 19/8
       </address>
       <a href="" class="contacts__link">Проложить маршрут</a>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <img src="https://via.placeholder.com/320x307" width="320" height="307"
         alt="г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
     </section>

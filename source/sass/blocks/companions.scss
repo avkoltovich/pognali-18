@@ -1,0 +1,134 @@
+.companions {
+  @include round-end;
+  position: relative;
+  z-index: 4;
+
+  padding-top: 130px;
+
+  background-color: $bgcolor-dark;
+  background-image: url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-position: top 100px right 25px,
+    top 370px left -10px;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+
+    width: 113px;
+    height: 132px;
+    content: "";
+
+    border-radius: 0 20px 20px 0;
+    background-color: #141b3b;
+  }
+}
+
+.companions__heading {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include font(700, normal);
+  font-size: 24px;
+  color: #ff8d30;
+}
+
+.companions__text {
+  position: relative;
+
+  @include font(300, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  color: #ffffff;
+
+  &--bold {
+    @include font(700, normal);
+  }
+}
+
+.companions__list {
+  @include list;
+}
+
+.companions__item {
+  margin-bottom: 10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.companions__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  color: #ffffff;
+
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  border-radius: 50%;
+
+  & dt {
+    @include font(700, normal);
+    font-size: 24px;
+  }
+
+  & dd {
+    margin-left: 0;
+
+    @include font(400, normal);
+    font-size: 14px;
+  }
+}
+
+.companions__link {
+  text-decoration: none;
+
+  &--btn {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    padding-left: 24px;
+
+    @include font(700, normal);
+    font-size: 18px;
+    color: #1d2e5b;
+
+    border-radius: 10px;
+    background-color: #ffd74b;
+  }
+}
+
+.companions__name {
+  @include font(700, normal);
+  font-size: 21px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.companions__countries {
+  display: flex;
+
+  @include list;
+}
+
+.companions__tags {
+  @include font(400, normal);
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  color: $greyish-brown;
+}
+
+.companions__transport-list {
+  display: flex;
+
+  @include list;
+}

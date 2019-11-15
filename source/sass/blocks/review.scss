@@ -1,0 +1,27 @@
+.review {
+  color: #ffffff;
+
+  background-color: #161c35;
+}
+
+.review__blockquote {
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 110px;
+}
+
+.review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+
+  @include font(300, normal);
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.review__author {
+  @include font(700, normal);
+  font-size: 16px;
+  line-height: 1.38;
+}

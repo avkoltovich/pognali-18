@@ -1,0 +1,55 @@
+.site-header {
+  padding-right: 25px;
+  padding-left: 25px;
+
+  background-color: #ffffff;
+}
+
+.site-header__navigation-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-header__navigation-link {
+  @include font(500, normal);
+  font-size: 30px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+}
+
+.site-header__user-list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header__user-link {
+  @include font(700, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+
+  &--btn {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 17px;
+    color: #161c35;
+
+    border-radius: 20px;
+    background-color: #ffd74b;
+  }
+}
+
+.site-header__social-list {
+  @include list;
+  display: flex;
+}

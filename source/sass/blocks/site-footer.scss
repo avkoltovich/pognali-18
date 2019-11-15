@@ -1,0 +1,23 @@
+.site-footer {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 90px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+}
+
+.site-footer__social-list {
+  @include list;
+}
+
+.site-footer__copyright {
+  @include font(400, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  color: $greyish-brown;
+}

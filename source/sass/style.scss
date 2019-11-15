@@ -1,0 +1,29 @@
+body {
+  width: 320px;
+}
+
+@import "mixins.scss";
+@import "variables.scss";
+@import "font-face.scss";
+@import "visually-hidden.scss";
+@import "normalize.scss";
+@import "box-sizing.scss";
+@import "blocks/site-header.scss";
+@import "blocks/promotion.scss";
+@import "blocks/user-menu.scss";
+@import "blocks/review.scss";
+@import "blocks/howto.scss";
+@import "blocks/about.scss";
+@import "blocks/directions.scss";
+@import "blocks/companions.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/business-rate.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/site-footer.scss";
+@import "blocks/main.scss";
+@import "blocks/filter-country.scss";
+@import "blocks/filter.scss";
+@import "blocks/catalog.scss";
+@import "blocks/pagination.scss";
