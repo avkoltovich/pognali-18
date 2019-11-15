@@ -65,29 +65,34 @@
   <main>
     <h1 class="main-heading">Попутчики</h1>
     <section class="filter-country">
-      <h2 class="filter-country__heading">Фильтрация по странам</h2>
-      <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
-        <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
-      </button>
-      <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
-        <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
-      </button>
+      <div class="filter-country__wrapper">
+        <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
+          <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
+        </button>
+        <h2 class="filter-country__heading">Фильтрация по странам</h2>
+        <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
+          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
+        </button>
+      </div>
       <ul class="filter-country__continent-list">
         <li class="filter-country__continent-item">
           <button class="filter-country__continent-button" type="button">Европа</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Азия</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Азия</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Америка</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Америка</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Острова</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Острова</button>
         </li>
       </ul>
       <ul class="filter-country__letter-list">
-        <li class="filter-country__letter-item">
+        <li class="filter-country__letter-item filter-country__letter-item--active">
           <button class="filter-country__letter-button" type="button">А</button>
         </li>
         <li class="filter-country__letter-item">
@@ -192,31 +197,25 @@
           <a href="" class="filter-country__link">Азербайджан</a>
         </li>
       </ul>
-      <button class="filter-country__button" type="button">
+      <button class="filter-country__button filter-country__button--hide" type="button">
         <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
         свернуть
       </button>
     </section>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
-      <h3 class="filter__heading">Подберите идеального попутчика</h3>
       <form action="https://echo.htmlacademy.ru" class="filter__form">
+      <h3 class="filter__heading">Подберите идеального попутчика</h3>
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Хобби</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
           </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
-          </button>
         </fieldset>
-        <fieldset class="filter__fieldset">
+        <fieldset class="filter__fieldset filter__fieldset--music">
           <legend class="filter__legend">Музыка</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-          </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
           </button>
           <label class="filter__label">
             <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
@@ -239,17 +238,11 @@
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
           </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
-          </button>
         </fieldset>
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Транспорт</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-          </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
           </button>
           <label class="filter__label">
             <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
@@ -277,9 +270,6 @@
           <legend class="filter__legend">Левел</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-          </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
           </button>
           <label class="filter__label">
             <input type="number" class="filter__number" placeholder="30">

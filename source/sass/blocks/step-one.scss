@@ -1,0 +1,11 @@
+.step-one {
+  @include step;
+}
+
+.step-one__heading {
+  @include step-title ;
+}
+
+.step-one__text {
+  @include step-text;
+}

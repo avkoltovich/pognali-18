@@ -114,13 +114,19 @@
       <h2 class="plans__heading">Мои планы:</h2>
       <ol class="plans__list">
         <li class="plans__item">
-          <h3 class="plans__title">Франция, Италия</h3>
+          <h3 class="plans__title">
+            <span class="plans__title plans__title--number">1.</span>
+            Франция, Италия
+          </h3>
           <p class="plans__companion">3 попутчика</p>
           <p class="plans__date">26 мар — 29 мар</p>
           <a href="" class="plans__link">Изменить</a>
         </li>
         <li class="plans__item">
-          <h3 class="plans__title">Таиланд, Индонезия</h3>
+          <h3 class="plans__title">
+            <span class="plans__title plans__title--number">2.</span>
+            Таиланд, Индонезия
+          </h3>
           <p class="plans__companion">1 попутчик</p>
           <p class="plans__date">1 июл — 15 июл</p>
           <a href="" class="plans__link">Изменить</a>
@@ -131,40 +137,40 @@
       <h2 class="add-plan__heading">Добавить план:</h2>
       <form class="add-plan__form">
         <section class="step-one">
-          <h2 class="add-plan__heading add-plan__heading-step">Шаг 1.<br> Даты пребывания</h2>
-          <p class="add-plan__text">
+          <h2 class="step-one__heading">Шаг 1.<br> Даты пребывания</h2>
+          <p class="step-one__text">
             Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.
           </p>
-            <fieldset class="step-one__fieldset">
-              <legend class="step-one__legend">ищу попутчиков: <span class="step-one__unit">Чел.</span></legend>
-              <button class="step-one__button" type="button" aria-label="Меньше">
-                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-              </button>
-              <label class="step-one__lebel">
-                <input type="number" placeholder="2">
-              </label>
-              <button class="step-one__button" type="button" aria-label="Больше">
-                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-              </button>
-            </fieldset>
-            <fieldset class="step-one__fieldset">
-              <legend class="step-one__legend">Длительность: <span class="step-one__unit">дн.</span></legend>
-              <button class="step-one__button" type="button" aria-label="Меньше">
-                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-              </button>
-              <label class="step-one__lebel">
-                <input type="number" placeholder="2">
-              </label>
-              <button class="step-one__button" type="button" aria-label="Больше">
-                <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-              </button>
-            </fieldset>
-            <label class="step-one__label">
-              <input type="checkbox" class="step-one__checkbox" name="childrens" value="true" checked>
-              <span class="step-one__checkbox-icon"></span>
-              Можно с детьми
+          <fieldset class="step-one__fieldset">
+            <legend class="step-one__legend">ищу попутчиков: <span class="step-one__unit">Чел.</span></legend>
+            <button class="step-one__button" type="button" aria-label="Меньше">
+              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+            </button>
+            <label class="step-one__lebel">
+              <input type="number" placeholder="2">
             </label>
+            <button class="step-one__button" type="button" aria-label="Больше">
+              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+            </button>
+          </fieldset>
+          <fieldset class="step-one__fieldset">
+            <legend class="step-one__legend">Длительность: <span class="step-one__unit">дн.</span></legend>
+            <button class="step-one__button" type="button" aria-label="Меньше">
+              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+            </button>
+            <label class="step-one__lebel">
+              <input type="number" placeholder="2">
+            </label>
+            <button class="step-one__button" type="button" aria-label="Больше">
+              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+            </button>
+          </fieldset>
+          <label class="step-one__label">
+            <input type="checkbox" class="step-one__checkbox" name="childrens" value="true" checked>
+            <span class="step-one__checkbox-icon"></span>
+            Можно с детьми
+          </label>
           <table class="step-one__calendar">
             <caption class="step-one__caption">
               <button class="step-one__button" type="button" aria-label="Назад">
@@ -466,7 +472,7 @@
           <a href="" class="add-plan__link add-plan__link--next">Следующий шаг</a>
         </section>
         <section class="step-two">
-          <h2 class="add-plan__heading add-plan__heading-step">Шаг 2.<br> Маршрут</h2>
+          <h2 class="step-two">Шаг 2.<br> Маршрут</h2>
           <p class="add-plan__text">
             Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
           </p>
@@ -613,7 +619,7 @@
           </ul>
         </section>
         <section class="step-three">
-          <h2 class="add-plan__heading add-plan__heading-step">Шаг 3.<br> Развлечения</h2>
+          <h2 class="step-three">Шаг 3.<br> Развлечения</h2>
           <p class="add-plan__text">
             Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
