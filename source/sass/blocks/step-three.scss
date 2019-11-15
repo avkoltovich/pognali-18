@@ -1,0 +1,39 @@
+.step-three {
+  @include step;
+}
+
+.step-three__heading {
+  @include step-title;
+}
+
+.step-three__text {
+  @include step-text;
+}
+
+.step-three__label {
+  @include font(500, normal);
+
+  font-size: 18px;
+  color: #1d2e5b;
+}
+
+.step-three__textarea {
+  @include font(400, normal);
+  width: 220px;
+  height: 220px;
+
+  font-size: 16px;
+  line-height: 1.38;
+  color: $greyish-brown;
+
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+}
+
+.step-three__button {
+  @include link-btn;
+}
+
+.step-three__link {
+  @include step-back-link;
+}

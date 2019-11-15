@@ -9,3 +9,105 @@
 .step-one__text {
   @include step-text;
 }
+
+.step-one__fieldset {
+  @include step-fieldset;
+}
+
+.step-one__legend {
+  width: 100%;
+}
+
+.step-one__legend-text {
+  @include font(500, normal);
+
+  display: table-cell;
+  width: 100%;
+
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &--unit {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.step-one__label {
+  @include font(400, normal);
+
+  font-size: 15px;
+  color: $greyish-brown;
+}
+
+.step-one__input {
+  @include font(500, normal);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.step-one__calendar {
+  margin-bottom: 23px;
+
+  border-collapse: collapse;
+}
+
+.step-one__caption {
+  @include font(700, normal);
+  font-size: 20px;
+  text-align: center;
+  color: #1d2e5b;
+
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.step-one__cell {
+  width: 30px;
+  height: 30px;
+
+  @include font(400, normal);
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: $greyish-brown;
+
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+
+  &--heading {
+    background-color: #ffffff;
+    border: 0;
+  }
+
+  &--heading:nth-last-child(-n + 2) {
+    color: #ff5c23;
+  }
+
+  &--disabled {
+    color: rgba(68, 68, 68, 0.3);
+
+    background-color: #ffffff;
+  }
+
+  &--active {
+    color: #ffffff;
+
+    background-color: #1d2e5b;
+  }
+
+  &--current {
+    border: 2px solid #ff5c23;
+  }
+}
+
+.step-one__checkbox {
+  appearance: none;
+}
+
+.step-one__link {
+  @include link-btn;
+}

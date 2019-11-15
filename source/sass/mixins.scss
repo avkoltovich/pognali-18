@@ -43,6 +43,7 @@
 
 @mixin step {
   padding: 25px;
+  margin-bottom: 10px;
 
   border-radius: 10px;
   background-color: #ffffff;
@@ -66,5 +67,94 @@
 
   font-size: 16px;
   line-height: 1.38;
+  color: $greyish-brown;
+}
+
+@mixin step-fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+@mixin step-back-link {
+  @include font(700, normal);
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161c35;
+}
+
+@mixin link-btn {
+  @include font(700, normal);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+
+  font-size: 17px;
+  line-height: 1.76;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161c35;
+
+  border: 0;
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+
+@mixin letter-list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin letter-item {
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  border-color: #cbced9;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+
+  &:nth-child(-n+5) {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  &:nth-child(5n + 1) {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+}
+
+@mixin letter-button {
+  @include font(500, normal);
+  width: 43px;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: inherit;
+
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin country-link {
+  @include font(400, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  text-decoration: none;
   color: $greyish-brown;
 }
