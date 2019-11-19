@@ -39,38 +39,23 @@
 }
 
 .site-main__companions {
-  position: relative;
-  z-index: 4;
-
-  margin-top: -60px;
+  @include relative-z-margin(4);
 }
 
 .site-main__contacts {
-  position: relative;
-  z-index: -2;
-
-  margin-top: -60px;
+  @include relative-z-margin(-2);
 }
 
 .site-main__directions {
-  position: relative;
-  z-index: 5;
-
-  margin-top: -60px;
+  @include relative-z-margin(5);
 }
 
 .site-main__feedback {
-  position: relative;
-  z-index: -1;
-
-  margin-top: -60px;
+  @include relative-z-margin(-1);
 }
 
 .site-main__filter-country {
-  position: relative;
-  z-index: 1;
-
-  margin-top: -60px;
+  @include relative-z-margin(1);
 }
 
 .site-main__filter,
@@ -80,9 +65,7 @@
 }
 
 .site-main__map {
-  position: relative;
-  z-index: -3;
+  @include relative-z-margin(-3);
 
-  margin-top: -60px;
   margin-bottom: -60px;
 }
