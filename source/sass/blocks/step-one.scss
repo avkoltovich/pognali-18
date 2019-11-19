@@ -14,15 +14,8 @@
   @include step-fieldset;
 }
 
-.step-one__legend {
-  width: 100%;
-}
-
-.step-one__legend-text {
+.step-one__label-text {
   @include font(500, normal);
-
-  display: table-cell;
-  width: 100%;
 
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -39,6 +32,12 @@
 
   font-size: 15px;
   color: $greyish-brown;
+
+  &--form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .step-one__input {
