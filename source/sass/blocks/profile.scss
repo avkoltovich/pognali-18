@@ -3,7 +3,6 @@
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 93px;
-  margin-top: -60px;
 
   background-color: $bgcolor-light;
 }
@@ -14,22 +13,22 @@
   align-items: center;
   width: 100px;
   height: 100px;
+}
 
-  & dt {
-    @include font(700, normal);
+.profile__term {
+  @include font(700, normal);
 
-    font-size: 38px;
-    color: #161c35;
-  }
+  font-size: 38px;
+  color: #161c35;
+}
 
-  & dd {
-    @include font(400, normal);
+.profile__description {
+  @include font(400, normal);
 
-    margin-left: 0;
-    font-size: 18px;
-    line-height: 1.22;
-    color: $greyish-brown;
-  }
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $greyish-brown;
 }
 
 .profile__label {

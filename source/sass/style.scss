@@ -9,6 +9,7 @@ body {
 @import "../../node_modules/normalize.css/normalize";
 @import "box-sizing";
 @import "blocks/site-header";
+@import "blocks/site-main";
 @import "blocks/promotion";
 @import "blocks/user-menu";
 @import "blocks/review";
@@ -21,8 +22,6 @@ body {
 @import "blocks/feedback";
 @import "blocks/contacts";
 @import "blocks/map";
-@import "blocks/site-footer";
-@import "blocks/main";
 @import "blocks/filter-country";
 @import "blocks/filter";
 @import "blocks/catalog";
@@ -34,3 +33,4 @@ body {
 @import "blocks/step-two";
 @import "blocks/country";
 @import "blocks/step-three";
+@import "blocks/site-footer";

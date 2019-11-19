@@ -17,13 +17,13 @@
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">О сервисе</a>
+          <a href="index.html" class="site-header__navigation-link">О сервисе</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Направления</a>
+          <a class="site-header__navigation-link">Направления</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Попутчики</a>
+          <a href="catalog.html" class="site-header__navigation-link">Попутчики</a>
         </li>
       </ul>
     </nav>
@@ -62,13 +62,13 @@
       </li>
     </ul>
   </header>
-  <main>
+  <main class="site-main">
     <h1 class="main-heading">Направления</h1>
-    <section class="profile">
+    <section class="site-main__profile profile">
       <h2 class="visually-hidden">Мой профиль</h2>
       <dl class="profile__level">
-        <dt>80</dt>
-        <dd>level</dd>
+        <dt class="profile__term">80</dt>
+        <dd class="profile__description">level</dd>
       </dl>
       <img class="profile__photo" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Мое фото">
       <form class="profile__form">
@@ -110,7 +110,7 @@
         </fieldset>
       </form>
     </section>
-    <section class="plans">
+    <section class="site-main__plans plans">
       <h2 class="plans__heading">Мои планы:</h2>
       <ol class="plans__list">
         <li class="plans__item">
@@ -133,10 +133,10 @@
         </li>
       </ol>
     </section>
-    <section class="add-plan">
+    <section class="site-main__add-plan add-plan">
       <h2 class="add-plan__heading">Добавить план:</h2>
       <form class="add-plan__form">
-        <section class="step-one">
+        <section class="add-plan__step-one step-one">
           <h2 class="step-one__heading">Шаг 1.<br> Даты пребывания</h2>
           <p class="step-one__text">
             Укажите предпочтительное количество попутчиков, которых
@@ -477,7 +477,7 @@
           </table>
           <a href="" class="step-one__link">Следующий шаг</a>
         </section>
-        <section class="step-two">
+        <section class="add-plan__step-two step-two">
           <h2 class="step-two__heading">Шаг 2.<br> Маршрут</h2>
           <p class="step-two__text">
             Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
@@ -628,7 +628,7 @@
           <a href="" class="step-two__link step-two__link--add">Следующий шаг</a>
           <a href="" class="step-two__link step-two__link--back">На шаг назад</a>
         </section>
-        <section class="step-three">
+        <section class="add-plan__step-three step-three">
           <h2 class="step-three__heading">Шаг 3.<br> Развлечения</h2>
           <p class="step-three__text">
             Наконец, расскажите о своих планах времяпровождения.

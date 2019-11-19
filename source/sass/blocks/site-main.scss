@@ -1,0 +1,88 @@
+.main-heading {
+  position: relative;
+  z-index: 2;
+
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  @include font(700, normal);
+  font-size: 36px;
+  line-height: 1.11;
+  color: #ffffff;
+
+  background-color: $bgcolor-dark;
+  border-radius: 0 0 30px 30px;
+}
+
+.site-main__user-menu {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.site-main__about {
+  position: relative;
+  z-index: 6;
+}
+
+.site-main__add-plan {
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+.site-main__catalog {
+  margin-bottom: -60px;
+}
+
+.site-main__add-profile {
+  margin-top: -60px;
+}
+
+.site-main__companions {
+  position: relative;
+  z-index: 4;
+
+  margin-top: -60px;
+}
+
+.site-main__contacts {
+  position: relative;
+  z-index: -2;
+
+  margin-top: -60px;
+}
+
+.site-main__directions {
+  position: relative;
+  z-index: 5;
+
+  margin-top: -60px;
+}
+
+.site-main__feedback {
+  position: relative;
+  z-index: -1;
+
+  margin-top: -60px;
+}
+
+.site-main__filter-country {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -60px;
+}
+
+.site-main__filter,
+.site-main__plans,
+.site-main__profile {
+  margin-top: -60px;
+}
+
+.site-main__map {
+  position: relative;
+  z-index: -3;
+
+  margin-top: -60px;
+  margin-bottom: -60px;
+}

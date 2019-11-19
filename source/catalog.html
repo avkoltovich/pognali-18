@@ -17,13 +17,13 @@
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">О сервисе</a>
+          <a href="index.html" class="site-header__navigation-link">О сервисе</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Направления</a>
+          <a href="form.html" class="site-header__navigation-link">Направления</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Попутчики</a>
+          <a class="site-header__navigation-link">Попутчики</a>
         </li>
       </ul>
     </nav>
@@ -62,9 +62,9 @@
       </li>
     </ul>
   </header>
-  <main>
+  <main class="site-main">
     <h1 class="main-heading">Попутчики</h1>
-    <section class="filter-country">
+    <section class="site-main__filter-country filter-country">
       <div class="filter-country__wrapper">
         <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
           <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
@@ -202,7 +202,7 @@
         свернуть
       </button>
     </section>
-    <section class="filter">
+    <section class="site-main__filter filter">
       <h2 class="visually-hidden">Фильтр</h2>
       <form action="https://echo.htmlacademy.ru" class="filter__form">
       <h3 class="filter__heading">Подберите идеального попутчика</h3>
@@ -283,7 +283,7 @@
         <button class="filter__button filter__button--submit" type="submit">Показать</button>
       </form>
     </section>
-    <section class="catalog">
+    <section class="site-main__catalog catalog">
       <h2 class="visually-hidden">Каталог попутчиков</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -329,8 +329,8 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>99</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">99</dd>
           </dl>
           <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
@@ -373,8 +373,8 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>80</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">80</dd>
           </dl>
           <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
@@ -421,8 +421,8 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>25</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">25</dd>
           </dl>
           <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>
@@ -467,8 +467,8 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>50</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">50</dd>
           </dl>
           <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
         </li>

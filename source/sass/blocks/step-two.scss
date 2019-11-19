@@ -2,6 +2,14 @@
   @include step;
 }
 
+.step-two__country {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+
 .step-two__heading {
   @include step-title;
 }

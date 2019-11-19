@@ -1,11 +1,18 @@
 .add-profile {
   @include round-bottom;
-  position: relative;
-  z-index: 3;
 
+  display: flex;
+  flex-direction: column;
   padding-top: 130px;
 
   background-color: $bgcolor-light;
+}
+
+.add-profile__business-rate {
+  position: absolute;
+  z-index: 9;
+
+  margin-top: -80px;
 }
 
 .add-profile__heading {

@@ -13,7 +13,6 @@
 }
 
 @mixin round-bottom {
-  margin-top: -60px;
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 25px;
@@ -22,7 +21,6 @@
 }
 
 @mixin round-top {
-  margin-top: -60px;
   padding-top: 30px;
   padding-right: 25px;
   padding-bottom: 90px;
