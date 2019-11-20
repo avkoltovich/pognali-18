@@ -34,8 +34,17 @@
   margin-bottom: -60px;
 }
 
+.site-main__business-rate {
+  position: absolute;
+  z-index: 9;
+
+  margin-top: 10px;
+  margin-left: 25px;
+  transform: translateY(-100%);
+}
+
 .site-main__add-profile {
-  margin-top: -60px;
+  @include relative-z-margin(3);
 }
 
 .site-main__companions {
@@ -43,7 +52,7 @@
 }
 
 .site-main__contacts {
-  @include relative-z-margin(-2);
+  @include relative-z-margin(1);
 }
 
 .site-main__directions {
@@ -51,7 +60,7 @@
 }
 
 .site-main__feedback {
-  @include relative-z-margin(-1);
+  @include relative-z-margin(2);
 }
 
 .site-main__filter-country {
@@ -65,7 +74,7 @@
 }
 
 .site-main__map {
-  @include relative-z-margin(-3);
+  @include relative-z-margin(0);
 
   margin-bottom: -60px;
 }

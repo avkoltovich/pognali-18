@@ -56,10 +56,6 @@
 }
 
 .step-two__link {
-  &--add {
-    @include link-btn;
-  }
-
   &--back {
     @include step-back-link;
   }

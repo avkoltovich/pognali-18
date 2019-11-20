@@ -88,20 +88,6 @@
 
 .companions__link {
   text-decoration: none;
-
-  &--btn {
-    display: flex;
-    align-items: center;
-    height: 62px;
-    padding-left: 24px;
-
-    @include font(700, normal);
-    font-size: 18px;
-    color: #1d2e5b;
-
-    border-radius: 10px;
-    background-color: #ffd74b;
-  }
 }
 
 .companions__name {

@@ -90,25 +90,6 @@
   color: #161c35;
 }
 
-@mixin link-btn {
-  @include font(700, normal);
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-
-  font-size: 17px;
-  line-height: 1.76;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #161c35;
-
-  border: 0;
-  border-radius: 20px;
-  background-color: #ffd74b;
-}
-
 @mixin letter-list {
   @include list;
   display: flex;

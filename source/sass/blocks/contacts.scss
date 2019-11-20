@@ -16,18 +16,3 @@
   text-transform: uppercase;
   color: #192144;
 }
-
-.contacts__link {
-  display: flex;
-  align-items: center;
-  height: 62px;
-  padding-left: 24px;
-
-  @include font(700, normal);
-  font-size: 18px;
-  text-decoration: none;
-  color: #1d2e5b;
-
-  border-radius: 10px;
-  border: solid 3px #192144;
-}

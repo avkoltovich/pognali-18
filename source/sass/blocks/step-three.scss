@@ -30,10 +30,6 @@
   border: solid 1px #cbced9;
 }
 
-.step-three__button {
-  @include link-btn;
-}
-
 .step-three__link {
   @include step-back-link;
 }

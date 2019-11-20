@@ -31,27 +31,9 @@
   color: $greyish-brown;
 }
 
-.profile__label {
-  &--upload {
-    @include font(700, normal);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 40px;
-
-    font-size: 17px;
-    text-transform: uppercase;
-    color: #161c35;
-
-    background-color: #dfe3f0;
-    border-radius: 20px;
-  }
-}
-
 .profile__upload {
   position: absolute;
+  z-index: -1;
 
   opacity: 0;
 }

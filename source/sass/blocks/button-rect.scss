@@ -1,0 +1,30 @@
+.button-rect {
+  @include font(700, normal);
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  font-size: 18px;
+  text-decoration: none;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  &--yellow {
+    color: #1d2e5b;
+
+    border: 0;
+    background-color: #ffd74b;
+  }
+
+  &--border {
+    color: #1d2e5b;
+
+    border: solid 3px #192144;
+    background-color: transparent;
+  }
+}

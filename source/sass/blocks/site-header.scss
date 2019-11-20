@@ -7,6 +7,7 @@
 
 .site-header__navigation-list {
   @include list;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +15,7 @@
 
 .site-header__navigation-link {
   @include font(500, normal);
+
   font-size: 30px;
   line-height: 1.2;
   text-decoration: none;
@@ -23,12 +25,14 @@
 
 .site-header__user-list {
   @include list;
+
   display: flex;
   flex-direction: column;
 }
 
 .site-header__user-link {
   @include font(700, normal);
+
   font-size: 16px;
   line-height: 1.38;
   text-decoration: none;
@@ -37,9 +41,9 @@
 
   &--btn {
     display: flex;
-    height: 50px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 50px;
 
     font-size: 17px;
     color: #161c35;
@@ -51,5 +55,6 @@
 
 .site-header__social-list {
   @include list;
+
   display: flex;
 }
