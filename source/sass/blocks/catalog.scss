@@ -3,7 +3,6 @@
   padding-right: 25px;
   padding-bottom: 110px;
   padding-left: 25px;
-  margin-bottom: -60px;
 
   background-color: $bgcolor-light;
 }
@@ -69,44 +68,30 @@
   @include list;
 }
 
-.catalog__level {
-  & dt {
-    @include font(400, normal);
-    font-size: 15px;
-    line-height: 1.2;
-    color: $greyish-brown;
-  }
+.catalog__term {
+  @include font(400, normal);
+  font-size: 15px;
+  line-height: 1.2;
+  color: $greyish-brown;
+}
 
-  & dd {
-    margin-left: 0;
+.catalog__description {
+  margin-left: 0;
 
-    @include font(700, normal);
-    font-size: 24px;
-    line-height: 0.75;
-    color: #1d2e5b;
-  }
+  @include font(700, normal);
+  font-size: 24px;
+  line-height: 0.75;
+  color: #1d2e5b;
 }
 
 .catalog__button {
-  @include font(700, normal);
-  font-size: 17px;
-  text-transform: uppercase;
-
-  &--call {
-    width: 100%;
-    height: 40px;
-
-    text-align: center;
-    color: #161c35;
-
-    border: 0;
-    border-radius: 20px;
-    background-color: #ffd74b;
-  }
-
   &--more {
+    @include font(700, normal);
+
     margin-bottom: 27px;
 
+    font-size: 17px;
+    text-transform: uppercase;
     color: #1d2e5b;
 
     border: 0;

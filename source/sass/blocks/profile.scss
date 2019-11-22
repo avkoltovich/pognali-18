@@ -1,0 +1,65 @@
+.profile {
+  padding-top: 60px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 93px;
+
+  background-color: $bgcolor-light;
+}
+
+.profile__level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.profile__term {
+  @include font(700, normal);
+
+  font-size: 38px;
+  color: #161c35;
+}
+
+.profile__description {
+  @include font(400, normal);
+
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $greyish-brown;
+}
+
+.profile__upload {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.profile__fieldset {
+  border-radius: 10px;
+  border: solid 1px #cbced9;
+  background-color: #edeff6;
+}
+
+.profile__legend {
+  @include font(700, normal);
+
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.profile__textarea {
+  @include font(400, normal);
+
+  font-size: 16px;
+  line-height: 1.38;
+  color: $greyish-brown;
+
+  background-color: $bgcolor-light;
+  border: 0;
+}

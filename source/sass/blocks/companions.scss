@@ -1,7 +1,5 @@
 .companions {
-  @include round-end;
-  position: relative;
-  z-index: 4;
+  @include round-bottom;
 
   padding-top: 130px;
 
@@ -74,36 +72,22 @@
 
   background-color: rgba($color: #000000, $alpha: 0.6);
   border-radius: 50%;
+}
 
-  & dt {
-    @include font(700, normal);
-    font-size: 24px;
-  }
+.companions__term {
+  @include font(700, normal);
+  font-size: 24px;
+}
 
-  & dd {
-    margin-left: 0;
+.companions__description {
+  margin-left: 0;
 
-    @include font(400, normal);
-    font-size: 14px;
-  }
+  @include font(400, normal);
+  font-size: 14px;
 }
 
 .companions__link {
   text-decoration: none;
-
-  &--btn {
-    display: flex;
-    align-items: center;
-    height: 62px;
-    padding-left: 24px;
-
-    @include font(700, normal);
-    font-size: 18px;
-    color: #1d2e5b;
-
-    border-radius: 10px;
-    background-color: #ffd74b;
-  }
 }
 
 .companions__name {

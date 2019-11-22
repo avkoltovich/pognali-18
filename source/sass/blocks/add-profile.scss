@@ -1,10 +1,12 @@
 .add-profile {
-  @include round-end;
-  position: relative;
-  z-index: 3;
-
+  display: flex;
+  flex-direction: column;
   padding-top: 130px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 50px;
 
+  border-radius: 0 0 30px 30px;
   background-color: $bgcolor-light;
 }
 
@@ -45,6 +47,11 @@
   &:first-child {
     border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
   }
+}
+
+.add-profile__dl {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .add-profile__item-cell {

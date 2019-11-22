@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Погнали - Попутчики</title>
+  <title>Попутчики - Погнали, HTML Academy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,13 +17,13 @@
     <nav class="site-header__navigation">
       <ul class="site-header__navigation-list">
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">О сервисе</a>
+          <a href="index.html" class="site-header__navigation-link">О сервисе</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Направления</a>
+          <a href="form.html" class="site-header__navigation-link">Направления</a>
         </li>
         <li class="site-header__navigation-item">
-          <a href="" class="site-header__navigation-link">Попутчики</a>
+          <a class="site-header__navigation-link">Попутчики</a>
         </li>
       </ul>
     </nav>
@@ -62,32 +62,37 @@
       </li>
     </ul>
   </header>
-  <main>
-    <h1 class="main-heading">Попутчики</h1>
-    <section class="filter-country">
-      <h2 class="filter-country__heading">Фильтрация по странам</h2>
-      <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
-        <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
-      </button>
-      <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
-        <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
-      </button>
+  <main class="site-main">
+    <h1 class="site-main__heading">Попутчики</h1>
+    <section class="site-main__filter-country filter-country">
+      <div class="filter-country__wrapper">
+        <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
+          <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
+        </button>
+        <h2 class="filter-country__heading">Фильтрация по странам</h2>
+        <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
+          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
+        </button>
+      </div>
       <ul class="filter-country__continent-list">
         <li class="filter-country__continent-item">
           <button class="filter-country__continent-button" type="button">Европа</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Азия</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Азия</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Америка</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Америка</button>
         </li>
         <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Острова</button>
+          <button class="filter-country__continent-button filter-country__continent-button--disable"
+            type="button">Острова</button>
         </li>
       </ul>
       <ul class="filter-country__letter-list">
-        <li class="filter-country__letter-item">
+        <li class="filter-country__letter-item filter-country__letter-item--active">
           <button class="filter-country__letter-button" type="button">А</button>
         </li>
         <li class="filter-country__letter-item">
@@ -192,31 +197,25 @@
           <a href="" class="filter-country__link">Азербайджан</a>
         </li>
       </ul>
-      <button class="filter-country__button" type="button">
+      <button class="filter-country__button button-oval button-oval--blue" type="button">
         <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
         свернуть
       </button>
     </section>
-    <section class="filter">
+    <section class="site-main__filter filter">
       <h2 class="visually-hidden">Фильтр</h2>
-      <h3 class="filter__heading">Подберите идеального попутчика</h3>
       <form action="https://echo.htmlacademy.ru" class="filter__form">
+      <h3 class="filter__heading">Подберите идеального попутчика</h3>
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Хобби</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
           </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
-          </button>
         </fieldset>
-        <fieldset class="filter__fieldset">
+        <fieldset class="filter__fieldset filter__fieldset--music">
           <legend class="filter__legend">Музыка</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-          </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
           </button>
           <label class="filter__label">
             <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
@@ -239,17 +238,11 @@
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
           </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
-          </button>
         </fieldset>
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Транспорт</legend>
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-          </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
           </button>
           <label class="filter__label">
             <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
@@ -278,9 +271,6 @@
           <button class="filter__button filter__button--show" type="button" aria-label="Показать">
             <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
           </button>
-          <button class="filter__button filter__button--hide" type="button" aria-label="Скрыть">
-            <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Скрыть" aria-hidden="true">
-          </button>
           <label class="filter__label">
             <input type="number" class="filter__number" placeholder="30">
           </label>
@@ -290,10 +280,10 @@
           <button class="filter__button filter__button--range" type="button" aria-label="Меньше"></button>
           <button class="filter__button filter__button--range" type="button" aria-label="Больше"></button>
         </fieldset>
-        <button class="filter__button filter__button--submit" type="submit">Показать</button>
+        <button class="filter__button button-oval button-oval--white" type="submit">Показать</button>
       </form>
     </section>
-    <section class="catalog">
+    <section class="site-main__catalog catalog">
       <h2 class="visually-hidden">Каталог попутчиков</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -339,10 +329,10 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>99</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">99</dd>
           </dl>
-          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
+          <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
@@ -383,10 +373,10 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>80</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">80</dd>
           </dl>
-          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
+          <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
@@ -431,10 +421,10 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>25</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">25</dd>
           </dl>
-          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
+          <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
         </li>
         <li class="catalog__item">
           <span class="catalog__status catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
@@ -477,10 +467,10 @@
             </li>
           </ul>
           <dl class="catalog__level">
-            <dt>левел:</dt>
-            <dd>50</dd>
+            <dt class="catalog__term">левел:</dt>
+            <dd class="catalog__description">50</dd>
           </dl>
-          <button class="catalog__button catalog__button--call" type="button">Позвать!</button>
+          <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
         </li>
       </ul>
       <button class="catalog__button catalog__button--more" type="button">Показать еще</button>

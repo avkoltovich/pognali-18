@@ -1,0 +1,80 @@
+.site-main__heading {
+  position: relative;
+  z-index: 2;
+
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  @include font(700, normal);
+  font-size: 36px;
+  line-height: 1.11;
+  color: #ffffff;
+
+  background-color: $bgcolor-dark;
+  border-radius: 0 0 30px 30px;
+}
+
+.site-main__user-menu {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.site-main__about {
+  position: relative;
+  z-index: 6;
+}
+
+.site-main__add-plan {
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
+.site-main__catalog {
+  margin-bottom: -60px;
+}
+
+.site-main__business-rate {
+  position: relative;
+  z-index: 9;
+
+  margin-top: -10px;
+  margin-bottom: calc(-100% - 160px);
+  margin-left: 25px;
+}
+
+.site-main__add-profile {
+  @include relative-z-margin(3);
+}
+
+.site-main__companions {
+  @include relative-z-margin(4);
+}
+
+.site-main__contacts {
+  @include relative-z-margin(1);
+}
+
+.site-main__directions {
+  @include relative-z-margin(5);
+}
+
+.site-main__feedback {
+  @include relative-z-margin(2);
+}
+
+.site-main__filter-country {
+  @include relative-z-margin(1);
+}
+
+.site-main__filter,
+.site-main__plans,
+.site-main__profile {
+  margin-top: -60px;
+}
+
+.site-main__map {
+  @include relative-z-margin(0);
+
+  margin-bottom: -60px;
+}

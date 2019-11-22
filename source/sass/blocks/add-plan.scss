@@ -1,0 +1,12 @@
+.add-plan {
+  @include round-top;
+  background-color: #d4d9eb;
+}
+
+.add-plan__heading {
+  @include form-heading;
+}
+
+.add-plan__step {
+  margin-bottom: 10px;
+}

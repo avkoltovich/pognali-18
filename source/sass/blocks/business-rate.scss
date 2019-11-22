@@ -1,3 +1,72 @@
 .business-rate {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 443px;
+  padding-top: 30px;
+
+  border-radius: 20px;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+  background-color: white;
+}
+
+.business-rate__heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @include font(700, normal);
+  font-size: 24px;
+  text-align: center;
+  color: #ff8d30;
+}
+
+.business-rate__list {
+  @include list;
+  width: 219px;
+  margin: 0 auto;
+}
+
+.business-rate__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+
+  @include font(300, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  color: $greyish-brown;
+
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
+
+  &:first-child {
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+  }
+}
+
+.business-rate__dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.business-rate__item-cell {
+  margin-left: 0;
+}
+
+.business-rate__button {
+  width: 100%;
+  height: 60px;
+  margin-top: auto;
+
+  @include font(700, normal);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  background-color: #f3f4f8;
+  border: 0;
+  border-radius: 0  0 20px 20px;
+  cursor: pointer;
 }

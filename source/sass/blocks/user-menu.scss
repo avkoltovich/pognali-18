@@ -2,16 +2,14 @@
   height: 40px;
   padding-right: 25px;
   padding-left: 25px;
-  margin-top: -20px;
-  margin-bottom: -20px;
 
   background-color: transparent;
 }
 
 .user-menu__list {
-  display: flex;
-
   @include list;
+
+  display: flex;
 }
 
 .user-menu__item:last-child {
@@ -20,19 +18,10 @@
 
 .user-menu__link {
   @include font(700, normal);
+
   font-size: 17px;
   line-height: 1.76;
   text-decoration: none;
   text-transform: uppercase;
   color: #161c35;
-
-  &--btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-
-    border-radius: 20px;
-    background-color: #ffd74b;
-  }
 }

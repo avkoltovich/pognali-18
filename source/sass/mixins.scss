@@ -12,11 +12,85 @@
   list-style: none;
 }
 
-@mixin round-end {
-  margin-top: -60px;
+@mixin round-bottom {
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 25px;
 
   border-radius: 0 0 30px 30px;
+}
+
+@mixin round-top {
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 90px;
+  padding-left: 25px;
+
+  border-radius: 30px 30px 0 0;
+}
+
+@mixin form-heading {
+  @include font(700, normal);
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  color: #1d2e5b;
+}
+
+@mixin letter-list {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin letter-item {
+  color: #1d2e5b;
+
+  background-color: #ffffff;
+  border-color: #cbced9;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+
+  &:nth-child(-n+5) {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  &:nth-child(5n + 1) {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+}
+
+@mixin letter-button {
+  @include font(500, normal);
+  width: 43px;
+  height: 40px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: inherit;
+
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin country-link {
+  @include font(400, normal);
+  font-size: 16px;
+  line-height: 1.38;
+  text-decoration: none;
+  color: $greyish-brown;
+}
+
+@mixin relative-z-margin($zindex, $mt: -60px) {
+  position: relative;
+  z-index: $zindex;
+
+  margin-top: $mt;
 }

@@ -1,7 +1,5 @@
 .feedback {
-  @include round-end;
-  position: relative;
-  z-index: 2;
+  @include round-bottom;
 
   padding-top: 130px;
 
