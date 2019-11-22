@@ -69,7 +69,7 @@
 }
 
 .directions__counter,
-.directions__text {
+.directions__item-text {
   @include font(500, normal);
   font-size: 16px;
   line-height: 1.13;

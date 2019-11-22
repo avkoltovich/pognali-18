@@ -63,7 +63,7 @@
     </ul>
   </header>
   <main class="site-main">
-    <h1 class="main-heading">Направления</h1>
+    <h1 class="site-main__heading">Направления</h1>
     <section class="site-main__profile profile">
       <h2 class="visually-hidden">Мой профиль</h2>
       <dl class="profile__level">
@@ -136,367 +136,367 @@
     <section class="site-main__add-plan add-plan">
       <h2 class="add-plan__heading">Добавить план:</h2>
       <form class="add-plan__form">
-        <fieldset class="add-plan__step-one step-one">
-          <h3 class="step-one__heading">Шаг 1.<br> Даты пребывания</h3>
-          <p class="step-one__text">
+        <fieldset class="add-plan__step step">
+          <h3 class="step__heading">Шаг 1.<br> Даты пребывания</h3>
+          <p class="step__text">
             Укажите предпочтительное количество попутчиков, которых
             вы хотели бы позвать в поездку и ее предполагаемую длительность.
           </p>
-          <label class="step-one__label step-one__label--form" for="companions">
-            <span class="step-one__label-text">ищу попутчиков: </span>
-            <span class="step-one__label-text step-one__label-text--unit">Чел.</span>
+          <label class="step__label step__label--form" for="companions">
+            <span class="step__label-text">ищу попутчиков: </span>
+            <span class="step__label-text step__label-text--unit">Чел.</span>
           </label>
-          <button class="step-one__button" type="button" aria-label="Меньше">
+          <button class="step__button" type="button" aria-label="Меньше">
             <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
           </button>
-          <input class="step-one__input" type="number" id="companions" placeholder="2">
-          <button class="step-one__button" type="button" aria-label="Больше">
+          <input class="step__input step__input--step-one" type="number" id="companions" placeholder="2">
+          <button class="step__button" type="button" aria-label="Больше">
             <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
           </button>
-          <label class="step-one__label step-one__label--form" for="duration">
-            <span class="step-one__label-text">Длительность: </span>
-            <span class="step-one__label-text step-one__label-text--unit">дн.</span>
+          <label class="step__label step__label--form" for="duration">
+            <span class="step__label-text">Длительность: </span>
+            <span class="step__label-text step__label-text--unit">дн.</span>
           </label>
-          <button class="step-one__button" type="button" aria-label="Меньше">
+          <button class="step__button" type="button" aria-label="Меньше">
             <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
           </button>
-          <input class="step-one__input" type="number" id="duration" placeholder="2">
-          <button class="step-one__button" type="button" aria-label="Больше">
+          <input class="step__input step__input--step-one" type="number" id="duration" placeholder="2">
+          <button class="step__button" type="button" aria-label="Больше">
             <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
           </button>
-          <label class="step-one__label">
-            <input type="checkbox" class="step-one__checkbox" name="childrens" value="true" checked>
-            <span class="step-one__checkbox-icon"></span>
+          <label class="step__label">
+            <input type="checkbox" class="step__checkbox" name="childrens" value="true" checked>
+            <span class="step__checkbox-icon"></span>
             Можно с детьми
           </label>
-          <table class="step-one__calendar">
-            <caption class="step-one__caption">
-              <button class="step-one__button" type="button" aria-label="Назад">
+          <table class="step__calendar">
+            <caption class="step__caption">
+              <button class="step__button" type="button" aria-label="Назад">
                 <img src="https://via.placeholder.com/17x17" width="17" height="17" alt="<" aria-hidden="true">
               </button>
               Март 2019
-              <button class="step-one__button" type="button" aria-label="Вперед">
+              <button class="step__button" type="button" aria-label="Вперед">
                 <img src="https://via.placeholder.com/17x17" width="17" height="17" alt=">" aria-hidden="true">
               </button>
             </caption>
-            <tr class="step-one__row">
-              <th class="step-one__cell step-one__cell--heading">
+            <tr class="step__row">
+              <th class="step__cell step__cell--heading">
                 П
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 В
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 С
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 Ч
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 П
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 С
               </th>
-              <th class="step-one__cell step-one__cell--heading">
+              <th class="step__cell step__cell--heading">
                 В
               </th>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   23
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   24
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   25
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   26
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   27
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   28
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   1
                 </label>
               </td>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   2
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   3
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   4
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   5
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   6
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   7
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   8
                 </label>
               </td>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   9
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   10
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   11
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   12
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   13
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   14
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   15
                 </label>
               </td>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   16
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   17
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   18
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   19
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   20
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   21
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   22
                 </label>
               </td>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   23
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   24
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--disabled">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--disabled">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   25
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--active step-one__cell--current">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--active step__cell--current">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   26
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--active">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--active">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   27
                 </label>
               </td>
-              <td class="step-one__cell step-one__cell--active">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell step__cell--active">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   28
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   29
                 </label>
               </td>
             </tr>
-            <tr class="step-one__row">
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+            <tr class="step__row">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   30
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   31
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   1
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   2
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   3
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   4
                 </label>
               </td>
-              <td class="step-one__cell">
-                <label class="step-one__label-cell">
-                  <input type="checkbox" class="step-one__checkbox">
+              <td class="step__cell">
+                <label class="step__label-cell">
+                  <input type="checkbox" class="step__checkbox">
                   5
                 </label>
               </td>
             </tr>
           </table>
-          <a href="" class="step-one__link button-oval button-oval--yellow">Следующий шаг</a>
+          <a href="" class="step__link button-oval button-oval--yellow">Следующий шаг</a>
         </fieldset>
-        <fieldset class="add-plan__step-two step-two">
-          <h3 class="step-two__heading">Шаг 2.<br> Маршрут</h3>
-          <p class="step-two__text">
+        <fieldset class="add-plan__step step">
+          <h3 class="step__heading">Шаг 2.<br> Маршрут</h3>
+          <p class="step__text">
             Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
           </p>
-          <label class="step-two__label">
-            <input class="step-two__input" type="text" name="country" placeholder="Босния и герцегов">
+          <label class="step__label">
+            <input class="step__input step__input--step-two" type="text" name="country" placeholder="Босния и герцегов">
             <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и герцегов">
           </label>
-          <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+          <button class="step__button step__button--del" type="button" aria-label="Удалить">
             <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
           </button>
-          <label class="step-two__label">
-            <input class="step-two__input" type="text" name="country" placeholder="Чехия">
+          <label class="step__label">
+            <input class="step__input step__input--step-two" type="text" name="country" placeholder="Чехия">
             <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
           </label>
-          <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+          <button class="step__button step__button--del" type="button" aria-label="Удалить">
             <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
           </button>
-          <label class="step-two__label">
-            <input class="step-two__input" type="text" name="country" placeholder="Выберите страну">
+          <label class="step__label">
+            <input class="step__input step__input--step-two" type="text" name="country" placeholder="Выберите страну">
           </label>
-          <button class="step-two__button step-two__button--del" type="button" aria-label="Удалить">
+          <button class="step__button step__button--del" type="button" aria-label="Удалить">
             <img src="https://via.placeholder.com/21x21" width="21" height="21" alt="X" aria-hidden="true">
           </button>
-          <div class="step-two__wrapper">
-            <button class="step-two__button step-two__button--add" type="button">Добавить страну</button>
-            <section class="step-two__country country">
+          <div class="step__wrapper">
+            <button class="step__button step__button--add" type="button">Добавить страну</button>
+            <section class="step__country country">
               <div class="country__wrapper">
                 <h2 class="country__heading">Выберите страну</h2>
                 <button class="country__button country__button--close" aria-label="Закрыть">
@@ -611,28 +611,28 @@
               </ul>
             </section>
           </div>
-          <a href="" class="step-two__link button-oval button-oval--yellow">Следующий шаг</a>
-          <a href="" class="step-two__link step-two__link--back">На шаг назад</a>
+          <a href="" class="step__link button-oval button-oval--yellow">Следующий шаг</a>
+          <a href="" class="step__link step__link--back">На шаг назад</a>
         </fieldset>
-        <fieldset class="add-plan__step-three step-three">
-          <h3 class="step-three__heading">Шаг 3.<br> Развлечения</h3>
-          <p class="step-three__text">
+        <fieldset class="add-plan__step step">
+          <h3 class="step__heading">Шаг 3.<br> Развлечения</h3>
+          <p class="step__text">
             Наконец, расскажите о своих планах времяпровождения.
             Можно писать в свободной форме и ставить тэги.
           </p>
-          <label class="step-three__label">
+          <label class="step__title">
             Босния и Герцеговия
             <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Боснии и Герцеговии">
-            <textarea class="step-three__textarea" placeholder="План действий" aria-label="План действий"></textarea>
+            <textarea class="step__textarea" placeholder="План действий" aria-label="План действий"></textarea>
           </label>
-          <label class="step-three__label">
+          <label class="step__title">
             Чехия
             <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
-            <textarea class="step-three__textarea" placeholder="План действий"
+            <textarea class="step__textarea" placeholder="План действий"
               aria-label="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
           </label>
-          <button class="step-three__button button-oval button-oval--yellow" type="submit">Отправить</button>
-          <a href="" class="step-three__link">На шаг назад</a>
+          <button class="step__button button-oval button-oval--yellow" type="submit">Отправить</button>
+          <a href="" class="step__link step__link--back">На шаг назад</a>
         </fieldset>
       </form>
     </section>
