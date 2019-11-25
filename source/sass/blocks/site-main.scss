@@ -15,10 +15,24 @@
   border-radius: 0 0 30px 30px;
 }
 
+.site-main__wrapper {
+  position: relative;
+
+  display: flex;
+
+  &--profile {
+    flex-direction: column;
+  }
+}
+
 .site-main__user-menu {
+  z-index: 9;
+
   margin-top: -20px;
   margin-bottom: -20px;
 }
+
+.site-main__howto {}
 
 .site-main__about {
   position: relative;
@@ -27,6 +41,35 @@
 
 .site-main__directions {
   @include relative-z-margin(5);
+
+}
+
+.site-main__companions {
+  @include relative-z-margin(4);
+
+}
+
+.site-main__add-profile {
+  @include relative-z-margin(3);
+
+}
+
+.site-main__business-rate {
+  position: absolute;
+  z-index: 9;
+
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.site-main__feedback {
+  @include relative-z-margin(2);
+}
+
+.site-main__contacts {
+  @include relative-z-margin(1);
 }
 
 .site-main__add-plan {
@@ -38,38 +81,15 @@
   margin-bottom: -60px;
 }
 
-.site-main__business-rate {
-  position: relative;
-  z-index: 9;
-
-  margin-top: -10px;
-  margin-bottom: calc(-100% - 160px);
-  margin-left: 25px;
-}
-
-.site-main__add-profile {
-  @include relative-z-margin(3);
-}
-
-.site-main__companions {
-  @include relative-z-margin(4);
-}
-
-.site-main__contacts {
-  @include relative-z-margin(1);
-}
-
-.site-main__feedback {
-  @include relative-z-margin(2);
-}
-
 .site-main__filter-country {
   @include relative-z-margin(1);
 }
 
 .site-main__filter,
 .site-main__plans,
-.site-main__profile {
+.site-main__profile,
+.site-main__feedback,
+.site-main__contacts {
   margin-top: -60px;
 }
 
@@ -83,24 +103,31 @@
   .site-main__howto {
     margin-top: -140px;
   }
+
+  .site-main__directions,
+  .site-main__companions,
+  .site-main__add-profile {
+    margin-top: -60px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-main__wrapper {
-    position: relative;
-    z-index: 7;
+    &--promo {
+      z-index: 7;
 
-    display: flex;
-    justify-content: space-between;
-    min-height: 640px;
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 640px;
 
-    background-image: url("../img/traveller-illustration-desktop@1x.png"),
-      url("../img/globe-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 640px, cover;
-    background-position: bottom left 604px, center;
+      background-image: url("../img/traveller-illustration-desktop@1x.png"),
+        url("../img/globe-back-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 640px, cover;
+      background-position: bottom left 604px, center;
 
-    border-radius: 0 0 30px 30px;
+      border-radius: 0 0 30px 30px;
+    }
   }
 
   .site-main__howto {

@@ -96,7 +96,7 @@
   color: $greyish-brown;
 }
 
-@mixin relative-z-margin($zindex, $mt: -60px) {
+@mixin relative-z-margin($zindex, $mt: -30px) {
   position: relative;
   z-index: $zindex;
 

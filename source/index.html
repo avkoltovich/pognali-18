@@ -66,7 +66,7 @@
   </header>
   <main class="site-main">
     <h1 class="visually-hidden">Сервис поиска попутчиков</h1>
-    <div class="site-main__wrapper">
+    <div class="site-main__wrapper site-main__wrapper--promo">
       <section class="site-main__promotion promotion">
         <h2 class="promotion__heading">В путешествие с крутыми попутчиками!</h2>
       </section>
@@ -153,7 +153,6 @@
           Люди сами пишут о странах, куда хотели бы отправиться
           и чем можно там заняться.
         </p>
-
         <ul class="directions__list">
           <li class="directions__item">
             <a href="" class="directions__link directions__link--item">
@@ -299,62 +298,64 @@
         </a>
       </div>
     </section>
-    <section class="site-main__business-rate business-rate">
-      <h2 class="business-rate__heading">Бизнес-тарифы</h2>
-      <ul class="business-rate__list">
-        <li class="business-rate__item">
-          <dl class="business-rate__dl">
-            <dt class="business-rate__item-cell">Реклама у блоггера</dt>
-            <dd class="business-rate__item-cell">300 000 руб./пост</dd>
-          </dl>
-        </li>
-        <li class="business-rate__item">
-          <dl class="business-rate__dl">
-            <dt class="business-rate__item-cell">Накрутка подписчиков</dt>
-            <dd class="business-rate__item-cell">от 1 руб./шт.</dd>
-          </dl>
-        </li>
-        <li class="business-rate__item">
-          <dl class="business-rate__dl">
-            <dt class="business-rate__item-cell">Лайки от ботов</dt>
-            <dd class="business-rate__item-cell">от 20 коп./лайк</dd>
-          </dl>
-        </li>
-        <li class="business-rate__item">
-          <dl class="business-rate__dl">
-            <dt class="business-rate__item-cell">Ваш продакт-плейсмент</dt>
-            <dd class="business-rate__item-cell">Индивидуально</dd>
-          </dl>
-        </li>
-      </ul>
-      <button class="business-rate__button" type="button">Закрыть окно</button>
-    </section>
-    <section class="site-main__add-profile add-profile">
-      <h2 class="add-profile__heading">
-        <a href="" class="add-profile__link add-profile__link--add">Добавьте свой профиль</a>
-      </h2>
-      <ol class="add-profile__list">
-        <li class="add-profile__item">
-          <dl class="add-profile__dl">
-            <dt class="add-profile__item-cell">Базовое размещение</dt>
-            <dd class="add-profile__item-cell">Бесплатно</dd>
-          </dl>
-        </li>
-        <li class="add-profile__item">
-          <dl class="add-profile__dl">
-            <dt class="add-profile__item-cell">Вывод на первых позициях</dt>
-            <dd class="add-profile__item-cell">99 руб./мес</dd>
-          </dl>
-        </li>
-        <li class="add-profile__item">
-          <dl class="add-profile__dl">
-            <dt class="add-profile__item-cell">Кастомный цвет карточки</dt>
-            <dd class="add-profile__item-cell">59 руб./мес</dd>
-          </dl>
-        </li>
-      </ol>
-      <a href="" class="add-profile__link add-profile__link--all">Показать тарифы для бизнеса</a>
-    </section>
+    <div class="site-main__wrapper site-main__wrapper--profile">
+      <section class="site-main__add-profile add-profile">
+        <h2 class="add-profile__heading">
+          <a href="" class="add-profile__link add-profile__link--add">Добавьте свой профиль</a>
+        </h2>
+        <ol class="add-profile__list">
+          <li class="add-profile__item">
+            <dl class="add-profile__dl">
+              <dt class="add-profile__item-cell">Базовое размещение</dt>
+              <dd class="add-profile__item-cell">Бесплатно</dd>
+            </dl>
+          </li>
+          <li class="add-profile__item">
+            <dl class="add-profile__dl">
+              <dt class="add-profile__item-cell">Вывод на первых позициях</dt>
+              <dd class="add-profile__item-cell">99 руб./мес</dd>
+            </dl>
+          </li>
+          <li class="add-profile__item">
+            <dl class="add-profile__dl">
+              <dt class="add-profile__item-cell">Кастомный цвет карточки</dt>
+              <dd class="add-profile__item-cell">59 руб./мес</dd>
+            </dl>
+          </li>
+        </ol>
+        <a href="" class="add-profile__link add-profile__link--all">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="site-main__business-rate business-rate">
+        <h2 class="business-rate__heading">Бизнес-тарифы</h2>
+        <ul class="business-rate__list">
+          <li class="business-rate__item">
+            <dl class="business-rate__dl">
+              <dt class="business-rate__item-cell">Реклама у блоггера</dt>
+              <dd class="business-rate__item-cell">300 000 руб./пост</dd>
+            </dl>
+          </li>
+          <li class="business-rate__item">
+            <dl class="business-rate__dl">
+              <dt class="business-rate__item-cell">Накрутка подписчиков</dt>
+              <dd class="business-rate__item-cell">от 1 руб./шт.</dd>
+            </dl>
+          </li>
+          <li class="business-rate__item">
+            <dl class="business-rate__dl">
+              <dt class="business-rate__item-cell">Лайки от ботов</dt>
+              <dd class="business-rate__item-cell">от 20 коп./лайк</dd>
+            </dl>
+          </li>
+          <li class="business-rate__item">
+            <dl class="business-rate__dl">
+              <dt class="business-rate__item-cell">Ваш продакт-плейсмент</dt>
+              <dd class="business-rate__item-cell">Индивидуально</dd>
+            </dl>
+          </li>
+        </ul>
+        <button class="business-rate__button" type="button">Закрыть окно</button>
+      </section>
+    </div>
     <section class="site-main__feedback feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <h3 class="feedback__heading">Заинтересовались?</h3>

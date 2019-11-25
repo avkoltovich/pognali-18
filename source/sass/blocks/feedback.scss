@@ -1,7 +1,7 @@
 .feedback {
   @include round-bottom;
 
-  padding-top: 130px;
+  padding-top: 100px;
 
   background-color: $bgcolor-dark;
 }
@@ -81,3 +81,4 @@
   text-transform: uppercase;
   color: #ffd74b;
 }
+
