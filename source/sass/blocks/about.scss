@@ -1,4 +1,5 @@
 .about {
+  overflow: hidden;
   min-height: 352px;
   padding-top: 30px;
   padding-right: 60px;
@@ -51,10 +52,6 @@
 
     background-image: none;
     border-radius: 0 0 60px 60px;
-  }
-
-  .about__heading {
-    font-size: 45px;
 
     &::before {
       position: absolute;
@@ -84,6 +81,10 @@
     }
   }
 
+  .about__heading {
+    font-size: 45px;
+  }
+
   .about__text {
     width: 300px;
     font-size: 28px;
@@ -103,5 +104,52 @@
     display: flex;
     width: 274px;
     margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    min-height: 750px;
+    padding-top: 200px;
+    padding-left: 131px;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 130px;
+      left: 60px;
+
+      width: 213px;
+      height: 213px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #141b3b;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 145px;
+      left: 750px;
+
+      width: 630px;
+      height: 665px;
+      content: "";
+
+      background-image: url("../img/about-desktop@1x.png");
+    }
+  }
+
+  .about__text {
+    width: 620px;
+
+    &--bold {
+      width: 410px;
+    }
+  }
+
+  .about__br {
+    display: none;
   }
 }
