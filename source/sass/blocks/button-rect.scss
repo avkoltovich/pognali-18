@@ -28,3 +28,15 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button-rect {
+    height: 81px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    font-size: 24px;
+
+    border-radius: 20px;
+  }
+}

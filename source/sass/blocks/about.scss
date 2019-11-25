@@ -1,5 +1,5 @@
 .about {
-  height: 352px;
+  min-height: 352px;
   padding-top: 30px;
   padding-right: 60px;
   padding-bottom: 84px;
@@ -33,5 +33,75 @@
     margin-bottom: 0;
 
     @include font(700, normal);
+  }
+}
+
+.about__br {
+  display: none;
+}
+
+.about__link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 140px;
+    padding-left: 75px;
+
+    background-image: none;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about__heading {
+    font-size: 45px;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 96px;
+      left: 40px;
+
+      width: 688px;
+      height: 213px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #141b3b;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 144px;
+      left: 420px;
+
+      width: 376px;
+      height: 548px;
+      content: "";
+
+      background-image: url("../img/about-tablet@1x.png");
+    }
+  }
+
+  .about__text {
+    width: 300px;
+    font-size: 28px;
+    line-height: 1.18;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 1.19;
+    }
+  }
+
+  .about__br {
+    display: block;
+  }
+
+  .about__link {
+    display: flex;
+    width: 274px;
+    margin-top: auto;
   }
 }

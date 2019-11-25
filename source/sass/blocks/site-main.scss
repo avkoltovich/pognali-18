@@ -25,6 +25,10 @@
   z-index: 6;
 }
 
+.site-main__directions {
+  @include relative-z-margin(5);
+}
+
 .site-main__add-plan {
   margin-top: -60px;
   margin-bottom: -60px;
@@ -53,10 +57,6 @@
 
 .site-main__contacts {
   @include relative-z-margin(1);
-}
-
-.site-main__directions {
-  @include relative-z-margin(5);
 }
 
 .site-main__feedback {
