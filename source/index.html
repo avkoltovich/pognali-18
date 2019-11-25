@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Главная - Погнали, HTML Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -65,43 +66,43 @@
   </header>
   <main class="site-main">
     <h1 class="visually-hidden">Сервис поиска попутчиков</h1>
-    <section class="site-main__promotion promotion">
-      <h2 class="promotion__heading">В путешествие с крутыми попутчиками!</h2>
-      <img class="promotion__img" src="img/traveller-illustration-mobile@1x.png" width="192" height="255"
-        alt="Ваш крутой попутчик">
-    </section>
-    <section class="site-main__user-menu user-menu">
-      <h2 class="visually-hidden">Меню пользователя</h2>
-      <ul class="user-menu__list">
-        <li class="user-menu__item">
-          <a href="tel:+78005558628" class="user-menu__link">
-            <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Позвонить нам">
-          </a>
-        </li>
-        <li class="user-menu__item">
-          <a href="mailto:mail@htmlacademy.ru" class="user-menu__link">
-            <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Написать нам на e-mail">
-          </a>
-        </li>
-        <li class="user-menu__item">
-          <a href="" class="user-menu__link button-oval button-oval--yellow">Авторизация</a>
-        </li>
-      </ul>
-    </section>
-    <section class="site-main__review review">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <blockquote class="review__blockquote">
-        <p class="review__text">
-          «Лучшее приложение,
-          что я видел в жизни!»
-        </p>
-        <cite class="review__author">
-          Мурат Эльтазин<br>
-          главный редактор
-          газеты «гаджетлайф»
-        </cite>
-      </blockquote>
-    </section>
+    <div class="site-main__wrapper">
+      <section class="site-main__promotion promotion">
+        <h2 class="promotion__heading">В путешествие с крутыми попутчиками!</h2>
+      </section>
+      <section class="site-main__user-menu user-menu">
+        <h2 class="visually-hidden">Меню пользователя</h2>
+        <ul class="user-menu__list">
+          <li class="user-menu__item">
+            <a href="tel:+78005558628" class="user-menu__link">
+              <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Позвонить нам">
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a href="mailto:mail@htmlacademy.ru" class="user-menu__link">
+              <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Написать нам на e-mail">
+            </a>
+          </li>
+          <li class="user-menu__item">
+            <a href="" class="user-menu__link button-oval button-oval--yellow">Авторизация</a>
+          </li>
+        </ul>
+      </section>
+      <section class="site-main__review review">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <blockquote class="review__blockquote">
+          <p class="review__text">
+            «Лучшее приложение,
+            что я видел в жизни!»
+          </p>
+          <cite class="review__author">
+            Мурат Эльтазин<br>
+            главный редактор
+            газеты «гаджетлайф»
+          </cite>
+        </blockquote>
+      </section>
+    </div>
     <section class="site-main__howto howto">
       <h2 class="visually-hidden">Как пользоваться приложением?</h2>
       <ol class="howto__list">

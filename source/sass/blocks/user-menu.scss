@@ -25,3 +25,9 @@
   text-transform: uppercase;
   color: #161c35;
 }
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    display: none;
+  }
+}

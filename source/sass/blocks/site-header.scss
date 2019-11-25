@@ -58,3 +58,14 @@
 
   display: flex;
 }
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-header__button--open {
+    display: none;
+  }
+}

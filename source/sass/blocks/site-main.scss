@@ -78,3 +78,22 @@
 
   margin-bottom: -60px;
 }
+
+@media (min-width: $tablet-width) {
+  .site-main__howto {
+    margin-top: -140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 640px;
+  }
+
+  .site-main__howto {
+    margin-top: -230px;
+    margin-bottom: 122px;
+  }
+}

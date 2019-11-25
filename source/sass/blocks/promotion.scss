@@ -1,18 +1,55 @@
 .promotion {
+  min-height: 381px;
+
   background-color: $bgcolor-dark;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-image: url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 255px, cover;
+  background-position: bottom, center;
 }
 
 .promotion__heading {
   margin-top: 0;
+  margin-right: auto;
   margin-bottom: 0;
+  margin-left: auto;
 
   @include font(700, normal);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .promotion {
+    background-image: none;
+  }
+
+  .promotion__heading {
+    max-width: 400px;
+
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    width: 100%;
+    min-height: 640px;
+    padding-top: 100px;
+    padding-left: 130px;
+
+    background-image: url("../img/traveller-illustration-desktop@1x.png"),
+      url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 640px, cover;
+    background-position: bottom right, center;
+  }
+
+  .promotion__heading {
+    margin-left: 0;
+  }
 }
