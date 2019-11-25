@@ -20,6 +20,14 @@
   border-radius: 0 0 30px 30px;
 }
 
+@mixin round-bottom-tablet {
+  padding-right: 75px;
+  padding-bottom: 80px;
+  padding-left: 75px;
+
+  border-radius: 0 0 60px 60px;
+}
+
 @mixin round-top {
   padding-top: 30px;
   padding-right: 25px;

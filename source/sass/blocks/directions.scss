@@ -37,6 +37,10 @@
   color: $greyish-brown;
 }
 
+.directions__br {
+  display: none;
+}
+
 .directions__list {
   @include list;
 }
@@ -74,4 +78,44 @@
   font-size: 16px;
   line-height: 1.13;
   color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .directions {
+    @include round-bottom-tablet;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto 575px;
+    background-position: top 140px right 40px;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 466px;
+      left: 40px;
+
+      width: 141px;
+      height: 141px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .directions__heading {
+    font-size: 45px;
+  }
+
+  .directions__text {
+    width: 340px;
+
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .directions__br {
+    display: block;
+  }
 }

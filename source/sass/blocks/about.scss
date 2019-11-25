@@ -47,11 +47,10 @@
 
 @media (min-width: $tablet-width) {
   .about {
+    @include round-bottom-tablet
     padding-top: 140px;
-    padding-left: 75px;
 
     background-image: none;
-    border-radius: 0 0 60px 60px;
 
     &::before {
       position: absolute;
