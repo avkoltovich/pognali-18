@@ -60,8 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  padding-right: 40px;
-  padding-left: 40px;
+  .site-header {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
