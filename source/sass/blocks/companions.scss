@@ -47,10 +47,6 @@
   }
 }
 
-.companions__br {
-  display: none;
-}
-
 .companions__list {
   @include list;
 }
@@ -172,10 +168,6 @@
       font-size: 21px;
       line-height: 1.19;
     }
-  }
-
-  .companions__br {
-    display: block;
   }
 
   .companions__list {

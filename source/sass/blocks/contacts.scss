@@ -8,6 +8,7 @@
 
 .contacts__address {
   display: flex;
+  max-width: 150px;
   margin-bottom: 32px;
 
   @include font(700, normal);
@@ -25,12 +26,9 @@
   }
 
   .contacts__address {
+    max-width: fit-content;
     font-size: 28px;
     line-height: 1;
-  }
-
-  .contacts__br {
-    display: none;
   }
 }
 

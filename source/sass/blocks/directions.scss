@@ -37,10 +37,6 @@
   color: $greyish-brown;
 }
 
-.directions__br {
-  display: none;
-}
-
 .directions__list {
   @include list;
 }
@@ -99,10 +95,6 @@
 
     font-size: 28px;
     line-height: 1.18;
-  }
-
-  .directions__br {
-    display: block;
   }
 }
 
