@@ -47,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    @include round-bottom-tablet
+    @include round-bottom-tablet;
     padding-top: 140px;
 
     background-image: none;
