@@ -92,6 +92,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-main__heading {
+    min-height: 130px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    font-size: 60px;
+    line-height: 1.17;
+
+    border-radius: 0 0 60px 60px;
+  }
+
   .site-main__howto {
     margin-top: -140px;
   }
@@ -107,6 +118,14 @@
   .site-main__map {
     margin-top: -60px;
     margin-bottom: -60px;
+  }
+
+  .site-main__filter {
+    display: none;
+  }
+
+  .site-main__filter-country {
+    display: none;
   }
 }
 
