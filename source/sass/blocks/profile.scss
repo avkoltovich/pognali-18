@@ -63,3 +63,17 @@
   background-color: $bgcolor-light;
   border: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .profile {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-right: 60px;
+    padding-left: 124px;
+  }
+}

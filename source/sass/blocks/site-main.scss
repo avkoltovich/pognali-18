@@ -2,6 +2,8 @@
   position: relative;
   z-index: 2;
 
+  margin-top: 0;
+  margin-bottom: 0;
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
@@ -64,20 +66,17 @@
   @include relative-z-margin(1);
 }
 
+.site-main__catalog,
 .site-main__add-plan {
   margin-top: -30px;
   margin-bottom: -60px;
 }
 
-.site-main__catalog {
-  margin-bottom: -60px;
-}
-
 .site-main__filter-country {
   @include relative-z-margin(1);
+
 }
 
-.site-main__filter,
 .site-main__plans,
 .site-main__profile,
 .site-main__feedback,
@@ -111,21 +110,18 @@
   .site-main__companions,
   .site-main__add-profile,
   .site-main__feedback,
-  .site-main__contacts {
+  .site-main__contacts,
+  .site-main__filter-country,
+  .site-main__catalog,
+  .site-main__profile,
+  .site-main__plans,
+  .site-main__add-plan {
     margin-top: -60px;
   }
 
   .site-main__map {
     margin-top: -60px;
     margin-bottom: -60px;
-  }
-
-  .site-main__filter {
-    display: none;
-  }
-
-  .site-main__filter-country {
-    display: none;
   }
 }
 

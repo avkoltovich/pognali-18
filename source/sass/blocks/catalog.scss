@@ -1,10 +1,14 @@
 .catalog {
-  padding-top: 28px;
+  padding-top: 60px;
   padding-right: 25px;
   padding-bottom: 110px;
   padding-left: 25px;
 
   background-color: $bgcolor-light;
+}
+
+.catalog__filter {
+  margin-bottom: 28px;
 }
 
 .catalog__list {
@@ -102,8 +106,13 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    padding-top: 100px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+
+  .catalog__filter {
+    margin-bottom: 40px;
   }
 
   .catalog__item {
@@ -128,5 +137,18 @@
   .catalog {
     padding-right: 60px;
     padding-left: 60px;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+  }
+
+  .catalog__filter {
+    order: 2;
+  }
+
+  .catalog__list {
+    order: 1;
+    margin-right: 85px;
   }
 }

@@ -78,3 +78,36 @@
 .filter-country__link {
   @include country-link;
 }
+
+@media (min-width: $tablet-width) {
+  .filter-country {
+    @include round-bottom-tablet;
+  }
+
+  .filter-country__button {
+    &--open {
+      display: none;
+    }
+
+    &--close {
+      display: none;
+    }
+  }
+
+  .filter-country__heading {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-country {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    background-color: $bgcolor-light;
+  }
+
+  .filter-country__heading {
+    display: block;
+  }
+}

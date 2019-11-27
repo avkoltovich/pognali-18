@@ -204,3 +204,25 @@
     color: #161c35;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .step {
+    padding-top: 50px;
+    padding-right: 45px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step {
+    padding-top: 100px;
+    padding-right: 160px;
+    padding-bottom: 105px;
+    padding-left: 160px;
+
+    border-radius: 60px;
+  }
+}

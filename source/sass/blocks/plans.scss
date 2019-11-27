@@ -60,3 +60,18 @@
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .plans {
+    @include round-top-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plans {
+    padding-right: 60px;
+    padding-left: 124px;
+
+    border-radius: 60px 60px 0 0;
+  }
+}

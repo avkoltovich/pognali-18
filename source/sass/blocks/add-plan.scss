@@ -10,3 +10,22 @@
 .add-plan__step {
   margin-bottom: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .add-plan {
+    @include round-top-tablet;
+  }
+
+  .add-plan__step {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-plan {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    border-radius: 60px 60px 0 0;
+  }
+}
