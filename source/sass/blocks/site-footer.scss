@@ -21,3 +21,27 @@
   line-height: 1.38;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .site-footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 154px;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    border-radius: 60px 60px 0 0;
+  }
+
+  .site-footer__social-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-footer {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}

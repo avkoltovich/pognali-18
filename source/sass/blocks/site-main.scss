@@ -15,7 +15,16 @@
   border-radius: 0 0 30px 30px;
 }
 
+.site-main__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .site-main__user-menu {
+  z-index: 9;
+
   margin-top: -20px;
   margin-bottom: -20px;
 }
@@ -25,42 +34,43 @@
   z-index: 6;
 }
 
-.site-main__add-plan {
-  margin-top: -60px;
-  margin-bottom: -60px;
-}
-
-.site-main__catalog {
-  margin-bottom: -60px;
-}
-
-.site-main__business-rate {
-  position: relative;
-  z-index: 9;
-
-  margin-top: -10px;
-  margin-bottom: calc(-100% - 160px);
-  margin-left: 25px;
-}
-
-.site-main__add-profile {
-  @include relative-z-margin(3);
+.site-main__directions {
+  @include relative-z-margin(5);
 }
 
 .site-main__companions {
   @include relative-z-margin(4);
 }
 
-.site-main__contacts {
-  @include relative-z-margin(1);
+.site-main__add-profile {
+  @include relative-z-margin(3);
 }
 
-.site-main__directions {
-  @include relative-z-margin(5);
+.site-main__business-rate {
+  position: absolute;
+  z-index: 9;
+
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .site-main__feedback {
   @include relative-z-margin(2);
+}
+
+.site-main__contacts {
+  @include relative-z-margin(1);
+}
+
+.site-main__add-plan {
+  margin-top: -30px;
+  margin-bottom: -60px;
+}
+
+.site-main__catalog {
+  margin-bottom: -60px;
 }
 
 .site-main__filter-country {
@@ -69,12 +79,81 @@
 
 .site-main__filter,
 .site-main__plans,
-.site-main__profile {
-  margin-top: -60px;
+.site-main__profile,
+.site-main__feedback,
+.site-main__contacts {
+  margin-top: -30px;
 }
 
 .site-main__map {
   @include relative-z-margin(0);
 
-  margin-bottom: -60px;
+  margin-bottom: -30px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-main__heading {
+    min-height: 130px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    font-size: 60px;
+    line-height: 1.17;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .site-main__howto {
+    margin-top: -140px;
+  }
+
+  .site-main__directions,
+  .site-main__companions,
+  .site-main__add-profile,
+  .site-main__feedback,
+  .site-main__contacts {
+    margin-top: -60px;
+  }
+
+  .site-main__map {
+    margin-top: -60px;
+    margin-bottom: -60px;
+  }
+
+  .site-main__filter {
+    display: none;
+  }
+
+  .site-main__filter-country {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-main__wrapper {
+    &--promo {
+      z-index: 7;
+
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 640px;
+
+      background-image: url("../img/traveller-illustration-desktop@1x.png"),
+        url("../img/globe-back-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 640px, cover;
+      background-position: bottom left 604px, center;
+
+      border-radius: 0 0 30px 30px;
+    }
+  }
+
+  .site-main__howto {
+    margin-top: -230px;
+    margin-bottom: 122px;
+  }
+
+  .site-main__about {
+    margin-top: -60px;
+  }
 }

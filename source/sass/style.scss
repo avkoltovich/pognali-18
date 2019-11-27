@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
 }
 
 @import "mixins";
@@ -9,7 +9,6 @@ body {
 @import "../../node_modules/normalize.css/normalize";
 @import "box-sizing";
 @import "blocks/site-header";
-@import "blocks/site-main";
 @import "blocks/button-oval";
 @import "blocks/button-rect";
 @import "blocks/promotion";
@@ -33,4 +32,5 @@ body {
 @import "blocks/add-plan";
 @import "blocks/step";
 @import "blocks/country";
+@import "blocks/site-main";
 @import "blocks/site-footer";

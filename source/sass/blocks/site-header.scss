@@ -58,3 +58,23 @@
 
   display: flex;
 }
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .site-header__button--open {
+    display: none;
+  }
+}

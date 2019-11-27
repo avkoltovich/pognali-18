@@ -1,13 +1,14 @@
 .contacts {
   @include round-bottom;
 
-  padding-top: 90px;
+  padding-top: 60px;
 
   background-color: $bgcolor-bright;
 }
 
 .contacts__address {
   display: flex;
+  max-width: 150px;
   margin-bottom: 32px;
 
   @include font(700, normal);
@@ -15,4 +16,40 @@
   line-height: 1.38;
   text-transform: uppercase;
   color: #192144;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include round-bottom-tablet;
+
+    padding-top: 130px;
+  }
+
+  .contacts__address {
+    max-width: fit-content;
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 114px;
+    padding-right: 134px;
+    padding-left: 405px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__address {
+    margin-bottom: 0;
+  }
+
+  .contacts__link {
+    min-width: 324px;
+  }
 }

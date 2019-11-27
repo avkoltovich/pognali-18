@@ -9,7 +9,7 @@
 
 .catalog__list {
   @include list;
-  width: 270px;
+  min-width: 270px;
   margin-bottom: 26px;
 }
 
@@ -88,6 +88,7 @@
   &--more {
     @include font(700, normal);
 
+    display: flex;
     margin-bottom: 27px;
 
     font-size: 17px;
@@ -96,5 +97,36 @@
 
     border: 0;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .catalog__item {
+    display: flex;
+    max-width: 950px;
+    min-height: 332px;
+    margin-bottom: 40px;
+
+    border-radius: 20px;
+  }
+
+  .catalog__button {
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }

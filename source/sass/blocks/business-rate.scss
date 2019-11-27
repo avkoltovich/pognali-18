@@ -1,8 +1,8 @@
 .business-rate {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 270px;
-  height: 443px;
+  min-height: 443px;
   padding-top: 30px;
 
   border-radius: 20px;

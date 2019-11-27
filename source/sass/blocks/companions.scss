@@ -1,7 +1,9 @@
 .companions {
   @include round-bottom;
 
-  padding-top: 130px;
+  position: relative;
+
+  padding-top: 100px;
 
   background-color: $bgcolor-dark;
   background-image: url("../img/smolov-back-desktop@1x.png"),
@@ -14,7 +16,7 @@
     position: absolute;
     top: 100px;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 
     width: 113px;
     height: 132px;
@@ -26,8 +28,6 @@
 }
 
 .companions__heading {
-  position: relative;
-
   margin-top: 0;
   margin-bottom: 0;
 
@@ -37,8 +37,6 @@
 }
 
 .companions__text {
-  position: relative;
-
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
@@ -58,6 +56,10 @@
 
   background-color: #ffffff;
   border-radius: 10px;
+}
+
+.companions__item-link {
+  text-decoration: none;
 }
 
 .companions__level {
@@ -115,4 +117,105 @@
   display: flex;
 
   @include list;
+}
+
+@media (min-width: $tablet-width) {
+  .companions {
+    @include round-bottom-tablet;
+
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    background-position: top 140px right 77px;
+    background-repeat: no-repeat;
+
+    &::before {
+      top: 140px;
+      left: 40px;
+
+      width: 213px;
+      height: 213px;
+
+      border-radius: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 486px;
+      left: 40px;
+      z-index: -1;
+
+      width: 143px;
+      height: 143px;
+
+      opacity: 0.1;
+      content: "";
+
+      background-image: url("../img/smolov-tablet@1x.jpg");
+      border-radius: 20px;
+    }
+  }
+
+  .companions__heading {
+    font-size: 45px;
+  }
+
+  .companions__text {
+    width: 430px;
+
+    font-size: 28px;
+    line-height: 1.18;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 1.19;
+    }
+  }
+
+  .companions__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions {
+    min-height: 750px;
+
+    background-position: top 385px left 191px;
+
+    &::before {
+      top: 128px;
+      left: 60px;
+
+      width: 213px;
+      height: 213px;
+
+      border-radius: 20px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 193px;
+      left: 547px;
+      z-index: -1;
+
+      width: 143px;
+      height: 143px;
+
+      opacity: 0.1;
+      content: "";
+
+      background-image: url("../img/smolov-tablet@1x.jpg");
+      border-radius: 20px;
+    }
+  }
+
+  .companions__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 485px;
+  }
+
+  .companions__list {
+    order: 10;
+  }
 }

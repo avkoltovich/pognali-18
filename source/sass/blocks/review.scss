@@ -25,3 +25,49 @@
   font-size: 16px;
   line-height: 1.38;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    min-height: 591px;
+
+    background-image: url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 451px, cover;
+    background-position: top, center;
+  }
+
+  .review__blockquote {
+    padding-top: 60px;
+    padding-left: 75px;
+  }
+
+  .review__text {
+    max-width: 265px;
+    margin-bottom: 52px;
+
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .review__author {
+    display: block;
+    max-width: 260px;
+
+    font-size: 21px;
+    line-height: 1.19;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    min-width: 405px;
+    background: none;
+  }
+
+  .review__blockquote {
+    padding-top: 60px;
+    padding-right: 0;
+    padding-left: 60px;
+  }
+}
