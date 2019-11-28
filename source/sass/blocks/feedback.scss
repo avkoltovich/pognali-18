@@ -135,8 +135,8 @@
 @media (min-width: $desktop-width) {
   .feedback {
     padding-top: 168px;
-    padding-right: 131px;
-    padding-left: 131px;
+    padding-right: calc(50% - 720px + 131px);
+    padding-left: calc(50% - 720px + 131px);
   }
 
   .feedback__button {

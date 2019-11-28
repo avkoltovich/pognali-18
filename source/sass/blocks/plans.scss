@@ -69,8 +69,8 @@
 
 @media (min-width: $desktop-width) {
   .plans {
-    padding-right: 60px;
-    padding-left: 124px;
+    padding-right: calc(50% - 720px + 60px);
+    padding-left: calc(50% - 720px + 124px);
 
     border-radius: 60px 60px 0 0;
   }

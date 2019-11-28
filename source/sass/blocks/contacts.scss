@@ -35,8 +35,8 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 114px;
-    padding-right: 134px;
-    padding-left: 405px;
+    padding-right: calc(50% - 720px + 134px);
+    padding-left: calc(50% - 720px + 405px);
   }
 
   .contacts__wrapper {

@@ -73,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .profile {
-    padding-right: 60px;
-    padding-left: 124px;
+    padding-right: calc(50% - 720px + 60px);
+    padding-left: calc(50% - 720px + 124px);
   }
 }

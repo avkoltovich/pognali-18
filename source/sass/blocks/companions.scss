@@ -178,12 +178,14 @@
 @media (min-width: $desktop-width) {
   .companions {
     min-height: 750px;
+    padding-right: calc(50vw - 720px + 60px);
+    padding-left: calc(50vw - 720px + 131px);
 
-    background-position: top 385px left 191px;
+    background-position: top 385px left calc(50vw - 720px + 191px);
 
     &::before {
       top: 128px;
-      left: 60px;
+      left: calc(50% - 720px + 60px);
 
       width: 213px;
       height: 213px;
@@ -194,7 +196,7 @@
     &::after {
       position: absolute;
       top: 193px;
-      left: 547px;
+      left: calc(50% - 720px + 547px);
       z-index: -1;
 
       width: 143px;

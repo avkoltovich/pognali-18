@@ -24,6 +24,8 @@
 
 @media (min-width: $tablet-width) {
   .promotion {
+    min-height: 0;
+    background-color: transparent;
     background-image: none;
   }
 
@@ -37,15 +39,16 @@
 
 @media (min-width: $desktop-width) {
   .promotion {
-    width: 100%;
-    min-height: 640px;
+    width: 50%;
+    min-height: 0;
     padding-top: 100px;
-    padding-left: 130px;
+    padding-left: 70px;
 
     background: none;
   }
 
   .promotion__heading {
+    margin-right: 0;
     margin-left: 0;
   }
 }

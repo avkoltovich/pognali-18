@@ -101,8 +101,8 @@
 
 @media (min-width: $desktop-width) {
   .filter-country {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: calc(50% - 720px + 60px);
+    padding-left: calc(50% - 720px + 60px);
 
     background-color: $bgcolor-light;
   }

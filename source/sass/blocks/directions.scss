@@ -102,19 +102,16 @@
   .directions {
     min-height: 750px;
     padding: 131px;
+    padding-top: 131px;
+    padding-right: calc(50vw - 720px + 131px);
+    padding-bottom: 131px;
+    padding-left: calc(50vw - 720px + 131px);
+
+    background-position: top 140px right calc(50vw - 720px + 60px);
 
     &::after {
-      position: absolute;
-      z-index: -1;
       top: 140px;
-      left: 60px;
-
-      width: 141px;
-      height: 141px;
-      content: "";
-
-      border-radius: 20px;
-      background-color: #e2e5f2;
+      left: calc(50% - 720px + 60px);
     }
   }
 

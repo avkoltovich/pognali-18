@@ -135,8 +135,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: calc(50% - 720px + 60px);
+    padding-left: calc(50% - 720px + 60px);
   }
 
   .catalog__wrapper {

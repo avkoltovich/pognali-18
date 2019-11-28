@@ -28,18 +28,14 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    min-height: 591px;
-
-    background-image: url("../img/traveller-illustration-tablet@1x.png"),
-      url("../img/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 451px, cover;
-    background-position: top, center;
+    background-color: transparent;
   }
 
   .review__blockquote {
     padding-top: 60px;
     padding-left: 75px;
+
+    margin-bottom: 213px;
   }
 
   .review__text {
@@ -61,13 +57,16 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    min-width: 405px;
+    min-width: 50%;
+    min-height: 0;
     background: none;
   }
 
   .review__blockquote {
+    width: fit-content;
     padding-top: 60px;
-    padding-right: 0;
-    padding-left: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: auto;
   }
 }

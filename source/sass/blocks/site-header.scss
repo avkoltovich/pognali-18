@@ -70,8 +70,7 @@
   .site-header {
     display: flex;
     justify-content: space-between;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding: 0 calc((100% - 1440px + 120px) / 2);
   }
 
   .site-header__button--open {

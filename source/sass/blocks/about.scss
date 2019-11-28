@@ -110,13 +110,13 @@
   .about {
     min-height: 750px;
     padding-top: 200px;
-    padding-left: 131px;
+    padding-left: calc(50vw - 720px + 131px);
 
     &::before {
       position: absolute;
       z-index: -1;
       top: 130px;
-      left: 60px;
+      left: calc(50% - 720px + 60px);
 
       width: 213px;
       height: 213px;
@@ -130,7 +130,7 @@
       position: absolute;
       z-index: 0;
       top: 145px;
-      left: 750px;
+      left: calc(50% - 720px + 750px);
 
       width: 630px;
       height: 665px;
