@@ -21,9 +21,9 @@
 }
 
 @mixin round-bottom-tablet {
-  padding-right: 75px;
+  padding-right: calc(50% - 384px + 75px);
   padding-bottom: 80px;
-  padding-left: 75px;
+  padding-left: calc(50% - 384px + 75px);
 
   border-radius: 0 0 60px 60px;
 }
@@ -39,8 +39,8 @@
 
 @mixin round-top-tablet {
   padding-top: 60px;
-  padding-right: 75px;
-  padding-left: 75px;
+  padding-right: calc(50vw - 384px + 75px);
+  padding-left: calc(50vw - 384px + 75px);
 }
 
 @mixin form-heading {

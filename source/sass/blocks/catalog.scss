@@ -107,8 +107,8 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding-top: 100px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: calc(50vw - 384px + 40px);
+    padding-left: calc(50vw - 384px + 40px);
   }
 
   .catalog__filter {

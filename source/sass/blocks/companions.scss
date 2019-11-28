@@ -124,12 +124,12 @@
     @include round-bottom-tablet;
 
     background-image: url("../img/rogovaya-back-desktop@1x.png");
-    background-position: top 140px right 77px;
+    background-position: top 140px right calc(50vw - 384px + 77px);
     background-repeat: no-repeat;
 
     &::before {
       top: 140px;
-      left: 40px;
+      left: calc(50% - 384px + 40px);
 
       width: 213px;
       height: 213px;
@@ -140,7 +140,7 @@
     &::after {
       position: absolute;
       top: 486px;
-      left: 40px;
+      left: calc(50% - 384px + 40px);
       z-index: -1;
 
       width: 143px;

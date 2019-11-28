@@ -69,13 +69,13 @@
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-size: auto 575px;
-    background-position: top 140px right 40px;
+    background-position: top 140px right calc(50vw - 384px + 40px);
 
     &::after {
       position: absolute;
       z-index: -1;
       top: 466px;
-      left: 40px;
+      left: calc(50% - 384px + 40px);
 
       width: 141px;
       height: 141px;

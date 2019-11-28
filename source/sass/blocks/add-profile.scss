@@ -68,9 +68,9 @@
   .add-profile {
     min-height: 540px;
     padding-top: 135px;
-    padding-right: 40px;
+    padding-right: calc(50vw - 384px + 40px);
     padding-bottom: 80px;
-    padding-left: 40px;
+    padding-left: calc(50vw - 384px + 40px);
 
     border-radius: 0 0 60px 60px;
   }

@@ -103,8 +103,8 @@
 
   .site-main__heading {
     min-height: 130px;
-    padding-right: 75px;
-    padding-left: 75px;
+    padding-right: calc(50vw - 384px + 75px);
+    padding-left: calc(50vw - 384px + 75px);
 
     font-size: 60px;
     line-height: 1.17;

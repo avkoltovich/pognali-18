@@ -66,8 +66,8 @@
 
 @media (min-width: $tablet-width) {
   .profile {
-    padding-right: 75px;
-    padding-left: 75px;
+    padding-right: calc(50vw - 384px + 75px);
+    padding-left: calc(50vw - 384px + 75px);
   }
 }
 
