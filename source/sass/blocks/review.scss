@@ -1,4 +1,7 @@
 .review {
+  padding-left: 50px;
+  padding-right: 110px;
+
   color: #ffffff;
 
   background-color: #161c35;
@@ -6,8 +9,6 @@
 
 .review__blockquote {
   margin: 0;
-  padding-left: 50px;
-  padding-right: 110px;
 }
 
 .review__text {
@@ -28,13 +29,15 @@
 
 @media (min-width: $tablet-width) {
   .review {
+    padding-right: calc(50% - 384px + 75px);
+    padding-left: calc(50% - 384px + 75px);
+
     background-color: transparent;
   }
 
   .review__blockquote {
     padding-top: 60px;
-    padding-left: 75px;
-
+    
     margin-bottom: 213px;
   }
 
