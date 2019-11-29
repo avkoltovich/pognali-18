@@ -141,10 +141,12 @@
 
   .catalog__wrapper {
     display: flex;
+
   }
 
   .catalog__filter {
     order: 2;
+    margin-bottom: auto;
   }
 
   .catalog__list {

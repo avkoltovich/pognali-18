@@ -82,7 +82,6 @@
 .feedback__contact-link {
   display: flex;
   align-items: center;
-  width: fit-content;
 
   @include font(700, normal);
   font-size: 16px;
@@ -141,7 +140,6 @@
 
   .feedback__button {
     justify-content: space-between;
-    width: fit-content;
     min-width: 324px;
     padding-right: 35px;
     padding-left: 35px;
