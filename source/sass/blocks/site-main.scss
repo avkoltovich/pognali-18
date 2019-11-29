@@ -4,9 +4,6 @@
 
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-left: 25px;
 
   @include font(700, normal);
   font-size: 36px;
@@ -17,7 +14,17 @@
   border-radius: 0 0 30px 30px;
 }
 
-.site-main__wrapper {
+.site-main__heading-container {
+  display: block;
+  width: $mobile-width;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+
+.site-main__wrapper,
+.site-main__container {
   position: relative;
 
   display: flex;
@@ -90,26 +97,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-main__wrapper {
-    &--promo {
-      background-color: #182044;
-      background-image: url("../img/traveller-illustration-tablet@1x.png"),
-        url("../img/globe-back-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: auto 451px, auto 591px;
-      background-position: center, center;
-    }
+  .site-main__container {
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 451px, auto 591px;
+    background-position: center, center;
   }
 
   .site-main__heading {
     min-height: 130px;
-    padding-right: calc(50vw - 384px + 75px);
-    padding-left: calc(50vw - 384px + 75px);
 
     font-size: 60px;
     line-height: 1.17;
 
     border-radius: 0 0 60px 60px;
+  }
+
+  .site-main__heading-container {
+    width: $tablet-width;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 
   .site-main__howto {
@@ -137,28 +146,32 @@
 
 @media (min-width: $desktop-width) {
   .site-main__wrapper {
-    &--promo {
-      z-index: 7;
+    z-index: 7;
 
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      min-height: 640px;
-      padding: 0 calc(50vw - 720px + 60px);
-
-      background-image: url("../img/traveller-illustration-desktop@1x.png"),
-        url("../img/globe-back-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: auto 640px, contain;
-      background-position: bottom left calc(50vw - 720px + 600px), center;
-
-      border-radius: 0 0 30px 30px;
-    }
+    background-color: #161c34;
+    border-radius: 0 0 30px 30px;
   }
 
-  .site-main__heading {
-    padding-right: calc(50% - 720px + 123px);
-    padding-left: calc(50% - 720px + 129px);
+  .site-main__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $desktop-width;
+    height: 640px;
+    padding: 0;
+    margin: 0 auto;
+
+    background-image: url("../img/traveller-illustration-desktop@1x.png"),
+      url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 640px, contain;
+    background-position: bottom left 600px, center;
+  }
+
+  .site-main__heading-container {
+    width: $desktop-width;
+    padding-right: 123px;
+    padding-left: 129px;
   }
 
   .site-main__howto {

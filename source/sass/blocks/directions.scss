@@ -1,9 +1,17 @@
 .directions {
-  @include round-bottom;
-
-  padding-top: 100px;
-
   background-color: $bgcolor-light;
+  border-radius: 0 0 30px 30px;
+}
+
+.directions__container {
+  position: relative;
+
+  width: $mobile-width;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin: 0 auto;
 }
 
 .directions__item-wrapper {
@@ -64,18 +72,25 @@
 
 @media (min-width: $tablet-width) {
   .directions {
-    @include round-bottom-tablet;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .directions__container {
+    width: $tablet-width;
+    padding-right: 75px;
+    padding-bottom: 80px;
+    padding-left: 75px;
 
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-size: auto 575px;
-    background-position: top 140px right calc(50vw - 384px + 40px);
+    background-position: top 140px right 40px;
 
     &::after {
       position: absolute;
       z-index: -1;
       top: 466px;
-      left: calc(50% - 384px + 40px);
+      left: 40px;
 
       width: 141px;
       height: 141px;
@@ -99,19 +114,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .directions {
+  .directions__container {
+    width: $desktop-width;
     min-height: 750px;
     padding: 131px;
     padding-top: 131px;
-    padding-right: calc(50vw - 720px + 131px);
+    padding-right: 131px;
     padding-bottom: 131px;
-    padding-left: calc(50vw - 720px + 131px);
+    padding-left: 131px;
 
-    background-position: top 140px right calc(50vw - 720px + 60px);
+    background-position: top 140px right 60px;
 
     &::after {
       top: 140px;
-      left: calc(50% - 720px + 60px);
+      left: 60px;
     }
   }
 

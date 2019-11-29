@@ -10,6 +10,7 @@
 }
 
 .promotion__heading {
+  width: $mobile-width;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -30,7 +31,7 @@
   }
 
   .promotion__heading {
-    max-width: 400px;
+    width: 400px;
 
     font-size: 60px;
     line-height: 1.17;

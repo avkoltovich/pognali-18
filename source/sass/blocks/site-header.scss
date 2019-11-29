@@ -1,8 +1,12 @@
 .site-header {
+  background-color: #ffffff;
+}
+
+.site-header__container {
+  width: $mobile-width;
   padding-right: 25px;
   padding-left: 25px;
-
-  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .site-header__navigation-list {
@@ -60,16 +64,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-header {
-    padding: 0 calc(50% - 384px + 40px);
+  .site-header__container {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-header {
+  .site-header__container {
     display: flex;
     justify-content: space-between;
-    padding: 0 calc(50% - 720px + 60px);
+    width: $desktop-width;
+    padding: 0 60px;
   }
 
   .site-header__button--open {

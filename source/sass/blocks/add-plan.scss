@@ -1,6 +1,15 @@
 .add-plan {
-  @include round-top;
   background-color: #d4d9eb;
+  border-radius: 30px 30px 0 0;
+}
+
+.add-plan__container {
+  width: $mobile-width;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 90px;
+  padding-left: 25px;
+  margin: 0 auto;
 }
 
 .add-plan__heading {
@@ -12,8 +21,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .add-plan {
-    @include round-top-tablet;
+  .add-plan__container {
+    width: $tablet-width;
+    padding-top: 60px;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 
   .add-plan__step {
@@ -23,9 +35,12 @@
 
 @media (min-width: $desktop-width) {
   .add-plan {
-    padding-right: calc(50% - 720px + 60px);
-    padding-left: calc(50% - 720px + 60px);
-
     border-radius: 60px 60px 0 0;
+  }
+
+  .add-plan__container {
+    width: $desktop-width;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }

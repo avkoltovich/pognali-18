@@ -1,10 +1,14 @@
 .catalog {
+  background-color: $bgcolor-light;
+}
+
+.catalog__container {
+  width: $mobile-width;
   padding-top: 60px;
   padding-right: 25px;
   padding-bottom: 110px;
   padding-left: 25px;
-
-  background-color: $bgcolor-light;
+  margin: 0 auto;
 }
 
 .catalog__filter {
@@ -105,10 +109,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
+  .catalog__container {
+    width: $tablet-width;
     padding-top: 100px;
-    padding-right: calc(50vw - 384px + 40px);
-    padding-left: calc(50vw - 384px + 40px);
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .catalog__filter {
@@ -134,9 +139,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    padding-right: calc(50% - 720px + 60px);
-    padding-left: calc(50% - 720px + 60px);
+  .catalog__container {
+    width: $desktop-width;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   .catalog__wrapper {

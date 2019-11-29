@@ -10,509 +10,531 @@
 
 <body>
   <header class="site-header">
-    <a class="site-header__logo-link"><img class="site-header__logo-img" src="https://via.placeholder.com/100x19"
-        width="100" height="19" alt="Погнали?"></a>
-    <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
-      <img src="https://via.placeholder.com/25x11" width="25" height="11" aria-hidden="true" alt="Открыть меню">
-    </button>
-    <nav class="site-header__navigation">
-      <ul class="site-header__navigation-list">
-        <li class="site-header__navigation-item">
-          <a href="index.html" class="site-header__navigation-link">О сервисе</a>
+    <div class="site-header__container">
+      <a class="site-header__logo-link">
+        <img class="site-header__logo-img" src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+      </a>
+      <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
+        <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">
+      </button>
+      <nav class="site-header__navigation">
+        <ul class="site-header__navigation-list">
+          <li class="site-header__navigation-item">
+            <a href="index.html" class="site-header__navigation-link">О сервисе</a>
+          </li>
+          <li class="site-header__navigation-item">
+            <a href="form.html" class="site-header__navigation-link">Направления</a>
+          </li>
+          <li class="site-header__navigation-item">
+            <a class="site-header__navigation-link">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="site-header__user-list">
+        <li class="site-header__user-item">
+          <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
         </li>
-        <li class="site-header__navigation-item">
-          <a href="form.html" class="site-header__navigation-link">Направления</a>
+        <li class="site-header__user-item">
+          <a href="tel:+78005558628" class="site-header__user-link">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+            8 800 555-86-28
+          </a>
         </li>
-        <li class="site-header__navigation-item">
-          <a class="site-header__navigation-link">Попутчики</a>
+        <li class="site-header__user-item">
+          <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">
+            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+            mail@htmlacademy.ru
+          </a>
         </li>
       </ul>
-    </nav>
-    <ul class="site-header__user-list">
-      <li class="site-header__user-item">
-        <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
-      </li>
-      <li class="site-header__user-item">
-        <a href="tel:+78005558628" class="site-header__user-link">
-          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="Телефон" aria-hidden="true">
-          8 800 555-86-28
-        </a>
-      </li>
-      <li class="site-header__user-item">
-        <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">
-          <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
-          mail@htmlacademy.ru
-        </a>
-      </li>
-    </ul>
-    <ul class="site-header__social-list">
-      <li class="site-header__social-item">
-        <a href="" class="site-header__social-link">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="site-header__social-item">
-        <a href="" class="site-header__social-link">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="site-header__social-item">
-        <a href="" class="site-header__social-link">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-    </ul>
+      <ul class="site-header__social-list">
+        <li class="site-header__social-item">
+          <a href="" class="site-header__social-link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="site-header__social-item">
+          <a href="" class="site-header__social-link">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="site-header__social-item">
+          <a href="" class="site-header__social-link">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main class="site-main">
-    <h1 class="site-main__heading">Попутчики</h1>
+    <h1 class="site-main__heading"><span class="site-main__heading-container">Попутчики</span></h1>
     <section class="site-main__filter-country filter-country">
-      <div class="filter-country__wrapper">
-        <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
-          <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
-        </button>
-        <h2 class="filter-country__heading">Фильтрация по странам</h2>
-        <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
-          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
+      <div class="filter-country__container">
+        <div class="filter-country__wrapper">
+          <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
+            <img src="https://via.placeholder.com/17x3" width="17" height="3" alt="Показать" aria-hidden="true">
+          </button>
+          <h2 class="filter-country__heading">Фильтрация по странам</h2>
+          <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
+            <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="Скрыть" aria-hidden="true">
+          </button>
+        </div>
+        <ul class="filter-country__continent-list">
+          <li class="filter-country__continent-item">
+            <button class="filter-country__continent-button" type="button">Европа</button>
+          </li>
+          <li class="filter-country__continent-item">
+            <button class="filter-country__continent-button filter-country__continent-button--disable"
+              type="button">Азия</button>
+          </li>
+          <li class="filter-country__continent-item">
+            <button class="filter-country__continent-button filter-country__continent-button--disable"
+              type="button">Америка</button>
+          </li>
+          <li class="filter-country__continent-item">
+            <button class="filter-country__continent-button filter-country__continent-button--disable"
+              type="button">Острова</button>
+          </li>
+        </ul>
+        <ul class="filter-country__letter-list">
+          <li class="filter-country__letter-item filter-country__letter-item--active">
+            <button class="filter-country__letter-button" type="button">А</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Б</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">В</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Г</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Д</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Е</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">З</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">И</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">К</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Л</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">М</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Н</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">О</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">П</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Р</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">С</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Т</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">У</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Ф</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Х</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Ч</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Ш</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Э</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Ю</button>
+          </li>
+          <li class="filter-country__letter-item">
+            <button class="filter-country__letter-button" type="button">Я</button>
+          </li>
+        </ul>
+        <ul class="filter-country__list">
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Афганистан</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Албания</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Алжир</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Андорра</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Аргентина</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Армения</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Австралия</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Австрия</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Азербайджан</a>
+          </li>
+        </ul>
+        <button class="filter-country__button button-oval button-oval--blue" type="button">
+          <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
+          свернуть
         </button>
       </div>
-      <ul class="filter-country__continent-list">
-        <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button" type="button">Европа</button>
-        </li>
-        <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button filter-country__continent-button--disable"
-            type="button">Азия</button>
-        </li>
-        <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button filter-country__continent-button--disable"
-            type="button">Америка</button>
-        </li>
-        <li class="filter-country__continent-item">
-          <button class="filter-country__continent-button filter-country__continent-button--disable"
-            type="button">Острова</button>
-        </li>
-      </ul>
-      <ul class="filter-country__letter-list">
-        <li class="filter-country__letter-item filter-country__letter-item--active">
-          <button class="filter-country__letter-button" type="button">А</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Б</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">В</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Г</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Д</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Е</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">З</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">И</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">К</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Л</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">М</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Н</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">О</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">П</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Р</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">С</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Т</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">У</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Ф</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Х</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Ч</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Ш</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Э</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Ю</button>
-        </li>
-        <li class="filter-country__letter-item">
-          <button class="filter-country__letter-button" type="button">Я</button>
-        </li>
-      </ul>
-      <ul class="filter-country__list">
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Афганистан</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Албания</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Алжир</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Андорра</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Аргентина</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Армения</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Австралия</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Австрия</a>
-        </li>
-        <li class="filter-country__item">
-          <a href="" class="filter-country__link">Азербайджан</a>
-        </li>
-      </ul>
-      <button class="filter-country__button button-oval button-oval--blue" type="button">
-        <img src="https://via.placeholder.com/12x12" width="12" height="12" alt="X" aria-hidden="true">
-        свернуть
-      </button>
     </section>
     <section class="site-main__catalog catalog">
-      <h2 class="visually-hidden">Каталог попутчиков</h2>
-      <div class="catalog__wrapper">
-        <form action="https://echo.htmlacademy.ru" class="catalog__filter filter">
-        <h3 class="filter__heading">Подберите идеального попутчика</h3>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Хобби</legend>
-            <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-              <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-            </button>
-          </fieldset>
-          <fieldset class="filter__fieldset filter__fieldset--music">
-            <legend class="filter__legend">Музыка</legend>
-            <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-              <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-            </button>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
-              <span class="filter__checkbox-icon"></span>
-              Тяжелый рок
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="hobby" value="Russian rap">
-              <span class="filter__checkbox-icon"></span>
-              Русский рэп
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="hobby" value="Eurodance">
-              <span class="filter__checkbox-icon"></span>
-              Евроденс
-            </label>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Еда</legend>
-            <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-              <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-            </button>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Транспорт</legend>
-            <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-              <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-            </button>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
-                checked>
-              <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
-                height="33" aria-hidden="true">
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="transport" value="Bus" aria-label="Автобус" checked>
-              <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
-                height="33" aria-hidden="true">
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="transport" value="Bike" aria-label="Велосипед">
-              <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
-                height="33" aria-hidden="true">
-            </label>
-            <label class="filter__label">
-              <input type="checkbox" class="filter__checkbox" name="transport" value="Run" aria-label="Пешком" checked>
-              <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
-                height="33" aria-hidden="true">
-            </label>
-          </fieldset>
-          <fieldset class="filter__fieldset">
-            <legend class="filter__legend">Левел</legend>
-            <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-              <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
-            </button>
-            <label class="filter__label">
-              <input type="number" class="filter__number" placeholder="30">
-            </label>
-            <label class="filter__label">
-              <input type="number" class="filter__number" placeholder="100">
-            </label>
-            <button class="filter__button filter__button--range" type="button" aria-label="Меньше"></button>
-            <button class="filter__button filter__button--range" type="button" aria-label="Больше"></button>
-          </fieldset>
-          <button class="filter__button button-oval button-oval--white" type="submit">Показать</button>
-        </form>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
-            <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова">
-            <h3 class="catalog__title">Таня Фирсова</h3>
-            <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
-              <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
-            </button>
-            <b class="catalog__like">1,5 m</b>
-            <p class="catalog__tags">
-              #ЗОЖ #ПП #Фитнес #пляж
-              #авокадо #смузи
-            </p>
-            <h4 class="catalog__list-caption">хочет посетить:</h4>
-            <ul class="catalog__countries-list">
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Шри-ланка">
-                Шри-ланка
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Таиланд">
-                Таиланд
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Сейшелы">
-                Сейшелы
-              </li>
-            </ul>
-            <h4 class="catalog__list-caption">транспорт:</h4>
-            <ul class="catalog__transport-list">
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Самолёт</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Поезд</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Велосипед</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
-            <dl class="catalog__level">
-              <dt class="catalog__term">левел:</dt>
-              <dd class="catalog__description">99</dd>
-            </dl>
-            <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+      <div class="catalog__container">
+        <h2 class="visually-hidden">Каталог попутчиков</h2>
+        <div class="catalog__wrapper">
+          <form action="https://echo.htmlacademy.ru" class="catalog__filter filter">
+            <h3 class="filter__heading">Подберите идеального попутчика</h3>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Хобби</legend>
+              <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+                <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+              </button>
+            </fieldset>
+            <fieldset class="filter__fieldset filter__fieldset--music">
+              <legend class="filter__legend">Музыка</legend>
+              <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+                <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+              </button>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
+                <span class="filter__checkbox-icon"></span>
+                Тяжелый рок
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="hobby" value="Russian rap">
+                <span class="filter__checkbox-icon"></span>
+                Русский рэп
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="hobby" value="Eurodance">
+                <span class="filter__checkbox-icon"></span>
+                Евроденс
+              </label>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Еда</legend>
+              <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+                <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+              </button>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Транспорт</legend>
+              <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+                <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+              </button>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
+                  checked>
+                <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
+                  height="33" aria-hidden="true">
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="transport" value="Bus" aria-label="Автобус"
+                  checked>
+                <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
+                  height="33" aria-hidden="true">
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="transport" value="Bike" aria-label="Велосипед">
+                <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
+                  height="33" aria-hidden="true">
+              </label>
+              <label class="filter__label">
+                <input type="checkbox" class="filter__checkbox" name="transport" value="Run" aria-label="Пешком"
+                  checked>
+                <img class="filter__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
+                  height="33" aria-hidden="true">
+              </label>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Левел</legend>
+              <button class="filter__button filter__button--show" type="button" aria-label="Показать">
+                <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+              </button>
+              <label class="filter__label">
+                <input type="number" class="filter__number" placeholder="30">
+              </label>
+              <label class="filter__label">
+                <input type="number" class="filter__number" placeholder="100">
+              </label>
+              <button class="filter__button filter__button--range" type="button" aria-label="Меньше"></button>
+              <button class="filter__button filter__button--range" type="button" aria-label="Больше"></button>
+            </fieldset>
+            <button class="filter__button button-oval button-oval--white" type="submit">Показать</button>
+          </form>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
+              <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+                alt="Таня Фирсова">
+              <h3 class="catalog__title">Таня Фирсова</h3>
+              <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+                <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+              </button>
+              <b class="catalog__like">1,5 m</b>
+              <p class="catalog__tags">
+                #ЗОЖ #ПП #Фитнес #пляж
+                #авокадо #смузи
+              </p>
+              <h4 class="catalog__list-caption">хочет посетить:</h4>
+              <ul class="catalog__countries-list">
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Шри-ланка">
+                  Шри-ланка
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Таиланд">
+                  Таиланд
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Сейшелы">
+                  Сейшелы
+                </li>
+              </ul>
+              <h4 class="catalog__list-caption">транспорт:</h4>
+              <ul class="catalog__transport-list">
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Самолёт</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Поезд</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Велосипед</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+              <dl class="catalog__level">
+                <dt class="catalog__term">левел:</dt>
+                <dd class="catalog__description">99</dd>
+              </dl>
+              <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+            </li>
+            <li class="catalog__item">
+              <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
+              <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+                alt="Петя Демин">
+              <h3 class="catalog__title">Петя Демин</h3>
+              <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+                <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+              </button>
+              <b class="catalog__like">150</b>
+              <p class="catalog__tags">
+                #бургер #бар #футбол
+                #концерт #крафт
+              </p>
+              <h4 class="catalog__list-caption">хочет посетить:</h4>
+              <ul class="catalog__countries-list">
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Бельгия">
+                  Бельгия
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Чехия">
+                  Чехия
+                </li>
+              </ul>
+              <h4 class="catalog__list-caption">транспорт:</h4>
+              <ul class="catalog__transport-list">
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Самолёт</span>
+                </li>
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Поезд</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Велосипед</span>
+                </li>
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+              <dl class="catalog__level">
+                <dt class="catalog__term">левел:</dt>
+                <dd class="catalog__description">80</dd>
+              </dl>
+              <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+            </li>
+            <li class="catalog__item">
+              <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
+              <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+                alt="Марк Смолов">
+              <h3 class="catalog__title">Марк Смолов</h3>
+              <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+                <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+              </button>
+              <b class="catalog__like">1700</b>
+              <p class="catalog__tags">
+                #рэп #тату #хайпбист
+                #кроссовки #суприм
+              </p>
+              <h4 class="catalog__list-caption">хочет посетить:</h4>
+              <ul class="catalog__countries-list">
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="США">
+                  США
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Австралия">
+                  Австралия
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Доминикана">
+                  Доминикана
+                </li>
+              </ul>
+              <h4 class="catalog__list-caption">транспорт:</h4>
+              <ul class="catalog__transport-list">
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Самолёт</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Поезд</span>
+                </li>
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Велосипед</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+              <dl class="catalog__level">
+                <dt class="catalog__term">левел:</dt>
+                <dd class="catalog__description">25</dd>
+              </dl>
+              <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+            </li>
+            <li class="catalog__item">
+              <span class="catalog__status catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
+              <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
+                alt="Лариса Роговая">
+              <h3 class="catalog__title">Лариса Роговая</h3>
+              <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
+                <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
+              </button>
+              <b class="catalog__like">23</b>
+              <p class="catalog__tags">
+                #образование #карьера
+                #учеба #линкедин
+              </p>
+              <h4 class="catalog__list-caption">хочет посетить:</h4>
+              <ul class="catalog__countries-list">
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Великобритания">
+                  Великобритания
+                </li>
+                <li class="catalog__flag">
+                  <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
+                    alt="Германия">
+                  Германия
+                </li>
+              </ul>
+              <h4 class="catalog__list-caption">транспорт:</h4>
+              <ul class="catalog__transport-list">
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Самолёт</span>
+                </li>
+                <li class="catalog__transport-item catalog__transport-item--active">
+                  <span class="visually-hidden">Поезд</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Велосипед</span>
+                </li>
+                <li class="catalog__transport-item">
+                  <span class="visually-hidden">Пешком</span>
+                </li>
+              </ul>
+              <dl class="catalog__level">
+                <dt class="catalog__term">левел:</dt>
+                <dd class="catalog__description">50</dd>
+              </dl>
+              <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+            </li>
+          </ul>
+        </div>
+        <button class="catalog__button catalog__button--more" type="button">Показать еще</button>
+        <ul class="catalog__pagination pagination">
+          <li class="pagination__item">
+            <a href="" class="pagination__link pagination__link--back" aria-label="Назад">
+
+            </a>
           </li>
-          <li class="catalog__item">
-            <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
-            <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин">
-            <h3 class="catalog__title">Петя Демин</h3>
-            <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
-              <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
-            </button>
-            <b class="catalog__like">150</b>
-            <p class="catalog__tags">
-              #бургер #бар #футбол
-              #концерт #крафт
-            </p>
-            <h4 class="catalog__list-caption">хочет посетить:</h4>
-            <ul class="catalog__countries-list">
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Бельгия">
-                Бельгия
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Чехия">
-                Чехия
-              </li>
-            </ul>
-            <h4 class="catalog__list-caption">транспорт:</h4>
-            <ul class="catalog__transport-list">
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Самолёт</span>
-              </li>
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Поезд</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Велосипед</span>
-              </li>
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
-            <dl class="catalog__level">
-              <dt class="catalog__term">левел:</dt>
-              <dd class="catalog__description">80</dd>
-            </dl>
-            <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
-          </li>
-          <li class="catalog__item">
-            <span class="catalog__status catalog__status--offline"><span class="visually-hidden">Оффлайн</span></span>
-            <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов">
-            <h3 class="catalog__title">Марк Смолов</h3>
-            <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
-              <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
-            </button>
-            <b class="catalog__like">1700</b>
-            <p class="catalog__tags">
-              #рэп #тату #хайпбист
-              #кроссовки #суприм
-            </p>
-            <h4 class="catalog__list-caption">хочет посетить:</h4>
-            <ul class="catalog__countries-list">
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="США">
-                США
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Австралия">
-                Австралия
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Доминикана">
-                Доминикана
-              </li>
-            </ul>
-            <h4 class="catalog__list-caption">транспорт:</h4>
-            <ul class="catalog__transport-list">
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Самолёт</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Поезд</span>
-              </li>
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Велосипед</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
-            <dl class="catalog__level">
-              <dt class="catalog__term">левел:</dt>
-              <dd class="catalog__description">25</dd>
-            </dl>
-            <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
-          </li>
-          <li class="catalog__item">
-            <span class="catalog__status catalog__status--online"><span class="visually-hidden">Онлайн</span></span>
-            <img class="catalog__photo" src="https://via.placeholder.com/70x70" width="70" height="70"
-              alt="Лариса Роговая">
-            <h3 class="catalog__title">Лариса Роговая</h3>
-            <button class="catalog__button catalog__button--like" type="button" aria-label="Like!">
-              <img class="catalog__photo" src="https://via.placeholder.com/13x11" width="13" height="11" alt="Like!">
-            </button>
-            <b class="catalog__like">23</b>
-            <p class="catalog__tags">
-              #образование #карьера
-              #учеба #линкедин
-            </p>
-            <h4 class="catalog__list-caption">хочет посетить:</h4>
-            <ul class="catalog__countries-list">
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18"
-                  alt="Великобритания">
-                Великобритания
-              </li>
-              <li class="catalog__flag">
-                <img class="catalog__img" src="https://via.placeholder.com/26x18" width="26" height="18" alt="Германия">
-                Германия
-              </li>
-            </ul>
-            <h4 class="catalog__list-caption">транспорт:</h4>
-            <ul class="catalog__transport-list">
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Самолёт</span>
-              </li>
-              <li class="catalog__transport-item catalog__transport-item--active">
-                <span class="visually-hidden">Поезд</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Велосипед</span>
-              </li>
-              <li class="catalog__transport-item">
-                <span class="visually-hidden">Пешком</span>
-              </li>
-            </ul>
-            <dl class="catalog__level">
-              <dt class="catalog__term">левел:</dt>
-              <dd class="catalog__description">50</dd>
-            </dl>
-            <button class="catalog__button button-oval button-oval--yellow" type="button">Позвать!</button>
+          <li class="pagination__item">
+            <a href="" class="pagination__link pagination__link--fwd" aria-label="Вперед">
+
+            </a>
           </li>
         </ul>
       </div>
-      <button class="catalog__button catalog__button--more" type="button">Показать еще</button>
-      <ul class="catalog__pagination pagination">
-        <li class="pagination__item">
-          <a href="" class="pagination__link pagination__link--back" aria-label="Назад">
-
-          </a>
-        </li>
-        <li class="pagination__item">
-          <a href="" class="pagination__link pagination__link--fwd" aria-label="Вперед">
-
-          </a>
-        </li>
-      </ul>
     </section>
   </main>
   <footer class="site-footer">
-    <a class="site-footer__logo-link">
-      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали?"></a>
-    <ul class="site-footer__social-list">
-      <li class="site-footer__social-item">
-        <a href="" class="site-footer__social-link">
-          <span class="visually-hidden">Facebook</span>
+    <div class="site-footer__container">
+      <a class="site-footer__logo-link">
+        <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Погнали?"></a>
+      <ul class="site-footer__social-list">
+        <li class="site-footer__social-item">
+          <a href="" class="site-footer__social-link">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a href="" class="site-footer__social-link">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="site-footer__social-item">
+          <a href="" class="site-footer__social-link">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+      <p>
+        <small class="site-footer__copyright">Разработано</small>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
         </a>
-      </li>
-      <li class="site-footer__social-item">
-        <a href="" class="site-footer__social-link">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="site-footer__social-item">
-        <a href="" class="site-footer__social-link">
-          <span class="visually-hidden">Instagram</span>
-        </a>
-      </li>
-    </ul>
-    <p>
-      <small class="site-footer__copyright">Разработано</small>
-      <a href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/27x34" width="27"
-          height="34" alt="HTML Academy"></a>
-    </p>
+      </p>
+    </div>
   </footer>
 </body>
 

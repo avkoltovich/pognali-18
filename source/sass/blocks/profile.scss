@@ -1,10 +1,14 @@
 .profile {
+  background-color: $bgcolor-light;
+}
+
+.profile__container {
+  width: $mobile-width;
   padding-top: 60px;
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 93px;
-
-  background-color: $bgcolor-light;
+  margin: 0 auto;
 }
 
 .profile__level {
@@ -65,15 +69,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .profile {
-    padding-right: calc(50vw - 384px + 75px);
-    padding-left: calc(50vw - 384px + 75px);
+  .profile__container {
+    width: $tablet-width;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .profile {
-    padding-right: calc(50% - 720px + 60px);
-    padding-left: calc(50% - 720px + 124px);
+  .profile__container {
+    width: $desktop-width;
+    padding-right: 60px;
+    padding-left: 124px;
   }
 }

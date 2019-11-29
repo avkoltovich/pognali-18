@@ -105,6 +105,9 @@
 
 @media (min-width: $desktop-width) {
   .howto {
+    width: 100%;
+    max-width: none;
+
     background: none;
   }
 

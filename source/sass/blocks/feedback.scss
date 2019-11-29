@@ -1,9 +1,15 @@
 .feedback {
-  @include round-bottom;
-
-  padding-top: 100px;
-
   background-color: $bgcolor-dark;
+  border-radius: 0 0 30px 30px;
+}
+
+.feedback__container {
+  width: $mobile-width;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin: 0 auto;
 }
 
 .feedback__heading {
@@ -92,8 +98,15 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    @include round-bottom-tablet;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .feedback__container {
+    width: $tablet-width;
     padding-top: 137px;
+    padding-right: 75px;
+    padding-bottom: 80px;
+    padding-left: 75px;
   }
 
   .feedback__heading {
@@ -132,10 +145,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feedback {
+  .feedback__container {
+    width: $desktop-width;
     padding-top: 168px;
-    padding-right: calc(50% - 720px + 131px);
-    padding-left: calc(50% - 720px + 131px);
+    padding-right: 131px;
+    padding-left: 131px;
   }
 
   .feedback__button {
