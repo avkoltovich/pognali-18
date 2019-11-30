@@ -1,15 +1,17 @@
 .user-menu {
   height: 40px;
-  padding-right: 25px;
-  padding-left: 25px;
 
   background-color: transparent;
 }
 
 .user-menu__list {
-  @include list;
-
   display: flex;
+  width: $mobile-width;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0 auto;
+
+  list-style: none;
 }
 
 .user-menu__item:last-child {

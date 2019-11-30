@@ -1,17 +1,39 @@
 .about {
   overflow: hidden;
   min-height: 352px;
+
+  background-color: $bgcolor-dark;
+
+  border-radius: 0 0 30px 30px;
+}
+
+.about__container {
+  position: relative;
+
+  width: $mobile-width;
   padding-top: 30px;
   padding-right: 60px;
   padding-bottom: 84px;
   padding-left: 50px;
+  margin: 0 auto;
 
-  background-color: $bgcolor-dark;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border-radius: 0 0 30px 30px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 113px;
+    height: 132px;
+    content: "";
+
+    background-color: #141b3b;
+  }
 }
 
 .about__heading {
@@ -47,8 +69,15 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    @include round-bottom-tablet;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about__container {
+    width: $tablet-width;
     padding-top: 140px;
+    padding-right: 75px;
+    padding-bottom: 80px;
+    padding-left: 75px;
 
     background-image: none;
 
@@ -56,7 +85,7 @@
       position: absolute;
       z-index: -1;
       top: 96px;
-      left: 40px;
+      left: calc(50% - 384px + 40px);
 
       width: 688px;
       height: 213px;
@@ -70,7 +99,7 @@
       position: absolute;
       z-index: 0;
       top: 144px;
-      left: 420px;
+      left: calc(50% - 384px + 420px);
 
       width: 376px;
       height: 548px;
@@ -109,6 +138,10 @@
 @media (min-width: $desktop-width) {
   .about {
     min-height: 750px;
+  }
+
+  .about__container {
+    width: $desktop-width;
     padding-top: 200px;
     padding-left: 131px;
 

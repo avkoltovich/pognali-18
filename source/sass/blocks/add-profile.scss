@@ -1,14 +1,18 @@
 .add-profile {
+  border-radius: 0 0 30px 30px;
+  background-color: $bgcolor-light;
+}
+
+.add-profile__container {
   display: flex;
   flex-direction: column;
+  width: $mobile-width;
   min-height: 481px;
   padding-top: 82px;
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 50px;
-
-  border-radius: 0 0 30px 30px;
-  background-color: $bgcolor-light;
+  margin: 0 auto;
 }
 
 .add-profile__heading {
@@ -66,13 +70,16 @@
 
 @media (min-width: $tablet-width) {
   .add-profile {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .add-profile__container {
+    width: $tablet-width;
     min-height: 540px;
     padding-top: 135px;
     padding-right: 40px;
     padding-bottom: 80px;
     padding-left: 40px;
-
-    border-radius: 0 0 60px 60px;
   }
 
   .add-profile__heading {
@@ -107,7 +114,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .add-profile {
+  .add-profile__container {
+    width: $desktop-width;
     min-height: 750px;
     padding-top: 168px;
     padding-right: 131px;

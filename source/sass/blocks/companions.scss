@@ -1,11 +1,18 @@
 .companions {
-  @include round-bottom;
+  background-color: $bgcolor-dark;
+  border-radius: 0 0 30px 30px;
+}
 
+.companions__container {
   position: relative;
 
+  width: $mobile-width;
   padding-top: 100px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin: 0 auto;
 
-  background-color: $bgcolor-dark;
   background-image: url("../img/smolov-back-desktop@1x.png"),
     url("../img/rogovaya-back-mobile@1x.png");
   background-position: top 100px right 25px,
@@ -121,8 +128,14 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    @include round-bottom-tablet;
+    border-radius: 0 0 60px 60px;
+  }
 
+  .companions__container {
+    width: $tablet-width;
+    padding-right: 75px;
+    padding-bottom: 80px;
+    padding-left: 75px;
     background-image: url("../img/rogovaya-back-desktop@1x.png");
     background-position: top 140px right 77px;
     background-repeat: no-repeat;
@@ -176,8 +189,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .companions {
+  .companions__container {
+    width: $desktop-width;
     min-height: 750px;
+    padding-right: 60px;
+    padding-left: 131px;
 
     background-position: top 385px left 191px;
 

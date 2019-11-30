@@ -1,8 +1,12 @@
 .site-header {
+  background-color: #ffffff;
+}
+
+.site-header__container {
+  width: $mobile-width;
   padding-right: 25px;
   padding-left: 25px;
-
-  background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .site-header__navigation-list {
@@ -59,19 +63,20 @@
   display: flex;
 }
 
-@media (min-width: $desktop-width) {
-  .site-header {
-    padding-right: 40px;
-    padding-left: 40px;
+@media (min-width: $tablet-width) {
+  .site-header__container {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-header {
+  .site-header__container {
     display: flex;
     justify-content: space-between;
-    padding-right: 60px;
-    padding-left: 60px;
+    width: $desktop-width;
+    padding: 0 60px;
   }
 
   .site-header__button--open {
