@@ -7,14 +7,14 @@
   width: $mobile-width;
   padding-top: 100px;
   padding-right: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   padding-left: 25px;
   margin: 0 auto;
 }
 
 .feedback__heading {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
   @include font(700, normal);
   font-size: 24px;
@@ -23,14 +23,21 @@
 }
 
 .feedback__text {
+  max-width: 215px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 28px;
 
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
   color: #ffffff;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
 }
 
 .feedback__link {
@@ -39,7 +46,7 @@
 
 .feedback__form {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .feedback__input {
@@ -94,6 +101,12 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffd74b;
+}
+
+.feedback__contact-img {
+  margin-right: 16px;
+
+  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {

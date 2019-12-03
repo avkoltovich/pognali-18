@@ -11,9 +11,9 @@
   position: relative;
 
   width: $mobile-width;
-  padding-top: 30px;
+  min-height: 352px;
+  padding-top: 32px;
   padding-right: 60px;
-  padding-bottom: 84px;
   padding-left: 50px;
   margin: 0 auto;
 
@@ -38,7 +38,7 @@
 
 .about__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 18px;
 
   @include font(700, normal);
   font-size: 24px;
@@ -46,13 +46,15 @@
 }
 
 .about__text {
+  margin-top: 0;
+  margin-bottom: 18px;
+
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
 
   &--bold {
-    margin-top: 0;
     margin-bottom: 0;
 
     @include font(700, normal);

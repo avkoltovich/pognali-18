@@ -1,16 +1,17 @@
 .promotion {
-  min-height: 381px;
+  min-height: 405px;
+  padding-top: 20px;
 
   background-color: $bgcolor-dark;
   background-image: url("../img/traveller-illustration-mobile@1x.png"),
     url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto 255px, cover;
-  background-position: bottom, center;
+  background-position: bottom right calc(50vw - 160px + 50px), center;
 }
 
 .promotion__heading {
-  width: $mobile-width;
+  max-width: 240px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -31,7 +32,7 @@
   }
 
   .promotion__heading {
-    width: 400px;
+    max-width: 400px;
 
     font-size: 60px;
     line-height: 1.17;

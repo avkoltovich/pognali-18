@@ -4,10 +4,10 @@
 
   display: flex;
   justify-content: center;
-  padding-top: 30px;
   padding-bottom: 39px;
 
-  background-color: $bgcolor-dark;
+  background: linear-gradient(to bottom, #161c35 80px, #192144 80px 100%);
+  background-image: -ms-linear-gradient(top, #161c35 80px, #192144 80px);
 }
 
 .howto__list {
@@ -22,6 +22,7 @@
 
   @include font(700, normal);
   font-size: 18px;
+  line-height: 1;
   color: #161c35;
 
   border-radius: 10px;

@@ -8,7 +8,7 @@
   flex-direction: column;
   width: $mobile-width;
   min-height: 481px;
-  padding-top: 82px;
+  padding-top: 80px;
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -16,8 +16,11 @@
 }
 
 .add-profile__heading {
+  max-width: 105px;
   margin-top: 0;
   margin-bottom: 44px;
+
+  line-height: 22px;
 }
 
 .add-profile__link {
@@ -45,7 +48,9 @@
 }
 
 .add-profile__item {
-  height: 65px;
+  display: flex;
+  align-items: center;
+  height: 66px;
 
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
 

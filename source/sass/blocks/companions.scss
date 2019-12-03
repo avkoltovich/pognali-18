@@ -15,13 +15,13 @@
 
   background-image: url("../img/smolov-back-desktop@1x.png"),
     url("../img/rogovaya-back-mobile@1x.png");
-  background-position: top 100px right 25px,
-    top 370px left -10px;
+  background-position: top 68px right 25px,
+    top 341px left -10px;
   background-repeat: no-repeat;
 
   &::before {
     position: absolute;
-    top: 100px;
+    top: 68px;
     left: 0;
     z-index: -1;
 
@@ -35,8 +35,9 @@
 }
 
 .companions__heading {
+  padding-left: 24px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 17px;
 
   @include font(700, normal);
   font-size: 24px;
@@ -44,21 +45,38 @@
 }
 
 .companions__text {
+  max-width: 245px;
+  padding-left: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
 
   &--bold {
+    margin-bottom: 56px;
+
     @include font(700, normal);
   }
 }
 
 .companions__list {
-  @include list;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  list-style: none;
 }
 
 .companions__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 427px;
   margin-bottom: 10px;
 
   background-color: #ffffff;
@@ -69,7 +87,19 @@
   text-decoration: none;
 }
 
+.companions__photo {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  border-radius: 10px 10px 0 0;
+}
+
 .companions__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,20 +129,39 @@
   text-decoration: none;
 }
 
+.companions__countries {
+  display: flex;
+  justify-content: center;
+  margin-top: -12px;
+  margin-bottom: 9px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.companions__flag {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .companions__name {
+  margin-top: 0;
+  margin-bottom: 12px;
+
   @include font(700, normal);
   font-size: 21px;
   text-align: center;
   color: #1d2e5b;
 }
 
-.companions__countries {
-  display: flex;
-
-  @include list;
-}
-
 .companions__tags {
+  max-width: 180px;
+  margin-top: 0;
+  margin-bottom: 17px;
+
   @include font(400, normal);
   font-size: 16px;
   line-height: 1.13;
@@ -122,8 +171,17 @@
 
 .companions__transport-list {
   display: flex;
+  justify-content: space-between;
+  min-width: 120px;
 
   @include list;
+}
+
+.companions__transport {
+  width: 24px;
+  height: 21px;
+
+  background-color: tomato;
 }
 
 @media (min-width: $tablet-width) {

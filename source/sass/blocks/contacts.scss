@@ -5,16 +5,17 @@
 
 .contacts__container {
   width: $mobile-width;
-  padding-top: 60px;
+  padding-top: 64px;
   padding-right: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   padding-left: 25px;
   margin: 0 auto;
 }
 
 .contacts__address {
   display: flex;
-  max-width: 150px;
+  max-width: 210px;
+  padding-left: 61px;
   margin-bottom: 32px;
 
   @include font(700, normal);
