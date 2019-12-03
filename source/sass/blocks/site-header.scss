@@ -1,12 +1,54 @@
 .site-header {
+  min-height: 568px;
+
   background-color: #ffffff;
 }
 
 .site-header__container {
+  display: flex;
+  flex-wrap: wrap;
   width: $mobile-width;
+  padding-top: 27px;
   padding-right: 25px;
+  padding-bottom: 40px;
   padding-left: 25px;
   margin: 0 auto;
+}
+
+.site-header__button {
+  &--auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 52px;
+
+    @include font(700, normal);
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #161c35;
+
+    border-radius: 30px;
+    background-color: #ffd74b;
+  }
+
+  &--menu {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+.site-header__navigation {
+  width: 100%;
+  margin-top: 68px;
+  margin-bottom: 47px;
 }
 
 .site-header__navigation-list {
@@ -17,50 +59,63 @@
   align-items: center;
 }
 
+.site-header__navigation-item {
+  margin-bottom: 2px;
+}
+
 .site-header__navigation-link {
   @include font(500, normal);
 
   font-size: 30px;
-  line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
   color: #192144;
 }
 
-.site-header__user-list {
-  @include list;
-
+.site-header__contact-list {
   display: flex;
   flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  list-style: none;
 }
 
-.site-header__user-link {
-  @include font(700, normal);
+.site-header__contact-link {
+  display: flex;
+  align-items: center;
 
+  @include font(700, normal);
   font-size: 16px;
-  line-height: 1.38;
   text-decoration: none;
   text-transform: uppercase;
   color: #192144;
+}
 
-  &--btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
+.site-header__contact-img {
+  margin-right: 16px;
 
-    font-size: 17px;
-    color: #161c35;
-
-    border-radius: 20px;
-    background-color: #ffd74b;
-  }
+  border-radius: 50%;
 }
 
 .site-header__social-list {
-  @include list;
-
   display: flex;
+  justify-content: space-between;
+  min-width: 106px;
+  padding-left: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  list-style: none;
+}
+
+.site-header__social-link {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: tomato;
 }
 
 @media (min-width: $tablet-width) {
