@@ -13,6 +13,8 @@
 }
 
 .contacts__address {
+  position: relative;
+
   display: flex;
   max-width: 210px;
   padding-left: 61px;
@@ -23,6 +25,18 @@
   line-height: 1.38;
   text-transform: uppercase;
   color: #192144;
+
+  &::before {
+    position: absolute;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    content: "";
+
+    background-color: tomato;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,15 +48,23 @@
     width: $tablet-width;
     padding-top: 130px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
     padding-left: 75px;
   }
 
   .contacts__address {
     max-width: none;
+    padding-left: 93px;
+    margin-bottom: 62px;
 
     font-size: 28px;
     line-height: 1;
+
+    &::before {
+      top: -22px;
+      width: 67px;
+      height: 67px;
+    }
   }
 }
 

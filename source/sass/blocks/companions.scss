@@ -62,6 +62,10 @@
   }
 }
 
+.companions__br {
+  display: none;
+}
+
 .companions__list {
   padding-left: 0;
   margin-top: 0;
@@ -157,6 +161,30 @@
   color: #1d2e5b;
 }
 
+.companions__status {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: -16px;
+
+    width: 5px;
+    height: 5px;
+    content: "";
+
+    border-radius: 2.5px;
+  }
+
+  &--online::before {
+    background-color: #81e31e;
+  }
+
+  &--offline::before {
+    background-color: #f97676;
+  }
+}
+
 .companions__tags {
   max-width: 180px;
   margin-top: 0;
@@ -191,8 +219,9 @@
 
   .companions__container {
     width: $tablet-width;
+    padding-top: 197px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
     padding-left: 75px;
     background-image: url("../img/rogovaya-back-desktop@1x.png");
     background-position: top 140px right 77px;
@@ -226,23 +255,94 @@
   }
 
   .companions__heading {
+    padding-left: 0;
+    margin-bottom: 53px;
+
     font-size: 45px;
   }
 
   .companions__text {
-    width: 430px;
+    max-width: 430px;
+    padding-left: 0;
+    margin-bottom: 40px;
 
     font-size: 28px;
     line-height: 1.18;
 
     &--bold {
+      max-width: 270px;
+      margin-bottom: 58px;
+
       font-size: 21px;
       line-height: 1.19;
     }
   }
 
+  .companions__br {
+    display: block;
+  }
+
   .companions__list {
     display: flex;
+    margin-bottom: 70px;
+  }
+
+  .companions__item {
+    min-width: 285px;
+    min-height: 483px;
+    margin-right: 48px;
+
+    border-radius: 20px;
+  }
+
+  .companions__level {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .companions__photo {
+    width: 285px;
+    height: 285px;
+    margin-bottom: 5px;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  .companions__name {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+  }
+
+  .companions__status {
+    position: relative;
+
+    &::before {
+      top: 7px;
+      left: -22px;
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 3.5px;
+    }
+
+    &--online::before {
+      background-color: #81e31e;
+    }
+
+    &--offline::before {
+      background-color: #f97676;
+    }
+  }
+
+  .companions__tags {
+    max-width: 230px;
+    margin-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 

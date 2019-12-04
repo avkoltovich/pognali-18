@@ -6,15 +6,17 @@
   justify-content: center;
   padding-bottom: 39px;
 
-  background: linear-gradient(to bottom, #161c35 80px, #192144 80px 100%);
-  background-image: -ms-linear-gradient(top, #161c35 80px, #192144 80px);
+  background: linear-gradient(to bottom, #161c35 80px, #192144 80px);
 }
 
 .howto__list {
   @include list;
+  counter-reset: how-to;
 }
 
 .howto__item {
+  position: relative;
+
   width: 270px;
   padding-top: 23px;
   padding-right: 50px;
@@ -26,6 +28,17 @@
   color: #161c35;
 
   border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    top: 23px;
+    right: 21px;
+
+    content: counter(how-to);
+    counter-increment: how-to;
+
+    color: #ffffff;
+  }
 
   &:not(:first-child) {
     margin-top: -20px;
@@ -60,6 +73,7 @@
     padding-bottom: 0;
 
     background-color: transparent;
+    background-image: none;
   }
 
   .howto__list {
@@ -71,8 +85,19 @@
 
   .howto__item {
     min-height: 140px;
+    padding-top: 29px;
+    padding-left: 33px;
 
     font-size: 24px;
+
+    &::after {
+      top: auto;
+      right: auto;
+      left: 33px;
+      bottom: 24px;
+
+      font-size: 30px;
+    }
 
     &:not(:first-child) {
       margin-top: 0;

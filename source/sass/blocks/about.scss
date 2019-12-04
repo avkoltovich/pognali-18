@@ -1,6 +1,7 @@
 .about {
   overflow: hidden;
   min-height: 352px;
+  margin-top: -1px;
 
   background-color: $bgcolor-dark;
 
@@ -76,9 +77,9 @@
 
   .about__container {
     width: $tablet-width;
-    padding-top: 140px;
+    padding-top: 132px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
     padding-left: 75px;
 
     background-image: none;
@@ -100,8 +101,8 @@
     &::after {
       position: absolute;
       z-index: 0;
-      top: 144px;
-      left: calc(50% - 384px + 420px);
+      top: 142px;
+      left: calc(50% - 384px + 384px);
 
       width: 376px;
       height: 548px;
@@ -113,14 +114,19 @@
 
   .about__heading {
     font-size: 45px;
+    margin-bottom: 36px;
   }
 
   .about__text {
     width: 300px;
+    margin-bottom: 32px;
+
     font-size: 28px;
     line-height: 1.18;
 
     &--bold {
+      margin-bottom: 50px;
+
       font-size: 21px;
       line-height: 1.19;
     }

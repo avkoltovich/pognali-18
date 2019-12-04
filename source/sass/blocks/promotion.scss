@@ -27,6 +27,8 @@
 @media (min-width: $tablet-width) {
   .promotion {
     min-height: 0;
+    padding-top: 30px;
+
     background-color: transparent;
     background-image: none;
   }
@@ -42,7 +44,6 @@
 @media (min-width: $desktop-width) {
   .promotion {
     width: 50%;
-    min-height: 0;
     padding-top: 100px;
     padding-left: 70px;
 

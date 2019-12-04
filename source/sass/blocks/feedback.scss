@@ -116,27 +116,46 @@
 
   .feedback__container {
     width: $tablet-width;
-    padding-top: 137px;
+    padding-top: 133px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     padding-left: 75px;
   }
 
   .feedback__heading {
+    margin-bottom: 52px;
+
     font-size: 45px;
   }
 
   .feedback__text {
+    max-width: none;
+    margin-bottom: 65px;
+
     font-size: 28px;
     line-height: 1.18;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   .feedback__br {
     display: none;
   }
 
+  .feedback__form {
+    margin-bottom: 58px;
+  }
+
   .feedback__contact-link {
     font-size: 28px;
+  }
+
+  .feedback__contact-img {
+    width: 67px;
+    height: 67px;
+    margin-right: 24px;
   }
 
   .feedback__input {
@@ -150,7 +169,7 @@
   }
 
   .feedback__button {
-    width: 82px;
+    width: 95px;
     height: 81px;
 
     border-radius: 0 20px 20px 0;

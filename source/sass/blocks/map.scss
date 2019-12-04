@@ -1,3 +1,10 @@
 .map {
+  min-height: 332px;
   background-color: grey;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 581px;
+  }
 }

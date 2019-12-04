@@ -98,12 +98,14 @@
 
 @media (min-width: $tablet-width) {
   .site-main__container {
-    background-color: #182044;
-    background-image: url("../img/traveller-illustration-tablet@1x.png"),
-      url("../img/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 451px, auto 591px;
-    background-position: center, center;
+    &--promo {
+      background-color: #182044;
+      background-image: url("../img/traveller-illustration-tablet@1x.png"),
+        url("../img/globe-back-tablet@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 451px, auto 611px;
+      background-position: bottom 280px right 112px, bottom 140px center;
+    }
   }
 
   .site-main__heading {
