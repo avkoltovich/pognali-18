@@ -14,7 +14,7 @@
       <a class="site-header__logo-link">
         <img class="site-header__logo-img" src="img/logo-mobile-blue@1x.png" alt="Погнали?">
       </a>
-      <button class="site-header__button site-header__button--open" type="button" aria-label="Открыть меню">
+      <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
         <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">
       </button>
       <nav class="site-header__navigation">
@@ -30,36 +30,36 @@
           </li>
         </ul>
       </nav>
-      <ul class="site-header__user-list">
-        <li class="site-header__user-item">
-          <a href="" class="site-header__user-link site-header__user-link--btn">Авторизация</a>
-        </li>
-        <li class="site-header__user-item">
-          <a href="tel:+78005558628" class="site-header__user-link">
-            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+      <a href="" class="site-header__button site-header__button--auth">Авторизация</a>
+      <ul class="site-header__contact-list">
+        <li class="site-header__contact-item">
+          <a href="tel:+78005558628" class="site-header__contact-link">
+            <img class="site-header__contact-img" src="https://via.placeholder.com/45x45" width="45" height="45"
+              alt="Telephone" aria-hidden="true">
             8 800 555-86-28
           </a>
         </li>
-        <li class="site-header__user-item">
-          <a href="mailto:mail@htmlacademy.ru" class="site-header__user-link">
-            <img src="https://via.placeholder.com/45x45" width="45" height="45" alt="E-mail" aria-hidden="true">
+        <li class="site-header__contact-item">
+          <a href="mailto:mail@htmlacademy.ru" class="site-header__contact-link">
+            <img class="site-header__contact-img" src="https://via.placeholder.com/45x45" width="45" height="45"
+              alt="E-mail" aria-hidden="true">
             mail@htmlacademy.ru
           </a>
         </li>
       </ul>
       <ul class="site-header__social-list">
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link">
+          <a href="" class="site-header__social-link site-header__social-link--fb">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link">
+          <a href="" class="site-header__social-link site-header__social-link--vk">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link">
+          <a href="" class="site-header__social-link site-header__social-link-in">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
@@ -67,7 +67,12 @@
     </div>
   </header>
   <main class="site-main">
-    <h1 class="site-main__heading"><span class="site-main__heading-container">Направления</span></h1>
+    <div class="site-main__heading">
+      <div class="site-main__heading-container">
+        <h1 class="site-main__title">Направления</h1>
+        <a href="index.html" class="site-main__button">На главную</a>
+      </div>
+    </div>
     <section class="site-main__profile profile">
       <div class="profile__container">
         <h2 class="visually-hidden">Мой профиль</h2>
@@ -98,7 +103,8 @@
                 height="33" aria-hidden="true">
             </label>
             <label class="profile__label profile__label--transport">
-              <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус" checked>
+              <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус"
+                checked>
               <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
                 height="33" aria-hidden="true">
             </label>
@@ -484,7 +490,8 @@
               Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
             </p>
             <label class="step__label">
-              <input class="step__input step__input--step-two" type="text" name="country" placeholder="Босния и герцегов">
+              <input class="step__input step__input--step-two" type="text" name="country"
+                placeholder="Босния и герцегов">
               <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и герцегов">
             </label>
             <button class="step__button step__button--del" type="button" aria-label="Удалить">

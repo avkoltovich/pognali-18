@@ -9,6 +9,7 @@
   min-height: 73px;
   padding-top: 27px;
   padding-right: 25px;
+  padding-bottom: 23px;
   padding-left: 25px;
   margin: 0 auto;
 }
@@ -108,7 +109,7 @@
   min-width: 106px;
   padding-left: 0;
   margin-right: auto;
-  margin-bottom: 0;
+  margin-bottom: 17px;
   margin-left: auto;
 
   list-style: none;
@@ -127,6 +128,7 @@
     min-height: 132px;
     padding-top: 40px;
     padding-right: 40px;
+    padding-bottom: 42px;
     padding-left: 40px;
     margin: 0 auto;
   }
@@ -178,6 +180,7 @@
     order: 5;
     min-width: 100%;
     padding-left: 58px;
+    margin-bottom: 113px;
   }
 
   .site-header__contact-item {
@@ -198,7 +201,13 @@
     order: 6;
     min-width: 139px;
     margin-right: auto;
+    margin-bottom: 48px;
     margin-left: 83px;
+  }
+
+  .site-header__social-link {
+    width: 31px;
+    height: 28px;
   }
 }
 

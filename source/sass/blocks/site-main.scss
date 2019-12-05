@@ -5,22 +5,52 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+}
+
+.site-main__heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $mobile-width;
+  min-height: 70px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin: 0 auto;
+}
+
+.site-main__title {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font(700, normal);
   font-size: 36px;
   line-height: 1.11;
   color: #ffffff;
 
-  background-color: $bgcolor-dark;
-  border-radius: 0 0 30px 30px;
+  &::after {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+    content: "";
+
+    background-color: #ff8d30;
+    border-radius: 2.4px;
+  }
 }
 
-.site-main__heading-container {
-  display: block;
-  width: $mobile-width;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  margin: 0 auto;
+.site-main__button {
+  position: relative;
+
+  display: none;
 }
 
 .site-main__wrapper,
@@ -111,16 +141,53 @@
   .site-main__heading {
     min-height: 130px;
 
-    font-size: 60px;
-    line-height: 1.17;
-
     border-radius: 0 0 60px 60px;
   }
 
   .site-main__heading-container {
     width: $tablet-width;
+    padding-top: 88px;
     padding-right: 75px;
+    padding-bottom: 60px;
     padding-left: 75px;
+  }
+
+  .site-main__title {
+    font-size: 60px;
+    line-height: 1.17;
+
+    &::after {
+      bottom: -65px;
+
+      height: 8px;
+
+      border-radius: 4px;
+    }
+  }
+
+  .site-main__button {
+    display: block;
+    padding-right: 61px;
+
+    @include font(700, normal);
+    font-size: 20px;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      right: 0;
+
+      width: 32px;
+      height: 16px;
+
+      content: "";
+
+      background-color: tomato;
+    }
   }
 
   .site-main__howto {
@@ -175,8 +242,10 @@
 
   .site-main__heading-container {
     width: $desktop-width;
-    padding-right: 123px;
-    padding-left: 129px;
+
+    padding-top: 112px;
+    padding-right: 125px;
+    padding-left: 125px;
   }
 
   .site-main__howto {
