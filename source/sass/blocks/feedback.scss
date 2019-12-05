@@ -179,14 +179,24 @@
 @media (min-width: $desktop-width) {
   .feedback__container {
     width: $desktop-width;
-    padding-top: 168px;
+    padding-top: 164px;
     padding-right: 131px;
+    padding-bottom: 105px;
     padding-left: 131px;
+  }
+
+  .feedback__text {
+    max-width: 650px;
+    margin-bottom: 58px;
+
+    &--question {
+      font-size: 29.5px;
+    }
   }
 
   .feedback__button {
     justify-content: space-between;
-    min-width: 324px;
+    min-width: 327px;
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -195,7 +205,26 @@
     display: inline;
   }
 
+  .feedback__form {
+    margin-bottom: 68px;
+  }
+
   .feedback__contact-list {
     display: flex;
+    justify-content: center;
+  }
+
+  .feedback__contact-item {
+    margin-right: 108px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .feedback__contact-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
   }
 }

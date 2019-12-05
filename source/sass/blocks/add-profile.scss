@@ -26,22 +26,8 @@
     height: 99px;
     content: "";
 
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-
-  &::after {
-    position: absolute;
-    top: 67px;
-    right: 26px;
-    z-index: 2;
-
-    width: 34px;
-    height: 34px;
-    content: "";
-
-    background-color: #ffd74b;
-    border-radius: 50%;
+    background-image: url("../img/rates@1x.png");
+    background-size: contain;
   }
 }
 
@@ -160,12 +146,6 @@
       right: 86px;
       bottom: 48px;
     }
-
-    &::after {
-      top: auto;
-      right: 86px;
-      bottom: 112px;
-    }
   }
 
   .add-profile__heading {
@@ -260,9 +240,45 @@
 @media (min-width: $desktop-width) {
   .add-profile__container {
     width: $desktop-width;
-    min-height: 750px;
-    padding-top: 168px;
+    min-height: 810px;
+    padding-top: 178px;
     padding-right: 131px;
     padding-left: 131px;
+
+    &::before {
+      top: 346px;
+      right: 134px;
+      bottom: auto;
+
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .add-profile__heading {
+    padding-left: 0;
+    margin-right: auto;
+    margin-bottom: 142px;
+    margin-left: auto;
+  }
+
+  .add-profile__list {
+    max-width: 903px;
+    min-width: 0;
+    padding-left: 90px;
+
+    &::after {
+      top: -52px;
+      right: -160px;
+
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .add-profile__link {
+    &--all {
+      margin-left: 90px;
+    }
   }
 }

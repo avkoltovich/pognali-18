@@ -86,7 +86,7 @@
   .howto__item {
     min-height: 140px;
     padding-top: 29px;
-    padding-left: 33px;
+    padding-left: 32px;
 
     font-size: 24px;
 
@@ -146,6 +146,15 @@
   .howto__item {
     min-height: 107px;
 
+    &::after {
+      top: 29px;
+      right: 73px;
+      left: auto;
+      bottom: auto;
+
+      font-size: 24px;
+    }
+
     &:not(:first-child) {
       width: 385px;
       margin-left: -40px;
@@ -162,6 +171,10 @@
     &:last-child {
       width: 315px;
       border-radius: 20px;
+
+      &::after {
+        right: 33px;
+      }
     }
   }
 }

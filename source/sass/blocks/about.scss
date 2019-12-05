@@ -145,12 +145,12 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    min-height: 750px;
+    min-height: 810px;
   }
 
   .about__container {
     width: $desktop-width;
-    padding-top: 200px;
+    padding-top: 190px;
     padding-left: 131px;
 
     &::before {
@@ -181,11 +181,17 @@
     }
   }
 
+  .about__heading {
+    margin-bottom: 53px;
+  }
+
   .about__text {
     width: 620px;
+    margin-bottom: 39px;
 
     &--bold {
       width: 410px;
+      margin-bottom: 84px;
     }
   }
 

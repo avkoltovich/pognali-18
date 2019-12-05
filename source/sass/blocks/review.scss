@@ -60,17 +60,17 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    min-height: none;
+    min-height: 0;
 
     background: none;
   }
 
   .review__blockquote {
     width: $mobile-width;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-right: 30px;
     padding-left: 30px;
-    margin-right: 90px;
+    margin-right: 57px;
     margin-bottom: 0;
     margin-left: 0;
   }

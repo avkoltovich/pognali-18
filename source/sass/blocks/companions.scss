@@ -349,11 +349,12 @@
 @media (min-width: $desktop-width) {
   .companions__container {
     width: $desktop-width;
-    min-height: 750px;
+    min-height: 810px;
+    padding-top: 185px;
     padding-right: 60px;
     padding-left: 131px;
 
-    background-position: top 385px left 191px;
+    background-position: top 445px left 191px;
 
     &::before {
       top: 128px;
@@ -377,19 +378,37 @@
       opacity: 0.1;
       content: "";
 
-      background-image: url("../img/smolov-tablet@1x.jpg");
+      background-image: url("../img/smolov-back-desktop@1x.jpg");
       border-radius: 20px;
     }
   }
 
   .companions__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    max-height: 485px;
+  }
+
+  .companions__text-wrap {
+    padding-bottom: 81px;
   }
 
   .companions__list {
-    order: 10;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+
+  .companions__item {
+    margin-right: 60px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .companions .button-rect {
+    margin-top: -81px;
   }
 }

@@ -74,13 +74,21 @@
     justify-content: space-between;
     align-items: center;
     width: $desktop-width;
-    padding-top: 114px;
+    padding-top: 119px;
     padding-right: 134px;
-    padding-left: 405px;
+    padding-bottom: 60px;
+    padding-left: 284px;
   }
 
   .contacts__address {
+    padding-left: 120px;
     margin-bottom: 0;
+
+    &::before {
+      top: -32px;
+      width: 90px;
+      height: 90px;
+    }
   }
 
   .contacts__link {
