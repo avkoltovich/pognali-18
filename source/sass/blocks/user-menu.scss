@@ -28,6 +28,10 @@
   color: #161c35;
 }
 
+.user-menu__img {
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .user-menu {
     display: none;

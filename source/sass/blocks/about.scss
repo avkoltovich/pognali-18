@@ -1,6 +1,7 @@
 .about {
   overflow: hidden;
   min-height: 352px;
+  margin-top: -1px;
 
   background-color: $bgcolor-dark;
 
@@ -11,9 +12,9 @@
   position: relative;
 
   width: $mobile-width;
-  padding-top: 30px;
+  min-height: 352px;
+  padding-top: 32px;
   padding-right: 60px;
-  padding-bottom: 84px;
   padding-left: 50px;
   margin: 0 auto;
 
@@ -38,7 +39,7 @@
 
 .about__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 18px;
 
   @include font(700, normal);
   font-size: 24px;
@@ -46,13 +47,15 @@
 }
 
 .about__text {
+  margin-top: 0;
+  margin-bottom: 18px;
+
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   color: #ffffff;
 
   &--bold {
-    margin-top: 0;
     margin-bottom: 0;
 
     @include font(700, normal);
@@ -74,9 +77,9 @@
 
   .about__container {
     width: $tablet-width;
-    padding-top: 140px;
+    padding-top: 132px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 88px;
     padding-left: 75px;
 
     background-image: none;
@@ -98,8 +101,8 @@
     &::after {
       position: absolute;
       z-index: 0;
-      top: 144px;
-      left: calc(50% - 384px + 420px);
+      top: 142px;
+      left: calc(50% - 384px + 384px);
 
       width: 376px;
       height: 548px;
@@ -111,14 +114,19 @@
 
   .about__heading {
     font-size: 45px;
+    margin-bottom: 36px;
   }
 
   .about__text {
     width: 300px;
+    margin-bottom: 32px;
+
     font-size: 28px;
     line-height: 1.18;
 
     &--bold {
+      margin-bottom: 50px;
+
       font-size: 21px;
       line-height: 1.19;
     }
@@ -137,12 +145,12 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    min-height: 750px;
+    min-height: 810px;
   }
 
   .about__container {
     width: $desktop-width;
-    padding-top: 200px;
+    padding-top: 190px;
     padding-left: 131px;
 
     &::before {
@@ -173,11 +181,17 @@
     }
   }
 
+  .about__heading {
+    margin-bottom: 53px;
+  }
+
   .about__text {
     width: 620px;
+    margin-bottom: 39px;
 
     &--bold {
       width: 410px;
+      margin-bottom: 84px;
     }
   }
 

@@ -1,4 +1,5 @@
 .review {
+  min-height: 205px;
   color: #ffffff;
 
   background-color: #161c35;
@@ -6,15 +7,15 @@
 
 .review__blockquote {
   width: $mobile-width;
-  padding-left: 50px;
+  padding-top: 48px;
   padding-right: 110px;
+  padding-left: 50px;
   margin: 0 auto;
 }
 
 .review__text {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
+  margin-bottom: 16px;
 
   @include font(300, normal);
   font-size: 16px;
@@ -34,7 +35,7 @@
 
   .review__blockquote {
     width: $tablet-width;
-    padding-top: 60px;
+    padding-top: 86px;
     padding-right: 75px;
     padding-left: 75px;
     margin-bottom: 213px;
@@ -42,7 +43,7 @@
 
   .review__text {
     max-width: 265px;
-    margin-bottom: 52px;
+    margin-bottom: 44px;
 
     font-size: 28px;
     line-height: 1.18;
@@ -59,17 +60,17 @@
 
 @media (min-width: $desktop-width) {
   .review {
-    min-height: none;
+    min-height: 0;
 
     background: none;
   }
 
   .review__blockquote {
     width: $mobile-width;
-    padding-top: 60px;
+    padding-top: 110px;
     padding-right: 30px;
     padding-left: 30px;
-    margin-right: 90px;
+    margin-right: 57px;
     margin-bottom: 0;
     margin-left: 0;
   }

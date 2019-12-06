@@ -4,20 +4,39 @@
 }
 
 .add-profile__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   width: $mobile-width;
   min-height: 481px;
-  padding-top: 82px;
+  padding-top: 80px;
   padding-right: 25px;
   padding-bottom: 30px;
   padding-left: 50px;
   margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    top: 67px;
+    right: 26px;
+    z-index: 1;
+
+    width: 99px;
+    height: 99px;
+    content: "";
+
+    background-image: url("../img/rates@1x.png");
+    background-size: contain;
+  }
 }
 
 .add-profile__heading {
+  max-width: 105px;
   margin-top: 0;
   margin-bottom: 44px;
+
+  line-height: 22px;
 }
 
 .add-profile__link {
@@ -30,7 +49,7 @@
   }
 
   &--all {
-    display: block;
+    display: flex;
 
     font-size: 16px;
     color: #192144;
@@ -38,19 +57,60 @@
 }
 
 .add-profile__list {
-  width: 200px;
+  max-width: 200px;
 
   @include list;
   margin-bottom: 30px;
+  counter-reset: add-profile;
 }
 
 .add-profile__item {
-  height: 65px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 67px;
 
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
 
+  &::after {
+    position: absolute;
+    top: 4px;
+    right: -44px;
+    z-index: 2;
+
+    width: 34px;
+    height: 34px;
+    content: "";
+
+    background-color: #ffbd30;
+    border-radius: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    top: 14px;
+    right: -31px;
+    z-index: 3;
+
+    content: counter(add-profile);
+    counter-increment: add-profile;
+
+    @include font(400, normal);
+    font-size: 16px;
+    color: #ffffff;
+  }
+
   &:first-child {
     border-top: 1px solid rgba($color: #000000, $alpha: 0.05);
+
+    &::after {
+      background-color: #ffa530;
+    }
+  }
+
+  &:last-child::after {
+    background-color: #ffd74b;
   }
 }
 
@@ -76,15 +136,22 @@
   .add-profile__container {
     width: $tablet-width;
     min-height: 540px;
-    padding-top: 135px;
-    padding-right: 40px;
-    padding-bottom: 80px;
-    padding-left: 40px;
+    padding-top: 145px;
+    padding-right: 75px;
+    padding-bottom: 62px;
+    padding-left: 131px;
+
+    &::before {
+      top: auto;
+      right: 86px;
+      bottom: 48px;
+    }
   }
 
   .add-profile__heading {
-    margin-right: auto;
-    margin-left: auto;
+    max-width: none;
+    padding-left: 14px;
+    margin-bottom: 82px;
   }
 
   .add-profile__link {
@@ -93,18 +160,75 @@
     }
 
     &--all {
+      position: relative;
+
+      align-items: center;
+      height: 67px;
+
       font-size: 20px;
       color: #132576;
+
+      &::before {
+        position: absolute;
+        top: -2px;
+        left: -90px;
+
+        width: 67px;
+        height: 67px;
+
+        content: "";
+
+        background-color: #e2e5f2;
+        border-radius: 50%;
+      }
     }
   }
 
   .add-profile__list {
-    width: 100%;
+    position: relative;
+
+    min-width: 100%;
+    margin-bottom: 34px;
+
+    &::after {
+      position: absolute;
+      top: -44px;
+      right: -35px;
+      z-index: -1;
+
+      width: 198px;
+      height: 285px;
+
+      content: "";
+
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .add-profile__item {
+    &::after {
+      top: 0;
+      right: auto;
+      left: -90px;
+
+      width: 67px;
+      height: 67px;
+    }
+
+    &::before {
+      top: 18px;
+      right: auto;
+      left: -64px;
+
+      font-size: 28px;
+    }
   }
 
   .add-profile__dl {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   .add-profile__item-cell {
@@ -116,9 +240,45 @@
 @media (min-width: $desktop-width) {
   .add-profile__container {
     width: $desktop-width;
-    min-height: 750px;
-    padding-top: 168px;
+    min-height: 810px;
+    padding-top: 178px;
     padding-right: 131px;
     padding-left: 131px;
+
+    &::before {
+      top: 346px;
+      right: 134px;
+      bottom: auto;
+
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .add-profile__heading {
+    padding-left: 0;
+    margin-right: auto;
+    margin-bottom: 142px;
+    margin-left: auto;
+  }
+
+  .add-profile__list {
+    max-width: 903px;
+    min-width: 0;
+    padding-left: 90px;
+
+    &::after {
+      top: -52px;
+      right: -160px;
+
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .add-profile__link {
+    &--all {
+      margin-left: 90px;
+    }
   }
 }

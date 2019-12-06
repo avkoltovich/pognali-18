@@ -25,11 +25,8 @@
   background-color: #ffffff;
 }
 
-.directions__img {
-  border-radius: 10px 10px 0 0;
-}
-
 .directions__heading {
+  padding-left: 25px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -39,6 +36,10 @@
 }
 
 .directions__text {
+  max-width: 220px;
+  padding-left: 25px;
+  margin-bottom: 60px;
+
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
@@ -46,11 +47,49 @@
 }
 
 .directions__list {
-  @include list;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  list-style: none;
+}
+
+.directions__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.directions__img {
+  display: block;
+
+  border-radius: 10px 10px 0 0;
 }
 
 .directions__link {
+  position: relative;
+
   text-decoration: none;
+}
+
+.directions__item-container {
+  z-index: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 270px;
+  min-height: 90px;
+  padding-top: 28px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin-top: -10px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .directions__title {
@@ -59,11 +98,24 @@
 
   @include font(700, normal);
   font-size: 21px;
+  line-height: 1;
   color: #161c35;
 }
 
-.directions__counter,
+.directions__counter {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include font(500, normal);
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .directions__item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include font(500, normal);
   font-size: 16px;
   line-height: 1.13;
@@ -77,9 +129,10 @@
 
   .directions__container {
     width: $tablet-width;
+    padding-top: 130px;
     padding-right: 75px;
     padding-bottom: 80px;
-    padding-left: 75px;
+    padding-left: 73px;
 
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
@@ -102,14 +155,88 @@
   }
 
   .directions__heading {
+    padding-left: 0;
+    margin-bottom: 53px;
+
     font-size: 45px;
   }
 
   .directions__text {
-    width: 340px;
+    max-width: 340px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 106px;
 
     font-size: 28px;
     line-height: 1.18;
+  }
+
+  .directions__list {
+    margin-bottom: 47px;
+  }
+
+  .directions__link {
+    &--item {
+      display: flex;
+    }
+  }
+
+  .directions__item-container {
+    position: relative;
+
+    order: 1;
+    flex-direction: column;
+    min-width: 434px;
+    min-height: 140px;
+    padding-top: 31px;
+    padding-bottom: 17px;
+    padding-left: 32px;
+    margin-top: 0;
+
+    border-radius: 20px 0 0 20px;
+
+    &::before {
+      position: absolute;
+      top: 15px;
+      right: -36px;
+      z-index: 1;
+
+      width: 70px;
+      height: 47px;
+
+      content: "";
+
+      background-color: tomato;
+      border-radius: 6px;
+    }
+  }
+
+  .directions__title {
+    order: 1;
+
+    font-size: 24px;
+  }
+
+  .directions__item-text {
+    order: 2;
+    margin-bottom: 11px;
+
+    font-size: 20px;
+  }
+
+  .directions__counter {
+    order: 3;
+    padding-left: 29px;
+
+    font-size: 20px;
+  }
+
+  .directions__img {
+    order: 2;
+    width: 186px;
+    min-height: 140px;
+
+    border-radius: 0 20px 20px 0;
   }
 }
 
@@ -118,35 +245,61 @@
     width: $desktop-width;
     min-height: 750px;
     padding: 131px;
-    padding-top: 131px;
+    padding-top: 222px;
     padding-right: 131px;
-    padding-bottom: 131px;
+    padding-bottom: 139px;
     padding-left: 131px;
 
-    background-position: top 140px right 60px;
+    background-position: top 149px right 60px;
 
     &::after {
-      top: 140px;
+      top: 149px;
       left: 60px;
     }
   }
 
   .directions__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    max-height: 450px;
+  }
+
+  .directions__text-wrap {
+    max-width: 340px;
+    padding-bottom: 81px;
+  }
+
+  .directions__text {
+    margin-bottom: 0;
   }
 
   .directions__list {
-    order: -1;
+    max-width: 560px;
+    height: 100%;
     margin-right: 170px;
+    margin-bottom: 0;
   }
 
   .directions__item {
-    width: 560px;
+    width: 100%;
     height: 140px;
     margin-bottom: 10px;
+  }
+
+  .directions__item-container {
+    min-width: 373px;
+    padding-top: 25px;
+    padding-left: 30px;
+
+    &::before {
+      top: 23px;
+      right: -35px;
+    }
+  }
+
+  .directions__item-text {
+    margin-bottom: 18px;
   }
 
   .directions__link {
@@ -154,5 +307,10 @@
       width: 100%;
       display: flex;
     }
+  }
+
+  .directions .button-rect {
+    margin-top: -71px;
+    margin-left: 733px;
   }
 }

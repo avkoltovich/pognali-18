@@ -7,14 +7,14 @@
   width: $mobile-width;
   padding-top: 100px;
   padding-right: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   padding-left: 25px;
   margin: 0 auto;
 }
 
 .feedback__heading {
   margin-top: 0;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 
   @include font(700, normal);
   font-size: 24px;
@@ -23,14 +23,21 @@
 }
 
 .feedback__text {
+  max-width: 215px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 28px;
 
   @include font(300, normal);
   font-size: 16px;
   line-height: 1.38;
   text-align: center;
   color: #ffffff;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
 }
 
 .feedback__link {
@@ -39,7 +46,7 @@
 
 .feedback__form {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .feedback__input {
@@ -96,6 +103,12 @@
   color: #ffd74b;
 }
 
+.feedback__contact-img {
+  margin-right: 16px;
+
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .feedback {
     border-radius: 0 0 60px 60px;
@@ -103,27 +116,46 @@
 
   .feedback__container {
     width: $tablet-width;
-    padding-top: 137px;
+    padding-top: 133px;
     padding-right: 75px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     padding-left: 75px;
   }
 
   .feedback__heading {
+    margin-bottom: 52px;
+
     font-size: 45px;
   }
 
   .feedback__text {
+    max-width: none;
+    margin-bottom: 65px;
+
     font-size: 28px;
     line-height: 1.18;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
   }
 
   .feedback__br {
     display: none;
   }
 
+  .feedback__form {
+    margin-bottom: 58px;
+  }
+
   .feedback__contact-link {
     font-size: 28px;
+  }
+
+  .feedback__contact-img {
+    width: 67px;
+    height: 67px;
+    margin-right: 24px;
   }
 
   .feedback__input {
@@ -137,7 +169,7 @@
   }
 
   .feedback__button {
-    width: 82px;
+    width: 95px;
     height: 81px;
 
     border-radius: 0 20px 20px 0;
@@ -147,14 +179,24 @@
 @media (min-width: $desktop-width) {
   .feedback__container {
     width: $desktop-width;
-    padding-top: 168px;
+    padding-top: 164px;
     padding-right: 131px;
+    padding-bottom: 105px;
     padding-left: 131px;
+  }
+
+  .feedback__text {
+    max-width: 650px;
+    margin-bottom: 58px;
+
+    &--question {
+      font-size: 29.5px;
+    }
   }
 
   .feedback__button {
     justify-content: space-between;
-    min-width: 324px;
+    min-width: 327px;
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -163,7 +205,26 @@
     display: inline;
   }
 
+  .feedback__form {
+    margin-bottom: 68px;
+  }
+
   .feedback__contact-list {
     display: flex;
+    justify-content: center;
+  }
+
+  .feedback__contact-item {
+    margin-right: 108px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .feedback__contact-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
   }
 }
