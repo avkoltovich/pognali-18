@@ -1,5 +1,8 @@
 .filter {
-  padding: 25px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
 
   border-radius: 20px;
   background-color: #ffd74b;
@@ -8,17 +11,22 @@
 .filter__heading {
   @include font(700, normal);
 
+  padding-left: 5px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-size: 22.5px;
+  line-height: 1;
   color: #1d2e5b;
 }
 
 .filter__fieldset {
   position: relative;
 
-  padding: 0;
+  padding-top: 0;
+  padding-right: 5px;
+  padding-bottom: 0;
+  padding-left: 5px;
   margin: 0;
 
   border: 0;
@@ -30,17 +38,80 @@
 }
 
 .filter__legend {
-  @include font(700, normal);
-
   width: 100%;
   height: 40px;
-
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 40px;
-  color: #1d2e5b;
+  margin-top: 0;
+  margin-bottom: 1px;
 
   border-top: 1px solid #f3c72b;
+}
+
+.filter__button {
+  padding: 0;
+
+  &--show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    @include font(700, normal);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #1d2e5b;
+
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.filter__label-wrap {
+  &--music {
+    margin-bottom: 10px;
+  }
+
+  &--transport {
+    display: flex;
+    padding-top: 3px;
+    margin-bottom: 20px;
+  }
+
+  &--number {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 20px;
+
+    background-color: #ffffff;
+    border: solid 1px #cbced9;
+    border-radius: 4px;
+
+    &::before {
+      position: absolute;
+      right: 50%;
+
+      width: 1px;
+      height: 35px;
+      content: "";
+
+      background-color: #cbced9;
+    }
+
+    &::after {
+      position: absolute;
+      right: 50%;
+
+      width: 1px;
+      height: 11px;
+      content: "";
+
+      background-color: #ffffff;
+    }
+  }
 }
 
 .filter__label {
@@ -48,6 +119,131 @@
 
   font-size: 15px;
   color: $greyish-brown;
+
+  &--music {
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    margin-bottom: 5px;
+  }
+
+  &--transport {
+    display: block;
+    width: 33px;
+    height: 33px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &--pseudo {
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: calc(50% - 7px);
+      z-index: 9;
+
+      width: 16px;
+      height: 1px;
+      content: "";
+
+      background-color: #cbced9;
+    }
+  }
+}
+
+.filter__checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.filter__checkbox::-ms-check {
+  display: none;
+}
+
+.filter__checkbox-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 9px;
+  margin-bottom: 2px;
+
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.filter__input-number {
+  appearance: textfield;
+
+  max-width: 102px;
+  padding-left: 47px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 1.5px;
+
+  border: 0;
+
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}
+
+.filter__range-wrap {
+  position: relative;
+
+  display: flex;
+  justify-content: end;
+  margin-bottom: 22px;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 1px);
+
+    width: 220px;
+    height: 2px;
+    content: "";
+
+    background-color: #1d2e5b;
+    border-radius: 1px;
+    opacity: 0.2;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+
+    width: 144px;
+    height: 2px;
+    content: "";
+
+    background-color: #1d2e5b;
+    border-radius: 1px;
+  }
+}
+
+.filter__range {
+  z-index: 10;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background-color: #1d2e5b;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--left {
+    margin-right: 133px;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -13,6 +13,8 @@
 }
 
 .pagination__link {
+  position: relative;
+
   display: flex;
   height: 50px;
 
@@ -24,6 +26,18 @@
 
   &--fwd {
     border-radius: 0 20px 20px 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 5px);
+
+    width: 10px;
+    height: 20px;
+    content: "";
+
+    background-color: #192144;
   }
 }
 
