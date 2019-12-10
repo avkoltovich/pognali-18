@@ -8,10 +8,10 @@ let socialList = document.querySelector('.site-header__social-list');
 
 menuBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
-    nav.classList.toggle('display-none');
-    contactList.classList.toggle('display-none');
-    socialList.classList.toggle('display-none');
-    if (window.matchMedia("(max-width: 767px)").matches) {
-      authBtn.classList.toggle('display-none');
-    };
+  nav.classList.toggle('display-none');
+  contactList.classList.toggle('display-none');
+  socialList.classList.toggle('display-none');
+  if (window.matchMedia("(max-width: 767px)").matches) {
+    authBtn.classList.toggle('display-none');
+  };
 });

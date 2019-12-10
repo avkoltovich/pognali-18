@@ -74,8 +74,15 @@
     height: 6px;
     content: "";
 
-    background-color: #f97676;
     border-radius: 50%;
+  }
+
+  &--offline::after {
+    background-color: #f97676;
+  }
+
+  &--online::after {
+    background-color: #81e31e;
   }
 }
 
@@ -265,8 +272,10 @@
     text-transform: uppercase;
     color: #1d2e5b;
 
-    border: 0;
     background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
 
     &::before {
       position: absolute;
