@@ -75,13 +75,13 @@
     </div>
     <section class="site-main__filter-country filter-country">
       <div class="filter-country__container">
-        <div class="filter-country__wrapper">
-          <button class="filter-country__button filter-country__button--open" type="button" aria-label="Показать">
+        <h2 class="filter-country__heading">
+          <button class="filter-country__button" type="button" aria-label="Показать">
+            <span class="filter-country__status filter-country__status--open"></span>
+            Фильтрация по странам
+            <span class="filter-country__status filter-country__status--close"></span>
           </button>
-          <h2 class="filter-country__heading">Фильтрация по странам</h2>
-          <button class="filter-country__button filter-country__button--close" type="button" aria-label="Скрыть">
-          </button>
-        </div>
+        </h2>
         <ul class="filter-country__continent-list">
           <li class="filter-country__continent-item">
             <button class="filter-country__continent-button" type="button">Европа</button>
@@ -217,7 +217,7 @@
           <form action="https://echo.htmlacademy.ru" class="catalog__filter filter">
             <h3 class="filter__heading">Подберите идеального попутчика</h3>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend" aria-label="Хобби">
+              <legend class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Хобби
                   <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
@@ -225,7 +225,7 @@
               </legend>
             </fieldset>
             <fieldset class="filter__fieldset filter__fieldset--music">
-              <legend class="filter__legend" aria-label="Музыка">
+              <legend class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Музыка
                   <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
@@ -250,7 +250,7 @@
               </div>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend" aria-label="Еда">
+              <legend class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Еда
                   <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
@@ -258,7 +258,7 @@
               </legend>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend" aria-label="Транспорт">
+              <legend class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Транспорт
                   <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
@@ -283,7 +283,7 @@
               </div>
             </fieldset>
             <fieldset class="filter__fieldset">
-              <legend class="filter__legend" aria-label="Левел">
+              <legend class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Левел
                   <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
@@ -624,6 +624,7 @@
       </p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
