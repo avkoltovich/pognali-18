@@ -31,14 +31,14 @@
 
   border: 0;
 
-  &--music {
+  &--checkbox {
     display: flex;
     flex-direction: column;
   }
 }
 
 .filter__legend {
-  width: 100%;
+  min-width: 100%;
   height: 40px;
   margin-top: 0;
   margin-bottom: 1px;
@@ -69,9 +69,33 @@
   }
 }
 
+.filter__colon {
+  display: none;
+}
+
+.filter__icon {
+  &--checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    margin-bottom: 2px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+}
+
 .filter__label-wrap {
+  &--hobby {
+    display: none;
+  }
+
   &--music {
     margin-bottom: 10px;
+  }
+
+  &--food {
+    display: none;
   }
 
   &--transport {
@@ -122,7 +146,7 @@
   font-size: 15px;
   color: $greyish-brown;
 
-  &--music {
+  &--checkbox {
     display: flex;
     align-items: center;
     min-height: 25px;
@@ -163,26 +187,16 @@
   display: none;
 }
 
-.filter__checkbox-icon {
-  width: 18px;
-  height: 18px;
-  margin-right: 9px;
-  margin-bottom: 2px;
-
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-
 .filter__input-number {
   appearance: textfield;
 
-  max-width: 102px;
-  padding-left: 47px;
+  max-width: 110px;
 
   font-size: 15px;
   font-weight: 500;
   line-height: 0.9;
   letter-spacing: 1.5px;
+  text-align: center;
 
   border: 0;
 
@@ -245,6 +259,208 @@
 
   &--left {
     margin-right: 133px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    padding-top: 36px;
+    padding-right: 35px;
+    padding-bottom: 37px;
+    padding-left: 35px;
+  }
+
+  .filter__heading {
+    padding-left: 0;
+    margin-bottom: 67px;
+
+    font-size: 30px;
+  }
+
+  .filter__fieldset {
+    padding-right: 0;
+    padding-left: 0;
+
+    &--checkbox {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--transport {
+      display: flex;
+      margin-bottom: 2px;
+    }
+
+    &--level {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 52px;
+    }
+
+    &:first-of-type::before {
+      position: absolute;
+      top: -30px;
+
+      width: 100%;
+      height: 1px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #f3c72b;
+    }
+
+    &:last-of-type::after {
+      position: absolute;
+      bottom: -15px;
+
+      width: 100%;
+      height: 1px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #f3c72b;
+    }
+  }
+
+  .filter__legend {
+    min-width: 121px;
+    margin-bottom: 10px;
+
+    border-top: none;
+
+    &--transport {
+      padding-top: 7px;
+    }
+
+    &--level {
+      order: 1;
+      padding-top: 6px;
+    }
+  }
+
+  .filter__button {
+    &--show {
+      width: initial;
+
+      font-size: 20px;
+      font-weight: 500;
+
+      cursor: initial;
+    }
+  }
+
+  .filter__colon {
+    display: inline;
+  }
+
+  .filter__icon {
+    &--checkbox {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      margin-bottom: 4px;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  .filter__label-wrap {
+    height: 40px;
+
+    &--hobby {
+      display: flex;
+    }
+
+    &--music {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &--food {
+      display: flex;
+      margin-bottom: 14px;
+    }
+
+    &--transport {
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
+
+    &--number {
+      order: 3;
+      height: 46px;
+
+      &::before {
+        height: 44px;
+      }
+    }
+  }
+
+  .filter__label {
+    font-size: 20px;
+
+    &--checkbox {
+      min-width: 170px;
+      min-height: 25px;
+      padding-left: 5px;
+      margin-bottom: 0;
+    }
+
+    &--checkbox:last-of-type {
+      min-width: 0;
+    }
+
+    &--transport {
+      width: 43px;
+      height: 43px;
+      margin-right: 13px;
+    }
+  }
+
+  .filter__input-number {
+    max-width: 75px;
+    padding-left: 0;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .filter__range-wrap {
+    min-width: 277px;
+    max-height: 40px;
+    order: 2;
+    align-items: center;
+    margin-right: 48px;
+    margin-bottom: 22px;
+
+    &::before {
+      top: calc(50% - 2px);
+
+      width: 277px;
+      height: 3px;
+
+      border-radius: 1.5px;
+    }
+
+    &::after {
+      top: calc(50% - 2px);
+
+      width: 201px;
+      height: 3px;
+
+      border-radius: 1.5px;
+    }
+  }
+
+  .filter__range {
+    width: 13px;
+    height: 13px;
+
+    &--left {
+      margin-right: 186px;
+    }
   }
 }
 

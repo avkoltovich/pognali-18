@@ -78,7 +78,8 @@
         <h2 class="filter-country__heading">
           <button class="filter-country__button filter-country__button--title" type="button" aria-label="Показать">
             <span class="filter-country__status filter-country__status--open"></span>
-            Фильтрация по странам
+            <span class="filter-country__heading-text filter-country__heading-text--mobile">Фильтрация по странам</span>
+            <span class="filter-country__heading-text filter-country__heading-text--tablet">СВЕРНУТЬ</span>
             <span class="filter-country__status filter-country__status--close"></span>
           </button>
         </h2>
@@ -178,24 +179,6 @@
         </ul>
         <ul class="filter-country__list">
           <li class="filter-country__item">
-            <a href="" class="filter-country__link">Афганистан</a>
-          </li>
-          <li class="filter-country__item">
-            <a href="" class="filter-country__link">Албания</a>
-          </li>
-          <li class="filter-country__item">
-            <a href="" class="filter-country__link">Алжир</a>
-          </li>
-          <li class="filter-country__item">
-            <a href="" class="filter-country__link">Андорра</a>
-          </li>
-          <li class="filter-country__item">
-            <a href="" class="filter-country__link">Аргентина</a>
-          </li>
-          <li class="filter-country__item">
-            <a href="" class="filter-country__link">Армения</a>
-          </li>
-          <li class="filter-country__item">
             <a href="" class="filter-country__link">Австралия</a>
           </li>
           <li class="filter-country__item">
@@ -204,8 +187,32 @@
           <li class="filter-country__item">
             <a href="" class="filter-country__link">Азербайджан</a>
           </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Албания</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Алжир</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Ангола</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Андорра</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Антигуа и Барбуда</a>
+          </li>
+          <li class="filter-country__item">
+            <a href="" class="filter-country__link">Аргентина</a>
+          </li>
+          <li class="filter-country__item filter-country__item--no-show">
+            <a href="" class="filter-country__link">Армения</a>
+          </li>
+          <li class="filter-country__item filter-country__item--no-show">
+            <a href="" class="filter-country__link">Афганистан</a>
+          </li>
         </ul>
-        <button class="filter-country__button button-oval button-oval--blue" type="button">
+        <button class="filter-country__button filter-country__button--hide button-oval button-oval--blue" type="button">
           <span class="filter-country__icon">свернуть</span>
         </button>
       </div>
@@ -216,54 +223,88 @@
         <div class="catalog__wrapper">
           <form action="https://echo.htmlacademy.ru" class="catalog__filter filter">
             <h3 class="filter__heading">Подберите идеального попутчика</h3>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">
+            <fieldset class="filter__fieldset filter__fieldset--checkbox">
+              <h4 class="filter__legend filter__fieldset--checkbox">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-                  Хобби
-                  <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+                  Хобби<span class="filter__colon">:</span>
+                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
                 </button>
-              </legend>
+              </h4>
+              <div class="filter__label-wrap filter__label-wrap--hobby">
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Sport" checked>
+                  <span class="filter__icon--checkbox"></span>
+                  Спортзал
+                </label>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Shisha">
+                  <span class="filter__icon--checkbox"></span>
+                  Кальян
+                </label>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Sofa">
+                  <span class="filter__icon--checkbox"></span>
+                  Диван
+                </label>
+              </div>
             </fieldset>
-            <fieldset class="filter__fieldset filter__fieldset--music">
-              <legend class="filter__legend">
+            <fieldset class="filter__fieldset filter__fieldset--checkbox">
+              <h4 class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-                  Музыка
-                  <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+                  Музыка<span class="filter__colon">:</span>
+                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
                 </button>
-              </legend>
+              </h4>
               <div class="filter__label-wrap filter__label-wrap--music">
-                <label class="filter__label filter__label--music">
-                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Hard Rock" checked>
-                  <span class="filter__checkbox-icon"></span>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="music" value="Hard Rock" checked>
+                  <span class="filter__icon--checkbox"></span>
                   Тяжелый рок
                 </label>
-                <label class="filter__label filter__label--music">
-                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Russian rap">
-                  <span class="filter__checkbox-icon"></span>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="music" value="Russian rap">
+                  <span class="filter__icon--checkbox"></span>
                   Русский рэп
                 </label>
-                <label class="filter__label filter__label--music">
-                  <input type="checkbox" class="filter__checkbox" name="hobby" value="Eurodance">
-                  <span class="filter__checkbox-icon"></span>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="music" value="Eurodance">
+                  <span class="filter__icon--checkbox"></span>
                   Евроденс
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">
+            <fieldset class="filter__fieldset filter__fieldset--checkbox">
+              <h4 class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-                  Еда
-                  <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+                  Еда<span class="filter__colon">:</span>
+                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
                 </button>
-              </legend>
+              </h4>
+              <div class="filter__label-wrap filter__label-wrap--food">
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="food" value="Meat" checked>
+                  <span class="filter__icon--checkbox"></span>
+                  Мясоед
+                </label>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="food" value="Proper nutrition">
+                  <span class="filter__icon--checkbox"></span>
+                  Сидит на ПП
+                </label>
+                <label class="filter__label filter__label--checkbox">
+                  <input type="checkbox" class="filter__checkbox" name="food" value="Vegan">
+                  <span class="filter__icon--checkbox"></span>
+                  Веган-сыроед
+                </label>
+              </div>
             </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">
+            <fieldset class="filter__fieldset filter__fieldset--transport">
+              <h4 class="filter__legend filter__legend--transport">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-                  Транспорт
-                  <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+                  Транспорт<span class="filter__colon">:</span>
+                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
                 </button>
-              </legend>
+              </h4>
               <div class="filter__label-wrap filter__label-wrap--transport">
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
@@ -282,13 +323,13 @@
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filter__fieldset">
-              <legend class="filter__legend">
+            <fieldset class="filter__fieldset filter__fieldset--level">
+              <h4 class="filter__legend filter__legend--level">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
-                  Левел
-                  <img src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
+                  Левел<span class="filter__colon">:</span>
+                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8" height="4" alt="Показать" aria-hidden="true">
                 </button>
-              </legend>
+              </h4>
               <div class="filter__label-wrap filter__label-wrap--number">
                 <label class="filter__label filter__label--pseudo">
                   <input type="number" class="filter__input-number" value="30">
