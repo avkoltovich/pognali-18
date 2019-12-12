@@ -86,10 +86,12 @@
   }
 }
 
-.catalog__like {
+.catalog__button-wrap {
   margin-top: -24px;
   margin-left: 84px;
+}
 
+.catalog__like {
   @include font(700, normal);
   font-size: 14px;
   line-height: 1.5;
@@ -229,6 +231,7 @@
   &--call {
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 10;
   }
 
@@ -305,19 +308,132 @@
 
   .catalog__item {
     display: flex;
-    max-width: 950px;
-    min-height: 332px;
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-bottom: 22px;
+    padding-left: 35px;
     margin-bottom: 40px;
 
     border-radius: 20px;
   }
 
-  .catalog__button {
-    margin-right: auto;
-    margin-left: auto;
+  .catalog__item-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item-header {
+    order: 1;
+    align-items: flex-start;
+    max-width: 570px;
+    min-height: 190px;
+    padding-left: 223px;
+    margin-bottom: 10px;
+  }
+
+  .catalog__photo {
+    position: absolute;
+    left: 0;
+
+    width: 190px;
+    height: 190px;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+
+  .catalog__title {
+    position: relative;
+
+    max-width: none;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+
+    font-size: 30px;
+  }
+
+  .catalog__status {
+    &::after {
+      top: 10px;
+      right: -30px;
+
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  .catalog__tags {
+    max-width: 225px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 45px;
 
     font-size: 20px;
-    line-height: 1.5;
+  }
+
+  .catalog__button-wrap {
+    order: 1;
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .catalog__button {
+    &--call {
+      position: static;
+
+      width: 148px;
+    }
+
+    &--like {
+      position: static;
+
+      width: 50px;
+      height: 50px;
+      margin-right: 4px;
+    }
+
+    &--not-like {
+      position: static;
+
+      width: 50px;
+      height: 50px;
+      margin-right: 4px;
+    }
+  }
+
+  .catalog__like {
+    padding-top: 12px;
+    margin-top: 0;
+    margin-left: 0;
+
+    font-size: 20px;
+  }
+
+  .catalog__item-direction {
+    order: 3;
+  }
+
+  .catalog__countries-list {
+    display: flex;
+  }
+
+  .catalog__item-footer {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__list-caption {
+    &--transport {
+      display: none;
+    }
+  }
+
+  .catalog__transport-list {
+    display: flex;
+    flex-direction: column;
   }
 }
 
