@@ -16,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -319,7 +320,6 @@
   }
 
   .filter-country__header {
-    align-items: flex-start;
     padding-right: 68px;
     padding-left: 20px;
     margin-bottom: 38px;

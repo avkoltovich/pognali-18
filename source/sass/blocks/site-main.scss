@@ -90,9 +90,7 @@
   z-index: 9;
 
   top: -10px;
-  left: 50%;
-
-  transform: translateX(-50%);
+  left: calc(50% - 135px);
 }
 
 .site-main__feedback {
@@ -209,6 +207,7 @@
 
   .site-main__business-rate {
     top: 0;
+    left: calc(50% - 344px);
   }
 
   .site-main__map {
@@ -262,5 +261,6 @@
 
   .site-main__business-rate {
     top: 108px;
+    left: calc(50% - 375px);
   }
 }

@@ -584,6 +584,14 @@
     margin-bottom: 11px;
   }
 
+  .catalog__status {
+    &::after {
+      top: 8px;
+      right: auto;
+      left: -24px;
+    }
+  }
+
   .catalog__tags {
     max-width: 235px;
     padding-left: 4px;
