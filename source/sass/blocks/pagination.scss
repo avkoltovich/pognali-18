@@ -51,7 +51,7 @@
 @media (min-width: $tablet-width) {
   .pagination {
     max-width: 950px;
-    min-height: 100px;
+    height: 100px;
     padding-left: 28px;
     padding-right: 22px;
 
@@ -60,7 +60,7 @@
   }
 
   .pagination__item {
-    width: initial;
+    width: auto;
 
     &:first-child {
       border-right: none;
@@ -70,12 +70,8 @@
       display: list-item;
     }
 
-    &--arrow {
+    &--left {
       width: 100%;
-    }
-
-    &--arrow:last-child {
-      width: initial;
     }
   }
 

@@ -241,7 +241,7 @@
   }
 
   .filter-country__letter-list {
-    max-width: 370px;
+    width: 370px;
     margin-left: 0;
     margin-bottom: 50px;
   }
@@ -319,6 +319,7 @@
   }
 
   .filter-country__header {
+    align-items: flex-start;
     padding-right: 68px;
     padding-left: 20px;
     margin-bottom: 38px;
@@ -328,7 +329,6 @@
     order: 1;
     display: flex;
     margin-right: 35px;
-    margin-bottom: auto;
 
     font-size: 20px;
     line-height: 1.2;

@@ -345,12 +345,12 @@
 
   .filter__button {
     &--show {
-      width: initial;
+      width: auto;
 
       font-size: 20px;
       font-weight: 500;
 
-      cursor: initial;
+      cursor: auto;
     }
   }
 
@@ -519,7 +519,7 @@
     }
 
     &--level {
-      order: initial;
+      order: auto;
       padding-top: 0;
       margin-bottom: 8px;
     }
@@ -548,7 +548,7 @@
   }
 
   .filter__label-wrap {
-    height: initial;
+    height: auto;
     margin-bottom: 8px;
 
     &--hobby {
@@ -571,7 +571,7 @@
     }
 
     &--number {
-      order: initial;
+      order: auto;
       max-width: 190px;
       height: 46px;
       margin-bottom: 32px;
