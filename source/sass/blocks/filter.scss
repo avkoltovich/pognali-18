@@ -118,10 +118,11 @@
 
     &::before {
       position: absolute;
+      top: 0;
       right: 50%;
 
       width: 1px;
-      height: 35px;
+      height: 34px;
       content: "";
 
       background-color: #cbced9;
@@ -129,6 +130,7 @@
 
     &::after {
       position: absolute;
+      top: calc(50% - 5px);
       right: 50%;
 
       width: 1px;
@@ -190,7 +192,7 @@
 .filter__input-number {
   appearance: textfield;
 
-  max-width: 110px;
+  max-width: 105px;
   padding-right: 8px;
   padding-left: 8px;
 
@@ -215,11 +217,12 @@
   position: relative;
 
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 22px;
 
   &::before {
     position: absolute;
+    right: 0;
     top: calc(50% - 1px);
 
     width: 220px;
@@ -353,6 +356,7 @@
 
   .filter__colon {
     display: inline;
+    margin-right: auto;
   }
 
   .filter__icon {
@@ -392,6 +396,7 @@
 
     &--number {
       order: 3;
+      max-width: 150px;
       height: 46px;
 
       &::before {
@@ -421,7 +426,7 @@
   }
 
   .filter__input-number {
-    max-width: 75px;
+    max-width: 74px;
 
     font-size: 20px;
     letter-spacing: 2px;
