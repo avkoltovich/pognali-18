@@ -1230,16 +1230,31 @@
             </li>
           </ul>
         </div>
-        <button class="catalog__button catalog__button--more" type="button">Показать еще</button>
+        <button class="catalog__button catalog__button--more" type="button">
+          <span class="catalog__icon"></span>
+          Показать еще
+        </button>
         <ul class="catalog__pagination pagination">
-          <li class="pagination__item">
+          <li class="pagination__item pagination__item--number">
+            <a class="pagination__link" aria-current="page">1</a>
+          </li>
+          <li class="pagination__item pagination__item--number">
+            <a href="" class="pagination__link">2</a>
+          </li>
+          <li class="pagination__item pagination__item--number">
+            <a href="" class="pagination__link">3</a>
+          </li>
+          <li class="pagination__item pagination__item--number">
+            <a href="" class="pagination__link">4</a>
+          </li>
+          <li class="pagination__item pagination__item--arrow">
             <a href="" class="pagination__link pagination__link--back" aria-label="Назад">
-
+              <span class="pagination__icon"></span>
             </a>
           </li>
-          <li class="pagination__item">
+          <li class="pagination__item pagination__item--arrow">
             <a href="" class="pagination__link pagination__link--fwd" aria-label="Вперед">
-
+              <span class="pagination__icon"></span>
             </a>
           </li>
         </ul>
