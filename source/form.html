@@ -68,9 +68,8 @@
   </header>
   <main class="site-main">
     <div class="site-main__heading">
-      <div class="site-main__heading-container">
+      <div class="site-main__heading-container site-main__heading-container--form">
         <h1 class="site-main__title">Направления</h1>
-        <a href="index.html" class="site-main__button">На главную</a>
       </div>
     </div>
     <section class="site-main__profile profile">
@@ -81,9 +80,9 @@
           <dd class="profile__description">level</dd>
         </dl>
         <img class="profile__photo" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Мое фото">
-        <label class="profile__label">
+        <label class="profile__label profile__label--upload">
           <input class="profile__upload" type="file">
-          <span class="button-oval button-oval--blue profile__button">Сменить фото</span>
+          <span class="button-oval button-oval--blue profile__button"><span class="profile__button-text">Сменить</span> фото</span>
         </label>
         <div class="profile__fieldset profile__fieldset--tags">
           <h3 class="profile__legend profile__legend--tags">
@@ -96,7 +95,7 @@
             <span class="profile__legend-text profile__legend-text--transport">Транспорт</span>
           </h3>
           <ul class="profile__profile__list">
-            <li>
+            <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Airplane" aria-label="Самолет"
                   checked>
@@ -104,21 +103,21 @@
                   height="33" aria-hidden="true">
               </label>
             </li>
-            <li>
+            <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус" checked>
                 <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
                   height="33" aria-hidden="true">
               </label>
             </li>
-            <li>
+            <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bike" aria-label="Велосипед">
                 <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
                   height="33" aria-hidden="true">
               </label>
             </li>
-            <li>
+            <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Run" aria-label="Пешком" checked>
                 <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
@@ -135,8 +134,8 @@
         <ol class="plans__list">
           <li class="plans__item">
             <h3 class="plans__title">
-              <span class="plans__title plans__title--number">1.</span>
-              Франция, Италия
+              <span class="plans__title-text plans__title-text--number">1.</span>
+              <span class="plans__title-text plans__title-text--letters">Франция, Италия</span>
             </h3>
             <p class="plans__companion">3 попутчика</p>
             <p class="plans__date">26 мар — 29 мар</p>
@@ -144,8 +143,8 @@
           </li>
           <li class="plans__item">
             <h3 class="plans__title">
-              <span class="plans__title plans__title--number">2.</span>
-              Таиланд, Индонезия
+              <span class="plans__title-text plans__title-text--number">2.</span>
+              <span class="plans__title-text plans__title-text--letters">Таиланд, Индонезия</span>
             </h3>
             <p class="plans__companion">1 попутчик</p>
             <p class="plans__date">1 июл — 15 июл</p>
