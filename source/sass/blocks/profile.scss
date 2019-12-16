@@ -3,11 +3,13 @@
 }
 
 .profile__container {
+  display: flex;
+  flex-wrap: wrap;
   width: $mobile-width;
-  padding-top: 60px;
+  padding-top: 52px;
   padding-right: 25px;
   padding-left: 25px;
-  padding-bottom: 93px;
+  padding-bottom: 37px;
   margin: 0 auto;
 }
 
@@ -15,15 +17,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+
+  border-radius: 50%;
+  border: solid 3px #ff8d30;
 }
 
 .profile__term {
-  @include font(700, normal);
+  position: relative;
 
+  @include font(700, normal);
   font-size: 38px;
+  line-height: 1;
   color: #161c35;
+
+  &::after {
+    position: absolute;
+    bottom: 2px;
+    left: -5px;
+
+    width: 49px;
+    height: 2px;
+    content: "";
+
+    background-color: #cbced9;
+  }
 }
 
 .profile__description {
@@ -35,6 +59,16 @@
   color: $greyish-brown;
 }
 
+.profile__photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+
+  border-radius: 50%;
+}
+
 .profile__upload {
   position: absolute;
   z-index: -1;
@@ -42,30 +76,89 @@
   opacity: 0;
 }
 
+.profile__button {
+  width: 270px;
+  margin-bottom: 33px;
+}
+
 .profile__fieldset {
+  width: 270px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 25px;
+
   border-radius: 10px;
   border: solid 1px #cbced9;
   background-color: #edeff6;
+
+  &--tags {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  &--transport {
+    padding-bottom: 10px;
+  }
 }
 
 .profile__legend {
-  @include font(700, normal);
+  display: flex;
+  margin-bottom: 11px;
 
+  @include font(700, normal);
   font-size: 16px;
   line-height: 1.13;
   text-transform: uppercase;
   color: #1d2e5b;
+
+  &--tags {
+    margin-top: -34px;
+  }
+
+  &--transport {
+    margin-top: -8px;
+    margin-bottom: 5px;
+  }
+}
+
+.profile__legend-text {
+  padding: 0 14px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: $bgcolor-light;
 }
 
 .profile__textarea {
-  @include font(400, normal);
+  width: 215px;
+  padding: 0;
 
+  @include font(400, normal);
   font-size: 16px;
   line-height: 1.38;
   color: $greyish-brown;
 
   background-color: $bgcolor-light;
   border: 0;
+}
+
+.profile__profile__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+}
+
+.profile__checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.profile__checkbox::-ms-check {
+  display: none;
+}
+
+.profile__checkbox-img {
+  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {
