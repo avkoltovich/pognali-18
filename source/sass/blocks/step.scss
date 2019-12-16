@@ -1,9 +1,16 @@
 .step {
-  padding: 25px;
+  padding: 0;
 
   border: 0;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+.step__inner {
+  padding-top: 21px;
+  padding-right: 23px;
+  padding-bottom: 19px;
+  padding-left: 22px;
 }
 
 .step__heading {
@@ -13,6 +20,7 @@
   margin-bottom: 15px;
 
   font-size: 20px;
+  line-height: 1;
   color: #1d2e5b;
 }
 
@@ -20,7 +28,7 @@
   @include font(400, normal);
 
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   font-size: 16px;
   line-height: 1.38;
@@ -62,8 +70,9 @@
 }
 
 .step__label {
-  @include font(400, normal);
+  position: relative;
 
+  @include font(400, normal);
   font-size: 15px;
   color: $greyish-brown;
 
@@ -71,7 +80,67 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 7px;
   }
+
+  &--children {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+
+  &--country {
+    display: flex;
+    width: 168px;
+    height: 42px;
+    margin-right: -1px;
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      right: -4px;
+
+      width: 8px;
+      height: 8px;
+      content: "";
+
+      border-radius: 50%;
+      background-color: #1d2e5b;
+    }
+  }
+
+  &--select {
+    position: relative;
+
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      right: 49px;
+
+      width: 8px;
+      height: 8px;
+      content: "";
+
+      border: solid 1px #cbced9;
+      border-radius: 50%;
+    }
+  }
+}
+
+.step__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 43px;
+  margin-bottom: 20px;
+
+  border-radius: 4px;
+  border: solid 1px #cbced9;
 }
 
 .step__title {
@@ -94,6 +163,13 @@
   border: solid 1px #cbced9;
 }
 
+.step__select-wrap {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 22px;
+}
+
 .step__input {
   @include font(500, normal);
 
@@ -103,22 +179,78 @@
     font-size: 15px;
     letter-spacing: 1.5px;
     text-align: center;
+
+    border: none;
   }
 
   &--step-two {
+    position: relative;
+
+    width: 168px;
+    height: 42px;
+    padding-right: 13px;
+    padding-left: 13px;
+
+    border-radius: 4px;
+    border: solid 1px #cbced9;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+
+  &--add-country {
+    width: 100%;
+    height: 42px;
+    padding-right: 13px;
+    padding-left: 13px;
+
+    border-radius: 4px;
+    border: solid 1px #cbced9;
     font-size: 14px;
     letter-spacing: 1.4px;
     text-transform: uppercase;
   }
 }
 
+.step__select-icon {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  z-index: 1;
+
+  width: 49px;
+  height: 36px;
+  content: "";
+
+  background-image: linear-gradient(to right, transparent 10%, #ffffff 40%, #ffffff);
+}
+
+.step__flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 42px;
+
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+}
+
 .step__calendar {
+  width: 100%;
   margin-bottom: 23px;
 
   border-collapse: collapse;
 }
 
 .step__caption {
+  position: relative;
+  min-height: 42px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
   @include font(700, normal);
   font-size: 20px;
   text-align: center;
@@ -129,8 +261,9 @@
 }
 
 .step__cell {
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
+  padding-right: 4px;
 
   @include font(400, normal);
   font-size: 14px;
@@ -171,12 +304,28 @@
   appearance: none;
 }
 
+.step__checkbox-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+}
+
 .step__button {
   border: 0;
 
   &--add {
-    @include font(500, normal);
+    position: relative;
 
+    width: 100%;
+    height: 42px;
+    padding-left: 12px;
+    margin-bottom: 25px;
+
+    @include font(500, normal);
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: 1.4px;
@@ -186,10 +335,68 @@
 
     border-radius: 4px;
     background-color: #edeff6;
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      right: 49px;
+
+      width: 8px;
+      height: 8px;
+      content: "";
+
+      border: solid 1px #cbced9;
+      border-radius: 50%;
+    }
+  }
+
+  &--back {
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  &--forward {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  &--del {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    padding-right: 0;
+    padding-left: 0;
+
+    border-radius: 50%;
+    background-color: #edeff6;
   }
 }
 
 .step__link {
+  &--oval {
+    margin-bottom: 13px;
+  }
+
   &--back {
     @include font(700, normal);
 
