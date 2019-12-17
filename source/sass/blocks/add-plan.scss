@@ -13,7 +13,53 @@
 }
 
 .add-plan__heading {
+  display: flex;
+  align-items: center;
+
   @include form-heading;
+}
+
+.add-plan__dots {
+  position: relative;
+
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-right: 60px;
+  margin-left: auto;
+
+  border-radius: 50%;
+  background-color: #1d2e5b;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 21px;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+    content: "";
+
+    border-radius: 50%;
+    background-color: #808285;
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 42px;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+    content: "";
+
+    border-radius: 50%;
+    background-color: #808285;
+    opacity: 0.3;
+  }
 }
 
 .add-plan__step {
@@ -23,9 +69,28 @@
 @media (min-width: $tablet-width) {
   .add-plan__container {
     width: $tablet-width;
-    padding-top: 60px;
+    padding-top: 46px;
     padding-right: 75px;
     padding-left: 75px;
+  }
+
+  .add-plan__heading {
+    margin-bottom: 49px;
+
+    font-size: 36px;
+    line-height: 1.39;
+  }
+
+  .add-plan__dots {
+    margin-right: 68px;
+
+    &::before {
+      left: 35px;
+    }
+
+    &::after {
+      left: 70px;
+    }
   }
 
   .add-plan__step {
@@ -40,7 +105,16 @@
 
   .add-plan__container {
     width: $desktop-width;
+    padding-top: 48px;
     padding-right: 60px;
     padding-left: 60px;
+  }
+
+  .add-plan__heading {
+    padding-left: 70px;
+  }
+
+  .add-plan__dots {
+    display: none;
   }
 }

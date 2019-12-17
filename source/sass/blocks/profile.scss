@@ -147,7 +147,9 @@
 }
 
 .profile__textarea {
+  box-sizing: border-box;
   width: 215px;
+  height: 45px;
   padding: 0;
 
   @include font(400, normal);
@@ -201,7 +203,7 @@
     &--transport {
       order: 2;
       width: 308px;
-      min-height: 94px;
+      height: 94px;
       margin-right: auto;
       margin-bottom: auto;
       margin-left: auto;
@@ -272,6 +274,7 @@
 
   .profile__textarea {
     width: 100%;
+    height: auto;
     margin-left: 13px;
 
     font-size: 20px;

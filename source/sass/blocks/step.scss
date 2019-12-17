@@ -35,6 +35,10 @@
   color: $greyish-brown;
 }
 
+.step__list {
+  display: none;
+}
+
 .step__fieldset {
   margin: 0;
   padding: 0;
@@ -136,7 +140,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 43px;
+  height: 43px;
   margin-bottom: 20px;
 
   border-radius: 4px;
@@ -329,6 +333,10 @@
   border-bottom: 1px solid #cbced9;
 }
 
+.step__cell-letter {
+  display: none;
+}
+
 .step__cell {
   width: 31px;
   height: 31px;
@@ -370,7 +378,12 @@
 }
 
 .step__checkbox {
+  position: absolute;
   appearance: none;
+}
+
+.step__checkbox::-ms-check {
+  display: none;
 }
 
 .step__checkbox-icon {
@@ -487,12 +500,145 @@
 
 @media (min-width: $tablet-width) {
   .step {
-    padding-top: 50px;
-    padding-right: 45px;
-    padding-bottom: 50px;
-    padding-left: 45px;
-
     border-radius: 30px;
+  }
+
+  .step__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-right: 45px;
+    padding-bottom: 37px;
+    padding-left: 41px;
+  }
+
+  .step__header {
+    order: 1;
+  }
+
+  .step__heading {
+    margin-bottom: 34px;
+
+    font-size: 36px;
+  }
+
+  .step__text {
+    margin-bottom: 38px;
+
+    max-width: 505px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .step__companions {
+    order: 2;
+  }
+
+  .step__label {
+    &--form {
+      height: 67px;
+      align-items: center;
+      margin-bottom: 0;
+
+      border-top: 1px solid #d6d9e6;
+    }
+
+    &--children {
+      order: 3;
+      margin-bottom: 26px;
+
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #1d2e5b;
+    }
+  }
+
+  .step__label-text {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .step__field {
+    height: 70px;
+    padding-right: 12px;
+    padding-left: 20px;
+    margin-bottom: 26px;
+  }
+
+  .step__input {
+    &--step-one {
+      font-size: 20px;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .step__duration {
+    order: 4;
+    margin-bottom: 34px;
+  }
+
+  .step__checkbox-icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 23px;
+  }
+
+  .step__calendar {
+    order: 5;
+    margin-bottom: 42px;
+  }
+
+  .step__caption {
+    min-height: 85px;
+    padding-top: 24px;
+    margin-bottom: 36px;
+
+    font-size: 36px;
+  }
+
+  .step__cell {
+    width: 77px;
+    height: 70px;
+    padding-right: 0;
+    padding-left: 8px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: #1d2e5b;
+
+    &--heading {
+      height: 30px;
+    }
+
+    &--disabled {
+      color: rgba(68, 68, 68, 0.3);
+    }
+
+    &--active {
+      color: #ffffff;
+    }
+  }
+
+  .step__cell-letter {
+    display: inline;
+  }
+
+  .step__link {
+    &--oval {
+      order: 6;
+      width: 285px;
+      height: 81px;
+
+      font-size: 24px;
+      text-transform: none;
+      border-radius: 20px;
+    }
   }
 }
 

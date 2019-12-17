@@ -158,40 +158,53 @@
     </section>
     <section class="site-main__add-plan add-plan">
       <div class="add-plan__container">
-        <h2 class="add-plan__heading">Добавить план:</h2>
+        <h2 class="add-plan__heading">Добавить план:<span class="add-plan__dots"></span></h2>
         <form class="add-plan__form">
           <fieldset class="add-plan__step step">
             <div class="step__inner">
-              <h3 class="step__heading">Шаг 1.<br class="step__br"> Даты пребывания</h3>
-              <p class="step__text">
-                Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку и ее предполагаемую длительность.
-              </p>
-              <label class="step__label step__label--form" for="companions">
-                <span class="step__label-text">ищу попутчиков: </span>
-                <span class="step__label-text step__label-text--unit">Чел.</span>
-              </label>
-              <div class="step__field">
-                <button class="step__button" type="button" aria-label="Меньше">
-                  <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-                </button>
-                <input class="step__input step__input--step-one" type="number" id="companions" value="2">
-                <button class="step__button" type="button" aria-label="Больше">
-                  <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-                </button>
+              <header class="step__header">
+                <div class="step__header-wrap">
+                  <h3 class="step__heading">Шаг 1.<br class="step__br"> Даты пребывания</h3>
+                  <p class="step__text">
+                    Укажите предпочтительное количество попутчиков, которых
+                    вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                  </p>
+                </div>
+                <ul class="step__list">
+                  <li class="step__item" aria-current="step">Даты</li>
+                  <li class="step__item">Маршрут</li>
+                  <li class="step__item">Развлечения</li>
+                </ul>
+              </header>
+              <div class="step__companions">
+                <label class="step__label step__label--form" for="companions">
+                  <span class="step__label-text">ищу попутчиков: </span>
+                  <span class="step__label-text step__label-text--unit">Чел.</span>
+                </label>
+                <div class="step__field">
+                  <button class="step__button" type="button" aria-label="Меньше">
+                    <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+                  </button>
+                  <input class="step__input step__input--step-one" type="number" id="companions" value="2">
+                  <button class="step__button" type="button" aria-label="Больше">
+                    <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+                  </button>
+                </div>
               </div>
-              <label class="step__label step__label--form" for="duration">
-                <span class="step__label-text">Длительность: </span>
-                <span class="step__label-text step__label-text--unit">дн.</span>
-              </label>
-              <div class="step__field">
-                <button class="step__button" type="button" aria-label="Меньше">
-                  <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
-                </button>
-                <input class="step__input step__input--step-one" type="number" id="duration" value="2">
-                <button class="step__button" type="button" aria-label="Больше">
-                  <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
-                </button>
+              <div class="step__duration">
+                <label class="step__label step__label--form" for="duration">
+                  <span class="step__label-text">Длительность: </span>
+                  <span class="step__label-text step__label-text--unit">дн.</span>
+                </label>
+                <div class="step__field">
+                  <button class="step__button" type="button" aria-label="Меньше">
+                    <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
+                  </button>
+                  <input class="step__input step__input--step-one" type="number" id="duration" value="2">
+                  <button class="step__button" type="button" aria-label="Больше">
+                    <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="+" aria-hidden="true">
+                  </button>
+                </div>
               </div>
               <label class="step__label step__label--children">
                 <input type="checkbox" class="step__checkbox" name="children" value="true" checked>
@@ -210,25 +223,25 @@
                 </caption>
                 <tr class="step__row">
                   <th class="step__cell step__cell--heading">
-                    П
+                    П<span class="step__cell-letter">н</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    В
+                    В<span class="step__cell-letter">т</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    С
+                    С<span class="step__cell-letter">р</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    Ч
+                    Ч<span class="step__cell-letter">т</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    П
+                    П<span class="step__cell-letter">т</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    С
+                    С<span class="step__cell-letter">б</span>
                   </th>
                   <th class="step__cell step__cell--heading">
-                    В
+                    В<span class="step__cell-letter">с</span>
                   </th>
                 </tr>
                 <tr class="step__row">
@@ -496,7 +509,7 @@
                   </td>
                 </tr>
               </table>
-              <a href="" class="step__link button-oval button-oval--yellow">Следующий шаг</a>
+              <a href="" class="button-oval button-oval--yellow step__link step__link--oval">Следующий шаг</a>
             </div>
           </fieldset>
           <fieldset class="add-plan__step step">
