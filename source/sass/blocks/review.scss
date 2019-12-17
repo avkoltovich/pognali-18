@@ -34,10 +34,8 @@
   }
 
   .review__blockquote {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 86px;
-    padding-right: 75px;
-    padding-left: 75px;
     margin-bottom: 213px;
   }
 

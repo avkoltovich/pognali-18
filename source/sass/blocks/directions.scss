@@ -6,11 +6,9 @@
 .directions__container {
   position: relative;
 
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 100px;
-  padding-right: 25px;
   padding-bottom: 30px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -245,13 +243,12 @@
 
 @media (min-width: $desktop-width) {
   .directions__container {
-    width: $desktop-width;
+    @include desktop-container;
     min-height: 750px;
     padding: 131px;
     padding-top: 222px;
     padding-right: 131px;
     padding-bottom: 139px;
-    padding-left: 131px;
 
     background-position: top 149px right 60px;
 

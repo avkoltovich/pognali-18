@@ -4,11 +4,9 @@
 }
 
 .filter-country__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 46px;
-  padding-right: 25px;
   padding-bottom: 27px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -178,11 +176,9 @@
 
     display: flex;
     flex-wrap: wrap;
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 120px;
-    padding-right: 75px;
     padding-bottom: 80px;
-    padding-left: 75px;
   }
 
   .filter-country__heading {
@@ -313,10 +309,8 @@
   }
 
   .filter-country__container {
-    width: $desktop-width;
-    padding-right: 60px;
+    @include desktop-container--narrow;
     padding-bottom: 108px;
-    padding-left: 60px;
   }
 
   .filter-country__header {

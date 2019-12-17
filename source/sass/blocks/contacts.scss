@@ -4,11 +4,9 @@
 }
 
 .contacts__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 64px;
-  padding-right: 25px;
   padding-bottom: 34px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -45,11 +43,9 @@
   }
 
   .contacts__container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 130px;
-    padding-right: 75px;
     padding-bottom: 85px;
-    padding-left: 75px;
   }
 
   .contacts__address {

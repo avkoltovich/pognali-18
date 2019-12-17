@@ -4,11 +4,9 @@
 }
 
 .feedback__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 100px;
-  padding-right: 25px;
   padding-bottom: 27px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -115,11 +113,9 @@
   }
 
   .feedback__container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 133px;
-    padding-right: 75px;
     padding-bottom: 60px;
-    padding-left: 75px;
   }
 
   .feedback__heading {
@@ -178,11 +174,10 @@
 
 @media (min-width: $desktop-width) {
   .feedback__container {
-    width: $desktop-width;
+    @include desktop-container;
     padding-top: 164px;
     padding-right: 131px;
     padding-bottom: 105px;
-    padding-left: 131px;
   }
 
   .feedback__text {

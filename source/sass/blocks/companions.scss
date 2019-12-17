@@ -6,11 +6,9 @@
 .companions__container {
   position: relative;
 
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 100px;
-  padding-right: 25px;
   padding-bottom: 30px;
-  padding-left: 25px;
   margin: 0 auto;
 
   background-image: url("../img/smolov-back-desktop@1x.png"),
@@ -220,11 +218,9 @@
   }
 
   .companions__container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 197px;
-    padding-right: 75px;
     padding-bottom: 88px;
-    padding-left: 75px;
     background-image: url("../img/rogovaya-back-desktop@1x.png");
     background-position: top 140px right 77px;
     background-repeat: no-repeat;
@@ -350,11 +346,10 @@
 
 @media (min-width: $desktop-width) {
   .companions__container {
-    width: $desktop-width;
+    @include desktop-container;
     min-height: 810px;
     padding-top: 185px;
     padding-right: 60px;
-    padding-left: 131px;
 
     background-position: top 445px left 191px;
 

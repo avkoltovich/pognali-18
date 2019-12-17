@@ -135,3 +135,26 @@
 @mixin step-two-dots--desktop {
   right: -52px;
 }
+
+@mixin mobile-container {
+  width: $mobile-width;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@mixin tablet-container {
+  width: $tablet-width;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+@mixin desktop-container {
+  width: $desktop-width;
+  padding-left: 131px;
+}
+
+@mixin desktop-container--narrow {
+  width: $desktop-width;
+  padding-right: 60px;
+  padding-left: 60px;
+}

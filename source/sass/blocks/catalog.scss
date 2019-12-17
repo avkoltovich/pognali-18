@@ -5,11 +5,9 @@
 }
 
 .catalog__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 53px;
-  padding-right: 25px;
   padding-bottom: 110px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -514,9 +512,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__container {
-    width: $desktop-width;
-    padding-right: 60px;
-    padding-left: 60px;
+    @include desktop-container--narrow;
   }
 
   .catalog__wrapper {

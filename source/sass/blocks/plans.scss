@@ -4,11 +4,9 @@
 }
 
 .plans__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 30px;
-  padding-right: 25px;
   padding-bottom: 50px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -78,11 +76,9 @@
 
 @media (min-width: $tablet-width) {
   .plans__container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 54px;
-    padding-right: 75px;
     padding-bottom: 127px;
-    padding-left: 75px;
   }
 
   .plans__heading {

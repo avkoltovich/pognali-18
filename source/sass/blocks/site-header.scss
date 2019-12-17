@@ -3,14 +3,12 @@
 }
 
 .site-header__container {
+  @include mobile-container;
   display: flex;
   flex-wrap: wrap;
-  width: $mobile-width;
   min-height: 73px;
   padding-top: 27px;
-  padding-right: 25px;
   padding-bottom: 23px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -215,13 +213,11 @@
 
 @media (min-width: $desktop-width) {
   .site-header__container {
+    @include desktop-container--narrow;
     align-items: center;
-    width: $desktop-width;
     min-height: 90px;
     padding-top: 47px;
-    padding-right: 60px;
     padding-bottom: 10px;
-    padding-left: 60px;
   }
 
   .site-header__button--menu {
