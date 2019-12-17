@@ -162,12 +162,12 @@
         <form class="add-plan__form">
           <fieldset class="add-plan__step step">
             <div class="step__inner">
-              <header class="step__header">
+              <header class="step__header step__header--step-one">
                 <div class="step__header-wrap">
                   <h3 class="step__heading">Шаг 1.<br class="step__br"> Даты пребывания</h3>
                   <p class="step__text">
                     Укажите предпочтительное количество попутчиков, которых
-                    вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                    вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.
                   </p>
                 </div>
                 <ul class="step__list">
@@ -179,8 +179,8 @@
               <div class="step__companions">
                 <label class="step__label step__label--form" for="companions">
                   <span class="step__label-text">ищу попутчиков: </span>
-                  <span class="step__label-text step__label-text--unit">Чел.</span>
                 </label>
+                <span class="step__label-text step__label-text--unit">Чел.</span>
                 <div class="step__field">
                   <button class="step__button" type="button" aria-label="Меньше">
                     <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
@@ -194,8 +194,8 @@
               <div class="step__duration">
                 <label class="step__label step__label--form" for="duration">
                   <span class="step__label-text">Длительность: </span>
-                  <span class="step__label-text step__label-text--unit">дн.</span>
                 </label>
+                <span class="step__label-text step__label-text--unit">дн.</span>
                 <div class="step__field">
                   <button class="step__button" type="button" aria-label="Меньше">
                     <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="-" aria-hidden="true">
@@ -284,7 +284,7 @@
                   <td class="step__cell step__cell--disabled">
                     <label class="step__label-cell">
                       <input type="checkbox" class="step__checkbox">
-                      1
+                      1<span class="step__cell-word"> мар</span>
                     </label>
                   </td>
                 </tr>
@@ -442,7 +442,7 @@
                   <td class="step__cell step__cell--active step__cell--current">
                     <label class="step__label-cell">
                       <input type="checkbox" class="step__checkbox">
-                      26
+                      26<span class="step__cell-word"><br>Заезд</span>
                     </label>
                   </td>
                   <td class="step__cell step__cell--active">
@@ -454,7 +454,7 @@
                   <td class="step__cell step__cell--active">
                     <label class="step__label-cell">
                       <input type="checkbox" class="step__checkbox">
-                      28
+                      28<span class="step__cell-word"><br>Выезд</span>
                     </label>
                   </td>
                   <td class="step__cell">
@@ -480,7 +480,7 @@
                   <td class="step__cell">
                     <label class="step__label-cell">
                       <input type="checkbox" class="step__checkbox">
-                      1
+                      1<span class="step__cell-word"> апр</span>
                     </label>
                   </td>
                   <td class="step__cell">
@@ -509,35 +509,46 @@
                   </td>
                 </tr>
               </table>
-              <a href="" class="button-oval button-oval--yellow step__link step__link--oval">Следующий шаг</a>
+              <a href="" class="button-oval button-oval--yellow step__link step__link--step-one">Следующий шаг</a>
             </div>
           </fieldset>
           <fieldset class="add-plan__step step">
             <div class="step__inner">
-              <h3 class="step__heading">Шаг 2.<br class="step__br"> Маршрут</h3>
-              <p class="step__text">
-                Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
-              </p>
-             <div class="step__select-wrap">
+              <header class="step__header step__header--step-two">
+                <div class="step__header-wrap">
+                  <h3 class="step__heading">Шаг 2.<br class="step__br"> Маршрут</h3>
+                  <p class="step__text step__text--step-two">
+                    Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+                  </p>
+                </div>
+                <ul class="step__list">
+                  <li class="step__item">Даты</li>
+                  <li class="step__item" aria-current="step">Маршрут</li>
+                  <li class="step__item">Развлечения</li>
+                </ul>
+              </header>
+              <div class="step__select-wrap">
                 <label class="step__label step__label--country">
                   <input class="step__input step__input--step-two" type="text" name="country"
-                    value="Босния и герцегов">
-                    <span class="step__select-icon"></span>
-                  </label>
-                  <span class="step__flag">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и герцегов">
+                    value="Босния и герцеговина">
+                  <span class="step__select-icon"></span>
+                </label>
+                <span class="step__flag">
+                  <img class="step__flag-img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Босния и герцеговина">
                 </span>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <img src="https://via.placeholder.com/21x21" width="9" height="9" alt="X" aria-hidden="true">
                 </button>
-             </div>
+              </div>
               <div class="step__select-wrap">
                 <label class="step__label step__label--country">
                   <input class="step__input step__input--step-two" type="text" name="country" value="Чехия">
                   <span class="step__select-icon"></span>
                 </label>
                 <span class="step__flag">
-                  <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                  <img class="step__flag-img" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Чехия">
                 </span>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <img src="https://via.placeholder.com/21x21" width="9" height="9" alt="X" aria-hidden="true">
@@ -547,7 +558,7 @@
                 <label class="step__label step__label--select">
                   <input class="step__input step__input--add-country" type="text" name="country"
                     value="Выберите страну">
-                    <span class="step__select-icon"></span>
+                  <span class="step__select-icon"></span>
                 </label>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <img src="https://via.placeholder.com/21x21" width="9" height="9" alt="X" aria-hidden="true">
@@ -676,24 +687,37 @@
           </fieldset>
           <fieldset class="add-plan__step step">
             <div class="step__inner">
-              <h3 class="step__heading">Шаг 3.<br class="step__br"> Развлечения</h3>
-              <p class="step__text">
-                Наконец, расскажите о своих планах времяпровождения.
-                Можно писать в свободной форме и ставить тэги.
-              </p>
+              <header class="step__header step__header--step-three">
+                <div class="step__header-wrap">
+                  <h3 class="step__heading">Шаг 3.<br class="step__br"> Развлечения</h3>
+                  <p class="step__text">
+                    Наконец, расскажите о своих планах времяпровождения.
+                    Можно писать в свободной форме и ставить тэги.
+                  </p>
+                </div>
+                <ul class="step__list">
+                  <li class="step__item">Даты</li>
+                  <li class="step__item">Маршрут</li>
+                  <li class="step__item" aria-current="step">Развлечения</li>
+                </ul>
+              </header>
               <label class="step__title">
                 <span class="step__title-text">Босния и Герцеговия</span>
                 <span class="step__left-line"></span>
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Боснии и Герцеговии">
-                <textarea class="step__textarea step__textarea--pseudo" placeholder="План действий" aria-label="План действий"></textarea>
+                  <img class="step__flag-img step__flag-img--step-three" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Боснии и Герцеговии">
+                <textarea class="step__textarea step__textarea--pseudo" placeholder="План действий"
+                  aria-label="План действий"></textarea>
               </label>
               <label class="step__title">
                 <span class="step__title-text">Чехия</span>
-                <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехии">
+                  <img class="step__flag-img step__flag-img--step-three" src="https://via.placeholder.com/35x24" width="35" height="24"
+                    alt="Флаг Чехии">
                 <textarea class="step__textarea" placeholder="План действий"
                   aria-label="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
-              <button class="button-oval button-oval--yellow step__button step__button--submit" type="submit">Отправить</button>
+              <button class="button-oval button-oval--yellow step__button step__button--submit"
+                type="submit">Отправить</button>
               <a href="" class="step__link step__link--back">На шаг назад</a>
             </div>
           </fieldset>

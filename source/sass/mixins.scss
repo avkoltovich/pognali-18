@@ -79,3 +79,59 @@
 
   margin-top: $mt;
 }
+
+@mixin step-one-field {
+  width: 50%;
+  align-items: center;
+  padding-top: 0;
+
+  border-top: none;
+}
+
+@mixin step-oval-link {
+  width: 285px;
+  height: 81px;
+
+  font-size: 24px;
+  text-transform: none;
+  border-radius: 20px;
+}
+
+@mixin step-two-input--tablet {
+  width: 369px;
+  height: 70px;
+  padding-left: 24px;
+
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+@mixin step-two-dots--mobile {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  right: 49px;
+
+  width: 8px;
+  height: 8px;
+  content: "";
+
+  border: solid 1px #cbced9;
+  border-radius: 50%;
+}
+
+@mixin step-two-dots--table {
+  top: 26px;
+  right: -34px;
+
+  width: 15px;
+  height: 15px;
+}
+
+@mixin step-two-input--desktop {
+  width: 730px;
+}
+
+@mixin step-two-dots--desktop {
+  right: -52px;
+}
