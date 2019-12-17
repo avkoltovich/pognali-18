@@ -11,6 +11,7 @@ let businessRate = document.querySelector('.site-main__business-rate');
 let stepCountryOpen = document.querySelector('.step__input--add-country');
 let stepCountryClose = document.querySelector('.country__button--close');
 let stepCountry = document.querySelector('.step__country');
+let stepBtnDel = document.querySelectorAll('.step__button--del');
 
 menuBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -38,10 +39,12 @@ if (stepCountry) {
   stepCountryOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
     stepCountry.classList.toggle('display-none');
+    stepBtnDel[stepBtnDel.length - 1].classList.toggle('display-none');
   });
 
   stepCountryClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     stepCountry.classList.toggle('display-none');
+    stepBtnDel[stepBtnDel.length - 1].classList.toggle('display-none');
   });
 };
