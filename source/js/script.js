@@ -8,6 +8,9 @@ let socialList = document.querySelector('.site-header__social-list');
 let businessRateOpen = document.querySelector('.add-profile__link--all');
 let businessRateClose = document.querySelector('.business-rate__button');
 let businessRate = document.querySelector('.site-main__business-rate');
+let stepCountryOpen = document.querySelector('.step__input--add-country');
+let stepCountryClose = document.querySelector('.country__button--close');
+let stepCountry = document.querySelector('.step__country');
 
 menuBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -19,12 +22,26 @@ menuBtn.addEventListener('click', function (evt) {
   };
 });
 
-businessRateOpen.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  businessRate.classList.toggle('display-none');
-});
+if (businessRate) {
+  businessRateOpen.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    businessRate.classList.toggle('display-none');
+  });
 
-businessRateClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  businessRate.classList.toggle('display-none');
-});
+  businessRateClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    businessRate.classList.toggle('display-none');
+  });
+};
+
+if (stepCountry) {
+  stepCountryOpen.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    stepCountry.classList.toggle('display-none');
+  });
+
+  stepCountryClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    stepCountry.classList.toggle('display-none');
+  });
+};
