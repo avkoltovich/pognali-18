@@ -144,16 +144,86 @@
 }
 
 .step__title {
-  @include font(500, normal);
+  position: relative;
 
+  display: flex;
+  flex-wrap: wrap;
+
+  @include font(500, normal);
   font-size: 18px;
   color: #1d2e5b;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: -13px;
+
+    width: 15px;
+    height: 2px;
+    content: "";
+
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: -2px;
+
+    width: 6px;
+    height: 6px;
+    content: "";
+
+    border-radius: 50%;
+    background-color: #1d2e5b;
+  }
+}
+
+.step__left-line {
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: -13px;
+
+    width: 2px;
+    height: 100%;
+    content: "";
+
+    background-color: #1d2e5b;
+  }
+}
+
+.step__title-text {
+  position: relative;
+
+  display: block;
+  width: 185px;
+  height: 36px;
+  padding-left: 12px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    z-index: 1;
+
+    width: 49px;
+    height: 36px;
+    content: "";
+
+    background-image: linear-gradient(to right, transparent 10%, #ffffff 40%, #ffffff);
+  }
 }
 
 .step__textarea {
   @include font(400, normal);
   width: 220px;
   height: 220px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-bottom: 26px;
 
   font-size: 16px;
   line-height: 1.38;
@@ -220,7 +290,6 @@
 
   width: 49px;
   height: 36px;
-  content: "";
 
   background-image: linear-gradient(to right, transparent 10%, #ffffff 40%, #ffffff);
 }
@@ -247,8 +316,8 @@
   position: relative;
   min-height: 42px;
   padding-top: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-bottom: 20px;
 
   @include font(700, normal);
@@ -390,11 +459,15 @@
     border-radius: 50%;
     background-color: #edeff6;
   }
+
+  &--submit {
+    margin-bottom: 15px;
+  }
 }
 
 .step__link {
   &--oval {
-    margin-bottom: 13px;
+    margin-bottom: 18px;
   }
 
   &--back {
@@ -405,7 +478,7 @@
 
     font-size: 17px;
     font-weight: bold;
-    line-height: 1.76;
+    line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
     color: #161c35;
