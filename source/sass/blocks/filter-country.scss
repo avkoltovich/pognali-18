@@ -1,4 +1,10 @@
-.filter-country {
+.filter__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
 }
@@ -11,6 +17,8 @@
 }
 
 .filter-country__header {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -52,6 +60,16 @@
     border: none;
 
     cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 100%;
+      height: 36px;
+      content: "";
+    }
   }
 }
 
@@ -166,8 +184,32 @@
   @include country-link;
 }
 
+.filter-country {
+  min-height: 82px;
+
+  background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
+
+  &--closed {
+    .filter-country__container {
+      padding-bottom: 0;
+    }
+
+    .filter-country__continent-list,
+    .filter-country__letter-list,
+    .filter-country__list-wrap,
+    .filter-country__button--hide {
+      display: none;
+    }
+
+    .filter-country__heading {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .filter-country {
+  .filter__wrapper {
     border-radius: 0 0 60px 60px;
   }
 
@@ -187,6 +229,11 @@
   }
 
   .filter-country__button {
+    &--close::before {
+      width: 210px;
+      height: 50px;
+    }
+
     &--hide {
       min-height: 100px;
 
@@ -219,6 +266,11 @@
     font-size: 20px;
     line-height: 1.2;
     color: #192144;
+
+    &--show {
+      display: none;
+      margin-right: 28px;
+    }
   }
 
   .filter-country__continent-list {
@@ -302,11 +354,37 @@
     font-size: 20px;
     line-height: 1.5;
   }
+
+  .filter-country {
+    min-height: 196px;
+
+    background-color: #e2e5f2;
+    border-radius: 0 0 60px 60px;
+
+    &--closed {
+      .filter-country__continent-list {
+        display: flex;
+      }
+
+      .filter-country__button-text {
+        &--show {
+          display: block;
+        }
+
+        &--hide {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .filter-country {
-    background-color: $bgcolor-light;
+  .filter__wrapper {
+    position: static;
+
+    background-color: transparent;
+    border-radius: none;
   }
 
   .filter-country__container {
@@ -341,6 +419,10 @@
   .filter-country__button {
     &--close {
       order: 3;
+
+      &::before {
+        width: 300px;
+      }
     }
   }
 
@@ -389,5 +471,17 @@
     min-width: 252px;
     margin-bottom: 30px;
     margin-left: 0;
+  }
+
+  .filter-country {
+    background-color: $bgcolor-light;
+
+    &--closed {
+      background-color: #e2e5f2;
+
+      .filter-country__header {
+        margin-bottom: 0;
+      }
+    }
   }
 }

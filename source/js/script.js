@@ -3,6 +3,10 @@
 const siteHeader = document.querySelector('.site-header');
 const menuBtn = siteHeader.querySelector('.site-header__button--menu');
 
+const filterCountry = document.querySelector('.filter-country');
+const filterCountryBtnOpen = filterCountry.querySelector('.filter-country__button--close');
+const filterCountryBtnClose = filterCountry.querySelector('.filter-country__button--hide');
+
 const filterBtnList = document.querySelectorAll('.filter__button--show');
 const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
 
@@ -44,6 +48,18 @@ if (stepCountry) {
     stepBtnDel[stepBtnDel.length - 1].classList.toggle('display-none');
   });
 };
+
+if (filterCountry) {
+  filterCountryBtnOpen.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    filterCountry.classList.toggle('filter-country--closed');
+  });
+
+  filterCountryBtnClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    filterCountry.classList.toggle('filter-country--closed');
+  });
+}
 
 if (filterBtnList) {
   for (let i = 0; i < filterBtnList.length; i++) {

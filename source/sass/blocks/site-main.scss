@@ -99,7 +99,6 @@
   @include relative-z-margin(1);
 }
 
-.site-main__catalog,
 .site-main__add-plan {
   margin-top: -30px;
   margin-bottom: -60px;
@@ -107,6 +106,11 @@
 
 .site-main__filter-country {
   @include relative-z-margin(1);
+}
+
+.site-main__catalog {
+  @include relative-z-margin(0);
+  margin-bottom: -60px;
 }
 
 .site-main__plans,
