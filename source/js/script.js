@@ -2,10 +2,9 @@
 
 const siteHeader = document.querySelector('.site-header');
 const menuBtn = siteHeader.querySelector('.site-header__button--menu');
-const nav = siteHeader.querySelector('.site-header__navigation');
-const authBtn = siteHeader.querySelector('.site-header__button--auth');
-const contactList = siteHeader.querySelector('.site-header__contact-list');
-const socialList = siteHeader.querySelector('.site-header__social-list');
+
+const filterBtn = document.querySelectorAll('.filter__button--show');
+const filterLabelWrap = document.querySelectorAll('.filter__label-wrap');
 
 const businessRateOpen = document.querySelector('.add-profile__link--all');
 const businessRateClose = document.querySelector('.business-rate__button');
@@ -17,12 +16,7 @@ const stepBtnDel = document.querySelectorAll('.step__button--del');
 
 menuBtn.addEventListener('click', function (evt) {
   evt.preventDefault();
-  nav.classList.toggle('display-none');
-  contactList.classList.toggle('display-none');
-  socialList.classList.toggle('display-none');
-  if (window.matchMedia("(max-width: 767px)").matches) {
-    authBtn.classList.toggle('display-none');
-  };
+  siteHeader.classList.toggle('site-header--closed');
 });
 
 if (businessRate) {
@@ -50,3 +44,12 @@ if (stepCountry) {
     stepBtnDel[stepBtnDel.length - 1].classList.toggle('display-none');
   });
 };
+
+if (filterBtn) {
+  for (let i = 0; i <= filterBtn.length; i++) {
+    filterBtn[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      filterLabelWrap[i].classList.toggle('display-none');
+    });
+  }
+}

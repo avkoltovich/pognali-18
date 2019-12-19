@@ -818,7 +818,7 @@
                     height="4" alt="Показать" aria-hidden="true">
                 </button>
               </h4>
-              <div class="filter__label-wrap filter__label-wrap--hobby">
+              <p class="filter__label-wrap filter__label-wrap--hobby display-none">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Sport" checked>
                   <span class="filter__icon--checkbox"></span>
@@ -834,7 +834,7 @@
                   <span class="filter__icon--checkbox"></span>
                   Диван
                 </label>
-              </div>
+              </p>
             </div>
             <div class="filter__fieldset filter__fieldset--checkbox">
               <h4 class="filter__legend">
@@ -844,7 +844,7 @@
                     height="4" alt="Показать" aria-hidden="true">
                 </button>
               </h4>
-              <div class="filter__label-wrap filter__label-wrap--music">
+              <p class="filter__label-wrap filter__label-wrap--music display-none">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="music" value="Hard Rock" checked>
                   <span class="filter__icon--checkbox"></span>
@@ -860,7 +860,7 @@
                   <span class="filter__icon--checkbox"></span>
                   Евроденс
                 </label>
-              </div>
+              </p>
             </div>
             <div class="filter__fieldset filter__fieldset--checkbox">
               <h4 class="filter__legend">
@@ -870,7 +870,7 @@
                     height="4" alt="Показать" aria-hidden="true">
                 </button>
               </h4>
-              <div class="filter__label-wrap filter__label-wrap--food">
+              <p class="filter__label-wrap filter__label-wrap--food display-none">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="food" value="Meat" checked>
                   <span class="filter__icon--checkbox"></span>
@@ -886,7 +886,7 @@
                   <span class="filter__icon--checkbox"></span>
                   Веган-сыроед
                 </label>
-              </div>
+              </p>
             </div>
             <div class="filter__fieldset filter__fieldset--transport">
               <h4 class="filter__legend filter__legend--transport">
@@ -896,7 +896,7 @@
                     height="4" alt="Показать" aria-hidden="true">
                 </button>
               </h4>
-              <div class="filter__label-wrap filter__label-wrap--transport">
+              <p class="filter__label-wrap filter__label-wrap--transport display-none">
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
                     checked>
@@ -912,7 +912,7 @@
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Run" aria-label="Пешком"
                     checked>
                 </label>
-              </div>
+              </p>
             </div>
             <div class="filter__fieldset filter__fieldset--level">
               <h4 class="filter__legend filter__legend--level">
@@ -923,16 +923,18 @@
                 </button>
               </h4>
               <div class="filter__label-wrap filter__label-wrap--number">
-                <label class="filter__label filter__label--pseudo">
-                  <input type="number" class="filter__input-number" value="30">
-                </label>
-                <label class="filter__label">
-                  <input type="number" class="filter__input-number" value="100">
-                </label>
-              </div>
-              <div class="filter__range-wrap">
-                <button class="filter__range filter__range--left" type="button" aria-label="Меньше"></button>
-                <button class="filter__range filter__range--right" type="button" aria-label="Больше"></button>
+                <p class="filter__number-wrap">
+                  <label class="filter__label filter__label--pseudo">
+                    <input type="number" class="filter__input-number" value="30">
+                  </label>
+                  <label class="filter__label">
+                    <input type="number" class="filter__input-number" value="100">
+                  </label>
+                </p>
+                <div class="filter__range-wrap">
+                  <button class="filter__range filter__range--left" type="button" aria-label="Меньше"></button>
+                  <button class="filter__range filter__range--right" type="button" aria-label="Больше"></button>
+                </div>
               </div>
             </div>
             <button class="filter__button button-oval button-oval--white" type="submit">Показать</button>

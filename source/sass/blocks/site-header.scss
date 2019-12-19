@@ -1,9 +1,3 @@
-.site-header {
-  color: #192144;
-
-  background-color: #ffffff;
-}
-
 .site-header__container {
   @include mobile-container;
   display: flex;
@@ -124,6 +118,21 @@
   background-color: tomato;
 }
 
+.site-header {
+  color: #192144;
+
+  background-color: #ffffff;
+
+  &--closed {
+    .site-header__navigation,
+    .site-header__button--auth,
+    .site-header__contact-list,
+    .site-header__social-list {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-header__container {
     width: $tablet-width;
@@ -211,15 +220,17 @@
     width: 31px;
     height: 28px;
   }
+
+  .site-header {
+    &--closed {
+      .site-header__button--auth {
+        display: flex;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .site-header {
-    color: #ffffff;
-
-    background-color: #161c34;
-  }
-
   .site-header__container {
     @include desktop-container--narrow;
     align-items: center;
@@ -286,5 +297,21 @@
 
   .site-header__button--auth {
     order: 4;
+  }
+
+  .site-header {
+    color: #ffffff;
+
+    background-color: #161c34;
+
+    &--closed {
+      .site-header__navigation {
+        display: block;
+      }
+
+      .site-header__contact-list {
+        display: flex;
+      }
+    }
   }
 }
