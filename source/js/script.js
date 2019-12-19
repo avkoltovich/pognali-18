@@ -63,9 +63,15 @@ if (filterCountry) {
 
 if (filterBtnList) {
   for (let i = 0; i < filterBtnList.length; i++) {
-    filterBtnList[i].addEventListener('click', function (evt) {
+
+    // Вынужденная мера из-за поддержки IE 11
+
+    let currentBtn = filterBtnList[i];
+    let currentLabelWrap = filterLabelWrapList[i];
+
+    currentBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
-      filterLabelWrapList[i].classList.toggle('display-none');
+      currentLabelWrap.classList.toggle('display-none');
     });
   };
 };
