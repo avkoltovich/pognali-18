@@ -3,8 +3,8 @@
 const siteHeader = document.querySelector('.site-header');
 const menuBtn = siteHeader.querySelector('.site-header__button--menu');
 
-const filterBtn = document.querySelectorAll('.filter__button--show');
-const filterLabelWrap = document.querySelectorAll('.filter__label-wrap');
+const filterBtnList = document.querySelectorAll('.filter__button--show');
+const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
 
 const businessRateOpen = document.querySelector('.add-profile__link--all');
 const businessRateClose = document.querySelector('.business-rate__button');
@@ -45,11 +45,11 @@ if (stepCountry) {
   });
 };
 
-if (filterBtn) {
-  for (let i = 0; i <= filterBtn.length; i++) {
-    filterBtn[i].addEventListener('click', function (evt) {
+if (filterBtnList) {
+  for (let i = 0; i < filterBtnList.length; i++) {
+    filterBtnList[i].addEventListener('click', function (evt) {
       evt.preventDefault();
-      filterLabelWrap[i].classList.toggle('display-none');
+      filterLabelWrapList[i].classList.toggle('display-none');
     });
-  }
-}
+  };
+};
