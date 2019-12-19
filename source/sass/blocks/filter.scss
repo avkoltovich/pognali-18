@@ -86,16 +86,10 @@
 }
 
 .filter__label-wrap {
-  &--hobby {
-    display: none;
-  }
-
-  &--music {
-    margin-bottom: 10px;
-  }
-
+  &--hobby,
+  &--music,
   &--food {
-    display: none;
+    margin-bottom: 10px;
   }
 
   &--transport {
@@ -349,8 +343,6 @@
 
       font-size: 20px;
       font-weight: 500;
-
-      cursor: auto;
     }
   }
 
@@ -375,10 +367,7 @@
   .filter__label-wrap {
     height: 40px;
 
-    &--hobby {
-      display: flex;
-    }
-
+    &--hobby,
     &--music {
       display: flex;
       margin-bottom: 0;
@@ -551,18 +540,11 @@
     height: auto;
     margin-bottom: 8px;
 
-    &--hobby {
-      display: none;
-    }
-
-    &--music {
-      display: flex;
+    &--hobby,
+    &--music,
+    &--food {
       flex-direction: column;
       padding-top: 15px;
-    }
-
-    &--food {
-      display: none;
     }
 
     &--transport {

@@ -1,4 +1,6 @@
 .site-header {
+  color: #192144;
+
   background-color: #ffffff;
 }
 
@@ -73,7 +75,7 @@
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #192144;
+  color: inherit;
 }
 
 .site-header__contact-list {
@@ -212,9 +214,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-header {
+    color: #ffffff;
+
+    background-color: #161c34;
+  }
+
   .site-header__container {
     @include desktop-container--narrow;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 90px;
     padding-top: 47px;
     padding-bottom: 10px;

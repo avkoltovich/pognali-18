@@ -1,17 +1,19 @@
 "use strict";
 
-let menuBtn = document.querySelector('.site-header__button--menu');
-let nav = document.querySelector('.site-header__navigation');
-let authBtn = document.querySelector('.site-header__button--auth');
-let contactList = document.querySelector('.site-header__contact-list');
-let socialList = document.querySelector('.site-header__social-list');
-let businessRateOpen = document.querySelector('.add-profile__link--all');
-let businessRateClose = document.querySelector('.business-rate__button');
-let businessRate = document.querySelector('.site-main__business-rate');
-let stepCountryOpen = document.querySelector('.step__input--add-country');
-let stepCountryClose = document.querySelector('.country__button--close');
-let stepCountry = document.querySelector('.step__country');
-let stepBtnDel = document.querySelectorAll('.step__button--del');
+const siteHeader = document.querySelector('.site-header');
+const menuBtn = siteHeader.querySelector('.site-header__button--menu');
+const nav = siteHeader.querySelector('.site-header__navigation');
+const authBtn = siteHeader.querySelector('.site-header__button--auth');
+const contactList = siteHeader.querySelector('.site-header__contact-list');
+const socialList = siteHeader.querySelector('.site-header__social-list');
+
+const businessRateOpen = document.querySelector('.add-profile__link--all');
+const businessRateClose = document.querySelector('.business-rate__button');
+const businessRate = document.querySelector('.site-main__business-rate');
+const stepCountryOpen = document.querySelector('.step__input--add-country');
+const stepCountryClose = document.querySelector('.country__button--close');
+const stepCountry = document.querySelector('.step__country');
+const stepBtnDel = document.querySelectorAll('.step__button--del');
 
 menuBtn.addEventListener('click', function (evt) {
   evt.preventDefault();

@@ -158,3 +158,142 @@
   padding-right: 60px;
   padding-left: 60px;
 }
+
+@mixin statusBarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100%;
+  height: 100%;
+}
+
+@mixin statusBarIndexMobile($rotate) {
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+    clip: rect(0, 60px, 60px, 30px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+    clip: rect(0, 30px, 60px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 60px, 60px, 30px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}
+
+@mixin statusBarCatalogMobile($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 45px, 45px, 22.5px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 22.5px, 45px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 45px, 45px, 22.5px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}
+
+@mixin statusBarForm($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 100px, 100px, 50px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 50px, 100px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 100px, 100px, 50px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}

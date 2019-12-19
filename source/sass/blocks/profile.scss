@@ -12,6 +12,8 @@
 }
 
 .profile__level {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,9 +24,14 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 20px;
+}
 
-  border-radius: 50%;
-  border: solid 3px #ff8d30;
+.profile__status-bar {
+  @include statusBarContainer;
+
+  &--level-80 {
+    @include statusBarForm(80);
+  }
 }
 
 .profile__term {

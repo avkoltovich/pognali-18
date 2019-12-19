@@ -198,6 +198,8 @@
 }
 
 .catalog__level {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,13 +207,55 @@
   width: 45px;
   height: 45px;
   padding-top: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 4px;
 
-  border-radius: 50%;
-  border: solid 3px #ff8d30;
+
+  &--80 {
+    @include statusBarCatalogMobile(80);
+  }
+
+  &--50 {
+    @include statusBarCatalogMobile(50);
+  }
+
+  &--25 {
+    @include statusBarCatalogMobile(25);
+
+    &::before {
+      transform: rotate(180deg);
+
+      border: none;
+      border-radius: 0;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.catalog__status-bar {
+  @include statusBarContainer;
+
+  &--level-99 {
+    @include statusBarCatalogMobile(99);
+  }
+
+  &--level-80 {
+    @include statusBarCatalogMobile(80);
+  }
+
+  &--level-25 {
+    @include statusBarCatalogMobile(25);
+  }
+
+  &--level-50 {
+    @include statusBarCatalogMobile(50);
+  }
 }
 
 .catalog__term {
+  z-index: 3;
+
   @include font(700, normal);
   font-size: 24px;
   line-height: 1;
@@ -219,6 +263,8 @@
 }
 
 .catalog__description {
+  z-index: 3;
+
   display: none;
 }
 
@@ -475,6 +521,37 @@
     padding-top: 6px;
     margin-right: 6px;
     margin-left: 0;
+  }
+
+  .catalog__status-bar {
+    &--level-99,
+    &--level-80,
+    &--level-50 {
+      &::before {
+        width: 60px;
+        height: 60px;
+
+        clip: rect(0, 60px, 60px, 30px);
+      }
+
+      &::after {
+        width: 60px;
+        height: 60px;
+
+        clip: rect(0, 30px, 60px, 0);
+      }
+    }
+
+    &--level-25 {
+      clip: rect(0, 60px, 60px, 30px);
+
+      &::after {
+        width: 60px;
+        height: 60px;
+
+        clip: rect(0, 30px, 60px, 0);
+      }
+    }
   }
 
   .catalog__term {
