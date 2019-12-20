@@ -588,6 +588,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    &::after {
+      position: absolute;
+      right: -18px;
+      bottom: 250px;
+
+      width: 36px;
+      height: 2857px;
+      content: "";
+
+      border-radius: 0 0 0 60px;
+      background-color: #e2e5f2;
+    }
+  }
+
   .catalog__container {
     @include desktop-container--narrow;
   }

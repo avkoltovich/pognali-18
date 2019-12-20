@@ -119,6 +119,9 @@
 }
 
 .site-header {
+  position: relative;
+  z-index: 10;
+
   color: #192144;
 
   background-color: #ffffff;
