@@ -10,8 +10,9 @@ const filterBtnList = document.querySelectorAll('.filter__button--show');
 const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
 
 const businessRateOpen = document.querySelector('.add-profile__link--all');
-const businessRateClose = document.querySelector('.business-rate__button');
+
 const businessRate = document.querySelector('.site-main__business-rate');
+
 const stepCountryOpen = document.querySelector('.step__input--add-country');
 const stepCountryClose = document.querySelector('.country__button--close');
 const stepCountry = document.querySelector('.step__country');
@@ -31,6 +32,8 @@ if (isUserMenu) {
 }
 
 if (businessRate) {
+  const businessRateClose = businessRate.querySelector('.business-rate__button');
+
   businessRateOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
     businessRate.classList.toggle('display-none');
