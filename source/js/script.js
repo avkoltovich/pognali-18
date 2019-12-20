@@ -2,6 +2,7 @@
 
 const siteHeader = document.querySelector('.site-header');
 const menuBtn = siteHeader.querySelector('.site-header__button--menu');
+const isUserMenu = document.querySelector('.user-menu');
 
 const filterCountry = document.querySelector('.filter-country');
 
@@ -16,10 +17,18 @@ const stepCountryClose = document.querySelector('.country__button--close');
 const stepCountry = document.querySelector('.step__country');
 const stepBtnDel = document.querySelectorAll('.step__button--del');
 
-menuBtn.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  siteHeader.classList.toggle('site-header--closed');
-});
+if (isUserMenu) {
+  menuBtn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    siteHeader.classList.toggle('site-header--index-closed');
+  });
+
+} else {
+  menuBtn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    siteHeader.classList.toggle('site-header--closed');
+  });
+}
 
 if (businessRate) {
   businessRateOpen.addEventListener('click', function (evt) {

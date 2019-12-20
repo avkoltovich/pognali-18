@@ -297,3 +297,42 @@
 
   /* stylelint-enable */
 }
+
+@mixin menuClosedMobile {
+  background-color: #161c34;
+
+  .site-header__logo-link {
+    background-size: auto;
+  }
+
+  .site-header__logo-img {
+    opacity: 0;
+  }
+
+  .site-header__navigation,
+  .site-header__button--auth,
+  .site-header__contact-list,
+  .site-header__social-list {
+    display: none;
+  }
+}
+
+@mixin menuClosedTablet {
+  .site-header__logo-link {
+    background-image: url("../img/logo-tablet-white@1x.png");
+  }
+
+  .site-header__button--auth {
+    display: flex;
+  }
+}
+
+@mixin menuClosedDesktop {
+  .site-header__navigation {
+    display: block;
+  }
+
+  .site-header__contact-list {
+    display: flex;
+  }
+}
