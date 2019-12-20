@@ -9,8 +9,14 @@
 }
 
 .site-header__logo-link {
+  display: block;
+  min-width: 100px;
+  min-height: 23px;
   margin-bottom: auto;
-  background-color: tomato;
+
+  background-image: url("../img/logo-mobile-white@1x.png");
+  background-size: 0;
+  background-repeat: no-repeat;
 }
 
 .site-header__button {
@@ -129,6 +135,14 @@
   &--closed {
     background-color: #161c34;
 
+    .site-header__logo-link {
+      background-size: auto;
+    }
+
+    .site-header__logo-img {
+      opacity: 0;
+    }
+
     .site-header__navigation,
     .site-header__button--auth,
     .site-header__contact-list,
@@ -228,6 +242,10 @@
 
   .site-header {
     &--closed {
+      .site-header__logo-link {
+        background-image: url("../img/logo-tablet-white@1x.png");
+      }
+
       .site-header__button--auth {
         display: flex;
       }
@@ -261,10 +279,25 @@
   }
 
   .site-header__navigation {
+    position: relative;
+
     order: 2;
     min-width: 0;
     margin-top: 10px;
     margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: -104px;
+
+      width: 60px;
+      height: 2px;
+      content: "";
+
+      border-radius: 1px;
+      background-color: #ffffff;
+    }
   }
 
   .site-header__navigation-list {
@@ -308,6 +341,15 @@
     color: #ffffff;
 
     background-color: #161c34;
+
+    .site-header__logo-link {
+      background-image: url("../img/logo-desktop-white@1x.png");
+      background-size: auto;
+    }
+
+    .site-header__logo-img {
+      opacity: 0;
+    }
 
     &--closed {
       .site-header__navigation {
