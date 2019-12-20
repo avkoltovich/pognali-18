@@ -242,6 +242,13 @@
 
   .site-header {
     &--closed {
+      .site-header__bg-wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-color: #182044;
+      }
+
       .site-header__logo-link {
         background-image: url("../img/logo-tablet-white@1x.png");
       }
@@ -352,6 +359,13 @@
     }
 
     &--closed {
+      .site-header__bg-wrapper {
+        width: 100%;
+        height: 100%;
+
+        background-color: transparent;
+      }
+
       .site-header__navigation {
         display: block;
       }
