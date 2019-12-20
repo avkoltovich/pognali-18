@@ -4,11 +4,6 @@ const siteHeader = document.querySelector('.site-header');
 const menuBtn = siteHeader.querySelector('.site-header__button--menu');
 
 const filterCountry = document.querySelector('.filter-country');
-const filterCountryBtnOpen = filterCountry.querySelector('.filter-country__button--close');
-const filterCountryBtnClose = filterCountry.querySelector('.filter-country__button--hide');
-const filterCountryLetterList = filterCountry.querySelectorAll('.filter-country__letter-button');
-const filterCountryList = filterCountry.querySelectorAll('.filter-country__list-wrap');
-const filterCountryLetterItem = filterCountry.querySelectorAll('.filter-country__letter-item');
 
 const filterBtnList = document.querySelectorAll('.filter__button--show');
 const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
@@ -53,6 +48,12 @@ if (stepCountry) {
 };
 
 if (filterCountry) {
+  const filterCountryBtnOpen = filterCountry.querySelector('.filter-country__button--close');
+  const filterCountryBtnClose = filterCountry.querySelector('.filter-country__button--hide');
+  const filterCountryLetterList = filterCountry.querySelectorAll('.filter-country__letter-button');
+  const filterCountryList = filterCountry.querySelectorAll('.filter-country__list-wrap');
+  const filterCountryLetterItem = filterCountry.querySelectorAll('.filter-country__letter-item');
+
   filterCountryBtnOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
     filterCountry.classList.toggle('filter-country--closed');
