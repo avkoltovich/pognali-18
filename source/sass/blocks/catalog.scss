@@ -609,11 +609,11 @@
 
   .catalog__wrapper {
     display: flex;
+    align-items: flex-start;
   }
 
   .catalog__filter {
     order: 2;
-    margin-bottom: auto;
   }
 
   .catalog__list {
