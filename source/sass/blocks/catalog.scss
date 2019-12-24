@@ -338,6 +338,7 @@
     width: $tablet-width;
     padding-top: 106px;
     padding-right: 40px;
+    padding-bottom: 111px;
     padding-left: 40px;
   }
 
@@ -427,6 +428,8 @@
       position: static;
 
       width: 148px;
+      padding-top: 5px;
+      padding-right: 14px;
     }
 
     &--like {
@@ -518,12 +521,13 @@
   .catalog__level {
     width: 60px;
     height: 60px;
-    padding-top: 6px;
+    padding-top: 10px;
     margin-right: 6px;
     margin-left: 0;
   }
 
   .catalog__status-bar {
+
     &--level-99,
     &--level-80,
     &--level-50 {
