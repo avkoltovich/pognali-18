@@ -31,6 +31,7 @@
 .step__text {
   @include font(400, normal);
 
+  max-width: 218px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -88,6 +89,7 @@
   &--children {
     display: flex;
     align-items: center;
+    padding-top: 4px;
     margin-bottom: 22px;
   }
 
@@ -202,7 +204,7 @@
   &::after {
     position: absolute;
     top: 0;
-    right: 2px;
+    right: 0;
     z-index: 1;
 
     width: 49px;
@@ -244,6 +246,9 @@
   color: #1d2e5b;
 
   &--step-one {
+    appearance: textfield;
+    padding-top: 6px;
+
     font-size: 15px;
     letter-spacing: 1.5px;
     text-align: center;
@@ -256,8 +261,9 @@
 
     width: 168px;
     height: 42px;
+    padding-top: 5px;
     padding-right: 13px;
-    padding-left: 13px;
+    padding-left: 11px;
 
     border-radius: 4px;
     border: solid 1px #cbced9;
@@ -269,8 +275,9 @@
   &--add-country {
     width: 100%;
     height: 42px;
+    padding-top: 5px;
     padding-right: 13px;
-    padding-left: 13px;
+    padding-left: 11px;
 
     font-size: 14px;
     letter-spacing: 1.4px;
@@ -319,7 +326,7 @@
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @include font(700, normal);
   font-size: 20px;
@@ -341,7 +348,8 @@
 .step__cell {
   width: 31px;
   height: 31px;
-  padding-right: 4px;
+  padding-top: 4px;
+  padding-right: 0;
 
   @include font(400, normal);
   font-size: 14px;
@@ -353,6 +361,8 @@
   border: 1px solid #cbced9;
 
   &--heading {
+    padding-top: 0;
+
     background-color: #ffffff;
     border: 0;
   }
@@ -381,6 +391,7 @@
 .step__checkbox {
   position: absolute;
   appearance: none;
+  z-index: -1;
 }
 
 .step__checkbox::-ms-check {
@@ -405,7 +416,8 @@
 
     width: 100%;
     height: 42px;
-    padding-left: 12px;
+    padding-top: 5px;
+    padding-left: 11px;
     margin-bottom: 25px;
 
     @include font(500, normal);
@@ -504,7 +516,7 @@
     flex-wrap: wrap;
     padding-top: 48px;
     padding-right: 39px;
-    padding-bottom: 37px;
+    padding-bottom: 44px;
     padding-left: 41px;
   }
 
@@ -672,7 +684,7 @@
     height: 70px;
     padding-right: 12px;
     padding-left: 20px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .step__input {
@@ -735,7 +747,7 @@
     order: 4;
     width: 100%;
     padding-top: 25px;
-    margin-bottom: 34px;
+    margin-bottom: 39px;
 
     border-top: 1px solid #d6d9e6;
   }
@@ -748,20 +760,21 @@
 
   .step__calendar {
     order: 5;
+    width: 530px;
     margin-bottom: 42px;
   }
 
   .step__caption {
     min-height: 85px;
     padding-top: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 37px;
 
     font-size: 36px;
   }
 
   .step__cell {
     width: 77px;
-    height: 70px;
+    height: 69px;
     padding-right: 0;
     padding-left: 8px;
 
@@ -1011,6 +1024,7 @@
   }
 
   .step__calendar {
+    width: 100%;
     margin-bottom: 57px;
   }
 

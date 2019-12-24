@@ -285,6 +285,38 @@
     border: 3px solid #ff8d30;
     border-radius: 50%;
   }
+}
+
+@mixin statusBarFormTablet($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 94px;
+    height: 94px;
+    clip: rect(0, 94px, 94px, 47px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 94px;
+    height: 94px;
+    clip: rect(0, 47px, 94px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
 
   /* stylelint-disable */
   @if ($rotate < 50) {

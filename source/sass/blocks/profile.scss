@@ -175,6 +175,7 @@
 .profile__checkbox {
   position: absolute;
   appearance: none;
+  z-index: -1;
 }
 
 .profile__checkbox::-ms-check {
@@ -197,6 +198,12 @@
     width: 94px;
     height: 94px;
     margin-left: 0;
+  }
+
+  .profile__status-bar {
+    &--level-80 {
+      @include statusBarFormTablet(80);
+    }
   }
 
   .profile__fieldset {
