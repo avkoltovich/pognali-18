@@ -99,12 +99,17 @@
     padding-top: 3px;
     margin-bottom: 20px;
   }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .filter__number-wrap {
   position: relative;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 35px;
   margin-top: 0;
@@ -189,9 +194,10 @@
 .filter__input-number {
   appearance: textfield;
 
-  max-width: 105px;
+  max-width: 108px;
   padding-right: 8px;
   padding-left: 8px;
+  margin-top: 4px;
 
   font-size: 15px;
   font-weight: 500;
@@ -388,6 +394,10 @@
       flex-direction: row-reverse;
       align-items: center;
     }
+
+    &--closed {
+      display: flex;
+    }
   }
 
   .filter__number-wrap {
@@ -560,6 +570,10 @@
 
     &--number {
       flex-direction: column;
+    }
+
+    &--closed {
+      display: none;
     }
   }
 

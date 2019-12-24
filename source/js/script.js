@@ -110,7 +110,7 @@ if (filterBtnList) {
 
     currentBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
-      currentLabelWrap.classList.toggle('display-none');
+      currentLabelWrap.classList.toggle('filter__label-wrap--closed');
     });
   };
 };
