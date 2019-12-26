@@ -1,22 +1,22 @@
-.site-header {
-  background-color: #ffffff;
-}
-
 .site-header__container {
+  @include mobile-container;
   display: flex;
   flex-wrap: wrap;
-  width: $mobile-width;
   min-height: 73px;
   padding-top: 27px;
-  padding-right: 25px;
   padding-bottom: 23px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
 .site-header__logo-link {
+  display: block;
+  min-width: 100px;
+  min-height: 23px;
   margin-bottom: auto;
-  background-color: tomato;
+
+  background-image: url("../img/logo-mobile-white@1x.png");
+  background-size: 0;
+  background-repeat: no-repeat;
 }
 
 .site-header__button {
@@ -46,6 +46,8 @@
 
     background-color: transparent;
     border: 0;
+
+    cursor: pointer;
   }
 }
 
@@ -73,7 +75,7 @@
   font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #192144;
+  color: inherit;
 }
 
 .site-header__contact-list {
@@ -120,6 +122,23 @@
   width: 21px;
   height: 21px;
   background-color: tomato;
+}
+
+.site-header {
+  position: relative;
+  z-index: 10;
+
+  color: #192144;
+
+  background-color: #ffffff;
+
+  &--closed {
+    @include menuClosedMobile;
+  }
+
+  &--index-closed {
+    @include menuClosedMobile;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -209,17 +228,28 @@
     width: 31px;
     height: 28px;
   }
+
+  .site-header {
+    &--closed {
+      @include menuClosedTablet;
+    }
+
+    &--index-closed {
+      @include menuClosedTablet;
+
+      background-color: #182044;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-header__container {
+    @include desktop-container--narrow;
     align-items: center;
-    width: $desktop-width;
+    flex-wrap: wrap;
     min-height: 90px;
     padding-top: 47px;
-    padding-right: 60px;
     padding-bottom: 10px;
-    padding-left: 60px;
   }
 
   .site-header__button--menu {
@@ -238,10 +268,25 @@
   }
 
   .site-header__navigation {
+    position: relative;
+
     order: 2;
     min-width: 0;
     margin-top: 10px;
     margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: -104px;
+
+      width: 60px;
+      height: 2px;
+      content: "";
+
+      border-radius: 1px;
+      background-color: #ffffff;
+    }
   }
 
   .site-header__navigation-list {
@@ -279,5 +324,30 @@
 
   .site-header__button--auth {
     order: 4;
+  }
+
+  .site-header {
+    color: #ffffff;
+
+    background-color: #161c34;
+
+    .site-header__logo-link {
+      background-image: url("../img/logo-desktop-white@1x.png");
+      background-size: auto;
+    }
+
+    .site-header__logo-img {
+      opacity: 0;
+    }
+
+    &--closed {
+      @include menuClosedDesktop;
+    }
+
+    &--index-closed {
+      @include menuClosedDesktop;
+
+      background-color: #161c34;
+    }
   }
 }

@@ -6,11 +6,9 @@
 .directions__container {
   position: relative;
 
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 100px;
-  padding-right: 25px;
   padding-bottom: 30px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -55,10 +53,26 @@
 }
 
 .directions__item {
+  position: relative;
+
   margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
+
+    &::after {
+      position: absolute;
+      z-index: 99;
+
+      bottom: -10px;
+      left: 0;
+
+      width: 100%;
+      height: 81px;
+      content: "";
+
+      background-image: linear-gradient(to bottom, transparent, #edeff6 80%);
+    }
   }
 }
 
@@ -66,6 +80,10 @@
   display: block;
 
   border-radius: 10px 10px 0 0;
+}
+
+.directions__flag {
+  display: none;
 }
 
 .directions__link {
@@ -189,26 +207,12 @@
     min-width: 434px;
     min-height: 140px;
     padding-top: 31px;
+    padding-right: 35px;
     padding-bottom: 17px;
     padding-left: 32px;
     margin-top: 0;
 
     border-radius: 20px 0 0 20px;
-
-    &::before {
-      position: absolute;
-      top: 15px;
-      right: -36px;
-      z-index: 1;
-
-      width: 70px;
-      height: 47px;
-
-      content: "";
-
-      background-color: tomato;
-      border-radius: 6px;
-    }
   }
 
   .directions__title {
@@ -238,17 +242,29 @@
 
     border-radius: 0 20px 20px 0;
   }
+
+  .directions__flag {
+    position: absolute;
+    top: 14px;
+    right: 150px;
+    z-index: 10;
+
+    display: block;
+    width: 70px;
+    height: 47px;
+
+    border-radius: 6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .directions__container {
-    width: $desktop-width;
+    @include desktop-container;
     min-height: 750px;
     padding: 131px;
     padding-top: 222px;
     padding-right: 131px;
     padding-bottom: 139px;
-    padding-left: 131px;
 
     background-position: top 149px right 60px;
 
@@ -287,16 +303,16 @@
     margin-bottom: 10px;
   }
 
+  .directions__flag {
+    top: 23px;
+  }
+
   .directions__item-container {
     min-width: 373px;
     padding-top: 25px;
     padding-left: 30px;
-
-    &::before {
-      top: 23px;
-      right: -35px;
-    }
   }
+
 
   .directions__item-text {
     margin-bottom: 18px;

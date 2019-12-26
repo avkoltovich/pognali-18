@@ -1,5 +1,5 @@
 .country {
-  display: none;
+  display: block;
   width: 221px;
 
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
@@ -8,6 +8,10 @@
 }
 
 .country__wrapper {
+  position: relative;
+}
+
+.country__header {
   display: flex;
   justify-content: space-between;
   padding: 13px;
@@ -26,6 +30,17 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.country__button {
+  &--close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
 }
 
 .country__letter-list {
@@ -49,7 +64,7 @@
 .country__list {
   @include list;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 54px;
   padding-bottom: 15px;
   padding-left: 20px;
 
@@ -60,4 +75,126 @@
 
 .country__link {
   @include country-link;
+}
+
+@media (min-width: $tablet-width) {
+  .country {
+    width: 369px;
+    height: 487px;
+
+    border-radius: 10px 10px 0 10px;
+  }
+
+  .country__header {
+    align-items: center;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 26px;
+  }
+
+  .country__heading {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .country__letter-list {
+    width: 280px;
+    margin-top: 34px;
+    margin-left: 27px;
+  }
+
+  .country__letter-item {
+    width: 52px;
+    height: 70px;
+
+    &--active {
+      color: #ffffff;
+
+      border-color: #1d2e5b;
+      background-color: #1d2e5b;
+    }
+  }
+
+  .country__letter-button {
+    width: 52px;
+    height: 70px;
+
+    font-size: 20px;
+  }
+
+  .country__list {
+    position: absolute;
+    top: 70px;
+    right: -205px;
+    z-index: -1;
+
+    width: 205px;
+    height: 417px;
+    padding-top: 35px;
+    padding-left: 25px;
+
+    border: none;
+    border-left: 1px solid rgba(29, 46, 91, 0.1);
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+    box-shadow: 50px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  }
+
+  .country__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country {
+    width: 730px;
+    min-height: 546px;
+
+    border-radius: 10px;
+  }
+
+  .country__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .country__header {
+    width: 100%;
+  }
+
+  .country__letter-list {
+    width: 375px;
+    height: 100%;
+  }
+
+  .country__letter-item {
+    width: 60px;
+    height: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 4px;
+    border: solid 1px #cbced9;
+
+    &--active {
+      border-color: #1d2e5b;
+    }
+  }
+
+  .country__letter-button {
+    width: 58px;
+    height: 68px;
+  }
+
+  .country__list {
+    position: static;
+
+    height: 476px;
+    padding-top: 32px;
+    margin-right: 37px;
+    margin-left: auto;
+
+    box-shadow: none;
+  }
 }

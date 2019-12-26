@@ -164,6 +164,7 @@
 
       align-items: center;
       height: 67px;
+      margin-right: auto;
 
       font-size: 20px;
       color: #132576;
@@ -239,11 +240,10 @@
 
 @media (min-width: $desktop-width) {
   .add-profile__container {
-    width: $desktop-width;
+    @include desktop-container;
     min-height: 810px;
     padding-top: 178px;
     padding-right: 131px;
-    padding-left: 131px;
 
     &::before {
       top: 346px;

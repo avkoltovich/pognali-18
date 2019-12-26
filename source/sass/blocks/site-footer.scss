@@ -9,11 +9,9 @@
 }
 
 .site-footer__container {
-  width: $mobile-width;
+  @include mobile-container;
   padding-top: 38px;
-  padding-right: 25px;
   padding-bottom: 14px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -110,10 +108,8 @@
 
 @media (min-width: $desktop-width) {
   .site-footer__container {
-    width: $desktop-width;
+    @include desktop-container--narrow;
     padding-top: 52px;
-    padding-right: 60px;
-    padding-left: 60px;
   }
 
   .site-footer__logo-link {

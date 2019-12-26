@@ -1,5 +1,8 @@
 .filter {
-  padding: 25px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
 
   border-radius: 20px;
   background-color: #ffd74b;
@@ -8,39 +11,137 @@
 .filter__heading {
   @include font(700, normal);
 
+  padding-left: 5px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   font-size: 22.5px;
+  line-height: 1;
   color: #1d2e5b;
 }
 
 .filter__fieldset {
   position: relative;
 
-  padding: 0;
+  padding-top: 0;
+  padding-right: 5px;
+  padding-bottom: 0;
+  padding-left: 5px;
   margin: 0;
 
   border: 0;
 
-  &--music {
+  &--checkbox {
     display: flex;
     flex-direction: column;
   }
 }
 
 .filter__legend {
-  @include font(700, normal);
-
-  width: 100%;
+  min-width: 100%;
   height: 40px;
-
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 40px;
-  color: #1d2e5b;
+  margin-top: 0;
+  margin-bottom: 1px;
 
   border-top: 1px solid #f3c72b;
+}
+
+.filter__button {
+  padding: 0;
+
+  &--show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    @include font(700, normal);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #1d2e5b;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+  }
+}
+
+.filter__colon {
+  display: none;
+}
+
+.filter__icon {
+  &--checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    margin-bottom: 2px;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+}
+
+.filter__label-wrap {
+  margin-top: 0;
+
+  &--hobby,
+  &--music,
+  &--food {
+    margin-bottom: 10px;
+  }
+
+  &--transport {
+    display: flex;
+    padding-top: 3px;
+    margin-bottom: 20px;
+  }
+
+  &--closed {
+    display: none;
+  }
+}
+
+.filter__number-wrap {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
+  border: solid 1px #cbced9;
+  border-radius: 4px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    width: 1px;
+    height: 34px;
+    content: "";
+
+    background-color: #cbced9;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 50%;
+
+    width: 1px;
+    height: 11px;
+    content: "";
+
+    background-color: #ffffff;
+  }
 }
 
 .filter__label {
@@ -48,10 +149,478 @@
 
   font-size: 15px;
   color: $greyish-brown;
+
+  &--checkbox {
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    margin-bottom: 5px;
+  }
+
+  &--transport {
+    display: block;
+    width: 33px;
+    height: 33px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &--pseudo {
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: calc(50% - 7px);
+      z-index: 9;
+
+      width: 16px;
+      height: 1px;
+      content: "";
+
+      background-color: #cbced9;
+    }
+  }
+}
+
+.filter__checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.filter__checkbox::-ms-check {
+  display: none;
+}
+
+.filter__input-number {
+  appearance: textfield;
+
+  max-width: 108px;
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 4px;
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  border: 0;
+
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}
+
+.filter__range-wrap {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 22px;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 1px);
+
+    width: 220px;
+    height: 2px;
+    content: "";
+
+    background-color: #1d2e5b;
+    border-radius: 1px;
+    opacity: 0.2;
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+
+    width: 144px;
+    height: 2px;
+    content: "";
+
+    background-color: #1d2e5b;
+    border-radius: 1px;
+  }
+}
+
+.filter__range {
+  z-index: 10;
+
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background-color: #1d2e5b;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--left {
+    margin-right: 133px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter {
+    padding-top: 36px;
+    padding-right: 35px;
+    padding-bottom: 37px;
+    padding-left: 35px;
+  }
+
+  .filter__heading {
+    padding-left: 0;
+    margin-bottom: 67px;
+
+    font-size: 30px;
+  }
+
+  .filter__fieldset {
+    padding-right: 0;
+    padding-left: 0;
+
+    &--checkbox {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--transport {
+      display: flex;
+      min-height: 56px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+    }
+
+    &--level {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 66px;
+    }
+
+    &:first-of-type::before {
+      position: absolute;
+      top: -30px;
+
+      width: 100%;
+      height: 1px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #f3c72b;
+    }
+
+    &:last-of-type::after {
+      position: absolute;
+      bottom: -15px;
+
+      width: 100%;
+      height: 1px;
+      content: "";
+
+      border-radius: 20px;
+      background-color: #f3c72b;
+    }
+  }
+
+  .filter__legend {
+    min-width: 121px;
+    margin-bottom: 10px;
+
+    border-top: none;
+
+    &--transport {
+      padding-top: 7px;
+    }
+
+    &--level {
+      padding-top: 6px;
+    }
+  }
+
+  .filter__button {
+    &--show {
+      width: auto;
+
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .filter__colon {
+    display: inline;
+    margin-right: auto;
+  }
+
+  .filter__icon {
+    &--checkbox {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      margin-bottom: 4px;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  .filter__label-wrap {
+    height: 40px;
+
+    &--hobby,
+    &--music,
+    &--food {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    &--transport {
+      padding-top: 0;
+      margin-bottom: 16px;
+    }
+
+    &--number {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    &--closed {
+      display: flex;
+    }
+  }
+
+  .filter__number-wrap {
+    max-width: 150px;
+    height: 46px;
+    margin-bottom: 11px;
+
+    &::before {
+      height: 44px;
+    }
+  }
+
+  .filter__label {
+    font-size: 20px;
+
+    &--checkbox {
+      min-width: 170px;
+      min-height: 25px;
+      padding-left: 5px;
+      margin-bottom: 0;
+    }
+
+    &--checkbox:last-of-type {
+      min-width: 0;
+    }
+
+    &--transport {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .filter__input-number {
+    max-width: 74px;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .filter__range-wrap {
+    min-width: 277px;
+    max-height: 40px;
+    order: 2;
+    align-items: center;
+    margin-right: 61px;
+    margin-bottom: 14px;
+
+    &::before {
+      top: calc(50% - 2px);
+
+      width: 277px;
+      height: 3px;
+
+      border-radius: 1.5px;
+    }
+
+    &::after {
+      top: calc(50% - 2px);
+
+      width: 201px;
+      height: 3px;
+
+      border-radius: 1.5px;
+    }
+  }
+
+  .filter__range {
+    width: 13px;
+    height: 13px;
+
+    &--left {
+      margin-right: 186px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .filter {
     max-width: 285px;
+    padding-top: 47px;
+    padding-right: 41px;
+    padding-bottom: 47px;
+    padding-left: 48px;
+    margin-left: auto;
+  }
+
+  .filter__heading {
+    margin-bottom: 25px;
+  }
+
+  .filter__fieldset {
+    padding-right: 0;
+    padding-left: 0;
+
+    &--checkbox {
+      flex-direction: column;
+    }
+
+    &--transport {
+      flex-direction: column;
+    }
+
+    &--level {
+      flex-direction: column;
+      margin-bottom: 8px;
+    }
+
+    &:first-of-type::before {
+      display: none;
+    }
+
+    &:last-of-type::after {
+      display: none;
+    }
+  }
+
+  .filter__legend {
+    min-width: 100%;
+    margin-bottom: 0;
+
+    &--transport {
+      padding-top: 0;
+      margin-bottom: 10px;
+    }
+
+    &--level {
+      order: auto;
+      padding-top: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .filter__colon {
+    display: none;
+  }
+
+  .filter__button {
+    &--show {
+      min-width: 100%;
+      padding-right: 6px;
+    }
+  }
+
+  .filter__icon {
+    &--checkbox {
+      margin-right: 12px;
+      margin-bottom: 4px;
+    }
+
+    &--hide {
+      display: block;
+    }
+  }
+
+  .filter__label-wrap {
+    height: auto;
+    margin-bottom: 8px;
+
+    &--hobby,
+    &--music,
+    &--food {
+      flex-direction: column;
+      padding-top: 15px;
+    }
+
+    &--transport {
+      padding-top: 0;
+      margin-bottom: 22px;
+    }
+
+    &--number {
+      flex-direction: column;
+    }
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  .filter__number-wrap {
+    max-width: 190px;
+    height: 46px;
+    margin-bottom: 32px;
+  }
+
+  .filter__label {
+    &--checkbox {
+      min-height: 25px;
+      padding-left: 0;
+      margin-bottom: 12px;
+    }
+
+    &--checkbox:last-of-type {
+      min-width: 0;
+    }
+  }
+
+  .filter__input-number {
+    max-width: 94px;
+  }
+
+  .filter__range-wrap {
+    min-width: 190px;
+    margin-right: 6px;
+    margin-bottom: 22px;
+
+    &::before {
+      width: 191px;
+    }
+
+    &::after {
+      width: 125px;
+      border-radius: 1.5px;
+    }
+  }
+
+  .filter__range {
+    width: 13px;
+    height: 13px;
+
+    &--left {
+      margin-right: 106px;
+    }
   }
 }

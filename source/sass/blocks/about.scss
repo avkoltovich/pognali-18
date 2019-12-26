@@ -76,11 +76,9 @@
   }
 
   .about__container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 132px;
-    padding-right: 75px;
     padding-bottom: 88px;
-    padding-left: 75px;
 
     background-image: none;
 
@@ -149,9 +147,8 @@
   }
 
   .about__container {
-    width: $desktop-width;
+    @include desktop-container;
     padding-top: 190px;
-    padding-left: 131px;
 
     &::before {
       position: absolute;

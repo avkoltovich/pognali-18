@@ -16,7 +16,7 @@
   @include font(700, normal);
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 24px;
   color: #1d2e5b;
@@ -61,6 +61,8 @@
 
   background-color: transparent;
   border: 0;
+
+  cursor: pointer;
 }
 
 @mixin country-link {
@@ -76,4 +78,293 @@
   z-index: $zindex;
 
   margin-top: $mt;
+}
+
+@mixin step-one-field {
+  width: 50%;
+  align-items: center;
+  padding-top: 0;
+
+  border-top: none;
+}
+
+@mixin step-oval-link {
+  width: 285px;
+  height: 81px;
+
+  font-size: 24px;
+  text-transform: none;
+  border-radius: 20px;
+}
+
+@mixin step-two-input--tablet {
+  width: 369px;
+  height: 70px;
+  padding-left: 24px;
+
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+@mixin step-two-dots--mobile {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  right: 49px;
+
+  width: 8px;
+  height: 8px;
+  content: "";
+
+  border: solid 1px #cbced9;
+  border-radius: 50%;
+}
+
+@mixin step-two-dots--table {
+  top: 26px;
+  right: -34px;
+
+  width: 15px;
+  height: 15px;
+}
+
+@mixin step-two-input--desktop {
+  width: 730px;
+}
+
+@mixin step-two-dots--desktop {
+  right: -52px;
+}
+
+@mixin mobile-container {
+  width: $mobile-width;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@mixin tablet-container {
+  width: $tablet-width;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+@mixin desktop-container {
+  width: $desktop-width;
+  padding-left: 131px;
+}
+
+@mixin desktop-container--narrow {
+  width: $desktop-width;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+@mixin statusBarContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100%;
+  height: 100%;
+}
+
+@mixin statusBarIndexMobile($rotate) {
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+    clip: rect(0, 60px, 60px, 30px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 60px;
+    clip: rect(0, 30px, 60px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 60px, 60px, 30px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}
+
+@mixin statusBarCatalogMobile($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 45px, 45px, 22.5px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 22.5px, 45px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 45px, 45px, 22.5px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}
+
+@mixin statusBarForm($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 100px, 100px, 50px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 50px, 100px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+}
+
+@mixin statusBarFormTablet($rotate) {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 94px;
+    height: 94px;
+    clip: rect(0, 94px, 94px, 47px);
+    content: "";
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 94px;
+    height: 94px;
+    clip: rect(0, 47px, 94px, 0);
+    content: "";
+
+    transform: rotate($rotate * 3.6deg);
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+  }
+
+  /* stylelint-disable */
+  @if ($rotate < 50) {
+    clip: rect(0, 100px, 100px, 50px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  /* stylelint-enable */
+}
+
+@mixin menuClosedMobile {
+  background-color: #161c34;
+
+  .site-header__logo-link {
+    background-size: auto;
+  }
+
+  .site-header__logo-img {
+    opacity: 0;
+  }
+
+  .site-header__navigation,
+  .site-header__button--auth,
+  .site-header__contact-list,
+  .site-header__social-list {
+    display: none;
+  }
+}
+
+@mixin menuClosedTablet {
+  .site-header__logo-link {
+    background-image: url("../img/logo-tablet-white@1x.png");
+  }
+
+  .site-header__button--auth {
+    display: flex;
+  }
+}
+
+@mixin menuClosedDesktop {
+  .site-header__navigation {
+    display: block;
+  }
+
+  .site-header__contact-list {
+    display: flex;
+  }
 }

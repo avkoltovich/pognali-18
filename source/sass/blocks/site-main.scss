@@ -10,15 +10,13 @@
 }
 
 .site-main__heading-container {
+  @include mobile-container;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: $mobile-width;
   min-height: 70px;
   padding-top: 20px;
-  padding-right: 25px;
   padding-bottom: 10px;
-  padding-left: 25px;
   margin: 0 auto;
 }
 
@@ -90,9 +88,7 @@
   z-index: 9;
 
   top: -10px;
-  left: 50%;
-
-  transform: translateX(-50%);
+  left: calc(50% - 135px);
 }
 
 .site-main__feedback {
@@ -103,7 +99,6 @@
   @include relative-z-margin(1);
 }
 
-.site-main__catalog,
 .site-main__add-plan {
   margin-top: -30px;
   margin-bottom: -60px;
@@ -111,6 +106,11 @@
 
 .site-main__filter-country {
   @include relative-z-margin(1);
+}
+
+.site-main__catalog {
+  @include relative-z-margin(0);
+  margin-bottom: -60px;
 }
 
 .site-main__plans,
@@ -145,11 +145,9 @@
   }
 
   .site-main__heading-container {
-    width: $tablet-width;
+    @include tablet-container;
     padding-top: 88px;
-    padding-right: 75px;
     padding-bottom: 60px;
-    padding-left: 75px;
   }
 
   .site-main__title {
@@ -207,6 +205,11 @@
     margin-top: -60px;
   }
 
+  .site-main__business-rate {
+    top: 0;
+    left: calc(50% - 344px);
+  }
+
   .site-main__map {
     margin-top: -60px;
     margin-bottom: -60px;
@@ -246,6 +249,10 @@
     padding-top: 112px;
     padding-right: 125px;
     padding-left: 125px;
+
+    &--form {
+      padding-right: 500px;
+    }
   }
 
   .site-main__howto {
@@ -254,5 +261,10 @@
 
   .site-main__about {
     margin-top: -60px;
+  }
+
+  .site-main__business-rate {
+    top: 108px;
+    left: calc(50% - 375px);
   }
 }

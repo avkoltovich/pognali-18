@@ -5,10 +5,8 @@
 }
 
 .user-menu__list {
+  @include mobile-container;
   display: flex;
-  width: $mobile-width;
-  padding-right: 25px;
-  padding-left: 25px;
   margin: 0 auto;
 
   list-style: none;
