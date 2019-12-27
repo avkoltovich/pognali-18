@@ -1,6 +1,6 @@
 .promotion {
   min-height: 405px;
-  padding-top: 20px;
+  padding-top: 18px;
 
   background-color: $bgcolor-dark;
   background-image: url("../img/traveller-illustration-mobile@1x.png"),
@@ -8,6 +8,13 @@
   background-repeat: no-repeat;
   background-size: auto 255px, cover;
   background-position: bottom right calc(50vw - 160px + 50px), center;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .promotion {
+    background-image: url("../img/traveller-illustration-mobile@2x.png"),
+      url("../img/globe-back-mobile@2x.jpg");
+  }
 }
 
 .promotion__heading {
@@ -27,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .promotion {
     min-height: 0;
-    padding-top: 30px;
+    padding-top: 26px;
 
     background-color: transparent;
     background-image: none;
@@ -44,7 +51,7 @@
 @media (min-width: $desktop-width) {
   .promotion {
     width: 50%;
-    padding-top: 100px;
+    padding-top: 91px;
     padding-left: 127px;
 
     background: none;

@@ -12,7 +12,12 @@
   <header class="site-header">
     <div class="site-header__container">
       <a class="site-header__logo-link">
-        <img class="site-header__logo-img" src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+          <img class="site-header__logo-img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x"
+            alt="Погнали?">
+        </picture>
       </a>
       <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
         <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">
@@ -165,10 +170,14 @@
           <ul class="directions__list">
             <li class="directions__item">
               <a href="" class="directions__link directions__link--item">
-                <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
-                  alt="Таиланд">
-                <img class="directions__flag" src="https://via.placeholder.com/270x110" width="70" height="47"
-                  alt="Флаг Таиланда">
+                <div class="directions__img">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/thailand-desktop@1x.jpg, img/thailand-desktop@2x.jpg 2x">
+                    <img src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Таиланд">
+                  </picture>
+                </div>
+                <img class="directions__flag" src="img/flag-thailand.svg" width="35" height="24" alt="Флаг Таиланда">
                 <div class="directions__item-container">
                   <h3 class="directions__title">
                     Таиланд
@@ -180,10 +189,14 @@
             </li>
             <li class="directions__item">
               <a href="" class="directions__link directions__link--item">
-                <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
-                  alt="Франция">
-                <img class="directions__flag" src="https://via.placeholder.com/270x110" width="70" height="47"
-                  alt="Флаг Франции">
+                <div class="directions__img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg,
+                     img/france-desktop@2x.jpg 2x">
+                    <img src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Франция">
+                  </picture>
+                </div>
+                <img class="directions__flag" src="img/flag-france.svg" width="35" height="24" alt="Флаг Франции">
                 <div class="directions__item-container">
                   <h3 class="directions__title">
                     Франция
@@ -195,10 +208,13 @@
             </li>
             <li class="directions__item">
               <a href="" class="directions__link directions__link--item">
-                <img class="directions__img" src="https://via.placeholder.com/270x110" width="270" height="110"
-                  alt="Чехия">
-                <img class="directions__flag" src="https://via.placeholder.com/270x110" width="70" height="47"
-                  alt="Флаг Чехии">
+                <div class="directions__img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg 2x">
+                    <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Чехия">
+                  </picture>
+                </div>
+                <img class="directions__flag" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
                 <div class="directions__item-container">
                   <h3 class="directions__title">
                     Чехия
@@ -241,17 +257,19 @@
                 <span class="companions__description">level</span>
               </p>
               <a href="" class="companions__item-link">
-                <img class="companions__photo" src="https://via.placeholder.com/270x270" width="270" height="270"
-                  alt="Таня Фирсова">
+                <div class="companions__photo">
+                  <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-destop@2x.jpg 2x" width="270" height="270"
+                    alt="Фотография: Таня Фирсова">
+                </div>
                 <ul class="companions__countries">
                   <li class="companions__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Шри-Ланка">
+                    <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка">
                   </li>
                   <li class="companions__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Таиланд">
+                    <img src="img/flag-thailand.svg" width="35" height="24" alt="Таиланд">
                   </li>
                   <li class="companions__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Сейшельские Острова">
+                    <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшельские Острова">
                   </li>
                 </ul>
                 <h3 class="companions__name">
@@ -280,14 +298,16 @@
                 <span class="companions__description">level</span>
               </p>
               <a href="" class="companions__item-link">
-                <img class="companions__photo" src="https://via.placeholder.com/270x270" width="270" height="270"
-                  alt="Петя Демин">
+                <div class="companions__photo">
+                  <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270"
+                    alt="Петя Демин">
+                </div>
                 <ul class="companions__countries">
                   <li class="companions__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Бельгия">
+                    <img src="img/flag-belgium.svg" width="35" height="24" alt="Бельгия">
                   </li>
                   <li class="companions__flag">
-                    <img src="https://via.placeholder.com/35x24" width="35" height="24" alt="Чехия">
+                    <img src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
                   </li>
                 </ul>
                 <h3 class="companions__name">
@@ -438,8 +458,12 @@
   <footer class="site-footer">
     <div class="site-footer__container">
       <a class="site-footer__logo-link">
-        <img class="site-footer__logo-img" src="https://via.placeholder.com/96x15" width="96" height="15"
-          alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+          <img class="site-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
+            alt="Погнали?">
+        </picture>
       </a>
       <ul class="site-footer__social-list">
         <li class="site-footer__social-item">

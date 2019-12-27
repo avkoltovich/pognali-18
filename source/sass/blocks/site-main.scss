@@ -134,7 +134,16 @@
         url("../img/globe-back-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-size: auto 451px, auto 611px;
-      background-position: bottom 280px right 112px, bottom 140px center;
+      background-position: bottom 280px right calc(50% - 86px), bottom 140px center;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .site-main__container {
+      &--promo {
+        background-image: url("../img/traveller-illustration-tablet@2x.png"),
+          url("../img/globe-back-tablet@2x.jpg");
+      }
     }
   }
 
@@ -227,6 +236,13 @@
     background-size: auto 640px, auto 750px;
     background-position: bottom left calc(50vw - 720px + 604px), bottom;
     border-radius: 0 0 30px 30px;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .site-main__wrapper {
+      background-image: url("../img/traveller-illustration-desktop@2x.png"),
+        url("../img/globe-back-desktop@2x.jpg");
+    }
   }
 
   .site-main__container {

@@ -12,7 +12,12 @@
   <header class="site-header">
     <div class="site-header__container">
       <a class="site-header__logo-link" href="index.html">
-        <img class="site-header__logo-img" src="img/logo-mobile-blue@1x.png" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
+          <img class="site-header__logo-img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x"
+            alt="Погнали?">
+        </picture>
       </a>
       <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
         <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">

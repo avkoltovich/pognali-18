@@ -19,12 +19,14 @@ const stepCountry = document.querySelector('.step__country');
 const stepBtnDel = document.querySelectorAll('.step__button--del');
 
 if (isUserMenu) {
+  siteHeader.classList.toggle('site-header--index-closed');
   menuBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
     siteHeader.classList.toggle('site-header--index-closed');
   });
 
 } else {
+  siteHeader.classList.toggle('site-header--closed');
   menuBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
     siteHeader.classList.toggle('site-header--closed');

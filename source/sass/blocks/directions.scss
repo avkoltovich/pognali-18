@@ -3,6 +3,10 @@
   border-radius: 0 0 30px 30px;
 }
 
+.directions img {
+  display: block;
+}
+
 .directions__container {
   position: relative;
 
@@ -77,13 +81,18 @@
 }
 
 .directions__img {
-  display: block;
+  overflow: hidden;
+  width: 270px;
+  height: 110px;
 
   border-radius: 10px 10px 0 0;
 }
 
 .directions__flag {
-  display: none;
+  position: absolute;
+  top: 104px;
+  left: 25px;
+  z-index: 10;
 }
 
 .directions__link {
@@ -172,6 +181,12 @@
     }
   }
 
+  @media (min-resolution: 1.5dppx) {
+    .directions__container {
+      background-image: url("../img/flags-back@2x.png");
+    }
+  }
+
   .directions__heading {
     padding-left: 0;
     margin-bottom: 53px;
@@ -238,18 +253,18 @@
   .directions__img {
     order: 2;
     width: 186px;
-    min-height: 140px;
+    height: 140px;
 
     border-radius: 0 20px 20px 0;
   }
 
   .directions__flag {
     position: absolute;
-    top: 14px;
+    top: 17px;
     right: 150px;
+    left: auto;
     z-index: 10;
 
-    display: block;
     width: 70px;
     height: 47px;
 
@@ -312,7 +327,6 @@
     padding-top: 25px;
     padding-left: 30px;
   }
-
 
   .directions__item-text {
     margin-bottom: 18px;

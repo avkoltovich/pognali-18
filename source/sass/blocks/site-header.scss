@@ -14,9 +14,19 @@
   min-height: 23px;
   margin-bottom: auto;
 
-  background-image: url("../img/logo-mobile-white@1x.png");
-  background-size: 0;
+  background-image: url("../img/logo-mobile-blue@1x.png");
+  background-size: 100px 19px;
   background-repeat: no-repeat;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .site-header__logo-link {
+    background-image: url("../img/logo-mobile-blue@2x.png");
+  }
+}
+
+.site-header__logo-img {
+  opacity: 0;
 }
 
 .site-header__button {
@@ -159,8 +169,19 @@
     align-items: center;
     min-width: 166px;
     min-height: 50px;
+    padding-top: 5px;
     margin-right: 24px;
     margin-bottom: auto;
+
+    background-image: url("../img/logo-tablet-blue@1x.png");
+    background-size: 166px 42px;
+    background-position: top 5px left;
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .site-header__logo-link {
+      background-image: url("../img/logo-tablet-blue@2x.png");
+    }
   }
 
   .site-header__button--menu {
@@ -263,6 +284,7 @@
   .site-header__logo-link {
     order: 1;
     min-width: 198px;
+    padding-top: 0;
     margin-right: 147px;
     margin-bottom: 0;
   }
@@ -332,12 +354,11 @@
     background-color: #161c34;
 
     .site-header__logo-link {
-      background-image: url("../img/logo-desktop-white@1x.png");
-      background-size: auto;
+      background-image: none;
     }
 
     .site-header__logo-img {
-      opacity: 0;
+      opacity: 1;
     }
 
     &--closed {
