@@ -11,7 +11,7 @@
   position: relative;
 
   @include mobile-container;
-  padding-top: 100px;
+  padding-top: 99px;
   padding-bottom: 30px;
   margin: 0 auto;
 }
@@ -40,7 +40,7 @@
 .directions__text {
   max-width: 220px;
   padding-left: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 63px;
 
   @include font(300, normal);
   font-size: 16px;
@@ -64,9 +64,9 @@
   &:last-child {
     margin-bottom: 0;
 
-    &::after {
+    a::after {
       position: absolute;
-      z-index: 99;
+      z-index: 999;
 
       bottom: -10px;
       left: 0;
@@ -82,15 +82,17 @@
 
 .directions__img {
   overflow: hidden;
+  position: relative;
   width: 270px;
   height: 110px;
+  z-index: -1;
 
   border-radius: 10px 10px 0 0;
 }
 
 .directions__flag {
   position: absolute;
-  top: 104px;
+  top: 87px;
   left: 25px;
   z-index: 10;
 }
@@ -99,6 +101,12 @@
   position: relative;
 
   text-decoration: none;
+
+  &--item {
+    z-index: 10;
+
+    display: block;
+  }
 }
 
 .directions__item-container {
@@ -109,11 +117,11 @@
   justify-content: space-between;
   min-width: 270px;
   min-height: 90px;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-right: 26px;
   padding-bottom: 20px;
   padding-left: 24px;
-  margin-top: -10px;
+  margin-top: -11px;
 
   background-color: #ffffff;
   border-radius: 10px;
@@ -156,7 +164,7 @@
 
   .directions__container {
     width: $tablet-width;
-    padding-top: 130px;
+    padding-top: 127px;
     padding-right: 75px;
     padding-bottom: 80px;
     padding-left: 73px;
@@ -189,7 +197,7 @@
 
   .directions__heading {
     padding-left: 0;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 
     font-size: 45px;
   }
@@ -276,8 +284,7 @@
   .directions__container {
     @include desktop-container;
     min-height: 750px;
-    padding: 131px;
-    padding-top: 222px;
+    padding-top: 218px;
     padding-right: 131px;
     padding-bottom: 139px;
 
@@ -324,7 +331,7 @@
 
   .directions__item-container {
     min-width: 373px;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-left: 30px;
   }
 

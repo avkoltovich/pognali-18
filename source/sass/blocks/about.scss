@@ -13,7 +13,7 @@
 
   width: $mobile-width;
   min-height: 352px;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-right: 60px;
   padding-left: 50px;
   margin: 0 auto;
@@ -125,7 +125,7 @@
 
   .about__heading {
     font-size: 45px;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
   }
 
   .about__text {
@@ -136,7 +136,7 @@
     line-height: 1.18;
 
     &--bold {
-      margin-bottom: 50px;
+      margin-bottom: 52px;
 
       font-size: 21px;
       line-height: 1.19;
@@ -161,7 +161,7 @@
 
   .about__container {
     @include desktop-container;
-    padding-top: 190px;
+    padding-top: 182px;
 
     &::before {
       top: 130px;
@@ -189,7 +189,7 @@
   }
 
   .about__heading {
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 
   .about__text {
@@ -198,7 +198,7 @@
 
     &--bold {
       width: 410px;
-      margin-bottom: 84px;
+      margin-bottom: 85px;
     }
   }
 

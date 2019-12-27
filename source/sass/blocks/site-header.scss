@@ -1,9 +1,13 @@
+.site-header img {
+  display: block;
+}
+
 .site-header__container {
   @include mobile-container;
   display: flex;
   flex-wrap: wrap;
   min-height: 73px;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 23px;
   margin: 0 auto;
 }
@@ -12,10 +16,12 @@
   display: block;
   min-width: 100px;
   min-height: 23px;
+  padding-top: 3px;
   margin-bottom: auto;
 
   background-image: url("../img/logo-mobile-blue@1x.png");
   background-size: 100px 19px;
+  background-position: left top 3px;
   background-repeat: no-repeat;
 }
 
@@ -49,16 +55,27 @@
   }
 
   &--menu {
+    width: 25px;
+    height: 25px;
     padding-right: 0;
     padding-left: 0;
     margin-bottom: auto;
     margin-left: auto;
 
     background-color: transparent;
+    background-image: url("../img/menu-close.svg");
+    background-size: 19px 19px;
+    background-position: left 3px top 2px;
+    background-repeat: no-repeat;
     border: 0;
 
     cursor: pointer;
   }
+}
+
+.site-header__menu-icon {
+  fill: #ffffff;
+  opacity: 0;
 }
 
 .site-header__navigation {
@@ -110,15 +127,25 @@
 }
 
 .site-header__contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
   margin-right: 16px;
 
+  background-color: #121936;
   border-radius: 50%;
+}
+
+.site-header__contact-icon {
+  fill: #ffd74b;
 }
 
 .site-header__social-list {
   display: flex;
   justify-content: space-between;
-  min-width: 106px;
+  min-width: 114px;
   padding-left: 0;
   margin-right: auto;
   margin-bottom: 17px;
@@ -128,15 +155,22 @@
 }
 
 .site-header__social-link {
-  display: block;
-  width: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
   height: 21px;
-  background-color: tomato;
+}
+
+.site-header__social-icon {
+  fill: #cccccc;
 }
 
 .site-header {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  z-index: 99;
+
+  width: 100%;
 
   color: #192144;
 
@@ -148,6 +182,22 @@
 
   &--index-closed {
     @include menuClosedMobile;
+  }
+
+  &--scrolled {
+    background-color: #ffffff;
+
+    .site-header__logo-link {
+      background-size: 100px 19px;
+    }
+
+    .site-header__logo-img {
+      opacity: 0;
+    }
+
+    .site-header__menu-icon {
+      fill: #cccccc;
+    }
   }
 }
 
@@ -184,27 +234,31 @@
     }
   }
 
-  .site-header__button--menu {
-    order: 2;
-    display: flex;
-    align-items: center;
-    min-height: 50px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  .site-header__button {
+    &--menu {
+      order: 2;
+      display: flex;
+      align-items: center;
+      min-height: 50px;
+      margin-right: auto;
+      margin-left: auto;
 
-  .site-header__button--auth {
-    order: 3;
-    min-width: 190px;
-    margin-bottom: 0;
+      background-position: left 3px top 16px;
+    }
 
-    font-size: 20px;
+    &--auth {
+      order: 3;
+      min-width: 190px;
+      margin-bottom: 0;
+
+      font-size: 20px;
+    }
   }
 
   .site-header__navigation {
     order: 4;
-    margin-top: 94px;
-    margin-bottom: 128px;
+    margin-top: 89px;
+    margin-bottom: 135px;
   }
 
   .site-header__navigation-list {
@@ -260,6 +314,14 @@
 
       background-color: #182044;
     }
+
+    &--scrolled {
+      background-color: #ffffff;
+
+      .site-header__logo-link {
+        background-size: 166px 42px;
+      }
+    }
   }
 }
 
@@ -270,7 +332,7 @@
     flex-wrap: wrap;
     min-height: 90px;
     padding-top: 47px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
   }
 
   .site-header__button--menu {
@@ -283,7 +345,7 @@
 
   .site-header__logo-link {
     order: 1;
-    min-width: 198px;
+    min-width: 200px;
     padding-top: 0;
     margin-right: 147px;
     margin-bottom: 0;
@@ -349,12 +411,22 @@
   }
 
   .site-header {
+    position: absolute;
+
     color: #ffffff;
 
     background-color: #161c34;
 
     .site-header__logo-link {
-      background-image: none;
+      background-image: url("../img/logo-desktop-blue@1x.png");
+      background-size: 200px 52px;
+      background-position: top left;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      .site-header__logo-link {
+        background-image: url("../img/logo-desktop-blue@2x.png");
+      }
     }
 
     .site-header__logo-img {
@@ -369,6 +441,28 @@
       @include menuClosedDesktop;
 
       background-color: #161c34;
+    }
+
+    &--scrolled {
+      color: #192144;
+
+      background-color: #ffffff;
+
+      .site-header__logo-img {
+        opacity: 0;
+      }
+
+      .site-header__navigation::before {
+        background-color: #192144;
+      }
+    }
+
+    &--animation {
+      position: fixed;
+
+      .site-header__container {
+        padding-top: 24px;
+      }
     }
   }
 }

@@ -18,6 +18,21 @@ const stepCountryClose = document.querySelector('.country__button--close');
 const stepCountry = document.querySelector('.step__country');
 const stepBtnDel = document.querySelectorAll('.step__button--del');
 
+window.addEventListener('scroll', function (evt) {
+  evt.preventDefault();
+  if (window.pageYOffset > 1) {
+    siteHeader.classList.add('site-header--scrolled');
+  } else {
+    siteHeader.classList.remove('site-header--scrolled');
+
+  }
+  if (window.pageYOffset > 24) {
+    siteHeader.classList.add('site-header--animation');
+  } else {
+    siteHeader.classList.remove('site-header--animation');
+  }
+});
+
 if (isUserMenu) {
   siteHeader.classList.toggle('site-header--index-closed');
   menuBtn.addEventListener('click', function (evt) {

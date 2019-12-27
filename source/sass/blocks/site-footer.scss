@@ -23,7 +23,7 @@
 .site-footer__logo-img {
   display: block;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   margin-left: auto;
 }
 
@@ -32,7 +32,7 @@
   justify-content: center;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
 
   list-style: none;
 }
@@ -50,8 +50,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 9px;
   margin-top: 0;
   margin-bottom: 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  & a {
+    display: block;
+    padding-top: 4px;
+  }
 }
 
 .site-footer__copyright {

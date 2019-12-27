@@ -66,7 +66,7 @@
   color: #ffffff;
 
   &--bold {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 
     @include font(700, normal);
   }
@@ -250,7 +250,7 @@
 
   .companions__container {
     @include tablet-container;
-    padding-top: 197px;
+    padding-top: 195px;
     padding-bottom: 88px;
     background-image: url("../img/rogovaya-back-desktop@1x.png");
     background-size: 285px;
@@ -299,7 +299,7 @@
 
   .companions__heading {
     padding-left: 0;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
 
     font-size: 45px;
   }
@@ -314,7 +314,7 @@
 
     &--bold {
       max-width: 270px;
-      margin-bottom: 58px;
+      margin-bottom: 59px;
 
       font-size: 21px;
       line-height: 1.19;
@@ -362,7 +362,7 @@
     position: relative;
 
     &::before {
-      top: 7px;
+      top: 12px;
       left: -22px;
 
       width: 7px;
@@ -380,6 +380,11 @@
     }
   }
 
+  .companions__countries {
+    margin-top: -17px;
+    margin-bottom: 15px;
+  }
+
   .companions__tags {
     max-width: 230px;
     margin-bottom: 22px;
@@ -393,7 +398,7 @@
   .companions__container {
     @include desktop-container;
     min-height: 810px;
-    padding-top: 185px;
+    padding-top: 182px;
     padding-right: 60px;
 
     background-position: top 445px left 191px;
@@ -435,8 +440,12 @@
     padding-bottom: 81px;
   }
 
+  .companions__text {
+    margin-bottom: 40px;
+  }
+
   .companions__list {
-    margin-top: 8px;
+    margin-top: 12px;
     margin-bottom: 0;
   }
 
@@ -447,6 +456,11 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .companions__level {
+    top: 23px;
+    left: 23px;
   }
 
   .companions .button-rect {

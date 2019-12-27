@@ -1,3 +1,7 @@
+.site-main {
+  padding-top: 73px;
+}
+
 .site-main__heading {
   position: relative;
   z-index: 2;
@@ -127,6 +131,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-main {
+    padding-top: 132px;
+  }
+
   .site-main__container {
     &--promo {
       background-color: #182044;
@@ -226,6 +234,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-main {
+    padding-top: 113px;
+
+    background-color: #161c34;
+  }
+
   .site-main__wrapper {
     z-index: 7;
 

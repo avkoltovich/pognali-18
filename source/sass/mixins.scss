@@ -341,6 +341,16 @@
     opacity: 1;
   }
 
+  .site-header__button {
+    &--menu {
+      background-size: 0;
+    }
+  }
+
+  .site-header__menu-icon {
+    opacity: 1;
+  }
+
   .site-header__navigation,
   .site-header__button--auth,
   .site-header__contact-list,
