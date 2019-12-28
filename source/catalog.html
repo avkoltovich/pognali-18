@@ -11,7 +11,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__container">
-      <a class="site-header__logo-link" href="index.html">
+      <a class="site-header__logo-link">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png, img/logo-desktop-white@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png, img/logo-tablet-white@2x.png 2x">
@@ -20,12 +20,14 @@
         </picture>
       </a>
       <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
-        <img src="img/menu-close.svg" width="19" height="19" aria-hidden="true" alt="Открыть меню">
+        <svg class="site-header__menu-icon" width="25" height="25">
+          <use xlink:href="img/sprite.svg#menu-hamburger"></use>
+        </svg>
       </button>
       <nav class="site-header__navigation">
         <ul class="site-header__navigation-list">
           <li class="site-header__navigation-item">
-            <a href="index.html" class="site-header__navigation-link">О сервисе</a>
+            <a href="index.html" class="site-header__navigation-link">О сервисе</a href="catalog.html">
           </li>
           <li class="site-header__navigation-item">
             <a href="form.html" class="site-header__navigation-link">Направления</a>
@@ -39,32 +41,53 @@
       <ul class="site-header__contact-list">
         <li class="site-header__contact-item">
           <a href="tel:+78005558628" class="site-header__contact-link">
-            <img class="site-header__contact-img" src="https://via.placeholder.com/45x45" width="45" height="45"
-              alt="Telephone" aria-hidden="true">
+            <span class="menu-icon site-header__contact-img site-header__contact-img--tel">
+              <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#menu-phone"></use>
+              </svg>
+              <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="18">
+                <use xlink:href="img/sprite.svg#top-menu-phone"></use>
+              </svg>
+            </span>
             8 800 555-86-28
           </a>
         </li>
         <li class="site-header__contact-item">
           <a href="mailto:mail@htmlacademy.ru" class="site-header__contact-link">
-            <img class="site-header__contact-img" src="https://via.placeholder.com/45x45" width="45" height="45"
-              alt="E-mail" aria-hidden="true">
+            <span class="menu-icon site-header__contact-img site-header__contact-img--mail">
+              <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#menu-mail"></use>
+              </svg>
+              <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="14">
+                <use xlink:href="img/sprite.svg#top-menu-mail"></use>
+              </svg>
+            </span>
             mail@htmlacademy.ru
           </a>
         </li>
       </ul>
       <ul class="site-header__social-list">
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link site-header__social-link--fb">
+          <a href="" class="site-header__social-link">
+            <svg class="site-header__social-icon site-header__social-icon--fb" width="11" height="21">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link site-header__social-link--vk">
+          <a href="" class="site-header__social-link">
+            <svg class="site-header__social-icon site-header__social-icon--vk" width="23" height="12">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="site-header__social-item">
-          <a href="" class="site-header__social-link site-header__social-link-in">
+          <a href="" class="site-header__social-link">
+            <svg class="site-header__social-icon site-header__social-icon--in" width="18" height="18">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
@@ -1278,23 +1301,36 @@
   </main>
   <footer class="site-footer">
     <div class="site-footer__container">
-      <a class="site-footer__logo-link" href="index.html">
-        <img class="site-footer__logo-img" src="https://via.placeholder.com/96x15" width="96" height="15"
-          alt="Погнали?">
+      <a href="index.html" class="site-footer__logo-link">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png, img/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png, img/logo-tablet-blue@2x.png 2x">
+          <img class="site-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x"
+            alt="Погнали?">
+        </picture>
       </a>
       <ul class="site-footer__social-list">
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
+            <svg class="site-footer__social-icon site-footer__social-icon--fb" width="11" height="21">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
+            <svg class="site-footer__social-icon site-footer__social-icon--vk" width="23" height="12">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
+            <svg class="site-footer__social-icon site-footer__social-icon--in" width="18" height="18">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
@@ -1302,7 +1338,7 @@
       <p class="site-footer__copyright-wrap">
         <small class="site-footer__copyright">Разработано</small>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </p>
     </div>

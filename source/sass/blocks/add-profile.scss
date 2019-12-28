@@ -180,6 +180,7 @@
         position: absolute;
         top: -2px;
         left: -90px;
+        z-index: 1;
 
         width: 67px;
         height: 67px;
@@ -188,6 +189,22 @@
 
         background-color: #e2e5f2;
         border-radius: 50%;
+      }
+
+      &::after {
+        position: absolute;
+        top: 22px;
+        left: -66px;
+        z-index: 2;
+
+        width: 17px;
+        height: 21px;
+
+        content: "";
+
+        background-image: url("../img/business.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
   }
@@ -286,6 +303,11 @@
   .add-profile__link {
     &--all {
       margin-left: 90px;
+
+      &::after {
+        top: 21px;
+        left: -65px;
+      }
     }
   }
 }

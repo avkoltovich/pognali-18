@@ -26,7 +26,7 @@ window.addEventListener('scroll', function (evt) {
     siteHeader.classList.remove('site-header--scrolled');
 
   }
-  if (window.pageYOffset > 24) {
+  if (window.pageYOffset > 23) {
     siteHeader.classList.add('site-header--animation');
   } else {
     siteHeader.classList.remove('site-header--animation');

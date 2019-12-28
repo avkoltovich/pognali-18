@@ -236,11 +236,13 @@
   @include list;
 }
 
-.companions__transport {
-  width: 24px;
-  height: 21px;
+.companions__icon {
+  opacity: 0.15;
+}
 
-  background-color: tomato;
+.companions__transport--active .companions__icon {
+  fill: #1d2e5b;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

@@ -77,6 +77,10 @@
   background-color: #ffd74b;
 }
 
+.feedback__icon {
+  fill: #1d2e5b;
+}
+
 .feedback__button-text {
   @include font(700, normal);
 

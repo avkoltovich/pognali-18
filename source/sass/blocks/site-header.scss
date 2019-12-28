@@ -14,8 +14,6 @@
 
 .site-header__logo-link {
   display: block;
-  min-width: 100px;
-  min-height: 23px;
   padding-top: 3px;
   margin-bottom: auto;
 
@@ -32,6 +30,9 @@
 }
 
 .site-header__logo-img {
+  width: 100px;
+  height: 19px;
+
   opacity: 0;
 }
 
@@ -126,20 +127,10 @@
   color: #192144;
 }
 
-.site-header__contact-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  margin-right: 16px;
-
-  background-color: #121936;
-  border-radius: 50%;
-}
-
 .site-header__contact-icon {
-  fill: #ffd74b;
+  &--desktop {
+    display: none;
+  }
 }
 
 .site-header__social-list {
@@ -154,12 +145,16 @@
   list-style: none;
 }
 
-.site-header__social-link {
+.site-header__social-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 23px;
-  height: 21px;
+}
+
+.site-header__social-link {
+  display: flex;
+  justify-content: center;
+  width: 24px;
 }
 
 .site-header__social-icon {
@@ -217,8 +212,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 166px;
-    min-height: 50px;
     padding-top: 5px;
     margin-right: 24px;
     margin-bottom: auto;
@@ -226,6 +219,11 @@
     background-image: url("../img/logo-tablet-blue@1x.png");
     background-size: 166px 42px;
     background-position: top 5px left;
+  }
+
+  .site-header__logo-img {
+    width: 166px;
+    height: 42px;
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -285,12 +283,6 @@
     font-size: 28px;
   }
 
-  .site-header__contact-img {
-    width: 67px;
-    height: 67px;
-    margin-right: 23px;
-  }
-
   .site-header__social-list {
     order: 6;
     min-width: 139px;
@@ -300,8 +292,24 @@
   }
 
   .site-header__social-link {
-    width: 31px;
-    height: 28px;
+    width: auto;
+  }
+
+  .site-header__social-icon {
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vk {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--in {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .site-header {
@@ -345,10 +353,14 @@
 
   .site-header__logo-link {
     order: 1;
-    min-width: 200px;
     padding-top: 0;
     margin-right: 147px;
     margin-bottom: 0;
+  }
+
+  .site-header__logo-img {
+    width: 200px;
+    height: 52px;
   }
 
   .site-header__navigation {
@@ -361,8 +373,8 @@
 
     &::before {
       position: absolute;
-      top: 8px;
-      left: -104px;
+      top: 10px;
+      left: -107px;
 
       width: 60px;
       height: 2px;
@@ -379,7 +391,8 @@
   }
 
   .site-header__navigation-item {
-    margin-right: 34px;
+    margin-right: 33px;
+    margin-bottom: 5px;
   }
 
   .site-header__navigation-link {
@@ -404,6 +417,26 @@
     width: 50px;
     height: 50px;
     margin-right: 0;
+
+    &--tel {
+      background-color: #ff8d30;
+    }
+
+    &--mail {
+      background-color: #ffbd30;
+    }
+  }
+
+  .site-header__contact-icon {
+    display: none;
+
+    &--desktop {
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      fill: #161c35;
+    }
   }
 
   .site-header__button--auth {
