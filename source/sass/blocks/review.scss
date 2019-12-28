@@ -34,7 +34,7 @@
   }
 
   .review__blockquote {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 86px;
     margin-bottom: 213px;
   }

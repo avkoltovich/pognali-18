@@ -14,7 +14,7 @@
 }
 
 .site-main__heading-container {
-  @include mobile-container;
+  @include mobileContainer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,15 +76,15 @@
 }
 
 .site-main__directions {
-  @include relative-z-margin(5);
+  @include relativeZmargin(5);
 }
 
 .site-main__companions {
-  @include relative-z-margin(4);
+  @include relativeZmargin(4);
 }
 
 .site-main__add-profile {
-  @include relative-z-margin(3);
+  @include relativeZmargin(3);
 }
 
 .site-main__business-rate {
@@ -96,11 +96,11 @@
 }
 
 .site-main__feedback {
-  @include relative-z-margin(2);
+  @include relativeZmargin(2);
 }
 
 .site-main__contacts {
-  @include relative-z-margin(1);
+  @include relativeZmargin(1);
 }
 
 .site-main__add-plan {
@@ -109,11 +109,11 @@
 }
 
 .site-main__filter-country {
-  @include relative-z-margin(1);
+  @include relativeZmargin(1);
 }
 
 .site-main__catalog {
-  @include relative-z-margin(0);
+  @include relativeZmargin(0);
   margin-bottom: -60px;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .site-main__map {
-  @include relative-z-margin(0);
+  @include relativeZmargin(0);
 
   margin-bottom: -30px;
 }
@@ -162,17 +162,19 @@
   }
 
   .site-main__heading-container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 88px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
   }
 
   .site-main__title {
+    margin-bottom: 9px;
+
     font-size: 60px;
-    line-height: 1.17;
+    line-height: 1;
 
     &::after {
-      bottom: -65px;
+      bottom: -75px;
 
       height: 8px;
 
@@ -182,7 +184,6 @@
 
   .site-main__button {
     display: block;
-    padding-right: 61px;
 
     @include font(700, normal);
     font-size: 20px;
@@ -190,19 +191,12 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+  }
 
-    &::after {
-      position: absolute;
-      top: 2px;
-      right: 0;
+  .site-main__return-icon {
+    margin-left: 22px;
 
-      width: 32px;
-      height: 16px;
-
-      content: "";
-
-      background-color: tomato;
-    }
+    fill: #ffffff;
   }
 
   .site-main__howto {
@@ -276,7 +270,7 @@
   .site-main__heading-container {
     width: $desktop-width;
 
-    padding-top: 112px;
+    padding-top: 106px;
     padding-right: 125px;
     padding-left: 125px;
 

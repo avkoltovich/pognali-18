@@ -9,7 +9,7 @@
 }
 
 .site-footer__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 38px;
   padding-bottom: 14px;
   margin: 0 auto;
@@ -148,7 +148,7 @@
 
 @media (min-width: $desktop-width) {
   .site-footer__container {
-    @include desktop-container--narrow;
+    @include desktopContainerNarrow;
     padding-top: 52px;
   }
 

@@ -4,14 +4,14 @@
 }
 
 .plans__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 30px;
   padding-bottom: 50px;
   margin: 0 auto;
 }
 
 .plans__heading {
-  @include form-heading;
+  @include formHeading;
 }
 
 .plans__list {
@@ -76,7 +76,7 @@
 
 @media (min-width: $tablet-width) {
   .plans__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 54px;
     padding-bottom: 127px;
   }

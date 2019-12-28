@@ -4,7 +4,7 @@
 }
 
 .contacts__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 64px;
   padding-bottom: 34px;
   margin: 0 auto;
@@ -35,7 +35,7 @@
   }
 
   .contacts__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 109px;
     padding-bottom: 85px;
   }

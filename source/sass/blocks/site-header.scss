@@ -3,7 +3,7 @@
 }
 
 .site-header__container {
-  @include mobile-container;
+  @include mobileContainer;
   display: flex;
   flex-wrap: wrap;
   min-height: 73px;
@@ -335,7 +335,7 @@
 
 @media (min-width: $desktop-width) {
   .site-header__container {
-    @include desktop-container--narrow;
+    @include desktopContainerNarrow;
     align-items: center;
     flex-wrap: wrap;
     min-height: 90px;

@@ -41,11 +41,10 @@
 }
 
 .pagination__icon {
-  display: block;
-  width: 10px;
-  height: 20px;
+  width: auto;
+  height: 26px;
 
-  background-color: #192144;
+  fill: #192144;
 }
 
 @media (min-width: $tablet-width) {

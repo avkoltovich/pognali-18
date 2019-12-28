@@ -10,7 +10,7 @@
 .directions__container {
   position: relative;
 
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 99px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -320,7 +320,7 @@
 
 @media (min-width: $desktop-width) {
   .directions__container {
-    @include desktop-container;
+    @include desktopContainer;
     min-height: 750px;
     padding-top: 218px;
     padding-right: 131px;

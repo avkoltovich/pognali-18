@@ -4,7 +4,7 @@
 }
 
 .add-plan__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 30px;
   padding-bottom: 90px;
   margin: 0 auto;
@@ -66,7 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .add-plan__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 46px;
   }
 
@@ -104,7 +104,7 @@
   }
 
   .add-plan__container {
-    @include desktop-container--narrow;
+    @include desktopContainerNarrow;
     padding-top: 48px;
   }
 

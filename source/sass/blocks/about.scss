@@ -82,7 +82,7 @@
   }
 
   .about__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 132px;
     padding-bottom: 88px;
 
@@ -160,7 +160,7 @@
   }
 
   .about__container {
-    @include desktop-container;
+    @include desktopContainer;
     padding-top: 182px;
 
     &::before {

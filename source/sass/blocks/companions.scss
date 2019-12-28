@@ -10,7 +10,7 @@
 .companions__container {
   position: relative;
 
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 100px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -251,7 +251,7 @@
   }
 
   .companions__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 195px;
     padding-bottom: 88px;
     background-image: url("../img/rogovaya-back-desktop@1x.png");
@@ -398,7 +398,7 @@
 
 @media (min-width: $desktop-width) {
   .companions__container {
-    @include desktop-container;
+    @include desktopContainer;
     min-height: 810px;
     padding-top: 182px;
     padding-right: 60px;

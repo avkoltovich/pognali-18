@@ -10,7 +10,7 @@
 }
 
 .filter-country__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 46px;
   padding-bottom: 27px;
   margin: 0 auto;
@@ -137,14 +137,14 @@
 }
 
 .filter-country__letter-list {
-  @include letter-list;
+  @include letterList;
   padding: 0 auto;
   margin-left: 25px;
   margin-bottom: 46px;
 }
 
 .filter-country__letter-item {
-  @include letter-item;
+  @include letterItem;
 
   &--active {
     color: #ffffff;
@@ -155,7 +155,7 @@
 }
 
 .filter-country__letter-button {
-  @include letter-button;
+  @include letterButton;
 }
 
 .filter-country__list-wrap {
@@ -181,7 +181,7 @@
 }
 
 .filter-country__link {
-  @include country-link;
+  @include countryLink;
 }
 
 .filter-country {
@@ -221,7 +221,7 @@
     width: $tablet-width;
     padding-right: 45px;
     padding-left: 75px;
-    padding-top: 120px;
+    padding-top: 117px;
     padding-bottom: 72px;
   }
 
@@ -394,8 +394,8 @@
   }
 
   .filter-country__container {
-    @include desktop-container--narrow;
-    padding-bottom: 108px;
+    @include desktopContainerNarrow;
+    padding-bottom: 112px;
   }
 
   .filter-country__header {

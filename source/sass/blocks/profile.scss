@@ -3,7 +3,7 @@
 }
 
 .profile__container {
-  @include mobile-container;
+  @include mobileContainer;
   display: flex;
   flex-wrap: wrap;
   padding-top: 52px;
@@ -188,7 +188,7 @@
 
 @media (min-width: $tablet-width) {
   .profile__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 126px;
     padding-bottom: 95px;
   }

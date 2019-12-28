@@ -4,7 +4,7 @@
 }
 
 .feedback__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 98px;
   padding-bottom: 28px;
   margin: 0 auto;
@@ -117,7 +117,7 @@
   }
 
   .feedback__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 131px;
     padding-bottom: 60px;
   }
@@ -178,7 +178,7 @@
 
 @media (min-width: $desktop-width) {
   .feedback__container {
-    @include desktop-container;
+    @include desktopContainer;
     padding-top: 160px;
     padding-right: 131px;
     padding-bottom: 105px;
