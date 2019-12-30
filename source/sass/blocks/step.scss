@@ -1003,11 +1003,11 @@
     }
 
     &--step-two {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
     }
 
     &--add-country {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
     }
   }
 
@@ -1063,7 +1063,7 @@
 
   .step__button {
     &--add {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
 
       &::after {
         @include stepTwoDotsDesktop;
