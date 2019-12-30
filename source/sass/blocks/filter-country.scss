@@ -1,4 +1,4 @@
-.filter__wrapper {
+.filter-country__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -209,7 +209,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .filter__wrapper {
+  .filter-country__wrapper {
     border-radius: 0 0 60px 60px;
   }
 
@@ -386,7 +386,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter__wrapper {
+  .filter-country__wrapper {
     position: static;
 
     background-color: transparent;
