@@ -5,7 +5,7 @@
 }
 
 .catalog__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 53px;
   padding-bottom: 91px;
   margin: 0 auto;
@@ -18,7 +18,7 @@
 .catalog__list {
   @include list;
   min-width: 270px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .catalog__item {
@@ -85,7 +85,7 @@
 }
 
 .catalog__button-wrap {
-  margin-top: -24px;
+  margin-top: -29px;
   margin-left: 84px;
 }
 
@@ -100,7 +100,8 @@
 .catalog__tags {
   max-width: 175px;
   padding-left: 5px;
-  margin-bottom: 12px;
+  margin-top: 9px;
+  margin-bottom: 13px;
 
   @include font(400, normal);
   font-size: 15px;
@@ -190,11 +191,25 @@
 }
 
 .catalog__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 33px;
   height: 32px;
 
   background-color: #edeff6;
   border-radius: 50%;
+
+  &--active {
+    .catalog__transport-icon {
+      fill: #1d2e5b;
+      opacity: 1;
+    }
+  }
+}
+
+.catalog__transport-icon {
+  opacity: 0.15;
 }
 
 .catalog__level {
@@ -235,6 +250,7 @@
 
 .catalog__status-bar {
   @include statusBarContainer;
+  top: 2px;
 
   &--level-99 {
     @include statusBarCatalogMobile(99);
@@ -276,38 +292,12 @@
     z-index: 10;
   }
 
-  &--like {
-    position: absolute;
-    top: 39px;
-    left: 47px;
-
-    width: 31px;
-    height: 31px;
-
-    background-color: #f9eaea;
-    border: none;
-    border-radius: 50%;
-  }
-
-  &--not-like {
-    position: absolute;
-    top: 39px;
-    left: 47px;
-
-    width: 31px;
-    height: 31px;
-
-    background-color: #edeff6;
-    border: none;
-    border-radius: 50%;
-  }
-
   &--more {
     position: relative;
 
     display: flex;
     margin-right: auto;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
     margin-left: auto;
     padding-right: 0;
     padding-left: 0;
@@ -322,6 +312,48 @@
 
     cursor: pointer;
   }
+}
+
+.catalog__plus-icon {
+  margin-right: 14px;
+
+  fill: #1d2e5b;
+}
+
+.catalog__like-btn {
+  position: absolute;
+  top: 39px;
+  left: 47px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+
+  &--liked {
+    background-color: #f9eaea;
+
+    & .catalog__like-icon {
+      background-image: url("../img/heart-active.svg");
+      opacity: 1;
+    }
+  }
+}
+
+.catalog__like-icon {
+  display: block;
+  width: 13px;
+  height: 11px;
+
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
 }
 
 .catalog__icon {
@@ -347,13 +379,13 @@
   }
 
   .catalog__list {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .catalog__item {
     display: flex;
-    padding-top: 35px;
-    padding-bottom: 4px;
+    padding-top: 33px;
+    padding-bottom: 6px;
     padding-left: 35px;
     margin-bottom: 40px;
 
@@ -432,22 +464,6 @@
       padding-right: 14px;
     }
 
-    &--like {
-      position: static;
-
-      width: 50px;
-      height: 50px;
-      margin-right: 4px;
-    }
-
-    &--not-like {
-      position: static;
-
-      width: 50px;
-      height: 50px;
-      margin-right: 4px;
-    }
-
     &--more {
       padding-right: 9px;
       margin-bottom: 46px;
@@ -455,6 +471,27 @@
       font-size: 20px;
       line-height: 1.5;
     }
+  }
+
+  .catalog__plus-icon {
+    width: 27px;
+    height: 27px;
+    margin-right: 23px;
+
+    fill: #1d2e5b;
+  }
+
+  .catalog__like-btn {
+    position: static;
+
+    width: 50px;
+    height: 50px;
+    margin-right: 4px;
+  }
+
+  .catalog__like-icon {
+    width: 20px;
+    height: 17px;
   }
 
   .catalog__icon {
@@ -515,7 +552,12 @@
   }
 
   .catalog__transport-item {
-    background-color: #1d2e5b;
+    background-color: transparent;
+  }
+
+  .catalog__transport-icon {
+    height: 21px;
+    width: auto;
   }
 
   .catalog__level {
@@ -527,7 +569,6 @@
   }
 
   .catalog__status-bar {
-
     &--level-99,
     &--level-80,
     &--level-50 {
@@ -608,7 +649,7 @@
   }
 
   .catalog__container {
-    @include desktop-container--narrow;
+    @include desktopContainerNarrow;
   }
 
   .catalog__wrapper {

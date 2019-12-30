@@ -1,0 +1,41 @@
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.menu-icon__svg {
+  fill: #ffd74b;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-icon {
+    width: 67px;
+    height: 67px;
+    margin-right: 23px;
+  }
+
+  .menu-icon__svg {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-icon {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+  }
+
+  .menu-icon__svg {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -34,7 +34,7 @@
   }
 
   .review__blockquote {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 86px;
     margin-bottom: 213px;
   }
@@ -65,7 +65,7 @@
 
   .review__blockquote {
     width: $mobile-width;
-    padding-top: 110px;
+    padding-top: 106px;
     padding-right: 30px;
     padding-left: 30px;
     margin-right: 57px;

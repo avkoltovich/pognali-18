@@ -5,7 +5,7 @@
 }
 
 .user-menu__list {
-  @include mobile-container;
+  @include mobileContainer;
   display: flex;
   margin: 0 auto;
 
@@ -24,10 +24,32 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #161c35;
+
+  &--tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+    background-color: #ff8d30;
+    border-radius: 50%;
+  }
+
+  &--mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+    background-color: #ffbd30;
+    border-radius: 50%;
+  }
 }
 
-.user-menu__img {
-  border-radius: 50%;
+.user-menu__icon {
+  fill: #161c35;
 }
 
 @media (min-width: $tablet-width) {

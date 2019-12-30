@@ -12,7 +12,7 @@
   list-style: none;
 }
 
-@mixin form-heading {
+@mixin formHeading {
   @include font(700, normal);
 
   margin-top: 0;
@@ -22,13 +22,13 @@
   color: #1d2e5b;
 }
 
-@mixin letter-list {
+@mixin letterList {
   @include list;
   display: flex;
   flex-wrap: wrap;
 }
 
-@mixin letter-item {
+@mixin letterItem {
   color: #1d2e5b;
 
   background-color: #ffffff;
@@ -49,7 +49,7 @@
   }
 }
 
-@mixin letter-button {
+@mixin letterButton {
   @include font(500, normal);
   width: 43px;
   height: 40px;
@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 
-@mixin country-link {
+@mixin countryLink {
   @include font(400, normal);
   font-size: 16px;
   line-height: 1.38;
@@ -73,14 +73,14 @@
   color: $greyish-brown;
 }
 
-@mixin relative-z-margin($zindex, $mt: -30px) {
+@mixin relativeZmargin($zindex, $mt: -30px) {
   position: relative;
   z-index: $zindex;
 
   margin-top: $mt;
 }
 
-@mixin step-one-field {
+@mixin stepOneField {
   width: 50%;
   align-items: center;
   padding-top: 0;
@@ -88,7 +88,7 @@
   border-top: none;
 }
 
-@mixin step-oval-link {
+@mixin stepOvalLink {
   width: 285px;
   height: 81px;
 
@@ -97,7 +97,7 @@
   border-radius: 20px;
 }
 
-@mixin step-two-input--tablet {
+@mixin stepTwoInputTablet {
   width: 369px;
   height: 70px;
   padding-left: 24px;
@@ -106,7 +106,7 @@
   letter-spacing: 2px;
 }
 
-@mixin step-two-dots--mobile {
+@mixin stepTwoDotsMobile {
   position: absolute;
   z-index: 2;
   top: 16px;
@@ -120,7 +120,7 @@
   border-radius: 50%;
 }
 
-@mixin step-two-dots--table {
+@mixin stepTwoDotsTable {
   top: 26px;
   right: -34px;
 
@@ -128,32 +128,32 @@
   height: 15px;
 }
 
-@mixin step-two-input--desktop {
+@mixin stepTwoInputDesktop {
   width: 730px;
 }
 
-@mixin step-two-dots--desktop {
+@mixin stepTwoDotsDesktop {
   right: -52px;
 }
 
-@mixin mobile-container {
+@mixin mobileContainer {
   width: $mobile-width;
   padding-right: 25px;
   padding-left: 25px;
 }
 
-@mixin tablet-container {
+@mixin tabletContainer {
   width: $tablet-width;
   padding-right: 75px;
   padding-left: 75px;
 }
 
-@mixin desktop-container {
+@mixin desktopContainer {
   width: $desktop-width;
   padding-left: 131px;
 }
 
-@mixin desktop-container--narrow {
+@mixin desktopContainerNarrow {
   width: $desktop-width;
   padding-right: 60px;
   padding-left: 60px;
@@ -334,11 +334,21 @@
   background-color: #161c34;
 
   .site-header__logo-link {
-    background-size: auto;
+    background-size: 0;
   }
 
   .site-header__logo-img {
-    opacity: 0;
+    opacity: 1;
+  }
+
+  .site-header__button {
+    &--menu {
+      background-size: 0;
+    }
+  }
+
+  .site-header__menu-icon {
+    opacity: 1;
   }
 
   .site-header__navigation,
@@ -350,10 +360,6 @@
 }
 
 @mixin menuClosedTablet {
-  .site-header__logo-link {
-    background-image: url("../img/logo-tablet-white@1x.png");
-  }
-
   .site-header__button--auth {
     display: flex;
   }

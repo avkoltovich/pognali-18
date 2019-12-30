@@ -120,7 +120,7 @@
     width: 100%;
 
     &::after {
-      @include step-two-dots--mobile;
+      @include stepTwoDotsMobile;
     }
   }
 }
@@ -432,7 +432,7 @@
     background-color: #edeff6;
 
     &::after {
-      @include step-two-dots--mobile;
+      @include stepTwoDotsMobile;
     }
   }
 
@@ -649,7 +649,7 @@
       margin-right: 53px;
 
       &::after {
-        @include step-two-dots--table;
+        @include stepTwoDotsTable;
       }
     }
 
@@ -657,7 +657,7 @@
       width: 369px;
 
       &::after {
-        @include step-two-dots--table;
+        @include stepTwoDotsTable;
 
         background-color: #ffffff;
       }
@@ -695,11 +695,11 @@
     }
 
     &--step-two {
-      @include step-two-input--tablet;
+      @include stepTwoInputTablet;
     }
 
     &--add-country {
-      @include step-two-input--tablet;
+      @include stepTwoInputTablet;
     }
   }
 
@@ -729,17 +729,17 @@
     }
 
     &--add {
-      @include step-two-input--tablet;
+      @include stepTwoInputTablet;
 
       &::after {
-        @include step-two-dots--table;
+        @include stepTwoDotsTable;
 
         background-color: #edeff6;
       }
     }
 
     &--submit {
-      @include step-oval-link;
+      @include stepOvalLink;
     }
   }
 
@@ -807,13 +807,13 @@
 
   .step__link {
     &--step-one {
-      @include step-oval-link;
+      @include stepOvalLink;
       order: 6;
       margin-bottom: 15px;
     }
 
     &--oval {
-      @include step-oval-link;
+      @include stepOvalLink;
     }
 
     &--back {
@@ -949,13 +949,13 @@
   }
 
   .step__companions {
-    @include step-one-field;
+    @include stepOneField;
 
     margin-bottom: 14px;
   }
 
   .step__duration {
-    @include step-one-field;
+    @include stepOneField;
 
     margin-bottom: 32px;
   }
@@ -977,7 +977,7 @@
       margin-right: 85px;
 
       &::after {
-        @include step-two-dots--desktop;
+        @include stepTwoDotsDesktop;
       }
     }
 
@@ -985,7 +985,7 @@
       width: 730px;
 
       &::after {
-        @include step-two-dots--desktop;
+        @include stepTwoDotsDesktop;
       }
     }
   }
@@ -1003,11 +1003,11 @@
     }
 
     &--step-two {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
     }
 
     &--add-country {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
     }
   }
 
@@ -1063,10 +1063,10 @@
 
   .step__button {
     &--add {
-      @include step-two-input--desktop;
+      @include stepTwoInputDesktop;
 
       &::after {
-        @include step-two-dots--desktop;
+        @include stepTwoDotsDesktop;
       }
     }
   }

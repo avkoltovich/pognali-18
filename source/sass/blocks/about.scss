@@ -13,7 +13,7 @@
 
   width: $mobile-width;
   min-height: 352px;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-right: 60px;
   padding-left: 50px;
   margin: 0 auto;
@@ -34,6 +34,12 @@
     content: "";
 
     background-color: #141b3b;
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .about__container {
+    background-image: url("../img/about-mobile@2x.png");
   }
 }
 
@@ -76,7 +82,7 @@
   }
 
   .about__container {
-    @include tablet-container;
+    @include tabletContainer;
     padding-top: 132px;
     padding-bottom: 88px;
 
@@ -107,12 +113,19 @@
       content: "";
 
       background-image: url("../img/about-tablet@1x.png");
+      background-size: contain;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &::after {
+        background-image: url("../img/about-tablet@2x.png");
+      }
     }
   }
 
   .about__heading {
     font-size: 45px;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
   }
 
   .about__text {
@@ -123,7 +136,7 @@
     line-height: 1.18;
 
     &--bold {
-      margin-bottom: 50px;
+      margin-bottom: 52px;
 
       font-size: 21px;
       line-height: 1.19;
@@ -147,39 +160,36 @@
   }
 
   .about__container {
-    @include desktop-container;
-    padding-top: 190px;
+    @include desktopContainer;
+    padding-top: 182px;
 
     &::before {
-      position: absolute;
-      z-index: -1;
       top: 130px;
       left: 60px;
 
       width: 213px;
       height: 213px;
-      content: "";
-
-      border-radius: 20px;
-      background-color: #141b3b;
     }
 
     &::after {
-      position: absolute;
-      z-index: 0;
       top: 145px;
       left: 750px;
 
       width: 630px;
       height: 665px;
-      content: "";
 
       background-image: url("../img/about-desktop@1x.png");
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &::after {
+        background-image: url("../img/about-desktop@2x.png");
+      }
     }
   }
 
   .about__heading {
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 
   .about__text {
@@ -188,7 +198,7 @@
 
     &--bold {
       width: 410px;
-      margin-bottom: 84px;
+      margin-bottom: 85px;
     }
   }
 

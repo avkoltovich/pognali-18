@@ -1,6 +1,6 @@
 .site-footer {
   position: relative;
-  z-index: 99;
+  z-index: 10;
 
   min-height: 239px;
 
@@ -9,22 +9,23 @@
 }
 
 .site-footer__container {
-  @include mobile-container;
+  @include mobileContainer;
   padding-top: 38px;
   padding-bottom: 14px;
   margin: 0 auto;
 }
 
 .site-footer__logo-link {
-  width: 96px;
-  height: 15px;
-  background-color: tomato;
+  width: 100px;
+  height: 19px;
 }
 
 .site-footer__logo-img {
   display: block;
+  width: 100px;
+  height: 19px;
   margin-right: auto;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   margin-left: auto;
 }
 
@@ -33,26 +34,40 @@
   justify-content: center;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 37px;
 
   list-style: none;
 }
 
 .site-footer__social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
 
-  background-color: tomato;
+  background-color: #ffd74b;
   border-radius: 50%;
+}
+
+.site-footer__social-icon {
+  fill: #1d2e5b;
 }
 
 .site-footer__copyright-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 9px;
   margin-top: 0;
   margin-bottom: 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  & a {
+    display: block;
+    padding-top: 4px;
+  }
 }
 
 .site-footer__copyright {
@@ -81,7 +96,13 @@
 
   .site-footer__logo-link {
     width: 166px;
-    height: 50px;
+    height: 42px;
+    padding-top: 9px;
+  }
+
+  .site-footer__logo-img {
+    width: 166px;
+    height: 42px;
   }
 
   .site-footer__social-list {
@@ -94,9 +115,28 @@
     height: 60px;
   }
 
+  .site-footer__social-icon {
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vk {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--in {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .site-footer__copyright-wrap {
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: auto;
+
+    border-top: none;
   }
 
   .site-footer__copyright {
@@ -108,12 +148,18 @@
 
 @media (min-width: $desktop-width) {
   .site-footer__container {
-    @include desktop-container--narrow;
+    @include desktopContainerNarrow;
     padding-top: 52px;
   }
 
   .site-footer__logo-link {
     width: 198px;
+    height: 52px;
+    padding-top: 0;
+  }
+
+  .site-footer__logo-img {
+    width: 200px;
     height: 52px;
   }
 

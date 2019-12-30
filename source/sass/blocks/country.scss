@@ -50,7 +50,7 @@
 }
 
 .country__letter-item {
-  @include letter-item;
+  @include letterItem;
 
   &--active {
     background-color: #edeff6;
@@ -58,7 +58,7 @@
 }
 
 .country__letter-button {
-  @include letter-button;
+  @include letterButton;
 }
 
 .country__list {
@@ -74,7 +74,7 @@
 }
 
 .country__link {
-  @include country-link;
+  @include countryLink;
 }
 
 @media (min-width: $tablet-width) {

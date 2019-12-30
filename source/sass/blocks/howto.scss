@@ -18,7 +18,7 @@
   position: relative;
 
   width: 270px;
-  padding-top: 23px;
+  padding-top: 21px;
   padding-right: 50px;
   padding-left: 25px;
 
@@ -31,7 +31,7 @@
 
   &::after {
     position: absolute;
-    top: 23px;
+    top: 21px;
     right: 21px;
 
     content: counter(how-to);
