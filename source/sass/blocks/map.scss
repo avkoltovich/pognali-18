@@ -1,16 +1,15 @@
-.map {
-  min-height: 332px;
-  background-color: grey;
+.map__container {
+  height: 332px;
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    min-height: 581px;
+  .map__container {
+    height: 581px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    min-height: 512px;
+  .map__container {
+    height: 512px;
   }
 }
