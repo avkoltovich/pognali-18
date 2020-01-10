@@ -78,32 +78,28 @@
 }
 
 .filter-country__icon {
-  display: block;
+  fill: #192144;
 
   &--list {
     width: 15px;
     height: 10px;
-    padding: 0;
     margin-right: 12px;
-
-    border: none;
-    background-color: #192144;
   }
 
   &--close {
     width: 12px;
     height: 12px;
-
-    background-color: #192144;
   }
 
   &--hide {
     width: 12px;
     height: 12px;
-    margin-right: 16px;
-    margin-bottom: 3px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
-    background-color: #192144;
+  &--dots {
+    display: none;
   }
 }
 
@@ -252,8 +248,6 @@
       width: 19px;
       height: 19px;
       margin-bottom: 4px;
-
-      background-color: #192144;
     }
 
     &--hide {
@@ -380,6 +374,14 @@
         &--hide {
           display: none;
         }
+      }
+
+      .filter-country__icon--dots {
+        display: block;
+      }
+
+      .filter-country__icon--close {
+        display: none;
       }
     }
   }

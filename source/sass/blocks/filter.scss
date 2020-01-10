@@ -83,6 +83,14 @@
     border-radius: 4px;
     background-color: #ffffff;
   }
+
+  &--hide {
+    fill: #192144;
+  }
+
+  &--rotated {
+    transform: rotate(180deg);
+  }
 }
 
 .filter__label-wrap {
@@ -158,7 +166,9 @@
   }
 
   &--transport {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 33px;
     height: 33px;
 
@@ -182,6 +192,10 @@
   }
 }
 
+.filter__transport-icon {
+  opacity: 0.15;
+}
+
 .filter__checkbox {
   position: absolute;
   appearance: none;
@@ -189,6 +203,11 @@
 
 .filter__checkbox::-ms-check {
   display: none;
+}
+
+.filter__checkbox:checked+.filter__transport-icon {
+  fill: #1d2e5b;
+  opacity: 1;
 }
 
 .filter__input-number {
@@ -429,6 +448,11 @@
       width: 43px;
       height: 43px;
     }
+  }
+
+  .filter__transport-icon {
+    height: 21px;
+    width: auto;
   }
 
   .filter__input-number {
