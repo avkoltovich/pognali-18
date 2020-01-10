@@ -879,6 +879,8 @@
       @include stepOvalLink;
 
       justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
       margin-bottom: 8px;
     }
 
@@ -1014,6 +1016,8 @@
       @include stepOvalLink;
       order: 6;
       justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
       margin-bottom: 11px;
     }
 
@@ -1021,6 +1025,8 @@
       @include stepOvalLink;
 
       justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
     }
 
     &--back {
