@@ -75,6 +75,9 @@
 
 .filter__icon {
   &--checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 18px;
     height: 18px;
     margin-right: 9px;
@@ -207,6 +210,15 @@
 
 .filter__checkbox:checked+.filter__transport-icon {
   fill: #1d2e5b;
+  opacity: 1;
+}
+
+.filter__tick-img {
+  opacity: 0;
+  fill: #192144;
+}
+
+.filter__checkbox:checked+.filter__icon--checkbox>.filter__tick-img {
   opacity: 1;
 }
 
@@ -453,6 +465,11 @@
   .filter__transport-icon {
     height: 21px;
     width: auto;
+  }
+
+  .filter__tick-img {
+    width: 13px;
+    height: 13px;
   }
 
   .filter__input-number {
