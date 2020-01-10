@@ -200,7 +200,7 @@
   border-radius: 50%;
 }
 
-.profile__checkbox:checked+.profile__transport-icon {
+.profile__checkbox:checked + .profile__transport-icon {
   fill: #1d2e5b;
   opacity: 1;
 }

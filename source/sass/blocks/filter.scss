@@ -208,7 +208,7 @@
   display: none;
 }
 
-.filter__checkbox:checked+.filter__transport-icon {
+.filter__checkbox:checked + .filter__transport-icon {
   fill: #1d2e5b;
   opacity: 1;
 }
@@ -218,7 +218,7 @@
   fill: #192144;
 }
 
-.filter__checkbox:checked+.filter__icon--checkbox>.filter__tick-img {
+.filter__checkbox:checked + .filter__icon--checkbox > .filter__tick-img {
   opacity: 1;
 }
 

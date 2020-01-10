@@ -455,7 +455,7 @@
   fill: #192144;
 }
 
-.step__checkbox:checked+.step__checkbox-icon>.step__tick-img {
+.step__checkbox:checked + .step__checkbox-icon > .step__tick-img {
   opacity: 1;
 }
 
@@ -837,7 +837,6 @@
 
     &--add-country {
       @include stepTwoInputTablet;
-
     }
   }
 
