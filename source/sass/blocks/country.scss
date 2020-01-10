@@ -108,6 +108,17 @@
     letter-spacing: 2px;
   }
 
+  .country__button {
+    &--close {
+      padding-right: 14px;
+    }
+  }
+
+  .country__close-img {
+    width: 17px;
+    height: 17px;
+  }
+
   .country__letter-list {
     width: 280px;
     margin-top: 34px;

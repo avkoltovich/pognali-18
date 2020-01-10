@@ -509,8 +509,6 @@
     }
   }
 
-
-
   &--submit {
     margin-bottom: 15px;
   }
@@ -575,6 +573,11 @@
   }
 }
 
+.step__forward-icon,
+.step__back-icon {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .step {
     border-radius: 30px;
@@ -584,7 +587,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 48px;
+    padding-top: 46px;
     padding-right: 39px;
     padding-bottom: 44px;
     padding-left: 41px;
@@ -627,7 +630,7 @@
   }
 
   .step__heading {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
 
     font-size: 36px;
   }
@@ -662,6 +665,10 @@
 
       width: 15px;
       height: 15px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 4px;
     }
   }
 
@@ -754,7 +761,7 @@
     height: 70px;
     padding-right: 12px;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .step__input {
@@ -810,7 +817,69 @@
 
     &--submit {
       @include stepOvalLink;
+
+      justify-content: space-between;
+      margin-bottom: 8px;
     }
+
+    &--minus {
+      padding-top: 2px;
+      padding-right: 0;
+      padding-left: 3px;
+
+      & img {
+        width: 20px;
+        height: 2px;
+      }
+    }
+
+    &--plus {
+      padding-top: 2px;
+      padding-right: 9px;
+
+      & img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--minus:hover,
+    &--plus:hover {
+      & img {
+        opacity: 0.4;
+      }
+    }
+
+    &--back {
+      top: 28px;
+      left: 18px;
+    }
+
+    &--forward {
+      top: 28px;
+      right: 14px;
+    }
+
+    &--back,
+    &--forward {
+      & img {
+        width: auto;
+        height: 35px;
+      }
+    }
+
+    &--back:hover,
+    &--forward:hover {
+      & img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .step__back-icon {
+    margin-right: 24px;
+
+    fill: #1d2e5b;
   }
 
   .step__duration {
@@ -828,12 +897,15 @@
     margin-right: 23px;
   }
 
-
+  .step__tick-img {
+    width: 13px;
+    height: 13px;
+  }
 
   .step__calendar {
     order: 5;
     width: 530px;
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   .step__caption {
@@ -881,11 +953,14 @@
     &--step-one {
       @include stepOvalLink;
       order: 6;
-      margin-bottom: 15px;
+      justify-content: space-between;
+      margin-bottom: 11px;
     }
 
     &--oval {
       @include stepOvalLink;
+
+      justify-content: space-between;
     }
 
     &--back {
@@ -899,6 +974,11 @@
       text-transform: none;
     }
   }
+
+  .step__forward-icon,
+  .step__back-icon {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -909,9 +989,9 @@
   .step__inner {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-right: 160px;
-    padding-bottom: 90px;
+    padding-bottom: 94px;
     padding-left: 158px;
   }
 
@@ -919,12 +999,12 @@
     display: flex;
     width: 100%;
     padding-bottom: 33px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
 
     border-bottom: 1px solid #d6d9e6;
 
     &--step-two {
-      margin-bottom: 62px;
+      margin-bottom: 68px;
 
       &::after {
         bottom: -548px;
@@ -937,7 +1017,7 @@
     }
 
     &--step-three {
-      margin-bottom: 70px;
+      margin-bottom: 78px;
     }
   }
 
@@ -958,14 +1038,20 @@
     }
   }
 
+  .step__checkbox-icon {
+    margin-right: 19px;
+  }
+
   .step__list {
     display: list-item;
     margin-top: 0;
     margin-right: 44px;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     margin-left: auto;
-    padding-top: 7px;
+    padding-top: 9px;
     padding-left: 0;
+
+    list-style: none;
   }
 
   .step__item {
@@ -977,6 +1063,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.6);
+    list-style: disc;
 
     opacity: 0.6;
 
@@ -984,6 +1071,10 @@
       color: #000000;
 
       opacity: 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -1140,6 +1231,24 @@
       &::after {
         @include stepTwoDotsDesktop;
       }
+    }
+
+    &--back {
+      left: 0;
+    }
+
+    &--forward {
+      right: 0;
+    }
+  }
+
+  .step__link {
+    &--oval {
+      margin-bottom: 12px;
+    }
+
+    &--back {
+      margin-bottom: 12px;
     }
   }
 }

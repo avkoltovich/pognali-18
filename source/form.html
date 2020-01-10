@@ -52,6 +52,9 @@
     <symbol id="triangle-arrow-right" viewBox="0 0 10 14">
       <path d="M0 14V.1l10 7z" />
     </symbol>
+    <symbol id="triangle-arrow-left" viewBox="0 0 10 14">
+      <polygon points="0,7.1 10,0.1 10,14 " />
+    </symbol>
     <symbol id="contacts-location" viewBox="0 0 28 43">
       <path class="st0"
         d="M11.7 13.9c0-1.2 1-2.2 2.3-2.2s2.3 1 2.3 2.2c0 1.2-1 2.2-2.3 2.2-1.2 0-2.3-1-2.3-2.2zM14 8.1c-3.2 0-5.9 2.6-5.9 5.8s2.6 5.8 5.9 5.8c3.2 0 5.9-2.6 5.9-5.8 0-3.2-2.7-5.8-5.9-5.8zM0 13.6c0 9.1 10.9 16.2 11.7 26.7v.4c0 1.2 1 2.2 2.3 2.2s2.3-1 2.3-2.2v-.4C17.2 29.8 28 22.8 28 13.6 28 6.1 21.7 0 14 0S0 6.1 0 13.6zm14-9.1c5.2 0 9.5 4.2 9.5 9.4s-4.2 9.4-9.5 9.4-9.5-4.2-9.5-9.4S8.8 4.5 14 4.5z" />
@@ -99,7 +102,7 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
       <nav class="site-header__navigation">
         <ul class="site-header__navigation-list">
           <li class="site-header__navigation-item">
-            <a href="index.html" class="site-header__navigation-link">О сервисе</a href="form.html">
+            <a href="index.html" class="site-header__navigation-link">О сервисе</a>
           </li>
           <li class="site-header__navigation-item">
             <a class="site-header__navigation-link">Направления</a>
@@ -189,8 +192,8 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
         </div>
         <label class="profile__label profile__label--upload">
           <input class="profile__upload" type="file">
-          <span class="button-oval button-oval--blue profile__button"><span class="profile__button-text">Сменить
-              фото</span>
+          <span class="button-oval button-oval--blue profile__button"><span class="profile__button-text">Сменить&nbsp;</span>
+            фото</span>
         </label>
         <div class="profile__fieldset profile__fieldset--tags">
           <h3 class="profile__legend profile__legend--tags">
@@ -636,7 +639,11 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
                   </td>
                 </tr>
               </table>
-              <a href="" class="button-oval button-oval--yellow step__link step__link--step-one">Следующий шаг</a>
+              <a href="" class="button-oval button-oval--yellow step__link step__link--step-one">Следующий шаг
+                <svg class="step__forward-icon" width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </a>
             </div>
           </fieldset>
           <fieldset class="add-plan__step step">
@@ -816,8 +823,16 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
               <div class="step__wrapper">
                 <button class="step__button step__button--add" type="button">Добавить страну</button>
               </div>
-              <a href="" class="button-oval button-oval--yellow step__link step__link--oval">Следующий шаг</a>
-              <a href="" class="step__link step__link--back">На шаг назад</a>
+              <a href="" class="button-oval button-oval--yellow step__link step__link--oval">Следующий шаг
+                <svg class="step__forward-icon" width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </a>
+              <a href="" class="step__link step__link--back">
+                <svg class="step__back-icon" width="10" height="14">
+                  <use xlink:href="#triangle-arrow-left"></use>
+                </svg>
+                На шаг назад</a>
             </div>
           </fieldset>
           <fieldset class="add-plan__step step">
@@ -851,9 +866,16 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
                 <textarea class="step__textarea" placeholder="План действий"
                   aria-label="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
-              <button class="button-oval button-oval--yellow step__button step__button--submit"
-                type="submit">Отправить</button>
-              <a href="" class="step__link step__link--back">На шаг назад</a>
+              <button class="button-oval button-oval--yellow step__button step__button--submit" type="submit">Отправить
+                <svg class="step__forward-icon" width="10" height="14">
+                  <use xlink:href="#triangle-arrow-right"></use>
+                </svg>
+              </button>
+              <a href="" class="step__link step__link--back">
+                <svg class="step__back-icon" width="10" height="14">
+                  <use xlink:href="#triangle-arrow-left"></use>
+                </svg>
+                На шаг назад</a>
             </div>
           </fieldset>
         </form>

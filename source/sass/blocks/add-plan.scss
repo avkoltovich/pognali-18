@@ -68,6 +68,7 @@
   .add-plan__container {
     @include tabletContainer;
     padding-top: 46px;
+    padding-bottom: 80px;
   }
 
   .add-plan__heading {
@@ -105,11 +106,13 @@
 
   .add-plan__container {
     @include desktopContainerNarrow;
-    padding-top: 48px;
+    padding-top: 45px;
+    padding-bottom: 92px;
   }
 
   .add-plan__heading {
     padding-left: 70px;
+    margin-bottom: 52px;
   }
 
   .add-plan__dots {
