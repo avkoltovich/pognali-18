@@ -32,6 +32,11 @@
   color: #ffffff;
 }
 
+.country__close-img {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
 .country__button {
   &--close {
     display: flex;
@@ -39,7 +44,13 @@
     align-items: center;
     padding-right: 0;
     padding-left: 0;
+
+    background-color: transparent;
     border: none;
+
+    &:active .country__close-img {
+      opacity: 0.1;
+    }
   }
 }
 
