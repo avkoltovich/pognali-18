@@ -13,6 +13,8 @@
 .add-plan__heading {
   display: flex;
   align-items: center;
+
+  @include formHeading;
 }
 
 .add-plan__dots {

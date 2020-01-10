@@ -153,11 +153,16 @@
           <span class="profile__term">80</span>
           <span class="profile__description">level</span>
         </p>
-        <img class="profile__photo" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Мое фото">
+        <div class="profile__photo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
+            <img src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x"
+              width="100" height="100" alt="Мое фото">
+          </picture>
+        </div>
         <label class="profile__label profile__label--upload">
           <input class="profile__upload" type="file">
-          <span class="button-oval button-oval--blue profile__button"><span class="profile__button-text">Сменить</span>
-            фото</span>
+          <span class="button-oval button-oval--blue profile__button"><span class="profile__button-text">Сменить фото</span>
         </label>
         <div class="profile__fieldset profile__fieldset--tags">
           <h3 class="profile__legend profile__legend--tags">
@@ -174,31 +179,35 @@
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Airplane" aria-label="Самолет"
                   checked>
-                <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Самолет" width="33"
-                  height="33" aria-hidden="true">
+                  <svg class="profile__transport-icon" width="14" height="16">
+                    <use xlink:href="#plane"></use>
+                  </svg>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус"
                   checked>
-                <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Автобус" width="33"
-                  height="33" aria-hidden="true">
+                  <svg class="profile__transport-icon" width="13" height="16">
+                    <use xlink:href="#bus"></use>
+                  </svg>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bike" aria-label="Велосипед">
-                <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Велосипед" width="33"
-                  height="33" aria-hidden="true">
+                <svg class="profile__transport-icon" width="19" height="17">
+                  <use xlink:href="#bike"></use>
+                </svg>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Run" aria-label="Пешком"
                   checked>
-                <img class="profile__checkbox-img" src="https://via.placeholder.com/33x33" alt="Пешком" width="33"
-                  height="33" aria-hidden="true">
+                  <svg class="profile__transport-icon" width="15" height="17">
+                    <use xlink:href="#run"></use>
+                  </svg>
               </label>
             </li>
           </ul>
