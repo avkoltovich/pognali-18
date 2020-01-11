@@ -552,6 +552,14 @@
       .site-header__navigation::before {
         background-color: #192144;
       }
+
+      & .site-header__navigation-link:hover {
+        color: rgba(22, 28, 53, 0.6);
+      }
+
+      & .site-header__navigation-link:active {
+        color: rgba(22, 28, 53, 0.3);
+      }
     }
 
     &--animation {

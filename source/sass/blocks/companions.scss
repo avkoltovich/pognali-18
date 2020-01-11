@@ -99,6 +99,10 @@
 
 .companions__item-link {
   text-decoration: none;
+
+  &:active .companions__name {
+    opacity: 0.3;
+  }
 }
 
 .companions__photo {
@@ -347,6 +351,9 @@
   }
 
   .companions__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 285px;
     height: 285px;
     margin-bottom: 5px;
@@ -457,6 +464,136 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      & .companions__photo img {
+        width: 110%;
+        height: 110%;
+      }
+    }
+  }
+
+  .companions__name:hover {
+    opacity: 0.6;
+  }
+
+  .companions__transport {
+    position: relative;
+
+    &:hover::before {
+      position: absolute;
+      z-index: 99;
+      right: 50%;
+      bottom: -68px;
+
+      content: "";
+
+      padding: 18px 25px;
+
+      transform: translate(50%);
+
+      @include font(400, normal);
+      font-size: 20px;
+      color: #ffffff;
+
+      border-radius: 4px;
+      background-color: #101d41;
+    }
+
+    &:nth-child(1):hover::before {
+      content: "Авиаперелет";
+    }
+
+    &:nth-child(2):hover::before {
+      content: "Автотранспорт";
+    }
+
+    &:nth-child(3):hover::before {
+      content: "Велосипед";
+    }
+
+    &:nth-child(4):hover::before {
+      content: "Пешком";
+    }
+
+    &:hover::after {
+      position: absolute;
+      bottom: -9px;
+      right: 50%;
+      z-index: 99;
+
+      content: "";
+
+      transform: translate(50%);
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 8px 8px;
+      border-color: transparent transparent #101d41 transparent;
+    }
+  }
+
+  .companions__flag {
+    position: relative;
+
+    &:hover::before {
+      position: absolute;
+      z-index: 99;
+      right: 50%;
+      bottom: -68px;
+
+      content: "";
+
+      padding: 18px 25px;
+
+      transform: translate(50%);
+
+      @include font(400, normal);
+      font-size: 20px;
+      white-space: nowrap;
+      color: #ffffff;
+
+      border-radius: 4px;
+      background-color: #101d41;
+    }
+
+    &--sri-lanka:hover::before {
+      content: "Шри-Ланка";
+    }
+
+    &--thailand:hover::before {
+      content: "Таиланд";
+    }
+
+    &--seychelles:hover::before {
+      content: "Сейшельские Острова";
+    }
+
+    &--belgium:hover::before {
+      content: "Бельгия";
+    }
+
+    &--czech:hover::before {
+      content: "Чехия";
+    }
+
+    &:hover::after {
+      position: absolute;
+      bottom: -9px;
+      right: 50%;
+      z-index: 99;
+
+      content: "";
+
+      transform: translate(50%);
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 8px 8px;
+      border-color: transparent transparent #101d41 transparent;
     }
   }
 
