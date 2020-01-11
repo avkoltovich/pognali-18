@@ -30,6 +30,18 @@
 
     border: solid 3px #192144;
     background-color: transparent;
+
+    &:active {
+      border-color: rgba(22, 28, 53, 0.3);
+    }
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+
+    & .button-rect__arrow {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -52,5 +64,32 @@
 @media (min-width: $desktop-width) {
   .button-rect {
     width: 280px;
+
+    &--yellow {
+
+      &:hover,
+      &:active {
+        background-color: #ffbd30;
+      }
+    }
+
+    &--border {
+
+      &:hover,
+      &:active {
+        background-color: #192144;
+        border-color: #192144;
+
+        color: #ffffff;
+
+        & .button-rect__arrow {
+          fill: #ffffff;
+        }
+      }
+
+      &:active {
+        color: rgba(256, 256, 256, 0.3);
+      }
+    }
   }
 }
