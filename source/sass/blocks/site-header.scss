@@ -53,6 +53,10 @@
 
     border-radius: 30px;
     background-color: #ffd74b;
+
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
   }
 
   &--menu {
@@ -71,6 +75,10 @@
     border: 0;
 
     cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -104,6 +112,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-header__contact-list {
@@ -125,6 +137,14 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #192144;
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+
+    & .menu-icon__svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .site-header__contact-icon {
@@ -154,7 +174,16 @@
 .site-header__social-link {
   display: flex;
   justify-content: center;
-  width: 24px;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+
+  background-color: #192144;
+  border-radius: 50%;
+
+  &:active .site-header__social-icon {
+    opacity: 0.3;
+  }
 }
 
 .site-header__social-icon {
@@ -292,7 +321,8 @@
   }
 
   .site-header__social-link {
-    width: auto;
+    width: 60px;
+    height: 60px;
   }
 
   .site-header__social-icon {
@@ -397,6 +427,11 @@
 
   .site-header__navigation-link {
     font-size: 20px;
+
+    &:hover,
+    &:active {
+      color: #ffd74b;
+    }
   }
 
   .site-header__contact-list {
@@ -420,10 +455,34 @@
 
     &--tel {
       background-color: #ff8d30;
+
+      &:hover {
+        background-color: #f26926;
+      }
+
+      &:active {
+        background-color: #f26926;
+
+        & .site-header__contact-icon--desktop {
+          opacity: 0.3;
+        }
+      }
     }
 
     &--mail {
       background-color: #ffbd30;
+
+      &:hover {
+        background-color: #ff8d30;
+      }
+
+      &:active {
+        background-color: #ff8d30;
+
+        & .site-header__contact-icon--desktop {
+          opacity: 0.3;
+        }
+      }
     }
   }
 
@@ -441,6 +500,11 @@
 
   .site-header__button--auth {
     order: 4;
+
+    &:hover,
+    &:active {
+      background-color: #ffbd30;
+    }
   }
 
   .site-header {
