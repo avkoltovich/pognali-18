@@ -83,6 +83,32 @@
       <path class="st0"
         d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1 H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z" />
     </symbol>
+    <symbol id="filter" viewBox="0 0 15 10">
+      <rect x="4" width="2" height="2" />
+      <rect width="3" height="2" />
+      <rect x="7" width="8" height="2" />
+      <rect x="4" y="8" width="2" height="2" />
+      <rect y="8" width="3" height="2" />
+      <rect x="7" y="8" width="8" height="2" />
+      <rect x="9" y="4" width="2" height="2" />
+      <rect x="12" y="4" width="3" height="2" />
+      <rect y="4" width="8" height="2" />
+    </symbol>
+    <symbol id="close" viewBox="0 0 18.6 18.6">
+      <path d="M11.4,9.3l6.7-6.7c0.6-0.6,0.6-1.5,0-2.1s-1.5-0.6-2.1,0L9.3,7.2L2.6,0.4C2-0.1,1-0.1,0.4,0.4C-0.1,1-0.1,2,0.4,2.6l6.7,6.7
+L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1,0s0.6-1.5,0-2.1L11.4,9.3z" />
+    </symbol>
+    <symbol id="dots" viewBox="0 0 27 5">
+      <circle class="st0" cx="2.5" cy="2.5" r="2.5" />
+      <circle class="st0" cx="13.5" cy="2.5" r="2.5" />
+      <circle class="st0" cx="24.5" cy="2.5" r="2.5" />
+    </symbol>
+    <symbol id="dropdown" viewBox="0 0 10 5">
+      <polygon points="5,5 0,0 10,0 " />
+    </symbol>
+    <symbol id="tick" viewBox="0 0 12 12">
+      <polygon points="12,0 3.8,8 0,4.3 0,8.3 3.8,12 12,4 " />
+    </symbol>
   </svg>
   <header class="site-header">
     <div class="site-header__container">
@@ -186,7 +212,9 @@
         <div class="filter-country__container">
           <div class="filter-country__header">
             <h2 class="filter-country__heading">
-              <span class="filter-country__icon filter-country__icon--list"></span>
+              <svg class="filter-country__icon filter-country__icon--list" width="15" height="10">
+                <use xlink:href="#filter"></use>
+              </svg>
               <span class="filter-country__heading-text">
                 Фильтрация по странам<span class="filter-country__colon">:</span>
               </span>
@@ -194,7 +222,12 @@
             <button class="filter-country__button filter-country__button--close" type="button" aria-label="Показать">
               <span class="filter-country__button-text filter-country__button-text--hide">СВЕРНУТЬ</span>
               <span class="filter-country__button-text filter-country__button-text--show">ПОКАЗАТЬ ВСЕ</span>
-              <span class="filter-country__icon filter-country__icon--close"></span>
+              <svg class="filter-country__icon filter-country__icon--dots" width="27" height="5">
+                <use xlink:href="#dots"></use>
+              </svg>
+              <svg class="filter-country__icon filter-country__icon--close" width="12" height="12">
+                <use xlink:href="#close"></use>
+              </svg>
             </button>
             <ul class="filter-country__continent-list">
               <li class="filter-country__continent-item">
@@ -910,7 +943,9 @@
           </div>
           <button class="filter-country__button filter-country__button--hide button-oval button-oval--blue"
             type="button">
-            <span class="filter-country__icon filter-country__icon--hide"></span>
+            <svg class="filter-country__icon filter-country__icon--hide" width="12" height="12">
+              <use xlink:href="#close"></use>
+            </svg>
             свернуть
           </button>
         </div>
@@ -926,24 +961,37 @@
               <h4 class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Хобби<span class="filter__colon">:</span>
-                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8"
-                    height="4" alt="Показать" aria-hidden="true">
+                  <svg class="filter__icon filter__icon--hide" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
                 </button>
               </h4>
               <p class="filter__label-wrap filter__label-wrap--hobby filter__label-wrap--closed">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Sport" checked>
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Спортзал
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Shisha">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Кальян
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Sofa">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Диван
                 </label>
               </p>
@@ -952,24 +1000,37 @@
               <h4 class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Музыка<span class="filter__colon">:</span>
-                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8"
-                    height="4" alt="Показать" aria-hidden="true">
+                  <svg class="filter__icon filter__icon--hide" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
                 </button>
               </h4>
               <p class="filter__label-wrap filter__label-wrap--music filter__label-wrap--closed">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="music" value="Hard Rock" checked>
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Тяжелый рок
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="music" value="Russian rap">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Русский рэп
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="music" value="Eurodance">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Евроденс
                 </label>
               </p>
@@ -978,24 +1039,37 @@
               <h4 class="filter__legend">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Еда<span class="filter__colon">:</span>
-                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8"
-                    height="4" alt="Показать" aria-hidden="true">
+                  <svg class="filter__icon filter__icon--hide" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
                 </button>
               </h4>
               <p class="filter__label-wrap filter__label-wrap--food filter__label-wrap--closed">
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="food" value="Meat" checked>
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Мясоед
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="food" value="Proper nutrition">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Сидит на ПП
                 </label>
                 <label class="filter__label filter__label--checkbox">
                   <input type="checkbox" class="filter__checkbox" name="food" value="Vegan">
-                  <span class="filter__icon filter__icon--checkbox"></span>
+                  <span class="filter__icon filter__icon--checkbox">
+                    <svg class="filter__tick-img" width="9" height="9">
+                      <use xlink:href="#tick"></use>
+                    </svg>
+                  </span>
                   Веган-сыроед
                 </label>
               </p>
@@ -1004,25 +1078,38 @@
               <h4 class="filter__legend filter__legend--transport">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Транспорт<span class="filter__colon">:</span>
-                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8"
-                    height="4" alt="Показать" aria-hidden="true">
+                  <svg class="filter__icon filter__icon--hide" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
                 </button>
               </h4>
               <p class="filter__label-wrap filter__label-wrap--transport filter__label-wrap--closed">
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Airplane" aria-label="Самолет"
                     checked>
+                  <svg class="filter__transport-icon" width="14" height="16">
+                    <use xlink:href="#plane"></use>
+                  </svg>
                 </label>
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Bus" aria-label="Автобус"
                     checked>
+                  <svg class="filter__transport-icon" width="13" height="16">
+                    <use xlink:href="#bus"></use>
+                  </svg>
                 </label>
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Bike" aria-label="Велосипед">
+                  <svg class="filter__transport-icon" width="19" height="17">
+                    <use xlink:href="#bike"></use>
+                  </svg>
                 </label>
                 <label class="filter__label filter__label--transport">
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Run" aria-label="Пешком"
                     checked>
+                  <svg class="filter__transport-icon" width="15" height="17">
+                    <use xlink:href="#run"></use>
+                  </svg>
                 </label>
               </p>
             </div>
@@ -1030,8 +1117,9 @@
               <h4 class="filter__legend filter__legend--level">
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Левел<span class="filter__colon">:</span>
-                  <img class="filter__icon filter__icon--hide" src="https://via.placeholder.com/8x4" width="8"
-                    height="4" alt="Показать" aria-hidden="true">
+                  <svg class="filter__icon filter__icon--hide " width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
                 </button>
               </h4>
               <div class="filter__label-wrap filter__label-wrap--number">
@@ -1488,12 +1576,10 @@
           </a>
         </li>
       </ul>
-      <p class="site-footer__copyright-wrap">
+      <a class="site-footer__copyright-wrap" href="https://htmlacademy.ru/intensive/adaptive">
         <small class="site-footer__copyright">Разработано</small>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-        </a>
-      </p>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+      </a>
     </div>
   </footer>
   <script src="js/script.js"></script>

@@ -7,7 +7,6 @@ const isUserMenu = document.querySelector('.user-menu');
 const filterCountry = document.querySelector('.filter-country');
 
 const filterBtnList = document.querySelectorAll('.filter__button--show');
-const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
 
 const businessRateOpen = document.querySelector('.add-profile__link--all');
 
@@ -39,6 +38,31 @@ if (isUserMenu) {
     evt.preventDefault();
     siteHeader.classList.toggle('site-header--index-closed');
   });
+
+  // Yandex карта
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [59.936397, 30.321166],
+        zoom: 16,
+        controls: []
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'Погнали?',
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-marker.svg',
+        iconImageSize: [36, 36],
+        iconImageOffset: [0, 0]
+      });
+
+    myMap.geoObjects
+      .add(myPlacemark);
+  });
+
 
 } else {
   siteHeader.classList.toggle('site-header--closed');
@@ -118,16 +142,20 @@ if (filterCountry) {
 }
 
 if (filterBtnList) {
+  const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
+  const filterSVGList = document.querySelectorAll('.filter__icon--hide');
   for (let i = 0; i < filterBtnList.length; i++) {
 
     // Вынужденная мера из-за поддержки IE 11
 
     let currentBtn = filterBtnList[i];
     let currentLabelWrap = filterLabelWrapList[i];
+    let currentFilterSVGList = filterSVGList[i];
 
     currentBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
       currentLabelWrap.classList.toggle('filter__label-wrap--closed');
+      currentFilterSVGList.classList.toggle('filter__icon--rotated');
     });
   };
 };

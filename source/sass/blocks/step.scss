@@ -14,7 +14,17 @@
 }
 
 .step__header {
-  margin-bottom: 20px;
+  &--step-one {
+    margin-bottom: 20px;
+  }
+
+  &--step-two {
+    margin-bottom: 24px;
+  }
+
+  &--step-three {
+    margin-bottom: 22px;
+  }
 }
 
 .step__heading {
@@ -72,7 +82,7 @@
   color: #1d2e5b;
 
   &--unit {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
     margin-left: auto;
 
     color: rgba(29, 46, 91, 0.3);
@@ -137,7 +147,7 @@
   align-items: center;
   width: 100%;
   height: 43px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   border-radius: 4px;
   border: solid 1px #cbced9;
@@ -219,7 +229,7 @@
   @include font(400, normal);
   width: 220px;
   height: 220px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -231,6 +241,10 @@
 
   border-radius: 4px;
   border: solid 1px #cbced9;
+
+  &--last {
+    margin-bottom: 22px;
+  }
 }
 
 .step__select-wrap {
@@ -240,6 +254,14 @@
   margin-bottom: 22px;
 }
 
+.step__arrow-icon {
+  position: absolute;
+  bottom: -16px;
+  right: 50px;
+
+  fill: #cbced9;
+}
+
 .step__input {
   @include font(500, normal);
 
@@ -247,7 +269,7 @@
 
   &--step-one {
     appearance: textfield;
-    padding-top: 6px;
+    padding-top: 3px;
 
     font-size: 15px;
     letter-spacing: 1.5px;
@@ -261,7 +283,7 @@
 
     width: 168px;
     height: 42px;
-    padding-top: 5px;
+    padding-top: 0;
     padding-right: 13px;
     padding-left: 11px;
 
@@ -275,7 +297,7 @@
   &--add-country {
     width: 100%;
     height: 42px;
-    padding-top: 5px;
+    padding-top: 0;
     padding-right: 13px;
     padding-left: 11px;
 
@@ -300,6 +322,24 @@
   height: 36px;
 
   background-image: linear-gradient(to right, transparent 10%, #ffffff 40%, #ffffff);
+}
+
+.step__dropdown-icon {
+  position: absolute;
+  top: 17px;
+  right: 13px;
+  z-index: 2;
+
+  opacity: 0.3;
+}
+
+.step__plus-icon {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  z-index: 2;
+
+  opacity: 0.3;
 }
 
 .step__flag {
@@ -399,13 +439,24 @@
 }
 
 .step__checkbox-icon {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 26px;
   height: 26px;
   margin-right: 13px;
 
   border-radius: 4px;
   border: solid 1px #cbced9;
+}
+
+.step__tick-img {
+  opacity: 0;
+  fill: #192144;
+}
+
+.step__checkbox:checked + .step__checkbox-icon > .step__tick-img {
+  opacity: 1;
 }
 
 .step__button {
@@ -416,7 +467,7 @@
 
     width: 100%;
     height: 42px;
-    padding-top: 5px;
+    padding-top: 0;
     padding-left: 11px;
     margin-bottom: 25px;
 
@@ -458,6 +509,20 @@
     background-color: transparent;
   }
 
+  &--back,
+  &--forward {
+    & img {
+      opacity: 0.3;
+    }
+  }
+
+  &--back:active,
+  &--forward:active {
+    & img {
+      opacity: 0.1;
+    }
+  }
+
   &--del {
     position: absolute;
     top: -10px;
@@ -474,10 +539,53 @@
 
     border-radius: 50%;
     background-color: #edeff6;
+
+    & svg {
+      opacity: 0.1;
+    }
+
+    &:active svg {
+      opacity: 0.05;
+    }
   }
 
   &--submit {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+  }
+
+  &--minus {
+    height: 24px;
+    padding-right: 4px;
+    padding-left: 14px;
+
+    background-color: transparent;
+
+    & img {
+      display: block;
+
+      opacity: 0.2;
+    }
+  }
+
+  &--plus {
+    height: 24px;
+    padding-right: 14px;
+    padding-left: 0;
+
+    background-color: transparent;
+
+    & img {
+      display: block;
+
+      opacity: 0.2;
+    }
+  }
+
+  &--minus:active,
+  &--plus:active {
+    & img {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -493,7 +601,7 @@
   &--back {
     display: flex;
     justify-content: center;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
 
     @include font(700, normal);
     font-size: 17px;
@@ -505,6 +613,11 @@
   }
 }
 
+.step__forward-icon,
+.step__back-icon {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .step {
     border-radius: 30px;
@@ -514,7 +627,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 48px;
+    padding-top: 46px;
     padding-right: 39px;
     padding-bottom: 44px;
     padding-left: 41px;
@@ -557,7 +670,7 @@
   }
 
   .step__heading {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
 
     font-size: 36px;
   }
@@ -592,6 +705,10 @@
 
       width: 15px;
       height: 15px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 4px;
     }
   }
 
@@ -680,11 +797,31 @@
     margin-bottom: 14px;
   }
 
+  .step__arrow-icon {
+    display: none;
+  }
+
+  .step__dropdown-icon {
+    top: 30px;
+    right: 27px;
+
+    width: 17px;
+    height: 9px;
+  }
+
+  .step__plus-icon {
+    top: 26px;
+    right: 191px;
+
+    width: 19px;
+    height: 19px;
+  }
+
   .step__field {
     height: 70px;
     padding-right: 12px;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .step__input {
@@ -740,7 +877,71 @@
 
     &--submit {
       @include stepOvalLink;
+
+      justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
+      margin-bottom: 8px;
     }
+
+    &--minus {
+      padding-top: 2px;
+      padding-right: 0;
+      padding-left: 3px;
+
+      & img {
+        width: 20px;
+        height: 2px;
+      }
+    }
+
+    &--plus {
+      padding-top: 2px;
+      padding-right: 9px;
+
+      & img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--minus:hover,
+    &--plus:hover {
+      & img {
+        opacity: 0.4;
+      }
+    }
+
+    &--back {
+      top: 28px;
+      left: 18px;
+    }
+
+    &--forward {
+      top: 28px;
+      right: 14px;
+    }
+
+    &--back,
+    &--forward {
+      & img {
+        width: auto;
+        height: 35px;
+      }
+    }
+
+    &--back:hover,
+    &--forward:hover {
+      & img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .step__back-icon {
+    margin-right: 24px;
+
+    fill: #1d2e5b;
   }
 
   .step__duration {
@@ -758,10 +959,15 @@
     margin-right: 23px;
   }
 
+  .step__tick-img {
+    width: 13px;
+    height: 13px;
+  }
+
   .step__calendar {
     order: 5;
     width: 530px;
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
 
   .step__caption {
@@ -809,11 +1015,18 @@
     &--step-one {
       @include stepOvalLink;
       order: 6;
-      margin-bottom: 15px;
+      justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
+      margin-bottom: 11px;
     }
 
     &--oval {
       @include stepOvalLink;
+
+      justify-content: space-between;
+      padding-right: 34px;
+      padding-left: 34px;
     }
 
     &--back {
@@ -827,6 +1040,11 @@
       text-transform: none;
     }
   }
+
+  .step__forward-icon,
+  .step__back-icon {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -837,9 +1055,9 @@
   .step__inner {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-right: 160px;
-    padding-bottom: 90px;
+    padding-bottom: 94px;
     padding-left: 158px;
   }
 
@@ -847,12 +1065,12 @@
     display: flex;
     width: 100%;
     padding-bottom: 33px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
 
     border-bottom: 1px solid #d6d9e6;
 
     &--step-two {
-      margin-bottom: 62px;
+      margin-bottom: 68px;
 
       &::after {
         bottom: -548px;
@@ -865,7 +1083,7 @@
     }
 
     &--step-three {
-      margin-bottom: 70px;
+      margin-bottom: 78px;
     }
   }
 
@@ -886,14 +1104,20 @@
     }
   }
 
+  .step__checkbox-icon {
+    margin-right: 19px;
+  }
+
   .step__list {
     display: list-item;
     margin-top: 0;
     margin-right: 44px;
-    margin-bottom: 0;
+    margin-bottom: 18px;
     margin-left: auto;
-    padding-top: 7px;
+    padding-top: 9px;
     padding-left: 0;
+
+    list-style: none;
   }
 
   .step__item {
@@ -905,6 +1129,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.6);
+    list-style: disc;
 
     opacity: 0.6;
 
@@ -912,6 +1137,10 @@
       color: #000000;
 
       opacity: 1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -1069,5 +1298,27 @@
         @include stepTwoDotsDesktop;
       }
     }
+
+    &--back {
+      left: 0;
+    }
+
+    &--forward {
+      right: 0;
+    }
+  }
+
+  .step__link {
+    &--oval {
+      margin-bottom: 12px;
+    }
+
+    &--back {
+      margin-bottom: 12px;
+    }
+  }
+
+  .step__plus-icon {
+    right: 295px;
   }
 }

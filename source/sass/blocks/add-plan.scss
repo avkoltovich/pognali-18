@@ -6,13 +6,15 @@
 .add-plan__container {
   @include mobileContainer;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 95px;
   margin: 0 auto;
 }
 
 .add-plan__heading {
   display: flex;
   align-items: center;
+
+  @include formHeading;
 }
 
 .add-plan__dots {
@@ -66,6 +68,7 @@
   .add-plan__container {
     @include tabletContainer;
     padding-top: 46px;
+    padding-bottom: 80px;
   }
 
   .add-plan__heading {
@@ -103,11 +106,13 @@
 
   .add-plan__container {
     @include desktopContainerNarrow;
-    padding-top: 48px;
+    padding-top: 45px;
+    padding-bottom: 92px;
   }
 
   .add-plan__heading {
     padding-left: 70px;
+    margin-bottom: 52px;
   }
 
   .add-plan__dots {

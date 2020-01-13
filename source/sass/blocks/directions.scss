@@ -114,6 +114,10 @@
     z-index: 10;
 
     display: block;
+
+    &:active .directions__title {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -381,6 +385,14 @@
     &--item {
       width: 100%;
       display: flex;
+
+      &:hover .directions__title {
+        opacity: 0.6;
+      }
+
+      &:active .directions__title {
+        opacity: 0.3;
+      }
     }
   }
 

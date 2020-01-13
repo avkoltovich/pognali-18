@@ -48,6 +48,10 @@
 
   background-color: #ffd74b;
   border-radius: 50%;
+
+  &:active .site-footer__social-icon {
+    opacity: 0.3;
+  }
 }
 
 .site-footer__social-icon {
@@ -62,11 +66,15 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  text-decoration: none;
+
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
-  & a {
-    display: block;
-    padding-top: 4px;
+  &:active {
+    & .site-footer__copyright,
+    & img {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -165,5 +173,14 @@
 
   .site-footer__social-list {
     margin-right: 44px;
+  }
+
+  .site-footer__social-link:hover,
+  .site-footer__social-link:active {
+    background-color: #ffbd30;
+  }
+
+  .site-footer__copyright-wrap:hover {
+    opacity: 0.6;
   }
 }

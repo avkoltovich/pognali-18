@@ -46,6 +46,14 @@
     background-color: #ffbd30;
     border-radius: 50%;
   }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+
+    & .user-menu__icon {
+      opacity: 0.3;
+    }
+  }
 }
 
 .user-menu__icon {

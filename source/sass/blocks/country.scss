@@ -32,6 +32,11 @@
   color: #ffffff;
 }
 
+.country__close-img {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
 .country__button {
   &--close {
     display: flex;
@@ -39,7 +44,13 @@
     align-items: center;
     padding-right: 0;
     padding-left: 0;
+
+    background-color: transparent;
     border: none;
+
+    &:active .country__close-img {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -95,6 +106,17 @@
   .country__heading {
     font-size: 20px;
     letter-spacing: 2px;
+  }
+
+  .country__button {
+    &--close {
+      padding-right: 14px;
+    }
+  }
+
+  .country__close-img {
+    width: 17px;
+    height: 17px;
   }
 
   .country__letter-list {
