@@ -44,9 +44,30 @@
 }
 
 .catalog__photo {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
   margin-right: 15px;
 
   border-radius: 50%;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    transition: all 0.2s ease-out;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__title {
@@ -285,6 +306,8 @@
 }
 
 .catalog__button {
+  transition: all 0.2s ease-out;
+
   &--call {
     position: absolute;
     bottom: 0;
@@ -312,12 +335,22 @@
 
     cursor: pointer;
   }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+
+    & svg {
+      fill: rgba(22, 28, 53, 0.3);
+    }
+  }
 }
 
 .catalog__plus-icon {
   margin-right: 14px;
 
   fill: #1d2e5b;
+
+  transition: all 0.2s ease-out;
 }
 
 .catalog__like-btn {
@@ -335,12 +368,32 @@
   border-radius: 50%;
   background-color: #edeff6;
 
+  cursor: pointer;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    background-color: #e2e5f2;
+
+    & .catalog__like-icon {
+      opacity: 0.1;
+    }
+  }
+
   &--liked {
     background-color: #f9eaea;
 
     & .catalog__like-icon {
       background-image: url("../img/heart-active.svg");
       opacity: 1;
+    }
+
+    &:active {
+      background-color: #f9d8d8;
+
+      & .catalog__like-icon {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -354,6 +407,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.3;
+
+  transition: all 0.2s ease-out;
 }
 
 .catalog__icon {
@@ -460,7 +515,7 @@
       position: static;
 
       width: 148px;
-      padding-top: 5px;
+      padding-top: 2px;
       padding-right: 14px;
     }
 
@@ -676,6 +731,8 @@
     padding-right: 38px;
     margin-bottom: 30px;
 
+    transition: all 0.2s ease-out;
+
     &::before {
       position: absolute;
       top: 0;
@@ -688,6 +745,15 @@
 
       background-image: linear-gradient(to bottom, #ffffff, #444444, #ffffff);
       opacity: 0.1;
+    }
+
+    &:hover {
+      border-radius: 20px;
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+      & .catalog__photo img {
+        transform: scale(1.1, 1.1);
+      }
     }
   }
 
@@ -715,6 +781,8 @@
 
   .catalog__title {
     margin-bottom: 11px;
+
+    line-height: 0.9;
   }
 
   .catalog__status {
@@ -768,6 +836,66 @@
       margin-right: 0;
       margin-bottom: 66px;
       margin-left: 345px;
+
+      &:hover {
+        color: rgba(22, 28, 53, 0.6);
+
+        & svg {
+          fill: rgba(22, 28, 53, 0.6);
+        }
+      }
+
+      &:active {
+        color: rgba(22, 28, 53, 0.3);
+
+        & svg {
+          fill: rgba(22, 28, 53, 0.3);
+        }
+      }
+    }
+  }
+
+  .catalog__link:hover {
+    opacity: 0.6;
+  }
+
+  .catalog__link:active {
+    opacity: 0.3;
+  }
+
+  .catalog__like-btn {
+    &:hover {
+      background-color: #e2e5f2;
+
+      & .catalog__like-icon {
+        opacity: 0.5;
+      }
+    }
+
+    &:active {
+      background-color: #e2e5f2;
+
+      & .catalog__like-icon {
+        opacity: 0.1;
+      }
+    }
+
+    &--liked {
+      &:hover {
+        background-color: #f9d8d8;
+
+        & .catalog__like-icon {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        background-color: #f9d8d8;
+
+        & .catalog__like-icon {
+          opacity: 0.3;
+        }
+      }
     }
   }
 

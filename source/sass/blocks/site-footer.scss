@@ -49,6 +49,8 @@
   background-color: #ffd74b;
   border-radius: 50%;
 
+  transition: all 0.2s ease-out;
+
   &:active .site-footer__social-icon {
     opacity: 0.3;
   }
@@ -56,6 +58,8 @@
 
 .site-footer__social-icon {
   fill: #1d2e5b;
+
+  transition: all 0.2s ease-out;
 }
 
 .site-footer__copyright-wrap {
@@ -69,6 +73,8 @@
   text-decoration: none;
 
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  transition: all 0.2s ease-out;
 
   &:active {
     & .site-footer__copyright,

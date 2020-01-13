@@ -49,10 +49,16 @@
   @include font(700, normal);
   text-decoration: none;
 
+  transition: all 0.2s ease-out;
+
   &--add {
     font-size: 24px;
     line-height: 1;
     color: #ff8d30;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--all {
@@ -60,6 +66,10 @@
 
     font-size: 16px;
     color: #192144;
+
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
   }
 }
 
@@ -205,6 +215,12 @@
         background-image: url("../img/business.svg");
         background-repeat: no-repeat;
         background-size: contain;
+
+        transition: all 0.2s ease-out;
+      }
+
+      &:active::after {
+        opacity: 0.3;
       }
     }
   }
@@ -307,6 +323,32 @@
       &::after {
         top: 21px;
         left: -65px;
+      }
+
+      &:hover {
+        color: rgba(22, 28, 53, 0.6);
+
+        &::after {
+          opacity: 0.6;
+        }
+      }
+
+      &:active {
+        color: rgba(22, 28, 53, 0.3);
+
+        &::after {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    &--add {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
       }
     }
   }

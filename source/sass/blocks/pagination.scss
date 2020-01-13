@@ -31,12 +31,18 @@
 
   background-color: #ffffff;
 
+  transition: all 0.2s ease-out;
+
   &--back {
     border-radius: 20px 0 0 20px;
   }
 
   &--fwd {
     border-radius: 0 20px 20px 0;
+  }
+
+  &:active .pagination__icon {
+    opacity: 0.3;
   }
 }
 
@@ -92,13 +98,25 @@
       background-color: #ffd74b;
     }
 
+    &:active {
+      background-color: #ffd74b;
+    }
+
     &--back {
       width: 40px;
       margin-left: auto;
+
+      &:active {
+        background-color: transparent;
+      }
     }
 
     &--fwd {
       width: 40px;
+
+      &:active {
+        background-color: transparent;
+      }
     }
   }
 }
@@ -106,5 +124,22 @@
 @media (min-width: $desktop-width) {
   .pagination {
     padding-right: 30px;
+  }
+
+  .pagination__link {
+    &:hover {
+      color: rgba(22, 28, 53, 0.6);
+    }
+
+    &:active {
+      color: rgba(22, 28, 53, 1);
+    }
+
+    &--back,
+    &--fwd {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 }

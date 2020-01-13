@@ -1122,13 +1122,13 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
                   </svg>
                 </button>
               </h4>
-              <div class="filter__label-wrap filter__label-wrap--number">
+              <div class="filter__label-wrap filter__label-wrap--number filter__label-wrap--closed">
                 <p class="filter__number-wrap">
-                  <label class="filter__label filter__label--pseudo">
-                    <input type="number" class="filter__input-number" value="30">
+                  <label class="filter__label filter__label--number">
+                    <input type="number" class="filter__input-number filter__input-number--left" value="30">
                   </label>
-                  <label class="filter__label">
-                    <input type="number" class="filter__input-number" value="100">
+                  <label class="filter__label filter__label--number">
+                    <input type="number" class="filter__input-number filter__input-number--right" value="100">
                   </label>
                 </p>
                 <div class="filter__range-wrap">
@@ -1143,18 +1143,23 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
             <li class="catalog__item">
               <div class="catalog__item-container">
                 <div class="catalog__item-header">
-                  <picture>
-                    <source media="(min-width: 1440px)"
-                      srcset="img/firsova-desktop@1x.jpg, img/firsova-destop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
-                    <img class="catalog__photo" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"
-                      width="70" height="70" alt="Фотография - Таня Фирсова">
-                  </picture>
-                  <h3 class="catalog__title">
-                    <span class="catalog__status catalog__status--offline">
-                      Таня Фирсова
-                    </span>
-                  </h3>
+                  <a href="" class="catalog__photo">
+                    <picture>
+                      <source media="(min-width: 1440px)"
+                        srcset="img/firsova-desktop@1x.jpg, img/firsova-destop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
+                      <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70"
+                        alt="Фотография - Таня Фирсова">
+                    </picture>
+                  </a>
+                  <a href="" class="catalog__link">
+                    <h3 class="catalog__title">
+                      <span class="catalog__status catalog__status--offline">
+                        Таня Фирсова
+                      </span>
+                    </h3>
+                  </a>
                   <div class="catalog__button-wrap">
                     <button class="catalog__button catalog__button--call button-oval button-oval--yellow"
                       type="button">Позвать!</button>
@@ -1235,17 +1240,22 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
             <li class="catalog__item">
               <div class="catalog__item-container">
                 <div class="catalog__item-header">
-                  <picture>
-                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
-                    <img class="catalog__photo" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
-                      width="70" height="70" alt="Фотография - Петя Демин">
-                  </picture>
-                  <h3 class="catalog__title">
-                    <span class="catalog__status catalog__status--offline">
-                      Петя Демин
-                    </span>
-                  </h3>
+                  <a href="" class="catalog__photo">
+                    <picture>
+                      <source media="(min-width: 1440px)"
+                        srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+                      <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70"
+                        alt="Фотография - Петя Демин">
+                    </picture>
+                  </a>
+                  <a href="" class="catalog__link">
+                    <h3 class="catalog__title">
+                      <span class="catalog__status catalog__status--offline">
+                        Петя Демин
+                      </span>
+                    </h3>
+                  </a>
                   <div class="catalog__button-wrap">
                     <button class="catalog__button catalog__button--call button-oval button-oval--yellow"
                       type="button">Позвать!</button>
@@ -1322,18 +1332,22 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
             <li class="catalog__item">
               <div class="catalog__item-container">
                 <div class="catalog__item-header">
-                  <picture>
-                    <source media="(min-width: 1440px)"
-                      srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
-                    <img class="catalog__photo" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
-                      width="70" height="70" alt="Фотография - Марк Смолов">
-                  </picture>
-                  <h3 class="catalog__title">
-                    <span class="catalog__status catalog__status--offline">
-                      Марк Смолов
-                    </span>
-                  </h3>
+                  <a href="" class="catalog__photo">
+                    <picture>
+                      <source media="(min-width: 1440px)"
+                        srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
+                      <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70"
+                        alt="Фотография - Марк Смолов">
+                    </picture>
+                  </a>
+                  <a href="" class="catalog__link">
+                    <h3 class="catalog__title">
+                      <span class="catalog__status catalog__status--offline">
+                        Марк Смолов
+                      </span>
+                    </h3>
+                  </a>
                   <div class="catalog__button-wrap">
                     <button class="catalog__button catalog__button--call button-oval button-oval--yellow"
                       type="button">Позвать!</button>
@@ -1414,19 +1428,23 @@ L0.4,16c-0.6,0.6-0.6,1.5,0,2.1s1.5,0.6,2.1,0l6.7-6.7l6.7,6.7c0.6,0.6,1.5,0.6,2.1
             <li class="catalog__item">
               <div class="catalog__item-container">
                 <div class="catalog__item-header">
-                  <picture>
-                    <source media="(min-width: 1440px)"
-                      srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
-                    <img class="catalog__photo" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x"
-                      width="70" height="70" alt="Фотография - Лариса Роговая">
-                  </picture>
-                  <h3 class="catalog__title">
-                    <span class="catalog__status catalog__status--online">
-                      Лариса Роговая
-                    </span>
-                  </h3>
+                  <a href="" class="catalog__photo">
+                    <picture>
+                      <source media="(min-width: 1440px)"
+                        srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
+                      <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" width="70"
+                        height="70" alt="Фотография - Лариса Роговая">
+                    </picture>
+                  </a>
+                  <a href="" class="catalog__link">
+                    <h3 class="catalog__title">
+                      <span class="catalog__status catalog__status--online">
+                        Лариса Роговая
+                      </span>
+                    </h3>
+                  </a>
                   <div class="catalog__button-wrap">
                     <button class="catalog__button catalog__button--call button-oval button-oval--yellow"
                       type="button">Позвать!</button>

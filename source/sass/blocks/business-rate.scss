@@ -74,6 +74,12 @@
   border: 0;
   border-radius: 0  0 20px 20px;
   cursor: pointer;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -123,5 +129,9 @@
 
   .business-rate__list {
     width: 630px;
+  }
+
+  .business-rate__button:hover {
+    background-color: #edeff6;
   }
 }

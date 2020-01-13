@@ -37,6 +37,8 @@
 }
 
 .site-header__button {
+  transition: all 0.2s ease-out;
+
   &--auth {
     display: flex;
     align-items: center;
@@ -112,6 +114,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+
+  transition: all 0.2s ease-out;
 
   &:active {
     opacity: 0.3;
@@ -453,6 +457,8 @@
     height: 50px;
     margin-right: 0;
 
+    transition: all 0.2s ease-out;
+
     &--tel {
       background-color: #ff8d30;
 
@@ -465,6 +471,8 @@
 
         & .site-header__contact-icon--desktop {
           opacity: 0.3;
+
+          transition: all 0.2s ease-out;
         }
       }
     }
@@ -481,6 +489,8 @@
 
         & .site-header__contact-icon--desktop {
           opacity: 0.3;
+
+          transition: all 0.2s ease-out;
         }
       }
     }

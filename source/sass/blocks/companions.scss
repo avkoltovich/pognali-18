@@ -118,6 +118,8 @@
 .companions__photo img {
   height: 100%;
   width: auto;
+
+  transition: all 0.2s ease-out;
 }
 
 .companions__level {
@@ -467,15 +469,21 @@
     }
 
     &:hover {
+      border-radius: 20px;
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
       & .companions__photo img {
-        width: 110%;
-        height: 110%;
+        transform: scale(1.1, 1.1);
       }
     }
   }
 
-  .companions__name:hover {
-    opacity: 0.6;
+  .companions__name {
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   .companions__transport {
@@ -600,6 +608,7 @@
   .companions__level {
     top: 23px;
     left: 23px;
+    z-index: 99;
   }
 
   .companions .button-rect {
