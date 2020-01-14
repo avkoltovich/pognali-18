@@ -195,6 +195,8 @@
 
   resize: none;
 
+  transition: all 0.2s ease-out;
+
   &--last {
     margin-bottom: 22px;
   }
@@ -202,6 +204,11 @@
   &:focus {
     color: #444444;
     border-color: #161c35;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+    box-shadow: none;
   }
 }
 
@@ -224,6 +231,8 @@
   @include font(500, normal);
 
   color: #1d2e5b;
+
+  transition: all 0.2s ease-out;
 
   &--step-one {
     appearance: textfield;
@@ -377,12 +386,17 @@
   }
 }
 
+.step__label-cell {
+  width: 100%;
+  height: 100%;
+}
+
 .step__cell-bg {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 31px;
 
   background-color: #edeff6;
 
@@ -394,16 +408,24 @@
   appearance: none;
   z-index: -1;
 
-  &:checked+.step__cell-bg {
+  &:checked + .step__cell-bg {
     color: #ffffff;
 
     background-color: #101d41;
   }
 
-  &:disabled+.step__cell-bg {
+  &:disabled + .step__cell-bg {
     color: rgba(68, 68, 68, 0.3);
 
     background-color: #ffffff;
+  }
+
+  &:checked + .step__checkbox-icon > .step__tick-img {
+    opacity: 1;
+  }
+
+  &:checked:active + .step__checkbox-icon > .step__tick-img {
+    opacity: 0.3;
   }
 }
 
@@ -426,16 +448,6 @@
 .step__tick-img {
   opacity: 0;
   fill: #192144;
-}
-
-.step__checkbox {
-  &:checked+.step__checkbox-icon>.step__tick-img {
-    opacity: 1;
-  }
-
-  &:checked:active+.step__checkbox-icon>.step__tick-img {
-    opacity: 0.3;
-  }
 }
 
 .step__label {
@@ -499,6 +511,8 @@
   border: 0;
 
   cursor: pointer;
+
+  transition: all 0.2s ease-out;
 
   &--add {
     position: relative;
@@ -1034,6 +1048,10 @@
     }
   }
 
+  .step__cell-bg {
+    height: 69px;
+  }
+
   .step__cell-letter {
     display: inline;
   }
@@ -1217,6 +1235,34 @@
       color: #444444;
       border-color: #161c35;
     }
+
+    &:invalid {
+      border-color: #f47e7e;
+      box-shadow: none;
+
+      & + span::before {
+        position: absolute;
+        bottom: 45px;
+        left: 1px;
+        z-index: 99;
+
+        width: 728px;
+        height: 57px;
+        padding-top: 16px;
+        padding-left: 24px;
+
+        content: "Это поле должно быть заполнено";
+
+        @include font(400, normal);
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+        color: #ff0000;
+
+        border-radius: 4px;
+        background-color: #ffefef;
+      }
+    }
   }
 
   .step__companions {
@@ -1351,6 +1397,7 @@
 
     justify-content: flex-start;
     align-items: flex-start;
+    height: 73px;
     padding-top: 8px;
     padding-left: 16px;
 
@@ -1365,7 +1412,7 @@
       z-index: 9;
 
       width: 146px;
-      height: 74px;
+      height: 77px;
 
       content: "";
 
@@ -1397,7 +1444,7 @@
       &:active {
         color: rgba(29, 46, 91, 0.3);
 
-        &+.step__plus-icon {
+        & + .step__plus-icon {
           opacity: 0.1;
         }
       }
@@ -1426,6 +1473,20 @@
     &--forward:active {
       & img {
         opacity: 0.1;
+      }
+    }
+
+    &--del {
+      &:hover svg {
+        opacity: 0.3;
+
+        transition: all 0.2s ease-out;
+      }
+
+      &:active svg {
+        opacity: 0.05;
+
+        transition: all 0.2s ease-out;
       }
     }
   }
