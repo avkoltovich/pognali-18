@@ -89,52 +89,6 @@
   }
 }
 
-.step__label {
-  position: relative;
-
-  @include font(400, normal);
-  font-size: 15px;
-  color: $greyish-brown;
-
-  &--children {
-    display: flex;
-    align-items: center;
-    padding-top: 4px;
-    margin-bottom: 22px;
-  }
-
-  &--country {
-    display: flex;
-    width: 168px;
-    height: 42px;
-    margin-right: -1px;
-
-    &::after {
-      position: absolute;
-      z-index: 2;
-      top: 16px;
-      right: -4px;
-
-      width: 8px;
-      height: 8px;
-      content: "";
-
-      border-radius: 50%;
-      background-color: #1d2e5b;
-    }
-  }
-
-  &--select {
-    position: relative;
-
-    width: 100%;
-
-    &::after {
-      @include stepTwoDotsMobile;
-    }
-  }
-}
-
 .step__companions,
 .step__duration {
   display: flex;
@@ -142,15 +96,12 @@
 }
 
 .step__field {
+  position: relative;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   height: 43px;
   margin-bottom: 17px;
-
-  border-radius: 4px;
-  border: solid 1px #cbced9;
 }
 
 .step__title {
@@ -237,13 +188,20 @@
 
   font-size: 16px;
   line-height: 1.38;
-  color: $greyish-brown;
+  color: rgba(68, 68, 68, 0.3);
 
   border-radius: 4px;
   border: solid 1px #cbced9;
 
+  resize: none;
+
   &--last {
     margin-bottom: 22px;
+  }
+
+  &:focus {
+    color: #444444;
+    border-color: #161c35;
   }
 }
 
@@ -269,13 +227,20 @@
 
   &--step-one {
     appearance: textfield;
+    width: 100%;
+    height: 100%;
     padding-top: 3px;
 
     font-size: 15px;
     letter-spacing: 1.5px;
     text-align: center;
 
-    border: none;
+    border-radius: 4px;
+    border: solid 1px #cbced9;
+
+    &:focus {
+      border-color: #161c35;
+    }
   }
 
   &--step-two {
@@ -309,6 +274,8 @@
     border-radius: 4px;
     border: solid 1px #cbced9;
     background-color: transparent;
+
+    cursor: pointer;
   }
 }
 
@@ -363,7 +330,7 @@
 .step__caption {
   position: relative;
   min-height: 42px;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 16px;
@@ -388,8 +355,7 @@
 .step__cell {
   width: 31px;
   height: 31px;
-  padding-top: 4px;
-  padding-right: 0;
+  padding: 0;
 
   @include font(400, normal);
   font-size: 14px;
@@ -397,7 +363,6 @@
   text-align: center;
   color: $greyish-brown;
 
-  background-color: #edeff6;
   border: 1px solid #cbced9;
 
   &--heading {
@@ -410,28 +375,36 @@
   &--heading:nth-last-child(-n + 2) {
     color: #ff5c23;
   }
+}
 
-  &--disabled {
-    color: rgba(68, 68, 68, 0.3);
+.step__cell-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
-    background-color: #ffffff;
-  }
+  background-color: #edeff6;
 
-  &--active {
-    color: #ffffff;
-
-    background-color: #1d2e5b;
-  }
-
-  &--current {
-    border: 2px solid #ff5c23;
-  }
+  transition: all 0.2s ease-out;
 }
 
 .step__checkbox {
   position: absolute;
   appearance: none;
   z-index: -1;
+
+  &:checked+.step__cell-bg {
+    color: #ffffff;
+
+    background-color: #101d41;
+  }
+
+  &:disabled+.step__cell-bg {
+    color: rgba(68, 68, 68, 0.3);
+
+    background-color: #ffffff;
+  }
 }
 
 .step__checkbox::-ms-check {
@@ -455,12 +428,77 @@
   fill: #192144;
 }
 
-.step__checkbox:checked + .step__checkbox-icon > .step__tick-img {
-  opacity: 1;
+.step__checkbox {
+  &:checked+.step__checkbox-icon>.step__tick-img {
+    opacity: 1;
+  }
+
+  &:checked:active+.step__checkbox-icon>.step__tick-img {
+    opacity: 0.3;
+  }
+}
+
+.step__label {
+  position: relative;
+
+  @include font(400, normal);
+  font-size: 15px;
+  color: $greyish-brown;
+
+  &--children {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    margin-bottom: 20px;
+
+    &:active {
+      & .step__checkbox-icon {
+        border-color: #e2e5f1;
+        background-color: #e2e5f1;
+      }
+
+      & .step__tick-img {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--country {
+    display: flex;
+    width: 168px;
+    height: 42px;
+    margin-right: -1px;
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      right: -4px;
+
+      width: 8px;
+      height: 8px;
+      content: "";
+
+      border-radius: 50%;
+      background-color: #1d2e5b;
+    }
+  }
+
+  &--select {
+    position: relative;
+
+    width: 100%;
+
+    &::after {
+      @include stepTwoDotsMobile;
+    }
+  }
 }
 
 .step__button {
   border: 0;
+
+  cursor: pointer;
 
   &--add {
     position: relative;
@@ -551,12 +589,19 @@
 
   &--submit {
     margin-bottom: 17px;
+
+    &:active .step__forward-icon {
+      opacity: 0.3;
+    }
   }
 
   &--minus {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    z-index: 9;
+
     height: 24px;
-    padding-right: 4px;
-    padding-left: 14px;
 
     background-color: transparent;
 
@@ -568,9 +613,12 @@
   }
 
   &--plus {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    z-index: 9;
+
     height: 24px;
-    padding-right: 14px;
-    padding-left: 0;
 
     background-color: transparent;
 
@@ -610,6 +658,16 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #161c35;
+
+    transition: all 0.2s ease-out;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &:active .step__forward-icon {
+    opacity: 0.3;
   }
 }
 
@@ -819,8 +877,6 @@
 
   .step__field {
     height: 70px;
-    padding-right: 12px;
-    padding-left: 20px;
     margin-bottom: 21px;
   }
 
@@ -885,9 +941,8 @@
     }
 
     &--minus {
-      padding-top: 2px;
-      padding-right: 0;
-      padding-left: 3px;
+      top: 24px;
+      left: 16px;
 
       & img {
         width: 20px;
@@ -896,19 +951,12 @@
     }
 
     &--plus {
-      padding-top: 2px;
-      padding-right: 9px;
+      top: 24px;
+      right: 14px;
 
       & img {
         width: 20px;
         height: 20px;
-      }
-    }
-
-    &--minus:hover,
-    &--plus:hover {
-      & img {
-        opacity: 0.4;
       }
     }
 
@@ -927,13 +975,6 @@
       & img {
         width: auto;
         height: 35px;
-      }
-    }
-
-    &--back:hover,
-    &--forward:hover {
-      & img {
-        opacity: 0.5;
       }
     }
   }
@@ -981,8 +1022,6 @@
   .step__cell {
     width: 77px;
     height: 69px;
-    padding-right: 0;
-    padding-left: 8px;
 
     font-size: 20px;
     font-weight: 500;
@@ -992,14 +1031,6 @@
 
     &--heading {
       height: 30px;
-    }
-
-    &--disabled {
-      color: rgba(68, 68, 68, 0.3);
-    }
-
-    &--active {
-      color: #ffffff;
     }
   }
 
@@ -1044,6 +1075,8 @@
   .step__forward-icon,
   .step__back-icon {
     display: block;
+
+    transition: all 0.2s ease-out;
   }
 }
 
@@ -1175,6 +1208,15 @@
     padding-top: 23px;
     padding-right: 10px;
     padding-left: 25px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:focus {
+      color: #444444;
+      border-color: #161c35;
+    }
   }
 
   .step__companions {
@@ -1199,6 +1241,14 @@
       padding-top: 17px;
       margin-bottom: auto;
       margin-left: auto;
+
+      &:hover .step__checkbox-icon {
+        border-color: #959bb2;
+      }
+
+      &:active .step__checkbox-icon {
+        border-color: #e2e5f1;
+      }
     }
 
     &--country {
@@ -1228,15 +1278,29 @@
 
   .step__input {
     &--step-one {
-      width: 90px;
+      &:hover {
+        border-color: #959bb2;
+      }
+
+      &:focus {
+        border-color: #161c35;
+      }
     }
 
     &--step-two {
       @include stepTwoInputDesktop;
+
+      &:hover {
+        border-color: #959bb2;
+      }
     }
 
     &--add-country {
       @include stepTwoInputDesktop;
+
+      &:hover {
+        border-color: #959bb2;
+      }
     }
   }
 
@@ -1264,8 +1328,7 @@
   .step__cell {
     width: 143px;
     height: 71px;
-    padding-top: 8px;
-    padding-left: 15px;
+
 
     font-size: 18px;
     font-weight: normal;
@@ -1277,13 +1340,42 @@
     &--heading {
       height: 56px;
       padding-top: 0;
+      padding-left: 15px;
 
       vertical-align: middle;
     }
   }
 
+  .step__cell-bg {
+    position: relative;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 8px;
+    padding-left: 16px;
+
+    &--date {
+      flex-direction: column;
+    }
+
+    &:hover::before {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      z-index: 9;
+
+      width: 146px;
+      height: 74px;
+
+      content: "";
+
+      border: solid 4px #ff5c23;
+      background-color: transparent;
+    }
+  }
+
   .step__cell-word {
-    display: inline;
+    display: block;
   }
 
   .step__wrapper {
@@ -1297,14 +1389,44 @@
       &::after {
         @include stepTwoDotsDesktop;
       }
+
+      &:hover {
+        background-color: #dfe3f0;
+      }
+
+      &:active {
+        color: rgba(29, 46, 91, 0.3);
+
+        &+.step__plus-icon {
+          opacity: 0.1;
+        }
+      }
     }
 
     &--back {
       left: 0;
     }
 
+    &--submit:active .step__forward-icon {
+      opacity: 0.3;
+    }
+
     &--forward {
       right: 0;
+    }
+
+    &--back:hover,
+    &--forward:hover {
+      & img {
+        opacity: 0.5;
+      }
+    }
+
+    &--back:active,
+    &--forward:active {
+      & img {
+        opacity: 0.1;
+      }
     }
   }
 
@@ -1315,10 +1437,29 @@
 
     &--back {
       margin-bottom: 12px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    &:active .step__forward-icon {
+      opacity: 0.3;
     }
   }
 
   .step__plus-icon {
     right: 295px;
+  }
+
+  &--minus:hover,
+  &--plus:hover {
+    & img {
+      opacity: 0.4;
+    }
   }
 }

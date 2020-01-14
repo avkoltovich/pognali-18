@@ -86,6 +86,10 @@
 
 .country__link {
   @include countryLink;
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -211,6 +215,7 @@
 
   .country__list {
     position: static;
+    z-index: 1;
 
     height: 476px;
     padding-top: 32px;
@@ -218,5 +223,31 @@
     margin-left: auto;
 
     box-shadow: none;
+  }
+
+  .country__button {
+    &--close {
+      cursor: pointer;
+
+      &:hover .country__close-img {
+        opacity: 1;
+      }
+
+      &:active .country__close-img {
+        opacity: 0.1;
+      }
+    }
+  }
+
+  .country__link {
+    color: #444444;
+
+    &:hover {
+      color: #1d2e5b;
+    }
+
+    &:active {
+      color: rgba(29, 46, 91, 0.3);
+    }
   }
 }
