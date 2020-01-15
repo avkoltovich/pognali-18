@@ -430,11 +430,34 @@
   }
 
   .site-header__navigation-link {
+    display: block;
+    height: 24px;
+    overflow: hidden;
+
     font-size: 20px;
 
     &:hover,
     &:active {
-      color: #ffd74b;
+      & span {
+        transform: translateY(-100%);
+      }
+    }
+
+    & span {
+      position: relative;
+
+      display: block;
+
+      transition: transform 0.3s;
+
+      &::before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+
+        color: #ffd74b;
+        transform: translate3d(0, 0, 0);
+      }
     }
   }
 

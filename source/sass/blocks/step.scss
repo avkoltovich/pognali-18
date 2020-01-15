@@ -1191,6 +1191,15 @@
       opacity: 1;
     }
 
+    & a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
