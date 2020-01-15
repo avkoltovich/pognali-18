@@ -40,6 +40,12 @@
 
 .feedback__link {
   color: #ffd74b;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+  }
 }
 
 .feedback__form {
@@ -60,6 +66,21 @@
 
   border: 0;
   border-radius: 10px 0 0 10px;
+
+  transition: all 0.2s ease-out;
+
+  &:focus {
+    color: #ffffff;
+
+    border: solid 4px #ffffff;
+    background-color: transparent;
+  }
+
+  &:invalid {
+    color: #ff0000;
+
+    background-color: #ffefef;
+  }
 }
 
 .feedback__button {
@@ -75,10 +96,25 @@
   border-radius: 10px;
   border: 0;
   background-color: #ffd74b;
+  cursor: pointer;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    & .feedback__button-text {
+      color: rgba(22, 28, 53, 0.3);
+    }
+
+    & .feedback__icon {
+      fill: rgba(22, 28, 53, 0.3);
+    }
+  }
 }
 
 .feedback__icon {
   fill: #1d2e5b;
+
+  transition: all 0.2s ease-out;
 }
 
 .feedback__button-text {
@@ -88,6 +124,8 @@
 
   font-size: 24px;
   color: #1d2e5b;
+
+  transition: all 0.2s ease-out;
 }
 
 .feedback__contact-list {
@@ -103,6 +141,18 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #ffd74b;
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    color: rgba(255, 215, 75, 0.3);
+
+    & svg {
+      fill: rgba(255, 215, 75, 0.3);
+
+      transition: all 0.2s ease-out;
+    }
+  }
 }
 
 .feedback__contact-img {
@@ -171,6 +221,7 @@
   .feedback__button {
     width: 95px;
     height: 81px;
+    margin-left: 0;
 
     border-radius: 0 20px 20px 0;
   }
@@ -193,15 +244,51 @@
     }
   }
 
+  .feedback__input {
+    &:hover {
+      color: rgba(68, 68, 68, 0.5);
+
+      background-color: #edeff6;
+    }
+
+    &:focus {
+      color: #ffffff;
+
+      background-color: transparent;
+    }
+
+    &:invalid {
+      color: #ff0000;
+
+      background-color: #ffefef;
+      border-color: #ffefef;
+    }
+  }
+
   .feedback__button {
     justify-content: space-between;
     min-width: 327px;
     padding-right: 35px;
     padding-left: 35px;
+
+    &:hover,
+    &:active {
+      background-color: #ffbd30;
+    }
   }
 
   .feedback__button-text {
     display: inline;
+  }
+
+  .feedback__link {
+    &:hover {
+      color: #ff8d30;
+    }
+
+    &:active {
+      color: rgba(255, 141, 48, 0.3);
+    }
   }
 
   .feedback__form {
@@ -218,6 +305,28 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  .feedback__contact-link {
+    &:hover {
+      color: #ffbd30;
+
+      & svg {
+        fill: #ffbd30;
+
+        transition: all 0.2s ease-out;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 215, 75, 0.3);
+
+      & svg {
+        fill: rgba(255, 215, 75, 0.3);
+
+        transition: all 0.2s ease-out;
+      }
     }
   }
 

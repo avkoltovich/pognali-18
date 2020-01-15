@@ -72,6 +72,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
+
+  transition: all 0.2s ease-out;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -217,5 +223,13 @@
 
   .plans__link {
     margin-left: auto;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.1);
+    }
   }
 }
