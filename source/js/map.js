@@ -66,11 +66,4 @@ function init() {
   }
 
   myMap.geoObjects.add(myPlacemark);
-
-  const ROUTEBTN = document.querySelector('.contacts__btn');
-
-  ymaps.domEvent.manager
-    .add(ROUTEBTN, 'click', function () {
-      route.state.set('expanded', true);
-    });
 }
