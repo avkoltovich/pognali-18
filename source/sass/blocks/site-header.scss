@@ -586,12 +586,18 @@
         background-color: #192144;
       }
 
-      & .site-header__navigation-link:hover {
-        color: rgba(22, 28, 53, 0.6);
-      }
+      & .site-header__navigation-link {
+        &:hover {
+          color: rgba(22, 28, 53, 0.6);
+        }
 
-      & .site-header__navigation-link:active {
-        color: rgba(22, 28, 53, 0.3);
+        &:active {
+          color: rgba(22, 28, 53, 1);
+        }
+
+        & span::before {
+          color: rgba(22, 28, 53, 0.6)
+        }
       }
     }
 
