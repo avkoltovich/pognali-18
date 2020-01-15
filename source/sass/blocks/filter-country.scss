@@ -478,6 +478,7 @@
 
     &--hide {
       margin-right: 0;
+      margin-top: 7px;
 
       &:hover {
         background-color: #c8cee8;
@@ -586,9 +587,5 @@
         display: none;
       }
     }
-  }
-
-  .filter-country__button--hide {
-    margin-top: 7px;
   }
 }
