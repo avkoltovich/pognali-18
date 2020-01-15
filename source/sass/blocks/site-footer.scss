@@ -66,7 +66,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 9px;
+  padding-top: 10px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -75,6 +75,10 @@
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
   transition: all 0.2s ease-out;
+
+  & img {
+    margin-top: 3px;
+  }
 
   &:active {
     & .site-footer__copyright,
@@ -169,7 +173,7 @@
   .site-footer__logo-link {
     width: 198px;
     height: 52px;
-    padding-top: 0;
+    padding-top: 3px;
   }
 
   .site-footer__logo-img {

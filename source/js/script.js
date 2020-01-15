@@ -38,32 +38,6 @@ if (isUserMenu) {
     evt.preventDefault();
     siteHeader.classList.toggle('site-header--index-closed');
   });
-
-  // Yandex карта
-
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [59.936397, 30.321166],
-        zoom: 16,
-        controls: []
-      }, {
-        searchControlProvider: 'yandex#search'
-      }),
-
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'Погнали?',
-      }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/map-marker.svg',
-        iconImageSize: [36, 36],
-        iconImageOffset: [0, 0]
-      });
-
-    myMap.geoObjects
-      .add(myPlacemark);
-  });
-
-
 } else {
   siteHeader.classList.toggle('site-header--closed');
   menuBtn.addEventListener('click', function (evt) {

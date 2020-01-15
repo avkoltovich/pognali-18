@@ -33,13 +33,19 @@
       <nav class="site-header__navigation">
         <ul class="site-header__navigation-list">
           <li class="site-header__navigation-item">
-            <a class="site-header__navigation-link">О сервисе</a>
+            <a class="site-header__navigation-link">
+              <span data-hover="О сервисе">О сервисе</span>
+            </a>
           </li>
           <li class="site-header__navigation-item">
-            <a href="form.html" class="site-header__navigation-link">Направления</a>
+            <a href="form.html" class="site-header__navigation-link">
+              <span data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="site-header__navigation-item">
-            <a href="catalog.html" class="site-header__navigation-link">Попутчики</a>
+            <a href="catalog.html" class="site-header__navigation-link">
+              <span data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -545,7 +551,8 @@
             Конюшенная, 19/8
           </span>
         </address>
-        <a href="" class="contacts__link button-rect button-rect--border">
+        <a href="https://yandex.ru/maps/?ll=35.456519%2C53.127692&mode=routes&rtext=59.938631%2C30.323055~45.029096%2C38.972005&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8~&z=5"
+          class="contacts__btn button-rect button-rect--border" target="_blank">
           Проложить маршрут
           <svg class="button-rect__arrow" width="10" height="14">
             <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
@@ -608,9 +615,11 @@
   </footer>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=%3c23515868-9b39-49c7-a160-8952aa0e8fd6%3e">
   </script>
-  <script src="js/script.js" type="text/javascript"></script>
-  <script src="js/picturefill.min.js" type="text/javascript"></script>
+  <script src="js/map.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.js" defer=""></script>
+
 </body>
 
 </html>

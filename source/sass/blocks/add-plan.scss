@@ -5,8 +5,10 @@
 
 .add-plan__container {
   @include mobileContainer;
-  padding-top: 30px;
+  padding-top: 27px;
+  padding-right: 25px;
   padding-bottom: 95px;
+  padding-left: 25px;
   margin: 0 auto;
 }
 

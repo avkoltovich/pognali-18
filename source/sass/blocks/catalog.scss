@@ -72,7 +72,7 @@
 
 .catalog__title {
   max-width: 80px;
-  padding-bottom: 24px;
+  padding-bottom: 34px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -175,7 +175,7 @@
   min-height: 52px;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   list-style: none;
 }
@@ -705,6 +705,7 @@
 
   .catalog__container {
     @include desktopContainerNarrow;
+    padding-bottom: 106px;
   }
 
   .catalog__wrapper {
