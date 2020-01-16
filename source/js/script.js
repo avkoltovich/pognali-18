@@ -1,21 +1,16 @@
 "use strict";
 
-const siteHeader = document.querySelector('.site-header');
-const menuBtn = siteHeader.querySelector('.site-header__button--menu');
-const isUserMenu = document.querySelector('.user-menu');
-
-const filterCountry = document.querySelector('.filter-country');
-
-const filterBtnList = document.querySelectorAll('.filter__button--show');
-
-const businessRateOpen = document.querySelector('.add-profile__link--all');
-
-const businessRate = document.querySelector('.site-main__business-rate');
-
-const stepCountryOpen = document.querySelector('.step__input--add-country');
-const stepCountryClose = document.querySelector('.country__button--close');
-const stepCountry = document.querySelector('.step__country');
-const stepBtnDel = document.querySelectorAll('.step__button--del');
+var siteHeader = document.querySelector('.site-header');
+var menuBtn = siteHeader.querySelector('.site-header__button--menu');
+var isUserMenu = document.querySelector('.user-menu');
+var filterCountry = document.querySelector('.filter-country');
+var filterBtnList = document.querySelectorAll('.filter__button--show');
+var businessRateOpen = document.querySelector('.add-profile__link--all');
+var businessRate = document.querySelector('.site-main__business-rate');
+var stepCountryOpen = document.querySelector('.step__input--add-country');
+var stepCountryClose = document.querySelector('.country__button--close');
+var stepCountry = document.querySelector('.step__country');
+var stepBtnDel = document.querySelectorAll('.step__button--del');
 
 window.addEventListener('scroll', function (evt) {
   evt.preventDefault();
@@ -47,7 +42,7 @@ if (isUserMenu) {
 }
 
 if (businessRate) {
-  const businessRateClose = businessRate.querySelector('.business-rate__button');
+  var businessRateClose = businessRate.querySelector('.business-rate__button');
 
   businessRateOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -75,11 +70,11 @@ if (stepCountry) {
 };
 
 if (filterCountry) {
-  const filterCountryBtnOpen = filterCountry.querySelector('.filter-country__button--close');
-  const filterCountryBtnClose = filterCountry.querySelector('.filter-country__button--hide');
-  const filterCountryLetterList = filterCountry.querySelectorAll('.filter-country__letter-button');
-  const filterCountryList = filterCountry.querySelectorAll('.filter-country__list-wrap');
-  const filterCountryLetterItem = filterCountry.querySelectorAll('.filter-country__letter-item');
+  var filterCountryBtnOpen = filterCountry.querySelector('.filter-country__button--close');
+  var filterCountryBtnClose = filterCountry.querySelector('.filter-country__button--hide');
+  var filterCountryLetterList = filterCountry.querySelectorAll('.filter-country__letter-button');
+  var filterCountryList = filterCountry.querySelectorAll('.filter-country__list-wrap');
+  var filterCountryLetterItem = filterCountry.querySelectorAll('.filter-country__letter-item');
 
   filterCountryBtnOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -91,14 +86,14 @@ if (filterCountry) {
     filterCountry.classList.toggle('filter-country--closed');
   });
 
-  let currentListShow = filterCountryList[0];
-  let currentActiveItem = filterCountryLetterItem[0];
+  var currentListShow = filterCountryList[0];
+  var currentActiveItem = filterCountryLetterItem[0];
 
-  for (let i = 0; i < filterCountryList.length; i++) {
+  for (var i = 0; i < filterCountryList.length; i++) {
 
-    let currentLetterBtn = filterCountryLetterList[i];
-    let currentCountryList = filterCountryList[i];
-    let currentCountryLetterItem = filterCountryLetterItem[i];
+    var currentLetterBtn = filterCountryLetterList[i];
+    var currentCountryList = filterCountryList[i];
+    var currentCountryLetterItem = filterCountryLetterItem[i];
 
     currentLetterBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -116,15 +111,15 @@ if (filterCountry) {
 }
 
 if (filterBtnList) {
-  const filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
-  const filterSVGList = document.querySelectorAll('.filter__icon--hide');
-  for (let i = 0; i < filterBtnList.length; i++) {
+  var filterLabelWrapList = document.querySelectorAll('.filter__label-wrap');
+  var filterSVGList = document.querySelectorAll('.filter__icon--hide');
+  for (var i = 0; i < filterBtnList.length; i++) {
 
     // Вынужденная мера из-за поддержки IE 11
 
-    let currentBtn = filterBtnList[i];
-    let currentLabelWrap = filterLabelWrapList[i];
-    let currentFilterSVGList = filterSVGList[i];
+    var currentBtn = filterBtnList[i];
+    var currentLabelWrap = filterLabelWrapList[i];
+    var currentFilterSVGList = filterSVGList[i];
 
     currentBtn.addEventListener('click', function (evt) {
       evt.preventDefault();
