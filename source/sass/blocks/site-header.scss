@@ -438,26 +438,26 @@
 
     &:hover,
     &:active {
-      & span {
+      & .site-header__animation {
         transform: translateY(-100%);
       }
     }
+  }
 
-    & span {
-      position: relative;
+  .site-header__animation {
+    position: relative;
 
-      display: block;
+    display: block;
 
-      transition: transform 0.3s;
+    transition: transform 0.3s;
 
-      &::before {
-        position: absolute;
-        top: 100%;
-        content: attr(data-hover);
+    &::before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
 
-        color: #ffd74b;
-        transform: translate3d(0, 0, 0);
-      }
+      color: #ffd74b;
+      transform: translate3d(0, 0, 0);
     }
   }
 
@@ -594,10 +594,10 @@
         &:active {
           color: rgba(22, 28, 53, 1);
         }
+      }
 
-        & span::before {
-          color: rgba(22, 28, 53, 0.6)
-        }
+      .site-header__animation::before {
+        color: rgba(22, 28, 53, 0.6);
       }
     }
 
