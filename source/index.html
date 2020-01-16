@@ -6,6 +6,8 @@
   <title>Главная - Погнали, HTML Academy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
 </head>
 
 <body>
@@ -314,8 +316,12 @@
               </p>
               <a href="" class="companions__item-link">
                 <div class="companions__photo">
-                  <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-destop@2x.jpg 2x" width="270" height="270"
-                    alt="Фотография: Таня Фирсова">
+                  <picture>
+                    <source type="image/webp"
+                        srcset="img/firsova-desktop@1x.webp, img/firsova-destop@2x.webp 2x">
+                    <img src="img/firsova-desktop@1x.jpg" srcset="img/firsova-destop@2x.jpg 2x" width="270" height="270"
+                      alt="Фотография: Таня Фирсова">
+                  </picture>
                 </div>
                 <ul class="companions__countries">
                   <li class="companions__flag companions__flag--sri-lanka">
@@ -373,8 +379,12 @@
               </p>
               <a href="" class="companions__item-link">
                 <div class="companions__photo">
-                  <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270"
-                    alt="Петя Демин">
+                  <picture>
+                    <source type="image/webp"
+                        srcset="img/demin-desktop@1x.webp, img/demin-desktop@2x.webp 2x">
+                    <img src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" width="270" height="270"
+                      alt="Петя Демин">
+                  </picture>
                 </div>
                 <ul class="companions__countries">
                   <li class="companions__flag companions__flag--belgium">
