@@ -41,7 +41,7 @@
 
   .review__text {
     max-width: 265px;
-    margin-bottom: 44px;
+    margin-bottom: 47px;
 
     font-size: 28px;
     line-height: 1.18;
@@ -71,5 +71,9 @@
     margin-right: 57px;
     margin-bottom: 0;
     margin-left: 0;
+  }
+
+  .review__text {
+    margin-bottom: 44px;
   }
 }

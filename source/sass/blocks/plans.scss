@@ -5,7 +5,7 @@
 
 .plans__container {
   @include mobileContainer;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 50px;
   margin: 0 auto;
 }
@@ -23,7 +23,7 @@
 .plans__item {
   position: relative;
 
-  padding-top: 24px;
+  padding-top: 22px;
   padding-right: 25px;
   padding-bottom: 23px;
   padding-left: 25px;
@@ -36,7 +36,7 @@
 .plans__title {
   @include font(700, normal);
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   font-size: 16px;
   color: #1d2e5b;
@@ -83,12 +83,12 @@
 @media (min-width: $tablet-width) {
   .plans__container {
     @include tabletContainer;
-    padding-top: 50px;
+    padding-top: 54px;
     padding-bottom: 127px;
   }
 
   .plans__heading {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 
     font-size: 36px;
   }
@@ -112,6 +112,7 @@
     align-items: center;
     width: 100%;
     min-height: 100px;
+    margin-bottom: 16px;
 
     &::after {
       position: absolute;

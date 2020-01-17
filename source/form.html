@@ -154,35 +154,43 @@
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Airplane" aria-label="Самолет"
                   checked>
-                <svg class="profile__transport-icon" width="14" height="16">
-                  <use xlink:href="img/sprite.svg#icon-plane"></use>
-                </svg>
+                  <span class="profile__transport-bg">
+                    <svg class="profile__transport-icon" width="14" height="16">
+                      <use xlink:href="img/sprite.svg#icon-plane"></use>
+                    </svg>
+                  </span>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bus" aria-label="Автобус"
                   checked>
-                <svg class="profile__transport-icon" width="13" height="16">
-                  <use xlink:href="img/sprite.svg#icon-bus"></use>
-                </svg>
+                  <span class="profile__transport-bg">
+                    <svg class="profile__transport-icon" width="13" height="16">
+                      <use xlink:href="img/sprite.svg#icon-bus"></use>
+                    </svg>
+                  </span>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bike" aria-label="Велосипед">
-                <svg class="profile__transport-icon" width="19" height="17">
-                  <use xlink:href="img/sprite.svg#icon-bike"></use>
-                </svg>
+                <span class="profile__transport-bg">
+                  <svg class="profile__transport-icon" width="19" height="17">
+                    <use xlink:href="img/sprite.svg#icon-bike"></use>
+                  </svg>
+                </span>
               </label>
             </li>
             <li class="profile__item">
               <label class="profile__label profile__label--transport">
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Run" aria-label="Пешком"
                   checked>
-                <svg class="profile__transport-icon" width="15" height="17">
-                  <use xlink:href="img/sprite.svg#icon-run"></use>
-                </svg>
+                  <span class="profile__transport-bg">
+                    <svg class="profile__transport-icon" width="15" height="17">
+                      <use xlink:href="img/sprite.svg#icon-run"></use>
+                    </svg>
+                  </span>
               </label>
             </li>
           </ul>
@@ -222,7 +230,7 @@
             <div class="step__inner">
               <header class="step__header step__header--step-one">
                 <div class="step__header-wrap">
-                  <h3 class="step__heading">Шаг 1.<br class="step__br"> Даты пребывания</h3>
+                  <h3 class="step__heading">Шаг 1.&nbsp;<br class="step__br">Даты пребывания</h3>
                   <p class="step__text">
                     Укажите предпочтительное количество попутчиков, которых
                     вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.
@@ -280,7 +288,7 @@
                 <input type="checkbox" class="step__checkbox" name="children" value="true" checked>
                 <span class="step__checkbox-icon">
                   <svg class="step__tick-img" width="9" height="9">
-                    <use xlink:href="img/sprite.svg#tick"></use>
+                    <use xlink:href="img/sprite.svg#icon-tick"></use>
                   </svg>
                 </span>
                 Можно с детьми
@@ -592,11 +600,11 @@
               </a>
             </div>
           </fieldset>
-          <fieldset class="add-plan__step step" id="step-two">
-            <div class="step__inner">
+          <fieldset class="add-plan__step step step--two" id="step-two">
+            <div class="step__inner step__inner--step-two">
               <header class="step__header step__header--step-two">
                 <div class="step__header-wrap">
-                  <h3 class="step__heading">Шаг 2.<br class="step__br"> Маршрут</h3>
+                  <h3 class="step__heading">Шаг 2.&nbsp;<br class="step__br">Маршрут</h3>
                   <p class="step__text step__text--step-two">
                     Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
                   </p>
@@ -803,10 +811,10 @@
             </div>
           </fieldset>
           <fieldset class="add-plan__step step">
-            <div class="step__inner" id="step-three">
+            <div class="step__inner step__inner--step-three" id="step-three">
               <header class="step__header step__header--step-three">
                 <div class="step__header-wrap">
-                  <h3 class="step__heading">Шаг 3.<br class="step__br"> Развлечения</h3>
+                  <h3 class="step__heading">Шаг 3.&nbsp;<br class="step__br">Развлечения</h3>
                   <p class="step__text step__text--step-three">
                     Наконец, расскажите о своих планах времяпровождения.
                     Можно писать в свободной форме и ставить тэги.

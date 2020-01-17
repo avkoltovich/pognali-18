@@ -19,7 +19,7 @@
 
   width: 270px;
   padding-top: 21px;
-  padding-right: 50px;
+  padding-right: 70px;
   padding-left: 25px;
 
   @include font(700, normal);
@@ -85,8 +85,9 @@
 
   .howto__item {
     min-height: 140px;
-    padding-top: 29px;
+    padding-top: 30px;
     padding-left: 32px;
+    padding-right: 110px;
 
     font-size: 24px;
 
@@ -145,6 +146,7 @@
 
   .howto__item {
     min-height: 107px;
+    padding-top: 28px;
 
     &::after {
       top: 29px;
