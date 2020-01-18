@@ -28,7 +28,7 @@ function init() {
     }
   });
 
-  myMap.controls.add('routeButtonControl', {
+  myMap.controls.add("routeButtonControl", {
     size: "auto",
     float: "none",
     position: {
@@ -37,8 +37,8 @@ function init() {
     }
   });
 
-  var route = myMap.controls.get('routeButtonControl');
-  route.routePanel.geolocate('from');
+  var route = myMap.controls.get("routeButtonControl");
+  route.routePanel.geolocate("from");
   route.routePanel.state.set({
     fromEnabled: false,
     toEnabled: false,
