@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="site-header">
     <div class="site-header__container">
       <a href="index.html" class="site-header__logo-link">
@@ -29,7 +32,7 @@
       </a>
       <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
         <svg class="site-header__menu-icon" width="25" height="25">
-          <use xlink:href="img/sprite.svg#icon-menu-hamburger"></use>
+          <use xlink:href="#icon-menu-hamburger"></use>
         </svg>
       </button>
       <nav class="site-header__navigation">
@@ -57,10 +60,10 @@
           <a href="tel:+78005558628" class="site-header__contact-link">
             <span class="menu-icon site-header__contact-img site-header__contact-img--tel">
               <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-menu-phone"></use>
+                <use xlink:href="#icon-menu-phone"></use>
               </svg>
               <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
+                <use xlink:href="#icon-top-menu-phone"></use>
               </svg>
             </span>
             8 800 555-86-28
@@ -70,10 +73,10 @@
           <a href="mailto:mail@htmlacademy.ru" class="site-header__contact-link">
             <span class="menu-icon site-header__contact-img site-header__contact-img--mail">
               <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-menu-mail"></use>
+                <use xlink:href="#icon-menu-mail"></use>
               </svg>
               <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="14">
-                <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
+                <use xlink:href="#icon-top-menu-mail"></use>
               </svg>
             </span>
             mail@htmlacademy.ru
@@ -84,7 +87,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--fb" width="11" height="21">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -92,7 +95,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--vk" width="23" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -100,7 +103,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--in" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
@@ -156,7 +159,7 @@
                   checked>
                   <span class="profile__transport-bg">
                     <svg class="profile__transport-icon" width="14" height="16">
-                      <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      <use xlink:href="#icon-plane"></use>
                     </svg>
                   </span>
               </label>
@@ -167,7 +170,7 @@
                   checked>
                   <span class="profile__transport-bg">
                     <svg class="profile__transport-icon" width="13" height="16">
-                      <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      <use xlink:href="#icon-bus"></use>
                     </svg>
                   </span>
               </label>
@@ -177,7 +180,7 @@
                 <input type="checkbox" class="profile__checkbox" name="transport" value="Bike" aria-label="Велосипед">
                 <span class="profile__transport-bg">
                   <svg class="profile__transport-icon" width="19" height="17">
-                    <use xlink:href="img/sprite.svg#icon-bike"></use>
+                    <use xlink:href="#icon-bike"></use>
                   </svg>
                 </span>
               </label>
@@ -188,7 +191,7 @@
                   checked>
                   <span class="profile__transport-bg">
                     <svg class="profile__transport-icon" width="15" height="17">
-                      <use xlink:href="img/sprite.svg#icon-run"></use>
+                      <use xlink:href="#icon-run"></use>
                     </svg>
                   </span>
               </label>
@@ -288,7 +291,7 @@
                 <input type="checkbox" class="step__checkbox" name="children" value="true" checked>
                 <span class="step__checkbox-icon">
                   <svg class="step__tick-img" width="9" height="9">
-                    <use xlink:href="img/sprite.svg#icon-tick"></use>
+                    <use xlink:href="#icon-tick"></use>
                   </svg>
                 </span>
                 Можно с детьми
@@ -595,7 +598,7 @@
               </table>
               <a href="#step-two" class="button-oval button-oval--yellow step__link step__link--step-one">Следующий шаг
                 <svg class="step__forward-icon" width="10" height="14">
-                  <use xlink:href="img/sprite.svg#icon-triangle-arrow-right"></use>
+                  <use xlink:href="#icon-triangle-arrow-right"></use>
                 </svg>
               </a>
             </div>
@@ -621,7 +624,7 @@
                     value="Босния и герцеговина">
                   <span class="step__select-icon"></span>
                   <svg class="step__dropdown-icon" width="12" height="7">
-                    <use xlink:href="img/sprite.svg#icon-dropdown-form"></use>
+                    <use xlink:href="#icon-dropdown-form"></use>
                   </svg>
                 </label>
                 <span class="step__flag">
@@ -630,11 +633,11 @@
                 </span>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <svg width="9" height="9">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                    <use xlink:href="#icon-close"></use>
                   </svg>
                 </button>
                 <svg class="step__arrow-icon" width="5" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlink:href="#icon-arrow-down"></use>
                 </svg>
               </div>
               <div class="step__select-wrap">
@@ -642,7 +645,7 @@
                   <input class="step__input step__input--step-two" type="text" name="country" value="Чехия">
                   <span class="step__select-icon"></span>
                   <svg class="step__dropdown-icon" width="12" height="7">
-                    <use xlink:href="img/sprite.svg#icon-dropdown-form"></use>
+                    <use xlink:href="#icon-dropdown-form"></use>
                   </svg>
                 </label>
                 <span class="step__flag">
@@ -650,11 +653,11 @@
                 </span>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <svg width="9" height="9">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                    <use xlink:href="#icon-close"></use>
                   </svg>
                 </button>
                 <svg class="step__arrow-icon" width="5" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlink:href="#icon-arrow-down"></use>
                 </svg>
               </div>
               <div class="step__select-wrap">
@@ -662,7 +665,7 @@
                   <button class="step__input step__input--add-country" type="button">Выберите страну</button>
                   <span class="step__select-icon"></span>
                   <svg class="step__dropdown-icon" width="12" height="7">
-                    <use xlink:href="img/sprite.svg#icon-dropdown-form"></use>
+                    <use xlink:href="#icon-dropdown-form"></use>
                   </svg>
                 </label>
                 <section class="step__country country display-none">
@@ -671,7 +674,7 @@
                       <h2 class="country__heading">Выберите страну</h2>
                       <button class="country__button country__button--close" aria-label="Закрыть">
                         <svg class="country__close-img" width="9" height="9">
-                          <use xlink:href="img/sprite.svg#icon-close"></use>
+                          <use xlink:href="#icon-close"></use>
                         </svg>
                       </button>
                     </header>
@@ -785,27 +788,27 @@
                 </section>
                 <button class="step__button step__button--del" type="button" aria-label="Удалить">
                   <svg width="9" height="9">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                    <use xlink:href="#icon-close"></use>
                   </svg>
                 </button>
                 <svg class="step__arrow-icon" width="5" height="10">
-                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  <use xlink:href="#icon-arrow-down"></use>
                 </svg>
               </div>
               <div class="step__wrapper">
                 <button class="step__button step__button--add" type="button">Добавить страну</button>
                 <svg class="step__plus-icon" width="14" height="14">
-                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  <use xlink:href="#icon-plus"></use>
                 </svg>
               </div>
               <a href="#step-three" class="button-oval button-oval--yellow step__link step__link--oval">Следующий шаг
                 <svg class="step__forward-icon" width="10" height="14">
-                  <use xlink:href="img/sprite.svg#icon-triangle-arrow-right"></use>
+                  <use xlink:href="#icon-triangle-arrow-right"></use>
                 </svg>
               </a>
               <a href="#step-one" class="step__link step__link--back">
                 <svg class="step__back-icon" width="10" height="14">
-                  <use xlink:href="img/sprite.svg#icon-triangle-arrow-left"></use>
+                  <use xlink:href="#icon-triangle-arrow-left"></use>
                 </svg>
                 На шаг назад</a>
             </div>
@@ -846,12 +849,12 @@
               </label>
               <button class="button-oval button-oval--yellow step__button step__button--submit" type="submit">Отправить
                 <svg class="step__forward-icon" width="10" height="14">
-                  <use xlink:href="img/sprite.svg#icon-triangle-arrow-right"></use>
+                  <use xlink:href="#icon-triangle-arrow-right"></use>
                 </svg>
               </button>
               <a href="#step-two" class="step__link step__link--back">
                 <svg class="step__back-icon" width="10" height="14">
-                  <use xlink:href="img/sprite.svg#icon-triangle-arrow-left"></use>
+                  <use xlink:href="#icon-triangle-arrow-left"></use>
                 </svg>
                 На шаг назад</a>
             </div>
@@ -880,7 +883,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--fb" width="11" height="21">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -888,7 +891,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--vk" width="23" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -896,7 +899,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--in" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>

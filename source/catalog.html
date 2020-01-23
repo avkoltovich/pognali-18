@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="site-header">
     <div class="site-header__container">
       <a href="index.html" class="site-header__logo-link">
@@ -29,7 +32,7 @@
       </a>
       <button class="site-header__button site-header__button--menu" type="button" aria-label="Открыть меню">
         <svg class="site-header__menu-icon" width="25" height="25">
-          <use xlink:href="img/sprite.svg#icon-menu-hamburger"></use>
+          <use xlink:href="#icon-menu-hamburger"></use>
         </svg>
       </button>
       <nav class="site-header__navigation">
@@ -57,10 +60,10 @@
           <a href="tel:+78005558628" class="site-header__contact-link">
             <span class="menu-icon site-header__contact-img site-header__contact-img--tel">
               <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-menu-phone"></use>
+                <use xlink:href="#icon-menu-phone"></use>
               </svg>
               <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-top-menu-phone"></use>
+                <use xlink:href="#icon-top-menu-phone"></use>
               </svg>
             </span>
             8 800 555-86-28
@@ -70,10 +73,10 @@
           <a href="mailto:mail@htmlacademy.ru" class="site-header__contact-link">
             <span class="menu-icon site-header__contact-img site-header__contact-img--mail">
               <svg class="menu-icon__svg site-header__contact-icon" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-menu-mail"></use>
+                <use xlink:href="#icon-menu-mail"></use>
               </svg>
               <svg class="site-header__contact-icon site-header__contact-icon--desktop" width="18" height="14">
-                <use xlink:href="img/sprite.svg#icon-top-menu-mail"></use>
+                <use xlink:href="#icon-top-menu-mail"></use>
               </svg>
             </span>
             mail@htmlacademy.ru
@@ -84,7 +87,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--fb" width="11" height="21">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -92,7 +95,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--vk" width="23" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -100,7 +103,7 @@
         <li class="site-header__social-item">
           <a href="" class="site-header__social-link">
             <svg class="site-header__social-icon site-header__social-icon--in" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
@@ -115,7 +118,7 @@
         <a href="index.html" class="site-main__button">
           На главную
           <svg class="site-main__return-icon" width="32" height="16">
-            <use xlink:href="img/sprite.svg#icon-return"></use>
+            <use xlink:href="#icon-return"></use>
           </svg>
         </a>
       </div>
@@ -126,7 +129,7 @@
           <div class="filter-country__header">
             <h2 class="filter-country__heading">
               <svg class="filter-country__icon filter-country__icon--list" width="15" height="10">
-                <use xlink:href="img/sprite.svg#icon-filter"></use>
+                <use xlink:href="#icon-filter"></use>
               </svg>
               <span class="filter-country__heading-text">
                 Фильтрация по странам<span class="filter-country__colon">:</span>
@@ -136,10 +139,10 @@
               <span class="filter-country__button-text filter-country__button-text--hide">СВЕРНУТЬ</span>
               <span class="filter-country__button-text filter-country__button-text--show">ПОКАЗАТЬ ВСЕ</span>
               <svg class="filter-country__icon filter-country__icon--dots" width="27" height="5">
-                <use xlink:href="img/sprite.svg#icon-dots"></use>
+                <use xlink:href="#icon-dots"></use>
               </svg>
               <svg class="filter-country__icon filter-country__icon--close" width="12" height="12">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
+                <use xlink:href="#icon-close"></use>
               </svg>
             </button>
             <ul class="filter-country__continent-list">
@@ -857,7 +860,7 @@
           <button class="filter-country__button filter-country__button--hide button-oval button-oval--blue"
             type="button">
             <svg class="filter-country__icon filter-country__icon--hide" width="12" height="12">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
+              <use xlink:href="#icon-close"></use>
             </svg>
             свернуть
           </button>
@@ -875,7 +878,7 @@
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Хобби<span class="filter__colon">:</span>
                   <svg class="filter__icon filter__icon--hide" width="8" height="4">
-                    <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    <use xlink:href="#icon-dropdown"></use>
                   </svg>
                 </button>
               </h4>
@@ -884,7 +887,7 @@
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Sport" checked>
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Спортзал
@@ -893,7 +896,7 @@
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Shisha">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Кальян
@@ -902,7 +905,7 @@
                   <input type="checkbox" class="filter__checkbox" name="hobby" value="Sofa">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Диван
@@ -914,7 +917,7 @@
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Музыка<span class="filter__colon">:</span>
                   <svg class="filter__icon filter__icon--hide" width="8" height="4">
-                    <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    <use xlink:href="#icon-dropdown"></use>
                   </svg>
                 </button>
               </h4>
@@ -923,7 +926,7 @@
                   <input type="checkbox" class="filter__checkbox" name="music" value="Hard Rock" checked>
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Тяжелый рок
@@ -932,7 +935,7 @@
                   <input type="checkbox" class="filter__checkbox" name="music" value="Russian rap">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Русский рэп
@@ -941,7 +944,7 @@
                   <input type="checkbox" class="filter__checkbox" name="music" value="Eurodance">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Евроденс
@@ -953,7 +956,7 @@
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Еда<span class="filter__colon">:</span>
                   <svg class="filter__icon filter__icon--hide" width="8" height="4">
-                    <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    <use xlink:href="#icon-dropdown"></use>
                   </svg>
                 </button>
               </h4>
@@ -962,7 +965,7 @@
                   <input type="checkbox" class="filter__checkbox" name="food" value="Meat" checked>
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Мясоед
@@ -971,7 +974,7 @@
                   <input type="checkbox" class="filter__checkbox" name="food" value="Proper nutrition">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Сидит на ПП
@@ -980,7 +983,7 @@
                   <input type="checkbox" class="filter__checkbox" name="food" value="Vegan">
                   <span class="filter__icon filter__icon--checkbox">
                     <svg class="filter__tick-img" width="9" height="9">
-                      <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      <use xlink:href="#icon-tick"></use>
                     </svg>
                   </span>
                   Веган-сыроед
@@ -992,7 +995,7 @@
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Транспорт<span class="filter__colon">:</span>
                   <svg class="filter__icon filter__icon--hide" width="8" height="4">
-                    <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    <use xlink:href="#icon-dropdown"></use>
                   </svg>
                 </button>
               </h4>
@@ -1002,7 +1005,7 @@
                     checked>
                   <span class="filter__transport-bg">
                     <svg class="filter__transport-icon" width="14" height="16">
-                      <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      <use xlink:href="#icon-plane"></use>
                     </svg>
                   </span>
                 </label>
@@ -1011,7 +1014,7 @@
                     checked>
                   <span class="filter__transport-bg">
                     <svg class="filter__transport-icon" width="13" height="16">
-                      <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      <use xlink:href="#icon-bus"></use>
                     </svg>
                   </span>
                 </label>
@@ -1019,7 +1022,7 @@
                   <input type="checkbox" class="filter__checkbox" name="transport" value="Bike" aria-label="Велосипед">
                   <span class="filter__transport-bg">
                     <svg class="filter__transport-icon" width="19" height="17">
-                      <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      <use xlink:href="#icon-bike"></use>
                     </svg>
                   </span>
                 </label>
@@ -1028,7 +1031,7 @@
                     checked>
                   <span class="filter__transport-bg">
                     <svg class="filter__transport-icon" width="15" height="17">
-                      <use xlink:href="img/sprite.svg#icon-run"></use>
+                      <use xlink:href="#icon-run"></use>
                     </svg>
                   </span>
                 </label>
@@ -1039,7 +1042,7 @@
                 <button class="filter__button filter__button--show" type="button" aria-label="Показать">
                   Левел<span class="filter__colon">:</span>
                   <svg class="filter__icon filter__icon--hide " width="8" height="4">
-                    <use xlink:href="img/sprite.svg#icon-dropdown"></use>
+                    <use xlink:href="#icon-dropdown"></use>
                   </svg>
                 </button>
               </h4>
@@ -1122,25 +1125,25 @@
                   <ul class="catalog__transport-list">
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="14" height="16">
-                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                        <use xlink:href="#icon-plane"></use>
                       </svg>
                       <span class="visually-hidden">Самолёт</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="13" height="16">
-                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                        <use xlink:href="#icon-bus"></use>
                       </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="19" height="17">
-                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                        <use xlink:href="#icon-bike"></use>
                       </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="15" height="17">
-                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                        <use xlink:href="#icon-run"></use>
                       </svg>
                       <span class="visually-hidden">Бегом</span>
                     </li>
@@ -1215,25 +1218,25 @@
                   <ul class="catalog__transport-list">
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="14" height="16">
-                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                        <use xlink:href="#icon-plane"></use>
                       </svg>
                       <span class="visually-hidden">Самолёт</span>
                     </li>
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="13" height="16">
-                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                        <use xlink:href="#icon-bus"></use>
                       </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="19" height="17">
-                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                        <use xlink:href="#icon-bike"></use>
                       </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="15" height="17">
-                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                        <use xlink:href="#icon-run"></use>
                       </svg>
                       <span class="visually-hidden">Бегом</span>
                     </li>
@@ -1312,25 +1315,25 @@
                   <ul class="catalog__transport-list">
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="14" height="16">
-                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                        <use xlink:href="#icon-plane"></use>
                       </svg>
                       <span class="visually-hidden">Самолёт</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="13" height="16">
-                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                        <use xlink:href="#icon-bus"></use>
                       </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="19" height="17">
-                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                        <use xlink:href="#icon-bike"></use>
                       </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="15" height="17">
-                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                        <use xlink:href="#icon-run"></use>
                       </svg>
                       <span class="visually-hidden">Бегом</span>
                     </li>
@@ -1407,25 +1410,25 @@
                   <ul class="catalog__transport-list">
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="14" height="16">
-                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                        <use xlink:href="#icon-plane"></use>
                       </svg>
                       <span class="visually-hidden">Самолёт</span>
                     </li>
                     <li class="catalog__transport-item catalog__transport-item--active">
                       <svg class="catalog__transport-icon" width="13" height="16">
-                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                        <use xlink:href="#icon-bus"></use>
                       </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="19" height="17">
-                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                        <use xlink:href="#icon-bike"></use>
                       </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
                     <li class="catalog__transport-item">
                       <svg class="catalog__transport-icon" width="15" height="17">
-                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                        <use xlink:href="#icon-run"></use>
                       </svg>
                       <span class="visually-hidden">Бегом</span>
                     </li>
@@ -1447,7 +1450,7 @@
         </div>
         <button class="catalog__button catalog__button--more" type="button">
           <svg class="catalog__plus-icon" width="18" height="18">
-            <use xlink:href="img/sprite.svg#icon-plus"></use>
+            <use xlink:href="#icon-plus"></use>
           </svg>
           Показать еще
         </button>
@@ -1467,14 +1470,14 @@
           <li class="pagination__item pagination__item--left">
             <a href="" class="pagination__link pagination__link--back" aria-label="Назад">
               <svg class="pagination__icon" width="10" height="20">
-                <use xlink:href="img/sprite.svg#icon-triangle-arrow-left"></use>
+                <use xlink:href="#icon-triangle-arrow-left"></use>
               </svg>
             </a>
           </li>
           <li class="pagination__item pagination__item--right">
             <a href="" class="pagination__link pagination__link--fwd" aria-label="Вперед">
               <svg class="pagination__icon" width="10" height="20">
-                <use xlink:href="img/sprite.svg#icon-triangle-arrow-right"></use>
+                <use xlink:href="#icon-triangle-arrow-right"></use>
               </svg>
             </a>
           </li>
@@ -1502,7 +1505,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--fb" width="11" height="21">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
@@ -1510,7 +1513,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--vk" width="23" height="12">
-              <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Вконтакте</span>
           </a>
@@ -1518,7 +1521,7 @@
         <li class="site-footer__social-item">
           <a href="" class="site-footer__social-link">
             <svg class="site-footer__social-icon site-footer__social-icon--in" width="18" height="18">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="#icon-instagram"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>

@@ -14,6 +14,8 @@ var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task("css", function() {
@@ -61,6 +63,7 @@ gulp.task("sprite", function() {
 gulp.task("html", function() {
   return gulp
     .src("source/*.html")
+    .pipe(posthtml([include()]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
