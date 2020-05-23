@@ -1,6 +1,6 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Колтович](https://up.htmlacademy.ru/adaptive/18/user/1039795).
+* Студент: [Александр Колтович](https://up.htmlacademy.ru/adaptive/18/user/1039795). 
 * Наставник: [Максим Прусаков](https://htmlacademy.ru/profile/hikikomori). 
 
 ---
